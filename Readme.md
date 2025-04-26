@@ -19,6 +19,27 @@
 - **pdf_processing/**: Tools for extracting and processing content from PDF documents
 - **src/**: Custom implementation for data processing and format conversion
 
+## Project Structure and Organization
+
+The project follows a clear separation of concerns between framework code and project-specific code:
+
+- **LLaVA/**: Contains the core LLaVA framework code
+  - Base model implementation
+  - Training infrastructure
+  - Core vision-language model capabilities
+  - `train_llava.py`: Configures and runs the LLaVA training process
+
+- **src/**: Contains project-specific code
+  - Custom data processing and conversion utilities
+  - `convert_to_llava_format.py`: Converts course materials into LLaVA training format
+  - Handles project-specific data structures and requirements
+
+This separation allows for:
+- Clear distinction between framework and project code
+- Easier maintenance and updates of both components
+- Better organization of project-specific adaptations
+- Cleaner integration with the LLaVA framework
+
 ## Setup and Installation
 
 1. Install required dependencies:
