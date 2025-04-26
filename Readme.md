@@ -112,6 +112,90 @@ The training process:
   - Weight decay: 0
   - Warmup ratio: 0.03
 
+## Model Export and Deployment
+
+### Exporting the Model
+
+1. **Prepare the Model for Export**
+   ```bash
+   # Navigate to the checkpoints directory
+   cd checkpoints
+   
+   # The model checkpoints are saved in the format:
+   # checkpoint-{step}/
+   # Choose the latest or best checkpoint
+   ```
+
+2. **Export to USB Key**
+   ```bash
+   # Create a directory on your USB key
+   mkdir /path/to/usb/llava_model
+   
+   # Copy the model files
+   cp -r checkpoints/checkpoint-{step}/* /path/to/usb/llava_model/
+   
+   # Copy necessary configuration files
+   cp LLaVA/config.json /path/to/usb/llava_model/
+   cp LLaVA/tokenizer.json /path/to/usb/llava_model/
+   ```
+
+3. **Verify Export**
+   - Check that all files are copied successfully
+   - Ensure the USB key has sufficient space (model size ~7GB)
+   - Verify file permissions are correct
+
+### Using the Model from USB
+
+1. **Setup on Target Machine**
+   ```bash
+   # Create a directory for the model
+   mkdir -p ~/llava_model
+   
+   # Copy from USB to local storage
+   cp -r /path/to/usb/llava_model/* ~/llava_model/
+   
+   # Install required dependencies
+   pip install -r requirements.txt
+   ```
+
+2. **Load and Use the Model**
+   ```python
+   from llava.model.builder import load_pretrained_model
+   
+   # Load the model from the exported directory
+   tokenizer, model, image_processor, context_len = load_pretrained_model(
+       model_path="~/llava_model",
+       model_base=None,
+       vision_tower="openai/clip-vit-large-patch14-336"
+   )
+   
+   # Use the model for inference
+   # (Add your inference code here)
+   ```
+
+3. **Performance Considerations**
+   - Ensure target machine has sufficient RAM (minimum 16GB recommended)
+   - Use CUDA if available for better performance
+   - Consider using model quantization for lower memory usage
+   - Monitor GPU memory usage during inference
+
+### Portable Usage Tips
+
+1. **Model Optimization**
+   - Consider using model quantization for smaller file size
+   - Use half-precision (FP16) for reduced memory usage
+   - Remove unnecessary model components if possible
+
+2. **Storage Requirements**
+   - Full model: ~7GB
+   - Quantized model: ~3.5GB
+   - Additional space for temporary files during inference
+
+3. **Compatibility**
+   - Ensure target machine has compatible Python version (3.10+)
+   - Verify CUDA version compatibility if using GPU
+   - Check for sufficient disk space and memory
+
 ## Next Steps
 
 1. **Immediate Improvements**
