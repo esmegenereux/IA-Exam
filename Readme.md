@@ -35,13 +35,19 @@ python src/pdf_processing/pdf_extractor.py
 
 This will create processed content in:
 ```
-extracted_content/
+src/pdf_processing/extracted_content/
 ├── module1/
 │   ├── images/
+│   │   ├── page_1.png
+│   │   ├── page_2.png
+│   │   └── ...
 │   ├── module1_text.json
 │   └── module1_summary.json
 ├── module2/
 │   ├── images/
+│   │   ├── page_1.png
+│   │   ├── page_2.png
+│   │   └── ...
 │   ├── module2_text.json
 │   └── module2_summary.json
 └── ...
@@ -51,16 +57,27 @@ extracted_content/
 
 ```bash
 # Convert your course materials to LLaVA training format
-python src/convert_to_llava_format.py
+python src/convert_to_llava_format/convert_to_llava_format.py
 ```
 
 This will create training data in:
 ```
-src/llava_training_data/
+src/convert_to_llava_format/llava_training_data/
+├── images/
+│   ├── module1_page_1.png
+│   ├── module1_page_2.png
+│   ├── module2_page_1.png
+│   └── ...
 ├── module1_llava.json
 ├── module2_llava.json
 └── ...
 ```
+
+The conversion process:
+1. Creates a central `images` directory containing all course images
+2. Renames images to include module and page information
+3. Generates LLaVA-format JSON files with proper image references
+4. Maintains the relationship between text and images
 
 ### 4. Train the Model
 
@@ -85,18 +102,16 @@ The training will:
   - `train_llava.py`: Training configuration and execution
 
 - **src/**: Project-specific code
-  - `convert_to_llava_format.py`: Data conversion utilities
+  - `convert_to_llava_format/`: Data conversion utilities
+    - `convert_to_llava_format.py`: Main conversion script
+    - `llava_training_data/`: Formatted training data
   - `pdf_processing/`: PDF extraction and processing tools
-  - `llava_training_data/`: Formatted training data
+    - `pdf_extractor.py`: PDF processing script
+    - `extracted_content/`: Processed course materials
 
 - **Class docs/**: Original course materials
   - PDF documents
   - Organized by modules
-
-- **extracted_content/**: Processed course materials
-  - Organized by modules
-  - Contains images and text content
-  - Includes module summaries
 
 ## Training Configuration
 
@@ -140,6 +155,11 @@ The training process uses the following settings:
    - Verify JSON structure
    - Check image paths
    - Ensure proper module organization
+
+4. **Image Processing**
+   - Verify all images are copied to the central images directory
+   - Check image naming convention
+   - Ensure JSON files reference correct image paths
 
 ## Next Steps
 
