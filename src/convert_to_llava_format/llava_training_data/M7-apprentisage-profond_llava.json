@@ -1,0 +1,800 @@
+[
+  {
+    "id": "9612eb86-2796-46c5-9ada-aba2e3d083a2",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "INF8175 - Intelligence artiﬁcielleMéthodes et algorithmesModule 7: Réseaux de neurones et apprentissage profond"
+      }
+    ]
+  },
+  {
+    "id": "812e110b-dbd3-4ed3-bf3b-d08ac2b23b68",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Contenu du cours\n2Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques"
+      }
+    ]
+  },
+  {
+    "id": "4477e35b-18f9-4208-90ea-063c2a7275f0",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Table des matières\n3Réseaux de neurones1. Concepts principaux des réseaux de neurones 2. Extension de la régression logistique 3. Notations standards des réseaux de neurones 4. Exécution de la backpropagation du gradient 5. Principes des fonctions d'activation 6. Initialisation des paramètresApprentissage profond1. Limitation des petits réseaux de neurones 2. Principes de l'apprentissage profond 3. Profondeur d'un réseau de neurones 4. Introduction aux hyper-paramètres 5. Conseils pratiques\nhttps://www.asimovinstitute.org/author/fjodorvanveen/"
+      }
+    ]
+  },
+  {
+    "id": "b5ae958a-1649-4548-acd9-234215eb9e9b",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Rappel de la régression logistique\n4z=w1x1+…+wnxn+bx1bwnw1xn..L(a,y)a=σ(z)Intérêt: permet de créer une frontière de décision linéaireEtape 1: on prend une combinaison linéaire des caractéristiquesEtape 2: on applique une sigmoide sur cette combinaison\nAlgorithme d’apprentissage: descente de gradient avec une passe en avant et en arrière\nHypothèse: une tendance linéaire entre les données peut être établieCe n’est malheureusement pas souvent le cas en pratiqueBesoin: on doit construire une fonction (hypothèse) plus expressive\nLes réseaux de neurones permettent de combler ce manque\nUne régression logistique construit d'une fonction prédisant une valeur entre 0 et 1 (module précédent)"
+      }
+    ]
+  },
+  {
+    "id": "dd44a5e0-2e2f-42c5-87cc-c4022c139d66",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_5.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Aperçu d'un réseau de neurones\n5z=w1x1+…+wnxn+bx1bwnw1xn...a=σ(z)\nxn...x1a Ensemble de neurones organisés en un réseau de plusieurs couchesRéseau de neurones\nSans le savoir, on a déjà construit nos premiers neurones !\nQu’est-ce qu’un neurone dans ce contexte ?Neurone actuel: combinaison linéaire de variables, à laquelle est appliquée une sigmoïde\nPar la suite: on verra comment créer d'autres types de neurones (non basé sur une sigmoïde)Représentation visuelle: les paramètres à apprendre (w1, ..., wn, b) sont souvent implicitesExemple de neurone\nRéseau: les neurones sont organisés en un réseau de plusieurs couches (layers)Intuition: chaque neurone apporte sa propre contribution pour la prédictionParamètres: chaque neurone a ses propres paramètres à apprendre (w et b)Conséquence: on a un modèle plus expressif qu’une régression logistique\nL’idée est d’apprendre une fonction diﬀérente avec chaque neurone, qui sont ensuite composées"
+      }
+    ]
+  },
+  {
+    "id": "9a4257ee-ef67-4d48-900b-4213b6cdf21e",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_6.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Métaphore biologique\n6Transmission de l’information: sous forme de signal électrique, en passant de neurone en neuroneCerveau humain: organisé en un énorme réseau de neurones (86 millards de neurones)Attention: il s’agit simplement une métaphore, et non une correspondance exacte\nIl y a de nombreuses diﬀérences entre le fonctionnement d’un cerveau et ce qu’on va voirAttention: les inspirations naturelles (même existantes) sont plus de nature marketing que scientiﬁque\n\"C'est un abus de langage que de parler de neurones !  De la même façon qu'on parle d'aile pour un avion mais aussi pour un oiseau,  le neurone artiﬁciel est un modèle extrêmement simpliﬁé de la réalité biologique.\"https://www.sciencesetavenir.fr/high-tech/intelligence-artiﬁcielle/ selon-yann-lecun-l-intelligence-artiﬁcielle-a-20-ans-pour-faire-ses-preuves_120121\nYann LeCun"
+      }
+    ]
+  },
+  {
+    "id": "2a387cc2-3d5e-4f9e-b389-9da916045cbe",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_7.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Réseau de neurones à deux couches: notations\n7Couche d’entrée: couche reprenant les caractéristiques de la donnéeCouche cachée: couche dédiée aux calculs intermédiairesConvention: la couche d’entrée est la couche 0Couche de sortie: couche dédiée à la prédiction ﬁnale Couche  d’entrée [0] (input layer)\nCouche  cachée [1] (hidden layer)\nCouche  de sortie [2] (output layer)La couche d’entrée n’a ainsi aucun paramètres à apprendre\nn[i]: nombre de neurones à la couche iw[i]j,b[i]j: paramètres du neurone j à la couche ixj: caractéristique j pour une donnée spéciﬁque \nNote: w[i]j est de dimension n[i−1]×1 (nombre de ﬂèches entrantes)aj: sortie du neurone j à la couche cachéêy: prédiction pour une donnée selon ses caractéristiques xz1=w[1]T1x+b[1]1a1=σ(z1)a1x2x1Intuition: un neurone est une régression logistique avec ses paramètres\nx1,x2\na1,a2,a3\n̂yNotation: on va étendre nos notations précédentes\na1=σ(w[1]T1x+b[1]1)\na2=σ(w[1]T2x+b[1]2)\na3=σ(w[1]T3x+b[1]3)"
+      }
+    ]
+  },
+  {
+    "id": "785b7826-be7d-44e7-8168-8980fe4a56a1",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_8.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Réseau de neurones: forme matricielleNotation matricielle: regrouper toutes les valeurs en vecteurs et matricesIntérêt: donne une expression compacte et plus eﬃcace à calculerx=(x1x2) vecteur des caractéristiques d'une instance spéciﬁqueW[1]=−w[1]T1−−w[1]T2−−w[1]T3−b[1]=b[1]1b[1]2b[1]3z[1]=z[1]1z[1]2z[1]3=−w[1]T1−−w[1]T2−−w[1]T3−(x1x2)+b[1]1b[1]2b[1]3=w[1]T1x+b[1]1w[1]T2x+b[1]2w[1]T3x+b[1]3 Etape de la combinaison linéaire: z[1]=W[1]x+b[1]\na[1]=a[1]1a[1]2a[1]3=σ(z[1]1)σ(z[1]2)σ(z[1]3)Etape de l'application de la sigmoide: a[1]=σ(z[1])Dimension des matricesx:n[0]×1=2×1W[1]:n[1]×n[0]=3×2b[1]:n[1]×1=3×1z[1]:n[1]×1=3×1a[1]:n[1]×1=3×18\na[i]j: sortie du neurone j à la couche i (suite de la notation précédente)z[i]j: calcul intermédiaire du neurone j à la couche iMatrice des poids  à la couche cachéeVecteur des biais  à la couche cachée"
+      }
+    ]
+  },
+  {
+    "id": "3dbc1234-c9f8-4fb3-941e-43d7cf095fa4",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_9.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Réseau de neurones: équations fondamentales\nz[1]=W[1]x+b[1]a[1]=σ(z[1])z[2]=W[2]a[1]+b[2]̂y=σ(z[2])\nW[1]:n[1]×n[0]=3×2→6b[1]:n[1]×1=3×1→3b[2]:n[2]×1=1×1→1W[2]:n[2]×n[1]=1×3→3Total:13 paramètres devant être entrainés\nCombien de paramètres à apprendre a t-on dans ce réseau ?Expression similaire: notation a pour la couche d’entrée et de sortie\n9\nPrincipe: obtenir la prédiction à partir des caractéristiques en entrée\nz[1]=W[1]a[0]+b[1]a[1]=σ(z[1])z[2]=W[2]a[1]+b[2]a[2]=σ(z[2])Avantage: donne une expression plus générique\nPrincipe: calculer la taille de chaque matrice de paramètres, et sommer le toutNote: appliquer ces équations revient à faire la passe en avant dans un réseau de neurones\nCes équations sont les équations fondamentales des réseaux de neurones"
+      }
+    ]
+  },
+  {
+    "id": "e5509bd6-d030-4ea9-bbc6-cf271c384258",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_10.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Réseau de neurones : situation avec plusieurs données\nLimitation: ces équations ne considèrent qu’une seule donnée en entrée\nD:{(x(1),y(1)),(x(2),y(2)),…,(x(m),y(m))}\nz[1](i)=W[1]x(i)+b[1]a[1](i)=σ(z[1](i))z[2](i)=W[2]a[1](i)+b[2]a[2](i)=σ(z[2](i))∀i∈{1,…,m}̂y(i)=a[2](i)Objectif: appliquer ces équations sur chaque donnéeLa notation [i] réfère à une couche iLa notation (i) réfère à une donnée i\nErreur fréquente: confusion avec les indicesConseil: comprenez ce que chaque indice signiﬁe10\nz[1]=W[1]x+b[1]a[1]=σ(z[1])z[2]=W[2]a[1]+b[2]̂y=σ(z[2])\nz[1]=W[1]a[0]+b[1]a[1]=σ(z[1])z[2]=W[2]a[1]+b[2]a[2]=σ(z[2])Amélioration: adapter ces équations à un ensemble de donnéesNotation introduite dans le module précédent"
+      }
+    ]
+  },
+  {
+    "id": "830a6f3c-3c5b-4f91-b36c-bd935b5e9473",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_11.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Réseau de neurones : calcul de la passe en avant itérative pour plusieurs données\nEst-ce que c'est correct ? \nEst-ce que c'est eﬃcace ? Oui !Non ! Il y a moyen de faire mieuxAlgorithme naïf: prédire itérativement le résultat pour chaque donnée\nAvez-vous une autre alternative ? \n11\nz[1](i)=W[1]x(i)+b[1]a[1](i)=σ(z[1](i))z[2](i)=W[2]a[1](i)+b[2]a[2](i)=σ(z[2](i))𝖿𝗈𝗋i𝗂𝗇1𝗍𝗈m:𝖿𝗈𝗋𝗐𝖺𝗋𝖽𝖯𝖺𝗌𝗌𝖨𝗍𝖾𝗋𝖺𝗍𝗂𝗏𝖾(D,W[1],b[1],…):\n𝗋𝖾𝗍𝗎𝗋𝗇a[2](1),…,a[2](m)Idée: on peut regrouper toutes les données dans une matrice|x(1)|,…,|x(m)|n[0]×1n[0]×1n[0]×m|…|x(1)…x(m)|…|=X#caractéristiques×#donnéesIntérêt: permet la conception d'algorithmes plus eﬃcaces, opérant sur des matricesIntérêt supplémentaire: cela est d'autant plus vrai lorsqu'on utilise des GPUsGraphical processor unit (GPU): processeur spécialisé pour réaliser des tâches similaires en parallèle\nForme matricielle: représentation des données en matrice à des ﬁns de performances"
+      }
+    ]
+  },
+  {
+    "id": "02f99f55-b3a2-4e2b-a0c6-76b9ef8f8194",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_12.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Forme matricielle pour plusieurs prédictions\nConséquence: les valeurs z, et a de chaque neurone deviennent une matriceZ[1]=−w[1]T1−−…−−w[1]Tn[1]−|…|x(1)…x(m)|…|+b[1]1…b[1]n[1]=|…|z[1](1)…z[1](m)|…|Forme matricielle: une colonne contient les informations spéciﬁques pour une instance\n=w[1]T1x(1)+b[1]1…w[1]T1x(m)+b[1]1………w[1]Tn[1]x(1)+b[1]n[1]…w[1]Tn[1]x(m)+b[1]n[1]A[1]=|…|σ(z[1](1))…σ(z[1](m))|…|=|…|a[1](1)…a[1](m)|…|Application de la sigmoide à chaque valeur (element-wise)Broadcasting de bX=|…|x(1)…x(m)|…|\nDimension:n[0]×mDimension:#caractéristiques×#données\n12\nDimension:n[1]×mDimension:#neurones×#données\nDimension:n[1]×mDimension:#neurones×#données\nCes opérations reviennent à calculer la passe en avant en même temps pour un ensemble de données"
+      }
+    ]
+  },
+  {
+    "id": "c87107bd-2838-42b5-9ac4-97bd8cf8d964",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_13.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Equations fondamentales sous forme matricielle\nz[1]=W[1]x+b[1]a[1]=σ(z[1])z[2]=W[2]a[1]+b[2]a[2]=σ(z[2])̂y=a[2]Convention: on utilise des lettres majuscules pour les matricesApplication: problème de l'étudiant avec deux caractéristiques# heures d'étude:x1# heures de repos:x2Données: quatre données d’entraînementD:{(x(1),y(1)),(x(2),y(2)),(x(3),y(3)),(x(4),y(4))}Représentation: forme matricielleX=(x(1)1x(2)1x(3)1x(4)1x(1)2x(2)2x(3)2x(4)2)\nQue represente  x(3)2 ?Réponse: nombre d'heures de repos du troisième étudiantSortie de la première couche:A[1]=a[1](1)1a[1](2)1a[1](3)1a[1](4)1a[1](1)2a[1](2)2a[1](3)2a[1](4)2a[1](1)3a[1](2)3a[1](3)3a[1](4)3\nQue represente  a[1](2)3 ?Réponse:  activation du 3e neurone  de la couche 1 pour le  2e étudiantPrédiction ﬁnale: une valeur pour chaque donnéêY=(̂y(1)̂y(2)̂y(3)̂y(4))A[2]=(a[2](1)1a[2](2)1a[2](3)1a[2](4)1)13\nZ[1]=W[1]X+b[1]A[1]=σ(Z[1])Z[2]=W[2]A[1]+b[2]A[2]=σ(Z[2])̂Y=A[2]Illustration: passage à une forme matricielle (équations de droite)"
+      }
+    ]
+  },
+  {
+    "id": "cb1ff99b-7b49-4701-a822-a96a8af7cf08",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_14.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Table des matières\n14Réseaux de neurones1. Concepts principaux des réseaux de neurones 2. Extension de la régression logistique 3. Notations standards des réseaux de neurones 4. Exécution de la backpropagation du gradient 5. Principes des fonctions d'activation 6. Initialisation des paramètresApprentissage profond1. Limitation des petits réseaux de neurones 2. Principes de l'apprentissage profond 3. Profondeur d'un réseau de neurones 4. Introduction aux hyper-paramètres 5. Conseils pratiques\nhttps://www.asimovinstitute.org/author/fjodorvanveen/"
+      }
+    ]
+  },
+  {
+    "id": "bf577305-cbd2-49ca-9f11-872822ac8e1d",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_15.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Apprentissage supervisé par un réseau de neurones\nJ(W[1],b[1],W[2],b[2])=1mm∑i=1L(̂y(i),y(i))b[1]:n[1]×1=3×1W[1]:n[1]×n[0]=3×2W[2]:n[2]×n[1]=1×3b[2]:n[2]×1=1×113 paramètres à déterminer\nConséquence: la fonction peut être minimisée par une descente de gradientBonne nouvelle: tout le réseau est diﬀérentiable si la fonction d'écart l'est égalementConséquence: on risque de converger dans un minimum local15\nZ[1]=W[1]X+b[1]A[1]=σ(Z[1])Z[2]=W[2]A[1]+b[2]A[2]=σ(Z[2])̂Y=A[2]\nPrincipe: identique à une régression logistique, sauf que la fonction contient plus de paramètresObjectif: déterminer les paramètres qui minimisent une fonction de coût liée à la tâche de prédiction\nComment déterminer la valeur de ces paramètres ? Expression générique, qui ne diﬀère  que par la fonction d’écart choisieMauvaise nouvelle: la fonction de coût n’est plus convexe"
+      }
+    ]
+  },
+  {
+    "id": "bf745610-c825-4ab8-955e-93a28d07d67c",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_16.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Descente de gradient dans un réseau de neurones\n16\n𝖼𝗈𝗆𝗉𝗎𝗍𝖾̂Y𝗋𝖾𝗉𝖾𝖺𝗍𝗎𝗇𝗍𝗂𝗅𝖼𝗈𝗇𝗏𝖾𝗋𝗀𝖾𝗇𝖼𝖾:𝖼𝗈𝗆𝗉𝗎𝗍𝖾∂J∂W[2],∂J∂b[2],∂J∂W[1],∂J∂b[1]W[2],b[2],W[1],b[1]=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝗂𝗓𝖾𝖱𝖺𝗇𝖽𝗈𝗆𝗅𝗒()W[2]=W[2]−α∂J∂W[2]b[2]=b[2]−α∂J∂b[2]W[1]=W[1]−α∂J∂W[1]b[1]=b[1]−α∂J∂b[1]𝗀𝗋𝖺𝖽𝗂𝖾𝗇𝗍𝖣𝖾𝗌𝖼𝖾𝗇𝗍(D,α):\n𝗋𝖾𝗍𝗎𝗋𝗇W[1],W[2],b[1],b[2]𝖼𝗈𝗆𝗉𝗎𝗍𝖾J(W[1],b[1],W[2],b[2])\nJ(W[1],b[1],W[2],b[2])=1mm∑i=1L(̂y(i),y(i))\nZ[1]=W[1]X+b[1]A[1]=σ(Z[1])Z[2]=W[2]A[1]+b[2]A[2]=σ(Z[2])̂Y=A[2]\n∂J∂b[1]=1m(∂L(̂y(1),y(1))∂b[1]+…+∂L(̂y(m),y(m))∂b[1])∂J∂W[1]=1m(∂L(̂y(1),y(1))∂W[1]+…+∂L(̂y(m),y(m))∂W[1])∂J∂b[2]=1m(∂L(̂y(1),y(1))∂b[2]+…+∂L(̂y(m),y(m))∂b[2])∂J∂W[2]=1m(∂L(̂y(1),y(1))∂W[2]+…+∂L(̂y(m),y(m))∂W[2])Dérivation: www.efavdb.com/backpropagation-in-neural-networks\nCalcul du gradient: règle du chaînage sur un graphe de dépendances"
+      }
+    ]
+  },
+  {
+    "id": "042f8d1a-7796-4445-b3f1-a78028c58296",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_17.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Conséquence de la non-convexité\n17\nQuelle est la conséquence majeure de la non-convexité de la fonction de coût ?Réalité: on risque de converger dans un minimum localAnalogie: utilisation de métaheuristiques dans une recherche localeConséquence: on doit maintenant faire attention à la façon dont on entraîne le réseauObjectif: faciliter l’apprentissage aﬁn de converger vers un bon minimum local\nQuelles sont les actions que nous pouvons prendre pour faciliter l’apprentissage ?(1) Remplacer la sigmoide par une autre fonction (tanh, ReLU, LeakyReLU, etc.)(2) Initialiser adéquatement les paramètres (bonne solution initiale)(3) Utiliser un autre algorithme que la descente de gradient (SGD, Adam, etc.)(4) Rajouter des opérations complémentaires dans le réseau (normalisation, BatchNorm)(5) Sélectionner adéquatement certains hyper-paramètres (taux d’apprentissage, etc.)\nIl y a encore continuellement des nouvelles idées qui sont introduites par la communauté scientiﬁque"
+      }
+    ]
+  },
+  {
+    "id": "69d024cc-2ac5-40b8-9659-f247c7ee63d8",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_18.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Table des matières\n18Réseaux de neurones1. Concepts principaux des réseaux de neurones 2. Extension de la régression logistique 3. Notations standards des réseaux de neurones 4. Exécution de la backpropagation du gradient 5. Principes des fonctions d'activation 6. Initialisation des paramètresApprentissage profond1. Limitation des petits réseaux de neurones 2. Principes de l'apprentissage profond 3. Profondeur d'un réseau de neurones 4. Introduction aux hyper-paramètres 5. Conseils pratiques\nhttps://www.asimovinstitute.org/author/fjodorvanveen/"
+      }
+    ]
+  },
+  {
+    "id": "8263fcb4-7423-421e-ad85-57dd9647a538",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_19.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Z[1]=W[1]X+b[1]A[1]=σ(Z[1])Z[2]=W[2]A[1]+b[2]A[2]=σ(Z[2])̂Y=A[2]Limitations de la sigmoide \n19Situation actuelle: une fonction sigmoide est appliquée à la sortie de chaque neuroneObjectif initial: obtenir une valeur entre 0 et 1 (prédiction d’une probabilité)Limitation: ce choix est non justiﬁé pour les neurones intermédiairesPertinence du choix: correct pour le neurone de la dernière couche\nA t-on d'autres alternatives ?\nPire encore: ce choix amène à des piètres performancesTransformation déﬁnissant la valeur de sortie un neurone après la combinaison des entréesFonction d’activation"
+      }
+    ]
+  },
+  {
+    "id": "de414175-9960-4380-9798-649e5fcb6ef4",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_20.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Fonction d'activation\n20Fonction sigmoide: fonction d'activation possible, mais il en existe plein d'autresContrainte 1: la fonction activation doit être non-linéaire (explication à venir)Tangente hyperbolique (tanh)Rectiﬁed linear unit (ReLU)Variantes du ReLU (Leaky ReLU, Exponential ReLU, etc.)Et plein d'autres... (Maxout, etc.)Lecture complémentaire: https://cs231n.github.io/neural-networks-1/#actfunContrainte 2: la fonction doit être principalement diﬀérentiable (calcul de la descente de gradient)\nZ[1]=W[1]X+b[1]A[1]=σ(Z[1])Z[2]=W[2]A[1]+b[2]A[2]=σ(Z[2])̂Y=A[2]\nZ[1]=W[1]X+b[1]A[1]=g[1](Z[1])Z[2]=W[2]A[1]+b[2]A[2]=g[2](Z[2])̂Y=A[2]Idée: considérer une autre fonction que la sigmoide comme fonction activationIl existe une multitude de fonctions d’activation dans la littérature\nRaison principale: chacune a ses forces et faiblesses ainsi que leur champ d’application"
+      }
+    ]
+  },
+  {
+    "id": "16e2fcee-1641-4382-9157-af8b0959688e",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_21.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Fonction d'activation: la sigmoide\n21\ng(z)=11+e−zdg(z)dz=g(z)(1−g(z))Fonction sigmoideGradient de la sigmoide\nApplication: neurone de la dernière couche pour une classiﬁcation binaire (prédiction d'une probabilité)Fonction sigmoide: compresse n'importe quelle valeur dans un intervalle entre 0 et 1Diﬃculté: la fonction sature et le gradient quasi-nul pour des grosses valeurs (ralenti l'apprentissage)Diﬃculté: implique des opérations coûteuses (calcul d'exponentielles)Diﬃculté: Les valeurs de sortie sont toujours positivesConséquence: la descente de gradient aura tendance à zigzagger (ralenti l'apprentissage)\nW[1]=W[1]−α∂J∂W[1]\nRecommendation: utilisation non conseillée, sauf pour la sortie d'une classiﬁcation binaire"
+      }
+    ]
+  },
+  {
+    "id": "64f7bc22-a5d4-4808-b01f-25f035358c92",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_22.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Valeurs positives de la sigmoideRegardons l'impact sur le neurone de la dernière couche\nz[2]=w[2]1a[1]1+w[2]2a[1]2+b[2]Avec a[1]1 et a[1]2 positifs (sortie d'une sigmoide)Etape 2: analysons les dérivées partielles de la fonction d'écart\n22\nz[1]=W[1]x+b[1]a[1]=σ(z[1])z[2]=W[2]a[1]+b[2]a[2]=σ(z[2])̂y=a[2]\nEtape 1: analysons les dérivées partielles de ce neurone pour les diﬀérents poids (w)A ce stade, on sait que ces 2 valeurs sont positives∂L(̂y,y)∂w[2]1=∂L(̂y,y)∂z[2]∂z[2]∂w[2]1=a[1]1∂L(̂y,y)∂z[2]∂L(̂y,y)∂w[2]2=∂L(̂y,y)∂z[2]∂z[2]∂w[2]2=a[1]2∂L(̂y,y)∂z[2]Valeur positiveMême valeurMise en situation: réseau à deux neurones cachés\nConséquence: donne un zigzag visuel dans la descente de gradient, ce qui ralenti l’apprentissageObservation: les deux dérivées partielles ont le même signeImplication: on a le même sens de descente pour ces deux paramètresw[2]1=w[2]1−α∂J∂w[2]1\nw[2]2=w[2]2−α∂J∂w[2]2\nMême signe\n∂z[2]∂w[2]1=a[1]1\n∂z[2]∂w[2]2=a[1]2"
+      }
+    ]
+  },
+  {
+    "id": "77c3930c-3bb8-45b9-9a09-18e93c84050f",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_23.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Fonction d'activation: tangente hyperbolique (tanh)\n23Tangente hyperboliqueGradient de tanh\nAvantage: les valeurs de la fonction sont centrées en 0 (mitige l'eﬀet de zigzag)Tangente hyperbolique: compresse n'importe quelle valeur dans un intervalle entre -1 et 1g(z)=tanh(z)dg(z)dz=1−tanh2(z)tanh(z)=ez−e−zez+e−z\nDiﬃculté: la fonction sature et le gradient quasi-nul pour des grosses valeurs (ralenti l'apprentissage)Diﬃculté: implique des opérations coûteuses (calcul d'exponentielles)\nRecommendation: fonction quasi-toujours préférable à la fonction sigmoide pour une couche cachée"
+      }
+    ]
+  },
+  {
+    "id": "c04ea10c-735e-41d5-8e5e-cffc8cbcf752",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_24.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Fonction d'activation: Rectiﬁed linear unit (ReLU)\n24Avantage: ne sature pas dans la région positive (convergence accélérée)ReLU: fonction linéaire par morceaux qui met toutes les valeurs négatives à 0\ng(z)=max(0,z)\nDeep sparse rectiﬁer neural network [Glorot et al. 2011]\nNotez l'échelle de l'axe des ordonnéesDérivée non déﬁnie en 0Pas un problème en pratiquedg(z)dz=8><>:0i fz<01i fz>0?ifz=0\nAvantage: opérations peu coûteusesCause: le gradient est nul dans la zone négative (rien ne sera appris pour ce neurone)Mitigation possible: prendre un taux d'apprentissage pas trop grandDiﬃculté: Les valeurs de sortie ne sont jamais négatives (eﬀet de zigzag)Diﬃculté: une descente trop forte peut amener une valeur dans la zone négative (neurone mort)\nRecommendation: très bon choix de fonction d’activation (recommandé pour vos premiers modèles)\nW[1]=W[1]−α∂J∂W[1]"
+      }
+    ]
+  },
+  {
+    "id": "6f3bb8d4-6c91-4ed8-b23d-cc721a0505f0",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_25.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Non-linéarité des fonctions d'activation\n25\nOn souhaite avoir une activation non-linéaire. Pourquoi est-ce important ? Exemple: considérons une activation linéaire pour les neurones cachésFonction identité: g(z)=zAnalyse: regardons l'impact dans un réseau dédié à une prédiction de probabilité\nZ[2]=W′ X+b′ ̂Y=σ(Z[2])Observation: le réseau s'eﬀondre en une combinaison linéaire des entrées XCause: la composition de deux fonctions linéaires est aussi linéaire\nZ[1]=W[1]X+b[1]A[1]=Z[1]Z[2]=W[2]A[1]+b[2]A[2]=σ(Z[2])̂Y=A[2]Dimension de W[2]W[1]:(1×3).(3×2)=1×2Dimension de W[2]b[1]+b[2]:(1×3).(3×1)+(1×1)=1×1\nZ[1]=W[1]X+b[1]A[1]=Z[1]Z[2]=W[2](W[1]X+b[1])+b[2]A[2]=σ(Z[2])̂Y=A[2]\nZ[1]=W[1]X+b[1]A[1]=Z[1]Z[2]=(W[2]W[1])X+(W[2]b[1]+b[2])A[2]=σ(Z[2])̂Y=A[2]\nSans non-linéarité, le modèle se réduit à régression logistique"
+      }
+    ]
+  },
+  {
+    "id": "0572e655-aac9-4f20-bde4-d17d15a19844",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_26.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Expressivité des réseaux de neurones\n26Un réseau de neurones avec des fonctions d'activation non-linéaire peut théoriquement approximer avec une précision arbitraire n'importe quelle fonction réelleUniversalité des réseaux de neurones\nRésultat théorique important: justiﬁe le pouvoir expressif des réseaux de neurones (avec des non-linéarités)Terminologie: on dit également qu’un réseau de neurones est un approximateur universelNote: cela est également vrai avec une activation sigmoide et seulement une couche cachéeApproximation by superpositions of a sigmoidal function [Cybenko, 1989]Diﬃculté pratique: le réseau peut-être diﬃcile à entraîner (d’où les mécanismes supplémentaires)Diﬃculté pratique: ce résultat peut nécessiter un nombre immense de neurones"
+      }
+    ]
+  },
+  {
+    "id": "d38413b8-9155-4fa7-8e5f-994d2387ce95",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_27.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Fonction d'activation de la dernière couche\n27\nPeut-on utiliser la même fonction d’activation pour tous les neurones ? Objectif de la dernière couche: déﬁnir le type de prédiction à obtenir\nZ[1]=W[1]X+b[1]A[1]=g[1](Z[1])Z[2]=W[2]A[1]+b[2]A[2]=g[2](Z[2])̂Y=A[2]En très grande majorité: oui, vous pouvez utiliser la même fonction partoutException: l’activation de la dernière couche a une importance particulière \nChoix adapté: fonction sigmoïdeTâche 2: classiﬁcation binaireObjectif: obtenir une probabilité de succès (valeur entre 0 et 1)Règle d’or: la dernière activation doit retourner une valeur cohérente avec votre tâche de prédiction\nFonction de perte liée: entropie croisée binaireTâche 1: régression\nChoix adapté: fonction identité (linéaire)Objectif: obtenir une valeur réelleFonction de perte liée: erreur quadratiqueNote: il s’agit d’un des rares cas ou vous devez utiliser une activation linéaire\ng[2](z)=σ(z)=11+e−z\ng[2](z)=z"
+      }
+    ]
+  },
+  {
+    "id": "df257969-6064-46a2-98a9-aac20b630513",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_28.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Fonction d'activation de la dernière couche\n28Tâche 3: classiﬁcation multi-classe\nObjectif: eﬀectuer une prédiction entre plusieurs classes d'objetsExtension naturelle de la classiﬁcation binaire\nComment eﬀectuer une prédiction multi-classe ? Etape initiale: supposons que l'on ait C classes de prédictionVraie valeur (y): correspond à une catégorie c∈CIdée: prédire une probabilité d’appartenance à chaque classe (de façon similaire au cas binaire)\nOiseauChienChaty=(100)Encodage possible: un vecteur de taille C×1 avec un 1 à la bonne classe et 0 sinon (one-hot encoding)Objectif: prédire la probabilité d'appartenance à chaque classePrédiction: correspond à un vecteur ̂y∈[0,1]C\n̂y=0.700.260.04Remarque: la somme des éléments de ce vecteur doit valoir 1 (ce sont des probabilités)\nComment obtenir un vecteur satisfaisant cette contrainte ?"
+      }
+    ]
+  },
+  {
+    "id": "dcc440ac-84de-457c-90e7-da3c10b68b07",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_29.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Fonction d'activation softmax\n29Exemple: z=(542)→̂y=e5e5+e4+e2e4e5+e4+e2e2e5+e4+e2=0.700.260.04Intérêt: permet de réaliser des classiﬁcations avec plusieurs classes Fonction qui transforme un vecteur de C réels en entrée, en un vecteur de C probabilitésFonction softmax\n𝖲𝗈𝖿𝗍𝗆𝖺𝗑:ℝC→[0,1]C (avec la somme des outputs qui vaut à 1)̂yj=𝖲𝗈𝖿𝗍𝗆𝖺𝗑(zj)=ezj∑Cc=1ezc\nClassiﬁcation ﬁnale: eﬀectuer la prédiction en choisissant la classe ayant la plus haute probabilitéUtilisation: à la dernière couche d’un réseau de neurones pour une tâche de classiﬁcation multi-classeImpact sur le réseau: la dernière couche aura un nombre de neurones qui équivaut au nombre de classesIntuition: chaque neurone de la dernière couche va prédire une probabilité propre à la classe"
+      }
+    ]
+  },
+  {
+    "id": "fb633e46-d96d-4944-9c06-34bc1cc50242",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_30.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "̂y=0.700.260.04≈y=(100)Fonction d’écart pour une classiﬁcation multi-classe\n30\nComment caractériser la qualité d'une classiﬁcation multi-classe ?Encore une fois, cela revient à déﬁnir une fonction d’écart appropriée à cette tâcheClassiﬁcation binaire: utilisation de l’entropie croisée binaire Classiﬁcation multi-classe: utilisation de l’entropie croisée\nL(̂y,y)=−(ylog(̂y)+(1−y)log(1−̂y))Fonction d’écart communément utilisée pour des tâches de de classiﬁcation multi-classeErreur de l’entropie croisée (categorical cross entropy loss)\nL(̂y,y)=−C∑c=1yclog(̂yc) avec ̂yc∈[0,1] et C∑c=1̂yc=1C:le nombre de classes présentesyc:valeur du vecteur y qui vaut 1 si c correspond à la bonne classe (0 sinon)̂yc:valeur du vecteur ̂y qui correspond à la probabilité prédite de la classe cIntuition: exactement le même principe que le cas binairePrincipe: minimiser la fonction pousse (̂y→1) pour la bonne classe\nFonction de coût: écart moyen de toutes les prédictions"
+      }
+    ]
+  },
+  {
+    "id": "ea7d4ace-0c36-438a-80a3-bf6043417c79",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_31.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Table des matières\n31Réseaux de neurones1. Concepts principaux des réseaux de neurones 2. Extension de la régression logistique 3. Notations standards des réseaux de neurones 4. Exécution de la backpropagation du gradient 5. Principes des fonctions d'activation 6. Initialisation des paramètresApprentissage profond1. Limitation des petits réseaux de neurones 2. Principes de l'apprentissage profond 3. Profondeur d'un réseau de neurones 4. Introduction aux hyper-paramètres 5. Conseils pratiques\nhttps://www.asimovinstitute.org/author/fjodorvanveen/"
+      }
+    ]
+  },
+  {
+    "id": "91c0ee1c-faeb-4439-a504-66c105373e3f",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_32.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "∂J∂W[1]=(uvuvuv)\nZ[1]=W[1]X+b[1]A[1]=σ(Z[1])Z[2]=W[2]A[1]+b[2]A[2]=σ(Z[2])̂Y=A[2]Initialisation des paramètres: valeur identique\n32\nQue pensez-vous de cette idée ?\nContre-exemple: essayons avec une valeur initiale de 0 pour tous les paramètres\nW[1]=(000000)\nQue peut-on dire de la valeur de sortie de ces 3 neurones ?\nConclusion: on n’est pas plus expressif qu'un seul neurone dans la couche\nIdée 1: initialiser tous les paramètres à la même valeurRegardons ce qui se passe à la couche cachéeValeurs de sorties: identiques pour les 3 neuronesConséquence: rien ne diﬀérencie les neurones, ils calculent la même fonctionPasse en arrière: les trois gradients vont par conséquent avoir la même valeurValeurs du gradient liées au 3e neurone\nb[1]=(000)\na[1]=σ(W[1]x+b[1])\na[1]1=a[1]2=a[1]3"
+      }
+    ]
+  },
+  {
+    "id": "a1a1e03b-60ab-446a-b134-8ff2b5ba498b",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_33.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Initialisation des paramètres: valeur aléatoire quelconque\n33Intuition: permet de corriger la diﬃculté précédente car le gradient lié à chaque neurone sera diﬀérent\nEst-ce que n'importe quelle valeur est bonne ?Descente de gradient: demande de calculer le gradient d'une fonction sigmoide (version de base)\nZ[1]=W[1]X+b[1]A[1]=σ(Z[1])Z[2]=W[2]A[1]+b[2]A[2]=σ(Z[2])̂Y=A[2]\nIdée 2: initialiser tous les paramètres à une valeur aléatoire quelconque\nQue se passe t-il si les paramètres ont une grande valeur (positive ou négative) ?\nTrès petite valeurObservation: on se retrouve sur une région assez plate de la sigmoide (pente très faible)Conséquence théorique: la valeur du gradient sera par très petiteConséquence pratique: l’entraînement sera lent\nW[1]=W[1]−α∂J∂W[1]"
+      }
+    ]
+  },
+  {
+    "id": "19479795-50ea-4b2f-80e4-ef1daf6447dd",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_34.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Initialisation des paramètres: valeur aléatoire proche de zéro\n34Intuition: permet de corriger la diﬃculté précédente en permettant des plus grands pas de gradient\nZ[1]=W[1]X+b[1]A[1]=σ(Z[1])Z[2]=W[2]A[1]+b[2]A[2]=σ(Z[2])̂Y=A[2]\nIdée 3: initialiser tous les paramètres à une valeur aléatoire proche de zéroL’objectif est d’être dans cette zoneNote: il n’y a aucun problème à initialiser les biais (b) à zéroApproche simple: initialiser les paramètres aléatoirement dans un intervalle entre -1 et 1Autres fonctions d’initialisation (hors matière)Cette initialisation est simple et donne de bons résultats en pratique pour de petits réseaux\nObjectif: aider à la stabilisation du gradient dans des réseaux à beaucoup de couches\nInitialisation de Xavier: W[l]∼𝒩(μ=0,σ2=1n[l−1]) (pour une activation tanh)Idée: changer la façon d’initialiser en fonction de la couche considérée\nInitialisation de He: W[l]∼𝒩(μ=0,σ2=2n[l−1]) (pour une activation ReLU)"
+      }
+    ]
+  },
+  {
+    "id": "7195ff43-41f9-4dae-9b78-07e28989269a",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_35.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Visualisation de l’impact de l’initialisation\n35Lecture complémentaire: https://www.deeplearning.ai/ai-notes/initialization/index.htmlUnderstanding the diﬃculty of training deep feedforward neural networks [Glorot and Bengio, 2010]Delving deep into rectiﬁers: Surpassing human-level performance on imagenet classiﬁcation [He et al., 2015]Architecture: réseau de neurones à 4 couches avec des activations de type tanhTâche: classiﬁcation de chiﬀres écrits à la main (même tâche que pour le devoir)\nAnalyse: impact de l’initialisation des paramètres sur les valeurs des activations à chaque couche\nLe signal globalement nulLe signal s’estompeLa signal reste stable"
+      }
+    ]
+  },
+  {
+    "id": "911616cf-12e9-48f9-b012-510f807744ea",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_36.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Récapitulatif: réseau de neurones\n36\nZ[1]=W[1]X+b[1]A[1]=g[1](Z[1])Z[2]=W[2]A[1]+b[2]A[2]=g[2](Z[2])̂Y=A[2]z1=w[1]T1x+b[1]1a1=σ(z1)a1x2x1\nPasse en avant: prédiction via les équations fondamentalesConcepts clefsNotation matricielle: expression compacte et plus eﬃcaceArchitecture: neurones structurés en plusieurs couchesEntraînement: descente de gradient et passe en arrièreFonction d’activation intermédiaire: non-linéaireDernière activation: dépend de la tâche de prédictionInitialisation des paramètres: aléatoire et proche de 0Diﬃculté: la fonction de coût n’est plus convexe\n∂J∂b[1]=1m(∂L(̂y(1),y(1))∂b[1]+…+∂L(̂y(m),y(m))∂b[1])∂J∂W[1]=1m(∂L(̂y(1),y(1))∂W[1]+…+∂L(̂y(m),y(m))∂W[1])∂J∂b[2]=1m(∂L(̂y(1),y(1))∂b[2]+…+∂L(̂y(m),y(m))∂b[2])∂J∂W[2]=1m(∂L(̂y(1),y(1))∂W[2]+…+∂L(̂y(m),y(m))∂W[2])\nJ(W[1],b[1],W[2],b[2])=1mm∑i=1L(̂y(i),y(i))"
+      }
+    ]
+  },
+  {
+    "id": "3ff02840-ea4e-48e0-8345-74c820d35a10",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_37.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Visualisation de la prédiction\n37\nhttps://playground.tensorﬂow.org\nCaractéristiques en entrée: coordonnée en x, coordonnée en yActivation: tangente hyperboliqueTaux d’apprentissage: 0.01Chaque neurone apprend une fonction diﬀérente Prédiction plus complexe\nTâche: classiﬁcation binaire de points 2D"
+      }
+    ]
+  },
+  {
+    "id": "3222736c-46b3-46a2-b910-18f2d21d28cd",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_38.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Table des matières\n38Réseaux de neurones1. Concepts principaux des réseaux de neurones 2. Extension de la régression logistique 3. Notations standards des réseaux de neurones 4. Exécution de la backpropagation du gradient 5. Principes des fonctions d'activation 6. Initialisation des paramètresApprentissage profond1. Limitation des petits réseaux de neurones 2. Principes de l'apprentissage profond 3. Profondeur d'un réseau de neurones 4. Introduction aux hyper-paramètres 5. Conseils pratiques\nhttps://www.asimovinstitute.org/author/fjodorvanveen/"
+      }
+    ]
+  },
+  {
+    "id": "fcda8942-9354-47df-a1dd-e8a34cdf021b",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_39.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Limitation de notre réseau de neurones\n39\nQuelles sont les limitations de notre réseau de neurones actuel ?\nLimitation: il peut manquer d'expressivité pour approximer des fonctions complexesFigure de droite: la séparation avec le même réseau devient diﬃcileConclusion: il faut une fonction de prédiction plus expressive !Figure de gauche: bonne séparation avec un réseau à deux couches\nPour cela, on va simplement augmenter le nombre de couches dans le réseau"
+      }
+    ]
+  },
+  {
+    "id": "68e38c20-dc86-4b64-94fd-edf0ce54f4e1",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_40.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Apprentissage profond (deep learning)\n40\nTerminologie: le terme profond fait référence au nombre de couches du réseauObjectif: construire des fonctions de prédiction plus expressives\nContenu du module: on a formalisé les réseaux de neurones de façon génériqueAvantage: l’extension à l’apprentissage profond va être TRES facileConceptuellement, il n'y a pas de profondeur limite (bien que des diﬃcultés apparaissent)Exemple: le réseau utilisé dans AlphaZero a environ 80 couches, celui de GPT-4 a 120 couchesApprentissage profond (deep learning): utiliser un réseau avec plus d’une couche cachée\nPour faire simple, on a déjà fait tout le nécessaire…"
+      }
+    ]
+  },
+  {
+    "id": "5457de82-5c7a-4f4e-9b47-d79845b67127",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_41.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Notations pour le deep learning\n41Notationsn[l]: nombre de neurones pour la couche lW[l],b[l]: paramètres de la couche lX: caractéristiques en entrée (format matriciel)L: nombre de couches (couche d'entrée non comprise)A[l]: sortie de la couche lZ[l]: valeurs avant l'activation de la couche l̂Y: sortie du réseau (prédiction)\nExercice: donnez les dimensions de chaque matrice pour 10 données d’entraînementExercice: donnez le nombre de paramètres à apprendre dans ce réseau"
+      }
+    ]
+  },
+  {
+    "id": "ae55a3e3-3da5-4a61-97dd-cb12b583ea32",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_42.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Equations fondamentales de l'apprentissage profond\n42\nZ[l]=W[l]A[l−1]+b[l]A[l]=g[l](Z[l])̂Y=A[L]𝚏𝚘𝚛l∈{1,…,L}:A[0]=X\nZ[1]=W[1]X+b[1]A[1]=g[1](Z[1])Z[2]=W[2]A[1]+b[2]A[2]=g[2](Z[2])̂Y=A[2]\nSituation précédente: réseau de neurones à 2 couches\nSituation actuelle: réseau de neurones à L couches\nIl n’y a vraiment rien de nouveau conceptuellement par rapport à précédemment"
+      }
+    ]
+  },
+  {
+    "id": "d36bffee-7f2d-4380-ab2b-948f2c1e5d83",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_43.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Descente de gradient dans un réseau de neurones profond\n43\n𝖼𝗈𝗆𝗉𝗎𝗍𝖾̂Y𝗋𝖾𝗉𝖾𝖺𝗍𝗎𝗇𝗍𝗂𝗅𝖼𝗈𝗇𝗏𝖾𝗋𝗀𝖾𝗇𝖼𝖾:𝖼𝗈𝗆𝗉𝗎𝗍𝖾∂J∂W[L],∂J∂b[L],…,∂J∂W[1],∂J∂b[1]W[l],b[l]=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝗂𝗓𝖾𝖱𝖺𝗇𝖽𝗈𝗆𝗅𝗒()∀l∈{1,…,L}W[l]=W[l]−α∂J∂W[l]∀l∈{1,…,L}b[l]=b[l]−α∂J∂b[l]∀l∈{1,…,L}𝗀𝗋𝖺𝖽𝗂𝖾𝗇𝗍𝖣𝖾𝗌𝖼𝖾𝗇𝗍(D,α):\n𝗋𝖾𝗍𝗎𝗋𝗇W[1],b[1],…,W[L],b[L]𝖼𝗈𝗆𝗉𝗎𝗍𝖾J(W[1],b[1],…,W[L],b[L])\nJ(W[1],b[1],…,W[L],b[L])=1mm∑i=1L(̂y(i),y(i))Calcul des dérivées par un graphe de dépendance  et une application de la passe en arrière\n̂Y=A[L]\nZ[l]=W[l]A[l−1]+b[l]A[l]=g[l](Z[l])𝚏𝚘𝚛l∈{1,…,L}:A[0]=X\n∂J∂b[l]=1m(∂L(̂y(1),y(1))∂b[l]+…+∂L(̂y(m),y(m))∂b[l])∂J∂W[l]=1m(∂L(̂y(1),y(1))∂W[l]+…+∂L(̂y(m),y(m))∂W[l])𝚏𝚘𝚛l𝚒𝚗L𝚝𝚘1:Nombre de paramètresW[1]=n[1]×n[0]=5×4=20b[1]=n[1]×1=5×1=5W[2]=n[2]×n[1]=6×5=30W[3]=n[3]×n[2]=6×6=36W[4]=n[4]×n[3]=5×6=30W[5]=n[5]×n[4]=4×5=20W[6]=n[6]×n[5]=1×4=4b[2]=n[2]×1=6×1=6b[3]=n[3]×1=6×1=6b[4]=n[4]×1=5×1=5b[5]=n[5]×1=4×1=4b[6]=n[6]×1=1×1=1Total: 167 paramètres à apprendre"
+      }
+    ]
+  },
+  {
+    "id": "a56b780c-5d99-4863-ac22-2445607322d8",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_44.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Expressivité de l'apprentissage profond\n44Intérêt principal: permet de construire des fonctions plus expressives\nSimple relation (linéaire)Relation  plus complexeRelation encore plus complexeObservation: les neurones apprennent des relations de plus en plus complexe avec le niveau de profondeurhttps://playground.tensorﬂow.org\nQu’en est-il des fonctions encore plus compliquées ?"
+      }
+    ]
+  },
+  {
+    "id": "bc3fb38f-0a88-4b1b-91f7-cbde2e3b5776",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_45.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Expressivité de l'apprentissage profond\n45Situation à résoudre: assez compliquée, et demande une bonne fonction d’approximationSolution: en augmentant la taille du réseau, on arrive à avoir des meilleures frontières de décision\nExpérimentez par vous même en essayant d'autres fonctions d'activation et taux d'apprentissagehttps://playground.tensorﬂow.orgNeurone mort avec une activation ReLUObservation: une activation ReLU a été utilisée, et un neurone est mort"
+      }
+    ]
+  },
+  {
+    "id": "ce86a698-3e1a-4e46-9538-9e58b18ed2d9",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_46.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Table des matières\n46Réseaux de neurones1. Concepts principaux des réseaux de neurones 2. Extension de la régression logistique 3. Notations standards des réseaux de neurones 4. Exécution de la backpropagation du gradient 5. Principes des fonctions d'activation 6. Initialisation des paramètresApprentissage profond1. Limitation des petits réseaux de neurones 2. Principes de l'apprentissage profond 3. Profondeur d'un réseau de neurones 4. Introduction aux hyper-paramètres 5. Conseils pratiques\nhttps://www.asimovinstitute.org/author/fjodorvanveen/"
+      }
+    ]
+  },
+  {
+    "id": "0f4f6518-18db-4557-8f00-5cf403c73022",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_47.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Introduction aux hyper-paramètres\n47\nComment déterminer l'architecture du réseau à utiliser ?Cette question amène à diﬀérencier paramètres et hyper-paramètresParamètres: valeurs qui sont apprises durant la descente de gradient\nW[l]: poids de la couche lb[l]: biais de la couche l\nExemple: nombre de couches, fonction d’activation, etc.Autre choix à faire: taux d’apprentissageIntuition: il s’agit des valeurs qui vont déterminer la fonction que vous construisezValeurs déﬁnies par l'utilisateur utilisées pour contrôler l'apprentissage et le type de modèleHyperparamètre\nPoint de vue de l’utilisateur: il n’a aucun contrôle sur la valeur des paramètres\nObjectif idéal: trouver les hyper-paramètres qui vont résulter au modèle le plus performantImportance: les valeurs choisies ont un impact sur la qualité de l’apprentissage et sur le modèle obtenu(1) Nombre de couches(2) Nombre de neurones par couche(3) Fonction d'activation utilisée(4) Taux d'apprentissageEt encore tout plein !"
+      }
+    ]
+  },
+  {
+    "id": "32d1b73e-fbde-4238-97e7-76c35ab8b319",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_48.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Sélection de la valeur des hyper-paramètres\n48\nDiﬃculté de la tâche: il y a énormément de combinaisons à testerTaux d'apprentissage: {0.0001,0.001,0.01,0.1}Nombre de couches: {1,2,3,4,5}Fonction d'activation: {ReLU,tanh,sigmoid}Mise en situation: exemple très petit avec quelques choix à faireTotal: 4×5×3=60 conﬁgurations à testerLien avec le module 3: trouver la meilleure conﬁguration est un problème d’optimisation combinatoireDiﬃculté supplémentaire: évaluer chaque conﬁguration est coûteux car cela demande d’entraîner un réseauConseils pratiquesEtape 1: ﬁxez les valeurs standards dans un premier temps (par exemple une activation ReLU)Etape 2: procédez itérativement et analysez les résultats de votre modèleExemple: une mauvaise précision sur les données d'entrainement peut être dû à un manque d'expressivitéAction possible: il serait pertinent d’essayer d’augmenter la profondeur du réseauAlgorithme de recherche d'hyper-paramètresRecherche exhaustive (grid search)Recherche aléatoire (random search)Recherche locale et métaheuristiquesOptimisation bayésienneHyperparameter search in machine learning [Claesen and De Moor, 2015]"
+      }
+    ]
+  },
+  {
+    "id": "3e0ae16e-d11b-4d04-847d-4ab908ac8268",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_49.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Autres conseils pratiques\n49Diﬃcultés et pièges habituels\n(1) Confondre les dimensions des matrices(2) Oublier d'initialiser les poids aléatoirement(3) Avoir un taux d'apprentissage trop grand (surtout avec ReLU)(4) Oublier d'ajouter une fonction d’activation non-linéaire(5) Avoir une fonction d'activation non adaptée au problème à la dernière couche(6) Utiliser une fonction de coût non adaptée au problèmeEvaluation rigoureuse et analyse de vos réseauxBonne pratique: diviser vos données en plusieurs ensembles (entraînement, validation, et de test)Notion de sous-apprentissage (underﬁtting): diﬃculté à donner de bons résultats sur des données vuesNotion de sur-apprentissage (overﬁtting): diﬃculté à donner de bons résultats sur des données non-vuesCes considérations seront à prendre en compte lors du devoir 3 et discutées lors de votre laboratoire\nJe vous conseille Keras pour débuter (très facile d’utilisation)Librairies pour l'apprentissage profondObjectif 1: faciliter la création de réseaux pour un utilisateurObjectif 2: automatiser l’entraînement d’un modèle"
+      }
+    ]
+  },
+  {
+    "id": "020a2d91-4114-47a6-adc6-3bf90e1ac326",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_50.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Autres architectures existantes\n50Il existe également d’autres architectures de réseau de neuronesIntérêt: avoir une architecture adaptée aux données en entrées\nGradient-based learning applied to document recognition [LeCun, Bengio et al., 1998]\nRéseau récurrent: spécialisé pour l'apprentissage sur des séquences de donnéesRéseau à convolution: spécialisé pour l'apprentissage sur des images\nLong short-term memory (LSTM) [Hochreiter and Schmidhuber, 1997]Neural networks and physical systems with emergent collective computational abilities [Hopﬁeld, 1982]\nEt d’autres: réseau à convolution de graphe, architecture adversarielle, modèles génératifs, etc."
+      }
+    ]
+  },
+  {
+    "id": "73b5159f-0f25-4499-9917-13ec5de6aab6",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_51.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Diﬃcultés de l'apprentissage profond et alternatives\n51\nQuelles sont les alternatives aux réseaux de neuronesBesoin de l’apprentissage profond: trois composants essentiels(1) Une méthode d’apprentissage (ce qu’on a vu dans ce module)(2) Un nombre conséquent de données labellisées(3) De la puissance de calculDans les deux cas, si un de ces ingrédients manque, le résultat (ou performances) en sera aﬀecté\nLes besoins (2) et (3) augmentent avec la complexité du réseauAnalogie: le triangle du feu donnant les trois besoins pour avoir un feu\nIl existe une multitude d’autres méthodes pour l’apprentissage superviséArbres de décisionForêts aléatoiresClassiﬁcateur bayésienSupport vector machine (SVM)Modèles probabilistesGradient boosting (XGBoost)Conclusion: en tout temps, il est pertinent de rester ouvert à d’autres méthodesConclusion: les success stories de l’apprentissage profond sont souvent liées à des ressources immenses"
+      }
+    ]
+  },
+  {
+    "id": "07c67eed-547f-450b-a504-c172671b3001",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_52.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Exemple récent de réseau profond: Dall-E 2\n52\nNombre de paramètres à apprendre: plus de 3.5 millards de paramètresNombre de données: environ 650 millions imagesTemps d’entraînement: information malheureusement très diﬃcile à trouver, mais très conséquent"
+      }
+    ]
+  },
+  {
+    "id": "70b018ba-52c3-45e2-9604-35a33b78a3c0",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_53.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Table des matières\n53Réseaux de neurones1. Concepts principaux des réseaux de neurones 2. Extension de la régression logistique 3. Notations standards des réseaux de neurones 4. Exécution de la backpropagation du gradient 5. Principes des fonctions d'activation 6. Initialisation des paramètresApprentissage profond1. Limitation des petits réseaux de neurones 2. Principes de l'apprentissage profond 3. Profondeur d'un réseau de neurones 4. Introduction aux hyper-paramètres 5. Conseils pratiques\nhttps://www.asimovinstitute.org/author/fjodorvanveen/"
+      }
+    ]
+  },
+  {
+    "id": "d5d4a65c-0c3c-40b3-ab56-04ff40a9b8fb",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_54.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Synthèse des notions vues\n54Réseaux de neurones\nEntraînement: descente de gradient et passe en arrièreDiﬃculté: la fonction de coût n’est plus convexe\nDéﬁnition: ensemble de neurones organisés en un réseauIntérêt: chaque neurone a ses paramètres et contribue à la prédictionApproximateur universel: capacité d'approximer n'importe quelle fonctionBesoin: activations non-linéairesApprentissage profondDéﬁnition: réseau de neurones ayant plus d'une couche cachéeIntérêt: permet de réaliser des approximations plus précisesTrois ingrédients essentiels:\n(1) Une méthode d’apprentissage(2) Un nombre conséquent de données labellisées(3) De la puissance de calculConséquence: utilisation de mécanismes pour faciliter l’apprentissage"
+      }
+    ]
+  },
+  {
+    "id": "9a8bbe4b-3901-43d6-89ce-527371c2c28f",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_55.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Aller plus loin...\n55Cours donnés à PolytechniqueINF8460: Traitement automatique de la langue naturelle (Amal Zouaq)\nINF8245E: Machine learning (Sarath Chandar)\nINF8225: I.A.: techniques probabilistes et d'apprentissage (Chris pal)\nCours en ligne\nFastAI: Practical deep learning for codersCoursera: Machine learning (Andrew Ng)Coursera: Deep learning (Andrew Ng)https://course.fast.ai/https://www.coursera.org/learn/machine-learninghttps://www.coursera.org/specializations/deep-learning\nAutres ressourcesEnormément de ressources sur le web (blog, vidéo youtube, tutoriel, etc.)\nhttps://www.youtube.com/results?search_query=code+emporium\nhttps://distill.pub/"
+      }
+    ]
+  },
+  {
+    "id": "41bdc201-9317-4ade-bc2d-b91b0b372b46",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_56.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Exemples de questions d'examen\n561. Indiquer le nombre de paramètres à entraîner pour un réseau de neurones donné 2. Indiquer la taille des matrices dans une représentation matricielle 3. Donnez les équations de la forward pass pour un réseau de neurones donnéThéoriePratique1. Expliquer ce qu'est un réseau de neurones comparé à une régression logistique 2. Expliquer l'importance d'avoir une fonction d'activation non-linéaire 3. Expliquer l'intérêt d'initialiser aléatoirement les paramètres 4. Expliquer la diﬀérence entre paramètres et hyper-paramètres"
+      }
+    ]
+  },
+  {
+    "id": "310cabcc-6032-48d9-bb26-4fe52b052bde",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M7-apprentisage-profond_page_57.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "INF8175 - Intelligence artiﬁcielleMéthodes et algorithmesRéseaux de neurones et apprentissage profond: FIN\nDALLE: Neural network, digital art"
+      }
+    ]
+  }
+]

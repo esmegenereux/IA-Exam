@@ -1,0 +1,562 @@
+[
+  {
+    "id": "7abb28bf-ff8b-44ac-868a-bea1c2d99e6f",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "INF8175 - Intelligence artiﬁcielleMéthodes et algorithmesModule 10: utilisation en industrie,  éthique, et philosophie"
+      }
+    ]
+  },
+  {
+    "id": "b2e57abe-5c59-4f39-844b-a7f45bb487ca",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Contenu du cours\n2Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques"
+      }
+    ]
+  },
+  {
+    "id": "e4bb6bac-8956-480d-bf6c-ae16d1262c22",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Conclusion du cours\n3Une intelligence artiﬁcielle est une entité capable d'agir rationnellementDéﬁnition moderne de l'intelligence artiﬁcielle\nDécision qui va maximiser les chances d'accomplir un objectif prédéﬁniDécision rationnelle\nConnaître, comprendre, et savoir utiliser judicieusement  les principaux types de raisonnement en intelligence artiﬁcielleObjectifs du cours"
+      }
+    ]
+  },
+  {
+    "id": "acaeb6c0-16c6-43bd-a786-0bca02c5f940",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Module 1: stratégies de recherche\n4Conception d'heuristiques: relaxation, connaissances expertes, etc.Stratégies avec information\nSGRecherche gloutonne: rapide mais sans garantieRecherche A*: combinaison de la recherche gloutonne et de coût uniformeInclusion d'une heuristique (information du problème) pour accélérer la rechercheHeuristique admissible: A* avec une recherche en arbre est optimalHeuristique consistante: A* avec une recherche en arbre/graphe est optimalStratégies sans information\nRecherche en profondeur......Recherche en largeur...Iterative deepening search...Recherche à coût uniformeProblèmes de rechercheMotivation: planiﬁer d'une séquence d'actions pour aller d'un état initial à un état ﬁnalObjectif idéal: trouver la séquence engendrant le moins de coûts\nPatron de résolution générique: recherche en graphe ou en arbre"
+      }
+    ]
+  },
+  {
+    "id": "e951b585-bf18-41de-86d7-7c15d06e74cc",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_5.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Module 2: recherche adversarielle\n5Recherche adversarielleContexte: l’agent évolue dans un environnement compétitifEnvironnement: caractérisé par la présence d'un ou de plusieurs adversaires\nCadre de référence: deux joueurs, déterministe, tour par tour, à information parfaite, et à somme nulleStratégie de recherche Minimax324623128325214\nMinimax classique3232123821452\nAlpha-beta pruning\nAvec des heuristiquesAutres améliorations: tables de transposition, méthodes hybrides, suppression de branches, etc.Arbre de recherche MC\nDépendance moindre à une heuristiqueBasé sur des simulations de partiesMéthode assez générique"
+      }
+    ]
+  },
+  {
+    "id": "2357c126-ccbf-4489-931c-a900c83143de",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_6.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Module 3: recherche locale\n6Problèmes combinatoiresSatisfaction (CSP): trouver une solution satisfaisant un ensemble de contraintesOptimisation (COP): CSP où on souhaite également optimiser une fonction objectif\nUne solution est un état, qui nous est inconnu, et non une séquence d'action\nInvestissementCoût ($)Revenu espéré dans 10 ans ($)A2001 000B2001 000C2001 000D50010 000E50010 000F80013 000G3007 000Budget maximal de 1000 $\nRecherche localePrincipe: résolution en se déplaçant de solutions en solutions via des mouvements locauxHill climbing: sélection systématique du meilleur voisinRisque: être bloqué dans un minimum local\nMécanismes d'améliorationIdée 1: utiliser un voisinage connectéIdée 3: redémarrer aléatoirement la rechercheIdée 4: accepter de dégrader sa solution (p.e., simulated annealing)Idée 2: agrandir le voisinage"
+      }
+    ]
+  },
+  {
+    "id": "91a34ac0-d4e2-4f8d-b8ca-02ccef329078",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_7.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Module 4: programmation par contraintes\n7Formalisation des problèmes combinatoires (CSP et COP)VariablesDomainesContraintesFonction objectif\nSatisfySubject toxu≠xvxv∈{𝗋𝖾𝖽,𝗀𝗋𝖾𝖾𝗇,𝖻𝗅𝗎𝖾}∀(u,v)∈E∀v∈V\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nRecherche à  retours arrières\nModèle du problèmePropagateurs de contraintes  et algorithme point ﬁxe\nProgrammation par contraintes = modèle + recherche + propagation"
+      }
+    ]
+  },
+  {
+    "id": "da07040a-ece4-4c3a-a2ab-a8c7d46b98fa",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_8.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Module 5: programmation logique\n8Langage logiqueSyntaxe: déﬁnit un ensemble de formules validesSémantique: déﬁnit la signiﬁcation d'une formuleRègles d'inférence: façon d'obtenir de nouvelles connaissances\nObjectif: raisonner sur base d'un ensemble de connaissancesComposé de 3 éléments fondamentauxVériﬁcation par model checkingVériﬁcation de la satisﬁabilité d'une formule basée sur les modèles (sémantique)\nRésolution: via des méthodes de rechercheLimitation: ne tient pas compte qu'on a des formules logiquesAlgorithmes d'inférencesAlgorithme de résolution: cohérent et complet dans la logique des propositionsCohérence: assure que l'algorithme ne génère que des formules vraiesComplétude: assure que l'algorithme génère toutes les formules vraies existantesAlgorithme utilisé pour inférer des nouvelles connaissances en conséquence logique de KB"
+      }
+    ]
+  },
+  {
+    "id": "c66f5dc6-4060-4e63-b15e-042be788f1b5",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_9.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Module 6: apprentissage supervisé\n9\nApprentissage automatique\"A computer program is said to learn from experience E  with respect to some task T and some performance measure P,  if its performance on T, as measured by P, improves with experience E\"http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mitchell/ftp/mlbook.html\n(2) L'apprentissage a besoin d'expériences passées (E - données)(3) Besoin d'avoir un moyen d'évaluer les performances d'un modèle (P)(1) L'apprentissage est dédié pour une tâche précise (T)Apprentissage supervisé: minimiser d'un coût entre une prédiction et les données connues(1) Régression linéaire simple(2) Régression linéaire multiple(3) Régression logistiquePlusieurs modèles possibles:\nAlgorithme d’apprentissage: par descente de gradient via un graphe de dépendance(4) Et d’autres !"
+      }
+    ]
+  },
+  {
+    "id": "031df60e-61e8-4636-8f65-7777fc49cad6",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_10.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Module 7: apprentissage profond\n10Réseaux de neurones\nEntraînement: descente de gradient et passe en arrièreDiﬃculté: la fonction de coût n’est plus convexe\nDéﬁnition: ensemble de neurones organisés en un réseauIntérêt: chaque neurone a ses paramètres et contribue à la prédictionApproximateur universel: capacité d'approximer n'importe quelle fonctionBesoin: activations non-linéairesApprentissage profondDéﬁnition: réseau de neurones ayant plus d'une couche cachéeIntérêt: permet de réaliser des approximations plus précisesTrois ingrédients essentiels:\n(1) Une méthode d’apprentissage(2) Un nombre conséquent de données labellisées(3) De la puissance de calculConséquence: utilisation de mécanismes pour faciliter l’apprentissage"
+      }
+    ]
+  },
+  {
+    "id": "baf51f1a-3cc1-4dcf-b0f2-308dae800f08",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_11.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Module 8: apprentissage non-supervisé\n11Apprentissage non-superviséDéﬁnition: apprentissage qui se fait sur base de données non-labelliséesPrincipe: exploitation de la similarité entre les données pour l'apprentissage\nD:{x(1),x(2),…,x(m)}Problème de regroupementObjectif: regrouper les données similaires en groupes (clusters) cohérentsMéthode de résolution: algorithme K-meansPrincipe: recherche locale pour minimiser une fonction de coûtAméliorations possibles: redémarrages, choix des positions initiales, etc.\nProblème de détection d'anomalies\nObjectif: prédire la probabilité qu’une nouvelle donnée soit régulièreModélisation: produit de lois normales univariées ou une loi normale mutivariéePrincipe: maximiser une fonction de vraisemblance"
+      }
+    ]
+  },
+  {
+    "id": "dcc7b59d-f2b0-4e88-8b36-7d8c18f6e5f9",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_12.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Module 9: apprentissage par renforcement\n12\nAlphaGo: combine MCTS, apprentissage supervisé, réseaux de neurones et apprentissage par renforcement\nAlphaGo Zero: simpliﬁcation de AlphaGo et n’utilise plus d’apprentissage superviséApprentissage par vous-même: lecture et compréhension des deux articles (sur Moodle)"
+      }
+    ]
+  },
+  {
+    "id": "81412d6c-2458-4740-95f1-8484232aa59f",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_13.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Contenu du cours\n13Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques"
+      }
+    ]
+  },
+  {
+    "id": "f0205faf-d124-4c0b-a596-b50b9262f709",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_14.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "L’intelligence artiﬁcielle en industrie\n14\nIntervenant: Alexandre Audette Génier (Ubisoft - 2020)Titre: des agents intelligents aux yeux du joueur\nRésumé: la diﬃculté n’est pas de faire des IAs eﬃcaces,               mais des IAs crédibles et amusantes pour le joueur \nIntervenant: Guillaume Vergnolle (AlayaCare - 2021)\nTitre: apprentissage automatique dans le domaine de la santéRésumé: toutes les erreurs de prédictions n’ont pas le même impact             (faux négatif vs faux positif)\nIntervenant: Raymond Li (ServiceNow Research - 2020)Titre: application de l’apprentissage automatique pour le NLPRésumé: construire des modèles plus volumineux n’est pas le seul moyen             d’améliorer les performances (p.e., mécanisme d’attention)\nIntervenant: Olivier Blais (MoovAI - 2022)Titre: il est temps de commencer à livrer des modèles de haute qualitéRésumé: applications diverses du ML en contexte industriel"
+      }
+    ]
+  },
+  {
+    "id": "4fccda66-7544-4f18-a35e-ffdd30c193c6",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_15.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Intervenant de 2023\n15\nMaxime Gasse (scientiﬁque de recherche senior à ServiceNow Research)\nDéploiement d’agents LLMs en industrie"
+      }
+    ]
+  },
+  {
+    "id": "1549608a-a2f7-45e8-83cb-b75a76118214",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_16.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Intervenant de cette année\n16\nAugustin Parjadis (scientiﬁque de recherche à IVADO Labs)\nCombiner apprentissage et optimisation pour le transport électrique"
+      }
+    ]
+  },
+  {
+    "id": "375386e7-e088-49d8-b58e-5ed1a93cc3d3",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_17.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "17Quels bienfaits l’intelligence artiﬁcielle peut apporter à notre société ?\nDALLE: An image of an utopia"
+      }
+    ]
+  },
+  {
+    "id": "21345c3b-4941-47bf-b11a-f83c3a3d6553",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_18.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Enjeux sanitaires\n18https://www.deepmind.com/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology\nApplication: découverte de composants biologiques\nAide: compréhension de certaines maladies\nhttps://www.cancer.gov/news-events/cancer-currents-blog/2022/artiﬁcial-intelligence-cancer-imagingApplication: diagnostic de maladiesAide: complément à l’analyse d’un médecin"
+      }
+    ]
+  },
+  {
+    "id": "e11e5cf9-499a-4695-addf-ed33ca14dfab",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_19.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Enjeux climatiques\n19Application: prédiction d’évènements météorologiques extrêmes (tornades, tremblements de terre, etc.) \nApplication: à des ﬁns de sensibilisationhttps://developer.nvidia.com/blog/deep-learning-accurately-forecasts-extreme-weather-events/\nhttps://mila.quebec/en/ai-a-tool-to-better-respond-to-environmental-challenges/"
+      }
+    ]
+  },
+  {
+    "id": "bf19f3a2-77bb-4612-b186-18a9bc2931a4",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_20.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Réduction de la consommation des ressources\n20Application: toutes sortes de problèmes de transport ou de production (problème d’optimisation à résoudre)Aide: réduire la consommation de diverses ressources (carburant, matières premières de construction, etc.)\nhttps://www.localsolver.com/benchmark/huge-instances-capacitated-vehicle-routing-problem-cvrpAide: rendre ces méthodes accessibles pour des petites entreprises ou pour des particuliers"
+      }
+    ]
+  },
+  {
+    "id": "032668ee-479f-464c-86ee-41ffd3da3299",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_21.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Enjeux industriels et sociaux\n21Eﬀet positif: amélioration de la productivité et automatisation de certaines opérationsEﬀet positif: création de nouveaux emplois\nIndustrie 4.0: quatrième révolution industrielle basé sur le numérique (vapeur, électricité, informatique)\nhttps://blogs.knowledgelens.com/index.php/2019/06/25/leveraging-ai-for-industry-4-0/\nSur base de ces exemples, l’intelligence artiﬁcielle a le pouvoir de boniﬁer notre société"
+      }
+    ]
+  },
+  {
+    "id": "47438cfc-17a9-475d-a56d-11f5679c655a",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_22.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "22Quels dangers les découvertes scientiﬁques  peuvent apporter à notre société ?\nDALLE: An image of a dark dystopia, with orange sky and ruins"
+      }
+    ]
+  },
+  {
+    "id": "50350462-ef99-4161-b44d-b244f10bcbf1",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_23.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Observation historique - nucléaire\n23Chaque invention, de base positive,  amène ses dangers, et ses dérives\nUtilisation bénéﬁque: source importante d’énergieInvention: exploitation de l’énergie nucléaire (ﬁssion/fusion)Utilisation meurtrière: création d’une arme (bombe nucléaire)Dangers possibles: accidents nucléaires (Tchernobyl, Fukushima), gestion des déchets"
+      }
+    ]
+  },
+  {
+    "id": "d2e46fac-55c5-47f5-9a3f-47659ccb9bf4",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_24.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Observation historique - synthèse de l’ammoniac\n24\nLien: https://www.youtube.com/watch?v=PMhqLQRpjhw\nUtilisation bénéﬁque: fabrication d’engrais et aide à l’agricultureInvention: synthèse de l’ammoniacUtilisation meurtrière: création d’une arme chimique (gaz moutarde)"
+      }
+    ]
+  },
+  {
+    "id": "191f9961-05fd-4611-b8ce-923c56898940",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_25.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "25Quels dangers les découvertes scientiﬁques  peuvent apporter à notre société ?\nDALLE: An image of a dark dystopia, with orange sky and ruinsCes dangers s’appliquent aussi  pour l’intelligence artiﬁcielle !\nAvez-vous en tête des dérives ou dangers potentiels dans la conception et l’utilisation d’intelligences artiﬁcielles ?"
+      }
+    ]
+  },
+  {
+    "id": "d1d4e87e-5325-4485-bb44-29f46c9b183b",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_26.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Diﬃculté possible - futur du monde du travail\n26Réalité: chaque progrès technique bouleverse le monde industriel\nhttps://soapboxie.com/economy/Robots-and-Artiﬁcial-Intelligence-Will-Cause-Massive-Unemployment-In-The-Future\nConséquence: certains jobs risquent de disparaître progressivementConseil personnel: ayez un proﬁl unique, combinant beaucoup d’aptitudesExemple: Github Copilote peut automatiser une partie de la gestion de codeClef du succès futur: savoir s’adapter à de nouvelles situations et apprendre continuellementAttention: tous les outils imparfaits actuellement ne font faire que s’améliorer"
+      }
+    ]
+  },
+  {
+    "id": "9eb09dcd-673a-44d8-8ba7-9f563b9a6c09",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_27.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Dérive possible - surveillance, sécurité, et vie privée\n27\nhttps://en.wikipedia.org/wiki/ Artiﬁcial_intelligence_for_video_surveillance\nCybersécurité: augmentation et facilitation des attaques (phising, fraude, ransomware, etc.)Surveillance de la population: identiﬁcation, trackage, et analyse des personnesVie privée: de plus en plus de données personnelles sont collectées et fuite de données sensible\nExemple: concours Netﬂix pour prédire des recommandation sur base de données historiques anonymesDiﬃculté: des chercheurs ont réussi à retrouver l’identité de personnes\nPiste prometteuse: federated learning ou l’apprentissage n’est pas centralisé (chacun garde ses données)\nRobust Physical-World Attacks on Deep Learning Visual Classiﬁcation [Eykholt et al., 2018]"
+      }
+    ]
+  },
+  {
+    "id": "a788741f-8a85-421e-9eba-5ffd3cf5732f",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_28.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Dérive possible - discrimination automatisée\n28https://www.technologyreview.com/2021/06/23/1026825/linkedin-ai-bias-ziprecruiter-monster-artiﬁcial-intelligence/\nNature de la discrimination: l’algorithme avait tendance à prioritiser les hommesObjectif de l’algorithme: faire des correspondances entre candidats et oﬀres d’emploisEquité: assurer que la prédiction ne discrimine pas les personnes via des données sociales et humainesCOMPAS: système donnant un score de risque qu’un prisonnier libéré récidiveUtilisation: aider à la décision de libérer ou non un prisonnierNature de la discrimination: risque supérieur et injustiﬁé donné pour les personnes de couleur"
+      }
+    ]
+  },
+  {
+    "id": "4bd357c3-4696-4771-9f48-6eb5e6119f9d",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_29.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Dérive possible - conﬁance et désinformation\n29Lien: https://www.youtube.com/watch?v=1mCwmxW6Xhk\nDeepFake: vidéo très réaliste d’une personne, mais qui a été générée artiﬁciellement Danger 1: désinformation en utilisant des personnalités publiques Danger 3: diﬀamation en utilisant votre propre image\nDanger 2: dans certains contextes, peut être utilisé comme une arme de guerre"
+      }
+    ]
+  },
+  {
+    "id": "51808a0e-df31-489e-9ce2-9f1f9db4eb01",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_30.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Dérive possible - armes mortelles automatiques\n30Déﬁnition de l’ONU: arme mortelle qui vise, sélectionne, et tue un humain sans supervision humaineDanger alarmant: à l’heure actuelle, on a la technologie pour la conception de ce genre d’armesExemple: Le missile Harop, capable de chercher pendant 6 heures une cible satisfaisant un certain critère\n« Autonomous machines with the power and discretion to select targets and take lives without human involvement are politically unacceptable,  morally repugnant and should be prohibited by international law. » (2019)Antonio Guterres (secrétaire général de l’ONU)Les progrès en AI ne font faire que faciliter ces développementsONU: la majorité des pays membres de l’ONU (mais pas tous) sont favorables à un ban de ces armes\nLien: https://www.youtube.com/watch?v=O-2tpwW0kmU\nVidéo de sensibilisation sur youtube: Slaughterbots"
+      }
+    ]
+  },
+  {
+    "id": "b35d13b2-278a-439e-8710-17f20f006a0b",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_31.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Dérive possible - autres exemples\n31Black Mirror: série montrant diﬀérents futurs dystopiques (souvent lié à l’abus de technologies)Certains épisodes: on a théoriquement toutes les technologies pouvant amener à ces situations !\nUpload: comédie liée à l’utilisation de l’IA pour communiquer avec les personnes mortes"
+      }
+    ]
+  },
+  {
+    "id": "042c0820-46c5-47a5-90d0-11fc681f63f3",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_32.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Dérive possible - où est le mal et le bien ?\n32Dilemme du tramway: est-il correct de tuer une personne pour en sauver d’autres ?\nOn parle de dilemme éthique (situation où la distinction entre bien/mal de chaque décision est ﬂoue)Véhicules autonomes: entre deux accidents inévitables, quelle issue l’IA doit-elle prendre ?\nhttps://www.moralmachine.net/hl/fr\nConception d’IAs: comment gérer ces situations, et à qui revient la responsabilité d’un acte ?"
+      }
+    ]
+  },
+  {
+    "id": "1dded797-488f-43b5-a96d-9a7846c6e16d",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_33.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "33\nQue peut-on faire actuellement pour  éviter un futur sombre ?"
+      }
+    ]
+  },
+  {
+    "id": "2d977b31-bc8c-4093-ad49-120a8948d70a",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_34.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Actions et résolutions groupées\n34\nDe nombreuses actions collectives et mondiales sont menées à ce sujetObjectif: notamment de codiﬁer les pratiques éthiques de l’intelligence artiﬁcielle\nDiﬃculté: tous les pays ne s’entendent pas forcément sur les principes à suivre"
+      }
+    ]
+  },
+  {
+    "id": "3e348c8f-17f8-4148-a421-a0d7968b6e67",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_35.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Actions que vous pouvez faire\n35(1) Être conscient des risques et des dangers qui peuvent découler de vos conceptions(2) Agir selon votre conscience sur ce qui est bon ou mauvais(3) Refuser de participer à des projets qui vont à l’encontre de vos principes\nLe monde de demain, c’est en partie vous qui le construirezMême si vous êtes bien intentionnés, cela ne va pas empêcher les personnes mal-intentionnées"
+      }
+    ]
+  },
+  {
+    "id": "7bca73df-ba2d-4a10-a6a3-28a5566a2c85",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_36.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "INF8175 - Intelligence artiﬁcielleMéthodes et algorithmesUtilisation en industrie,  éthique, et philosophie: FIN"
+      }
+    ]
+  },
+  {
+    "id": "d5cdad71-f31a-4539-a79f-a74416ccf4a7",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_37.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Suite de vos aventures...\n37Objectif 1: comprendre les diﬀérentes méthodes et types de raisonnement en intelligence artiﬁcielleObjectifs du coursObjectif 2: étudier rigoureusement ces méthodes, et vous rendre capable de les utiliser en pratiqueObjectif 3: nous munir d'un bagage suﬃsant pour approfondir les champs selon vos intérêts\nINF8953DE (Sarath Chandar)Apprentissage automatiqueLOG6308 (Michel Desmarais)INF8111 (Daniel Aloise)ApplicationsINF8460 (Amal Zouaq)\nINF8225 (Christopher Pal)INF8245E (Sarath Chandar)INF6101 (Gilles Pesant)Algorithmes de rechercheINF6102 ()INF8410 (non donné actuellement)Agents logiques et probabilistesSuite possible de votre cursus à Polytechnique en IALOG8235 (Olivier Gendreau)INF8775 (Gilles Pesant)INF6804 (G.-A. Bilodeau)Aspects logiciels de l’IAINF6805E (Giovanni Beltrame)\nLOG6309E (Heng Li)Problèmes combinatoiresMTH8414 (L.-M. Rousseau)MTH6404 (Guy Desaulniers)"
+      }
+    ]
+  },
+  {
+    "id": "ec0e594e-bedb-4c62-a681-af8edfdd4ea9",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_38.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quelques statistiques et remerciements…\n38\n(5) Meme-generator: pour la centaine de mêmes des slides :-)https://imgﬂip.com/memegenerator(2) Plusieurs références et inspiration pour le contenu du cours\nhttp://ai.berkeley.edu/home.html\nCS221(3) A toute la classe: pour votre intérêt, motivation, respect et bonne humeur!(4) Aux anciens chargés et responsable du cours: la construction d’un cours se fait de manière itérativeRemerciements(1) Chargés de laboratoires pour leur immense travail réaliséTemps de permanence, correction rapide, organisation du concours, etc."
+      }
+    ]
+  },
+  {
+    "id": "1c1ce9b6-44d5-4262-ba0c-a163f28d5e96",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_39.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Génération de mes schémas\n39\nInconvénient 2: malheureusement payant (et cher)Inconvénient 1: fonctionne que sur MacOSAvantage: génération aisée de ﬁguresLogiciel: Omnigraﬄe"
+      }
+    ]
+  },
+  {
+    "id": "666afeb6-7c2f-44d0-b8c6-de28f04f07a0",
+    "image": "src\\convert_to_llava_format\\llava_training_data\\images\\M10-ethique_page_40.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "https://www.lamarquezone.fr/images/Image/lucky_luke_sunset_aﬃche_equinoxe.jpg"
+      }
+    ]
+  }
+]
