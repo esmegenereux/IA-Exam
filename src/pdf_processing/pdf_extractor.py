@@ -10,7 +10,7 @@ class PDFExtractor:
         self.pdf_path = pdf_path
         self.pdf_name = Path(pdf_path).stem
         # Create output directories if they don't exist
-        self.output_dir = Path('extracted_content') / self.pdf_name
+        self.output_dir = Path('src/pdf_processing/extracted_content') / self.pdf_name
         self.images_dir = self.output_dir / 'images'
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.images_dir.mkdir(parents=True, exist_ok=True)
@@ -99,7 +99,7 @@ class PDFExtractor:
 
 def main():
     # Process all PDFs in the Class docs directory
-    pdf_dir = Path('Class docs')
+    pdf_dir = Path('src/pdf_processing/Class docs')
     if not pdf_dir.exists():
         print(f"Error: Directory '{pdf_dir}' not found")
         return

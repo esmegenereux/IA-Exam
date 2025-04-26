@@ -1,0 +1,802 @@
+[
+  {
+    "id": "89c7a146-1d8e-4df9-abc0-1732689235be",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_1.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesModule 10: utilisation en industrie,  éthique, et philosophie"
+      }
+    ]
+  },
+  {
+    "id": "6c9e4694-4563-4de5-95d7-53100d590a9f",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_2.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartContenu du cours\n2Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques"
+      }
+    ]
+  },
+  {
+    "id": "dd4cb3bf-9045-45ea-a1cb-b35c74fb30c1",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_3.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartConclusion du cours\n3Une intelligence artiﬁcielle est une entité capable d'agir rationnellementDéﬁnition moderne de l'intelligence artiﬁcielle\nDécision qui va maximiser les chances d'accomplir un objectif prédéﬁniDécision rationnelle\nConnaître, comprendre, et savoir utiliser judicieusement  les principaux types de raisonnement en intelligence artiﬁcielleObjectifs du cours"
+      }
+    ]
+  },
+  {
+    "id": "177d8925-2ccb-4808-b99e-2c9e2da468af",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_4.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartModule 1: stratégies de recherche\n4Conception d'heuristiques: relaxation, connaissances expertes, etc.Stratégies avec information\nSGRecherche gloutonne: rapide mais sans garantieRecherche A*: combinaison de la recherche gloutonne et de coût uniformeInclusion d'une heuristique (information du problème) pour accélérer la rechercheHeuristique admissible: A* avec une recherche en arbre est optimalHeuristique consistante: A* avec une recherche en arbre/graphe est optimalStratégies sans information\nRecherche en profondeur......Recherche en largeur...Iterative deepening search...Recherche à coût uniformeProblèmes de rechercheMotivation: planiﬁer d'une séquence d'actions pour aller d'un état initial à un état ﬁnalObjectif idéal: trouver la séquence engendrant le moins de coûts\nPatron de résolution générique: recherche en graphe ou en arbre"
+      }
+    ]
+  },
+  {
+    "id": "eca3e97a-bd79-4d4b-8c5b-fca103b3a3b1",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_5.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartModule 2: recherche adversarielle\n5Recherche adversarielleContexte: l’agent évolue dans un environnement compétitifEnvironnement: caractérisé par la présence d'un ou de plusieurs adversaires\nCadre de référence: deux joueurs, déterministe, tour par tour, à information parfaite, et à somme nulleStratégie de recherche Minimax324623128325214\nMinimax classique3232123821452\nAlpha-beta pruning\nAvec des heuristiquesAutres améliorations: tables de transposition, méthodes hybrides, suppression de branches, etc.Arbre de recherche MC\nDépendance moindre à une heuristiqueBasé sur des simulations de partiesMéthode assez générique"
+      }
+    ]
+  },
+  {
+    "id": "85834146-20a1-46b3-924d-f4713d4bf5a4",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_6.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartModule 3: recherche locale\n6Problèmes combinatoiresSatisfaction (CSP): trouver une solution satisfaisant un ensemble de contraintesOptimisation (COP): CSP où on souhaite également optimiser une fonction objectif\nUne solution est un état, qui nous est inconnu, et non une séquence d'action\nInvestissementCoût ($)Revenu espéré dans 10 ans ($)A2001 000B2001 000C2001 000D50010 000E50010 000F80013 000G3007 000Budget maximal de 1000 $\nRecherche localePrincipe: résolution en se déplaçant de solutions en solutions via des mouvements locauxHill climbing: sélection systématique du meilleur voisinRisque: être bloqué dans un minimum local\nMécanismes d'améliorationIdée 1: utiliser un voisinage connectéIdée 3: redémarrer aléatoirement la rechercheIdée 4: accepter de dégrader sa solution (p.e., simulated annealing)Idée 2: agrandir le voisinage"
+      }
+    ]
+  },
+  {
+    "id": "5294dd55-08e2-4d64-b34c-3d633a8e6eba",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_7.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartModule 4: programmation par contraintes\n7Formalisation des problèmes combinatoires (CSP et COP)VariablesDomainesContraintesFonction objectif\nSatisfySubject toxu≠xvxv∈{𝗋𝖾𝖽,𝗀𝗋𝖾𝖾𝗇,𝖻𝗅𝗎𝖾}∀(u,v)∈E∀v∈V\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nRecherche à  retours arrières\nModèle du problèmePropagateurs de contraintes  et algorithme point ﬁxe\nProgrammation par contraintes = modèle + recherche + propagation"
+      }
+    ]
+  },
+  {
+    "id": "ebbe0b54-eb01-4358-86f9-a8d32a63d899",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_8.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartModule 5: programmation logique\n8Langage logiqueSyntaxe: déﬁnit un ensemble de formules validesSémantique: déﬁnit la signiﬁcation d'une formuleRègles d'inférence: façon d'obtenir de nouvelles connaissances\nObjectif: raisonner sur base d'un ensemble de connaissancesComposé de 3 éléments fondamentauxVériﬁcation par model checkingVériﬁcation de la satisﬁabilité d'une formule basée sur les modèles (sémantique)\nRésolution: via des méthodes de rechercheLimitation: ne tient pas compte qu'on a des formules logiquesAlgorithmes d'inférencesAlgorithme de résolution: cohérent et complet dans la logique des propositionsCohérence: assure que l'algorithme ne génère que des formules vraiesComplétude: assure que l'algorithme génère toutes les formules vraies existantesAlgorithme utilisé pour inférer des nouvelles connaissances en conséquence logique de KB"
+      }
+    ]
+  },
+  {
+    "id": "acf1f594-beeb-4b2e-b7b8-ebbee343c76a",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_9.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartModule 6: apprentissage supervisé\n9\nApprentissage automatique\"A computer program is said to learn from experience E  with respect to some task T and some performance measure P,  if its performance on T, as measured by P, improves with experience E\"http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mitchell/ftp/mlbook.html\n(2) L'apprentissage a besoin d'expériences passées (E - données)(3) Besoin d'avoir un moyen d'évaluer les performances d'un modèle (P)(1) L'apprentissage est dédié pour une tâche précise (T)Apprentissage supervisé: minimiser d'un coût entre une prédiction et les données connues(1) Régression linéaire simple(2) Régression linéaire multiple(3) Régression logistiquePlusieurs modèles possibles:\nAlgorithme d’apprentissage: par descente de gradient via un graphe de dépendance(4) Et d’autres !"
+      }
+    ]
+  },
+  {
+    "id": "53398607-bafd-4e54-b9f1-75a256ef5e0c",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_10.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\nModule 7: apprentissage profond\n10Réseaux de neurones\nEntraînement: descente de gradient et passe en arrièreDiﬃculté: la fonction de coût n’est plus convexe\nDéﬁnition: ensemble de neurones organisés en un réseauIntérêt: chaque neurone a ses paramètres et contribue à la prédictionApproximateur universel: capacité d'approximer n'importe quelle fonctionBesoin: activations non-linéairesApprentissage profondDéﬁnition: réseau de neurones ayant plus d'une couche cachéeIntérêt: permet de réaliser des approximations plus précisesTrois ingrédients essentiels:\n(1) Une méthode d’apprentissage(2) Un nombre conséquent de données labellisées(3) De la puissance de calculConséquence: utilisation de mécanismes pour faciliter l’apprentissage"
+      }
+    ]
+  },
+  {
+    "id": "511b659c-8fca-4b68-8394-96fe6368c625",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_11.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartModule 8: apprentissage non-supervisé\n11Apprentissage non-superviséDéﬁnition: apprentissage qui se fait sur base de données non-labelliséesPrincipe: exploitation de la similarité entre les données pour l'apprentissage\nD:{x(1),x(2),…,x(m)}Problème de regroupementObjectif: regrouper les données similaires en groupes (clusters) cohérentsMéthode de résolution: algorithme K-meansPrincipe: recherche locale pour minimiser une fonction de coûtAméliorations possibles: redémarrages, choix des positions initiales, etc.\nProblème de détection d'anomalies\nObjectif: prédire la probabilité qu’une nouvelle donnée soit régulièreModélisation: produit de lois normales univariées ou une loi normale mutivariéePrincipe: maximiser une fonction de vraisemblance"
+      }
+    ]
+  },
+  {
+    "id": "e6229811-591c-4014-86c2-eaaf1a79bbf1",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_12.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartModule 9: apprentissage par renforcement\n12\nAlphaGo: combine MCTS, apprentissage supervisé, réseaux de neurones et apprentissage par renforcement\nAlphaGo Zero: simpliﬁcation de AlphaGo et n’utilise plus d’apprentissage superviséApprentissage par vous-même: lecture et compréhension des deux articles (sur Moodle)"
+      }
+    ]
+  },
+  {
+    "id": "644e8556-9f45-4252-a75f-be200ee3516f",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_13.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartContenu du cours\n13Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques"
+      }
+    ]
+  },
+  {
+    "id": "861e8aa2-3fd8-4001-83ec-4124e8c845aa",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_14.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartL’intelligence artiﬁcielle en industrie\n14\nIntervenant: Alexandre Audette Génier (Ubisoft - 2020)Titre: des agents intelligents aux yeux du joueur\nRésumé: la diﬃculté n’est pas de faire des IAs eﬃcaces,               mais des IAs crédibles et amusantes pour le joueur \nIntervenant: Guillaume Vergnolle (AlayaCare - 2021)\nTitre: apprentissage automatique dans le domaine de la santéRésumé: toutes les erreurs de prédictions n’ont pas le même impact             (faux négatif vs faux positif)\nIntervenant: Raymond Li (ServiceNow Research - 2020)Titre: application de l’apprentissage automatique pour le NLPRésumé: construire des modèles plus volumineux n’est pas le seul moyen             d’améliorer les performances (p.e., mécanisme d’attention)\nIntervenant: Olivier Blais (MoovAI - 2022)Titre: il est temps de commencer à livrer des modèles de haute qualitéRésumé: applications diverses du ML en contexte industriel"
+      }
+    ]
+  },
+  {
+    "id": "359ebaa1-882f-4907-b301-b7a0627122b3",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_15.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartIntervenant de 2023\n15\nMaxime Gasse (scientiﬁque de recherche senior à ServiceNow Research)\nDéploiement d’agents LLMs en industrie"
+      }
+    ]
+  },
+  {
+    "id": "3b8d3cd6-0c99-46dc-b7b5-89cdc3f29f43",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_16.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartIntervenant de cette année\n16\nAugustin Parjadis (scientiﬁque de recherche à IVADO Labs)\nCombiner apprentissage et optimisation pour le transport électrique"
+      }
+    ]
+  },
+  {
+    "id": "3fe4ef11-f316-4e67-beed-21553f38f89e",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_17.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\n17Quels bienfaits l’intelligence artiﬁcielle peut apporter à notre société ?\nDALLE: An image of an utopia"
+      }
+    ]
+  },
+  {
+    "id": "96a9ee1b-4980-4fea-aa6f-ace9a56c0799",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_18.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartEnjeux sanitaires\n18https://www.deepmind.com/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology\nApplication: découverte de composants biologiques\nAide: compréhension de certaines maladies\nhttps://www.cancer.gov/news-events/cancer-currents-blog/2022/artiﬁcial-intelligence-cancer-imagingApplication: diagnostic de maladiesAide: complément à l’analyse d’un médecin"
+      }
+    ]
+  },
+  {
+    "id": "23095da3-7ac6-45f1-a9ae-e257c474a3ff",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_19.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartEnjeux climatiques\n19Application: prédiction d’évènements météorologiques extrêmes (tornades, tremblements de terre, etc.) \nApplication: à des ﬁns de sensibilisationhttps://developer.nvidia.com/blog/deep-learning-accurately-forecasts-extreme-weather-events/\nhttps://mila.quebec/en/ai-a-tool-to-better-respond-to-environmental-challenges/"
+      }
+    ]
+  },
+  {
+    "id": "ec7e4517-eeeb-4fb0-9102-49ec38db5408",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_20.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRéduction de la consommation des ressources\n20Application: toutes sortes de problèmes de transport ou de production (problème d’optimisation à résoudre)Aide: réduire la consommation de diverses ressources (carburant, matières premières de construction, etc.)\nhttps://www.localsolver.com/benchmark/huge-instances-capacitated-vehicle-routing-problem-cvrpAide: rendre ces méthodes accessibles pour des petites entreprises ou pour des particuliers"
+      }
+    ]
+  },
+  {
+    "id": "92842744-df7c-4c2b-b419-49cb7f81f20d",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_21.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartEnjeux industriels et sociaux\n21Eﬀet positif: amélioration de la productivité et automatisation de certaines opérationsEﬀet positif: création de nouveaux emplois\nIndustrie 4.0: quatrième révolution industrielle basé sur le numérique (vapeur, électricité, informatique)\nhttps://blogs.knowledgelens.com/index.php/2019/06/25/leveraging-ai-for-industry-4-0/\nSur base de ces exemples, l’intelligence artiﬁcielle a le pouvoir de boniﬁer notre société"
+      }
+    ]
+  },
+  {
+    "id": "dc335865-e9f1-48d2-a1cb-bc17d3be5ce1",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_22.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\n22Quels dangers les découvertes scientiﬁques  peuvent apporter à notre société ?\nDALLE: An image of a dark dystopia, with orange sky and ruins"
+      }
+    ]
+  },
+  {
+    "id": "79c9878c-8e44-4fdf-9bc0-ae77327bd7fd",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_23.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartObservation historique - nucléaire\n23Chaque invention, de base positive,  amène ses dangers, et ses dérives\nUtilisation bénéﬁque: source importante d’énergieInvention: exploitation de l’énergie nucléaire (ﬁssion/fusion)Utilisation meurtrière: création d’une arme (bombe nucléaire)Dangers possibles: accidents nucléaires (Tchernobyl, Fukushima), gestion des déchets"
+      }
+    ]
+  },
+  {
+    "id": "e355ce04-2012-4bfe-99a4-a5da5538d9d7",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_24.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartObservation historique - synthèse de l’ammoniac\n24\nLien: https://www.youtube.com/watch?v=PMhqLQRpjhw\nUtilisation bénéﬁque: fabrication d’engrais et aide à l’agricultureInvention: synthèse de l’ammoniacUtilisation meurtrière: création d’une arme chimique (gaz moutarde)"
+      }
+    ]
+  },
+  {
+    "id": "951d906e-f093-4bd6-8a09-fcee587d633f",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_25.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\n25Quels dangers les découvertes scientiﬁques  peuvent apporter à notre société ?\nDALLE: An image of a dark dystopia, with orange sky and ruinsCes dangers s’appliquent aussi  pour l’intelligence artiﬁcielle !\nAvez-vous en tête des dérives ou dangers potentiels dans la conception et l’utilisation d’intelligences artiﬁcielles ?"
+      }
+    ]
+  },
+  {
+    "id": "3dfe20fc-5b88-48d7-b34e-a8d978b1c3b1",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_26.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDiﬃculté possible - futur du monde du travail\n26Réalité: chaque progrès technique bouleverse le monde industriel\nhttps://soapboxie.com/economy/Robots-and-Artiﬁcial-Intelligence-Will-Cause-Massive-Unemployment-In-The-Future\nConséquence: certains jobs risquent de disparaître progressivementConseil personnel: ayez un proﬁl unique, combinant beaucoup d’aptitudesExemple: Github Copilote peut automatiser une partie de la gestion de codeClef du succès futur: savoir s’adapter à de nouvelles situations et apprendre continuellementAttention: tous les outils imparfaits actuellement ne font faire que s’améliorer"
+      }
+    ]
+  },
+  {
+    "id": "2de400cb-df8b-4609-aa43-9d60713feed8",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_27.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDérive possible - surveillance, sécurité, et vie privée\n27\nhttps://en.wikipedia.org/wiki/ Artiﬁcial_intelligence_for_video_surveillance\nCybersécurité: augmentation et facilitation des attaques (phising, fraude, ransomware, etc.)Surveillance de la population: identiﬁcation, trackage, et analyse des personnesVie privée: de plus en plus de données personnelles sont collectées et fuite de données sensible\nExemple: concours Netﬂix pour prédire des recommandation sur base de données historiques anonymesDiﬃculté: des chercheurs ont réussi à retrouver l’identité de personnes\nPiste prometteuse: federated learning ou l’apprentissage n’est pas centralisé (chacun garde ses données)\nRobust Physical-World Attacks on Deep Learning Visual Classiﬁcation [Eykholt et al., 2018]"
+      }
+    ]
+  },
+  {
+    "id": "92d6039f-fa54-404d-b478-c7979588dc02",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_28.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDérive possible - discrimination automatisée\n28https://www.technologyreview.com/2021/06/23/1026825/linkedin-ai-bias-ziprecruiter-monster-artiﬁcial-intelligence/\nNature de la discrimination: l’algorithme avait tendance à prioritiser les hommesObjectif de l’algorithme: faire des correspondances entre candidats et oﬀres d’emploisEquité: assurer que la prédiction ne discrimine pas les personnes via des données sociales et humainesCOMPAS: système donnant un score de risque qu’un prisonnier libéré récidiveUtilisation: aider à la décision de libérer ou non un prisonnierNature de la discrimination: risque supérieur et injustiﬁé donné pour les personnes de couleur"
+      }
+    ]
+  },
+  {
+    "id": "c57d974f-7a49-45eb-97af-f160d650b503",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_29.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDérive possible - conﬁance et désinformation\n29Lien: https://www.youtube.com/watch?v=1mCwmxW6Xhk\nDeepFake: vidéo très réaliste d’une personne, mais qui a été générée artiﬁciellement Danger 1: désinformation en utilisant des personnalités publiques Danger 3: diﬀamation en utilisant votre propre image\nDanger 2: dans certains contextes, peut être utilisé comme une arme de guerre"
+      }
+    ]
+  },
+  {
+    "id": "0137f82a-45c4-4552-b746-d5ff32b09c06",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_30.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDérive possible - armes mortelles automatiques\n30Déﬁnition de l’ONU: arme mortelle qui vise, sélectionne, et tue un humain sans supervision humaineDanger alarmant: à l’heure actuelle, on a la technologie pour la conception de ce genre d’armesExemple: Le missile Harop, capable de chercher pendant 6 heures une cible satisfaisant un certain critère\n« Autonomous machines with the power and discretion to select targets and take lives without human involvement are politically unacceptable,  morally repugnant and should be prohibited by international law. » (2019)Antonio Guterres (secrétaire général de l’ONU)Les progrès en AI ne font faire que faciliter ces développementsONU: la majorité des pays membres de l’ONU (mais pas tous) sont favorables à un ban de ces armes\nLien: https://www.youtube.com/watch?v=O-2tpwW0kmU\nVidéo de sensibilisation sur youtube: Slaughterbots"
+      }
+    ]
+  },
+  {
+    "id": "77fd465a-d96f-488f-ba61-96e5e9affe50",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_31.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDérive possible - autres exemples\n31Black Mirror: série montrant diﬀérents futurs dystopiques (souvent lié à l’abus de technologies)Certains épisodes: on a théoriquement toutes les technologies pouvant amener à ces situations !\nUpload: comédie liée à l’utilisation de l’IA pour communiquer avec les personnes mortes"
+      }
+    ]
+  },
+  {
+    "id": "8ceea871-d5b6-4374-a785-5b7e2ebc2a1e",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_32.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDérive possible - où est le mal et le bien ?\n32Dilemme du tramway: est-il correct de tuer une personne pour en sauver d’autres ?\nOn parle de dilemme éthique (situation où la distinction entre bien/mal de chaque décision est ﬂoue)Véhicules autonomes: entre deux accidents inévitables, quelle issue l’IA doit-elle prendre ?\nhttps://www.moralmachine.net/hl/fr\nConception d’IAs: comment gérer ces situations, et à qui revient la responsabilité d’un acte ?"
+      }
+    ]
+  },
+  {
+    "id": "a7575e23-94d6-495d-b2a7-19d87752c38b",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_33.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart33\nQue peut-on faire actuellement pour  éviter un futur sombre ?"
+      }
+    ]
+  },
+  {
+    "id": "a3d68894-bed5-4cc9-8bdd-3f2e7a19a0c0",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_34.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartActions et résolutions groupées\n34\nDe nombreuses actions collectives et mondiales sont menées à ce sujetObjectif: notamment de codiﬁer les pratiques éthiques de l’intelligence artiﬁcielle\nDiﬃculté: tous les pays ne s’entendent pas forcément sur les principes à suivre"
+      }
+    ]
+  },
+  {
+    "id": "f29cf5a7-0262-4b34-b300-c9fe5e276a18",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_35.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartActions que vous pouvez faire\n35(1) Être conscient des risques et des dangers qui peuvent découler de vos conceptions(2) Agir selon votre conscience sur ce qui est bon ou mauvais(3) Refuser de participer à des projets qui vont à l’encontre de vos principes\nLe monde de demain, c’est en partie vous qui le construirezMême si vous êtes bien intentionnés, cela ne va pas empêcher les personnes mal-intentionnées"
+      }
+    ]
+  },
+  {
+    "id": "c4a9368d-7c9c-4886-92e3-045594d688a9",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_36.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesUtilisation en industrie,  éthique, et philosophie: FIN"
+      }
+    ]
+  },
+  {
+    "id": "b4526bda-fd4d-4151-aed9-6f4faadf447e",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_37.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartSuite de vos aventures...\n37Objectif 1: comprendre les diﬀérentes méthodes et types de raisonnement en intelligence artiﬁcielleObjectifs du coursObjectif 2: étudier rigoureusement ces méthodes, et vous rendre capable de les utiliser en pratiqueObjectif 3: nous munir d'un bagage suﬃsant pour approfondir les champs selon vos intérêts\nINF8953DE (Sarath Chandar)Apprentissage automatiqueLOG6308 (Michel Desmarais)INF8111 (Daniel Aloise)ApplicationsINF8460 (Amal Zouaq)\nINF8225 (Christopher Pal)INF8245E (Sarath Chandar)INF6101 (Gilles Pesant)Algorithmes de rechercheINF6102 (Quentin Cappart)INF8410 (non donné actuellement)Agents logiques et probabilistesSuite possible de votre cursus à Polytechnique en IALOG8235 (Olivier Gendreau)INF8775 (Gilles Pesant)INF6804 (G.-A. Bilodeau)Aspects logiciels de l’IAINF6805E (Giovanni Beltrame)\nLOG6309E (Heng Li)Problèmes combinatoiresMTH8414 (L.-M. Rousseau)MTH6404 (Guy Desaulniers)"
+      }
+    ]
+  },
+  {
+    "id": "fd24223b-fd96-40b1-9c70-ef71aedb1cc2",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_38.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartQuelques statistiques et remerciements…\n38\n(5) Meme-generator: pour la centaine de mêmes des slides :-)https://imgﬂip.com/memegenerator(2) Plusieurs références et inspiration pour le contenu du cours\nhttp://ai.berkeley.edu/home.html\nCS221(3) A toute la classe: pour votre intérêt, motivation, respect et bonne humeur!(4) Aux anciens chargés et responsable du cours: la construction d’un cours se fait de manière itérativeRemerciements(1) Chargés de laboratoires pour leur immense travail réaliséTemps de permanence, correction rapide, organisation du concours, etc."
+      }
+    ]
+  },
+  {
+    "id": "2fe00b5a-3711-440a-b2b2-afa5ca24b6f0",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_39.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartGénération de mes schémas\n39\nInconvénient 2: malheureusement payant (et cher)Inconvénient 1: fonctionne que sur MacOSAvantage: génération aisée de ﬁguresLogiciel: Omnigraﬄe"
+      }
+    ]
+  },
+  {
+    "id": "3b790150-d977-4498-ab18-066ca3abfbb1",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M10-ethique_page_40.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\nhttps://www.lamarquezone.fr/images/Image/lucky_luke_sunset_aﬃche_equinoxe.jpg"
+      }
+    ]
+  }
+]

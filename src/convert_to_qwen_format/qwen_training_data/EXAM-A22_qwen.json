@@ -1,0 +1,262 @@
+[
+  {
+    "id": "a1eae969-42cb-4ca7-a9ef-e41f50368616",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_1.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215 : Examen final (Automne 2022) - Quentin Cappart Note finale ↓\nDate : 14/12/2021 Nombre de questions : 6 Total des points : 40\nMatricule : Nom : Temps : 2h30 heures\nQuestion: 1 2 3 4 5 6 Total\nPoints: 0 10 5 10 5 10 40\nScore:\nInstructions\n1. La documentation papier et ´ electronique sur cl´ e USB est autoris´ ee.\n2. L’examen doit se r´ ealiser de mani` ere individuelle. Il est strictement interdit de collaborer."
+      }
+    ]
+  },
+  {
+    "id": "3afa075d-565d-43da-aaf8-feebf00d2f29",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_2.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\nQuestion 2 (10 points)\nNo¨ el approchant ` a grand pas, vous souhaitez acheter un jeu de plateau pour votre ni` ece. Au magasin,\nvous d´ ecouvrez le jeu Rush hour . Bri` evement, le jeu consiste ` a faire sortir la voiture rouge du plateau\nen la faisant coulisser ` a gauche ou ` a droite suivant le sens de conduite (les mouvements sur les cˆ ot´ es\nlat´ eraux de la voiture ne sont pas autoris´ es). La difficult´ e est que d’autres v´ ehicules sont sur le plateau\net bloquent les mouvements. Chaque v´ ehicule est sujet au mˆ eme r` egles de d´ eplacement. Une solution\nvalide est une s´ equence d’actions permettant de faire sortir la voiture rouge, et une solution optimale est\nla s´ equence comportant le moins d’actions. Une illustration d’une situation initiale est propos´ ee dans\nla figure suivante. Suite ` a ce que vous appris lors du cours, vous vous dites que la r´ esolution de ce jeu\npeut se faire ` a l’aide d’une strat´ egie de recherche. Une illustration du jeu r´ eel et montr´ ee ` a gauche, et\nune situation simplifi´ ee est propos´ ee ` a droite.\nFormellement, une situation du jeu est repr´ esent´ ee par un plateau de taille n×net contient mv´ ehicules\noccupant 2 cases (dont la voiture rouge), et pv´ ehicules occupant 3 cases.\n1. Formalisez ce probl` eme comme un probl` eme de recherche en identifiant bien quels sont les ´ etats, les\nactions, la fonction de transition, et la fonction de coˆ ut de votre mod` ele. Il n’est pas n´ ecessaire de\ndonner une formalisation math´ ematique stricte. L’important est que je comprenne clairement vos\ndiff´ erentes entit´ es.\n2. Donnez une borne sup´ erieure raisonnable sur le nombre d’´ etats de votre formulation, ainsi qu’une\nborne sup´ erieure raisonnable sur le nombre d’actions qui sont possibles ` a un ´ etat ( branching factor ).\nVeillez ` a bien pr´ eciser quelles approximations vous faites. Exprimez votre solution sur base de la\ntaille du plateau ( n×n) ainsi que sur base du nombre de v´ ehicules de chaque cat´ egorie ( metp).\n3. D´ eterminez la s´ equence d’actions qui sera obtenue en ex´ ecutant une recherche en largeur jusqu’` a la\nr´ esolution du probl` eme pour la situation de l’image de droite. Indiquez chaque ´ etape de l’algorithme.\nA chaque ´ etape, veillez ` a bien indiquer votre ´ etat actuel, ainsi que les nœuds pr´ esents dans la liste des\n´ etats candidats ( fringe ). Vous pouvez consid´ erer le probl` eme comme r´ esolu lorsque la case ` a gauche\nd’exitest touch´ ee par la voiture rouge dans un ´ etat. De plus, consid´ erez une recherche en graphe (et\nnon en arbre). Pr´ ecis´ ement, un ´ etat ne sera pas ajout´ e dans la liste des ´ etats candidats ( fringe ) si\net seulement s’il a d´ ej` a ´ et´ e visit´ e. Afin d’´ eviter de vous faire dessiner un grand nombre de sch´ emas,\nun patron d’ex´ ecution vous est mis disponible aux pages suivantes. Vous pouvez repr´ esenter un ´ etat\nseulement par une repr´ esentation visuelle. Barrez les cases qui ne sont pas n´ ecessaires.\n4. Dans une situation g´ en´ erale de plateau n×n, avez -vous la garantie que votre algorithme trouve la\nsolution optimale ? Expliquez bri` evement votre raisonnement.\n5. Proposez une heuristique admissible ,non-triviale , et de meilleure qualit´ e que la distance de Manhat-\ntan ( voiture rouge →sortie ) pour ce probl` eme. Justifiez bri` evement l’admissibilit´ e de votre heuris-\ntique.\n6. Supposez qu’on ex´ ecute une recherche A⋆en utilisant une heuristique admissible, selon le mˆ eme\nsc´ enario que pr´ ec´ edemment. Avez-vous la garantie que la solution optimale sera obtenue ?\nPolytechnique Montr´ eal Page 3 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "59420077-8443-445e-b387-ff6ee9acd123",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_3.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\nSolution:\n1. Proposition d’une formulation (des variations sont possibles) :\n—Etat : la position actuelle de chaque voiture et une indication sur leur orientation (ver-\nticale ou horizontale). Cela donne une une coordonn´ ee ( x, y)∈ {1, . . . , n }2pour chaque\nvoiture, une valeur binaire sur l’orientation o∈ {0,1}. Pour la coordonn´ ee, on peut\nprendre la case la plus ` a gauche, ensuite avec la taille de chaque voiture, on sait calcu-\nler les coordonn´ ees de chaque case occup´ ee. Un ´ etat est final lorsque la voiture rouge\n(coordonn´ ee de la case x+ 2) touche la case exit.\n—Action : il s’agit simplement de faire coulisser une voiture sur une case adjacente vide.\n—Fonction de transition : il s’agit de mettre ` a jour la coordonn´ ee d’une voiture ( x±1\nouy±1) en tenant compte des obstacles.\n—Fonction de coˆ ut : incr´ ement de 1 pour chaque mouvement.\n2. Comme hypoth` ese (relaxation), je calcule le nombre d’´ etats comme si chaque voiture n’avait\naucun obstacle. Ainsi chaque voiture de taille 2 a n−1 positions possibles, et chaque voiture\nde taille 3 a n−2 positions possibles. Cela donne ( n−1)m(n−2)p´ etats. Concernant le\nnombre d’actions, chaque voiture a deux d´ eplacements (sans tenir compte des obstacles et\ndes bords). On a m+pv´ ehicules, et donc 2( m+p) actions.\n3. La question ne pr´ ecisait pas comment g´ erer les ´ egalit´ es en cas d’une mˆ eme priorit´ e (mˆ eme\nanciennet´ e du noeud), d` es lors vous ´ etiez libres de faire le choix que vous souhaitiez. De plus,\nnotez bien qu’on ex´ ecute une recherche en graphe, et que d` es lors, on retient les ´ etats d´ ej` a\nvus. L’ex´ ecution est pr´ esent´ ee plus bas. Les lignes verticales regroupent les noeuds ` a priorit´ e\n´ egale.\n4. Oui, car on ex´ ecute une recherche en largeur et que les coˆ uts sont unitaires.\n5. Le plus simple est de prendre la distance de Manhattan entre la voiture rouge et la sortie,\nen faisant +1 pour chaque v´ ehicule qui est sur le chemin. L’heuristique est admissible car la\ndistance de Manhattan l’est, et que pour chaque obstacle, on doit faire obligatoirement au\nmoins une action pour d´ egager le v´ ehicule.\n6. Non,car on ex´ ecute une recherche en graphe. Dans cette situation, l’heuristique doit ˆ etre\n´ egalement consistante pour garantir l’optimalit´ e.\nPolytechnique Montr´ eal Page 4 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "4730dbe8-d666-47a3-80fd-7350555e8028",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_4.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\nPolytechnique Montr´ eal Page 5 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "466e5822-cafc-4e68-93b8-8327ea2febc4",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_5.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\nQuestion 3 (5 points)\nConsid´ erons un jeu d´ eterministe, ` a deux joueurs ( MAX etMIN), tour par tour, ` a information parfaite, et\n` a somme nulle. La r´ esolution se fait via un algorithme minimax , avec le noeud de gauche qui est explor´ e\nen priorit´ e (mˆ eme convention que celle utilis´ ee tout au long du cours). Pour cette question, diff´ erents\narbres de recherche vous seront pr´ esent´ es. Seulement la valeur des noeuds terminaux est indiqu´ ee. Pour\nchaque arbre, une branche est identifi´ ee pour ˆ etre ´ eventuellement ´ elagu´ ee via un alpha-beta pruning (en\npointill´ e) et la valeur d’un noeud de l’arbre est ind´ etermin´ ee (not´ ee x). Il vous est demand´ e de dire pour\nquelles valeurs de x, l’´ elagage sera effectu´ e. A titre d’exemple, pour la situation pr´ esent´ ee ci-dessous\n(Cas 0), l’´ elagage ne sera effectu´ e que si x≤2. Si aucun ´ elagage n’est possible quelque soit la valeur\ndex, indiquez jamais , si l’´ elagage sera toujours effectu´ e quelque soit la valeur de x, indiquez toujours .\nVous avez 5 situations ` a r´ esoudre. Il n’est pas n´ ecessaire de justifier votre r´ eponse.\nSolution: Note : on accepte ´ egalement les in´ egalit´ es strictes.\n— Cas 1 : jamais\n— Cas 2 : jamais\n— Cas 3 : x≥2\n— Cas 4 : x≥3\n— Cas 5 : jamais\nPolytechnique Montr´ eal Page 13 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "a8e977a9-e59c-4a86-a52a-c386824594ff",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_6.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\nQuestion 4 (10 points)\nSoit le probl` eme de satisfaction combinatoire suivant : ´ etant donn´ e la figure suivante, on souhaite placer\nles chiffres de 1 ` a 8 sur les noeuds du graphe de sorte qu’aucun nombre ne soit connect´ e ` a un nombre\nqui lui est cons´ ecutif (sup´ erieurement ou inf´ erieurement). Ainsi, le chiffre 5 ne pourra pas ˆ etre adjacent\nau chiffre 4 ou au chiffre 6.\nPour cette question, il ne vous est pas demand´ e de r´ esoudre compl` etement ce probl` eme, mais simplement\nde proposer une r´ esolution bas´ ee sur la recherche locale, et d’ex´ ecuter quelques ´ etapes de l’algorithme.\n1. Proposez un mod` ele de recherche locale en vue de r´ esoudre ce probl` eme. En particulier, veillez ` a bien\nd´ efinir les ´ el´ ements suivants :\n(a) Votre espace de recherche. Indiquez le plus pr´ ecis´ ement possible quelle est sa taille.\n(b) Les contraintes dures et molles relatives ` a l’espace de recherche que vous avez consid´ er´ e.\n(c) Une m´ ethode pour obtenir une solution initiale.\n(d) Votre fonction d’´ evaluation pour caract´ eriser la qualit´ e d’une solution.\n(e) Votre fonction de voisinage. Indiquez le plus pr´ ecis´ ement possible quelle est la taille du voisinage.\n2. Pour la r´ esolution, vous d´ ecidez d’utiliser un algorithme de type hill climbing qui prend n’importe quel\nvoisin am´ eliorant. Ex´ ecutez deux it´ erations d’une recherche locale sur base de votre formulation. Dans\nles figures ci-dessous, illustrez (a) votre solution initiale, (b) la solution obtenue apr` es la premi` ere\nit´ eration, (c) la solution obtenue apr` es la deuxi` eme it´ eration. Pour ces trois solutions, indiquez la\nvaleur de votre fonction d’´ evaluation. Pour vos deux it´ erations, veillez ` a bien indiquer les voisins\ng´ en´ er´ es, ainsi que celui qui a ´ et´ e s´ electionn´ e.\n3. Proposez une m´ ethode pour ´ eviter que votre algorithme se retrouve bloqu´ e dans un minimum local.\nPolytechnique Montr´ eal Page 15 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "6bc0961d-5e58-4085-a08d-2129ad806797",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_7.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\nSolution: Plusieurs solutions sont possibles. Le plus important est que le mod` ele soit coh´ erent dans\nsa globalit´ e. Par exemple, vous ne pouvez pas d´ efinir un voisinage qui viole une contrainte dure que\nvous avez d´ efinie. Voici un exemple de mod` ele et de solution.\n1. (a) Les nombres de 1 ` a 8 sont r´ epartis dans le graphe sans r´ ep´ etition. On a alors un espace\nde 8! solutions.\n(b) La contrainte de non-r´ ep´ etition est dure, et celles des arˆ etes (pas de nombre cons´ ecutif)\nest molle.\n(c) Simplement g´ en´ erer une permutation al´ eatoire.\n(d) Le nombre de contraintes molles non-satisfaites.\n(e) Faire une permutation de 2 nombres. Cela donne (8 ×7)/2 voisins ( O(n2) avec nle nombre\nd’´ el´ ements ` a placer, en supposant un graphe quelconque). Notez que la permutation x→y\nest la mˆ eme que y→x.\n2. On va choisir un voisin am´ eliorant ` a chaque fois. Les arˆ etes rouges indiquent les conflits, et\nles noeuds en vert indiquent les valeurs permut´ ees. Les it´ erations sont illustr´ ees plus bas.\n3. On peut par exemple ex´ ecuter des red´ emarrages al´ eatoires.\nPolytechnique Montr´ eal Page 16 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "adfe13e0-0184-49e4-b02e-da73d807a37d",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_8.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\nQuestion 5 (5 points)\nPour l’enti` eret´ e des questions, on se situe dans la logique des propositions, sauf si le contraire est explici-\ntement mentionn´ e. Indiquez si les assertions suivantes sont vraies ou fausses. Si elles sont fausses, justifiez\nsuccinctement (deux phrases au maximum) pourquoi ou donnez un contre-exemple. Il est n´ ecessaire de\nfournir cette justification pour avoir les points.\n1. Soit la base de connaissance KB:{¬EchecProjet ,(EchecProjet ∧ ¬ReussiteExamen )≡Tristesse }. La\nformule f1:¬Tristesse est une cons´ equence logique de KB.\n2. Soit la mˆ eme base de connaissances KB. La formule f2:¬EchecProjet ∧Tristesse est en contingence\navec KB.\n3. Soit la mˆ eme base de connaissances KB. La formule f3:ReussiteExamen ∨Tristesse est en contradiction\navec KB.\n4. Soit la r` egle d’inf´ erencef→g,¬f→¬g\nf≡g. Cette r` egle est coh´ erente ( sound ).\n5. Soit la r` egle d’inf´ erencef, f→g\ng. Cette r` egle est compl` ete ( complete ).\nPolytechnique Montr´ eal Page 20 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "d6e04f05-3082-4dfc-b06f-45fe679b28a8",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_9.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\n6. Supposons un agent logique bas´ e sur un algorithme d’inf´ erence complet mais non-coh´ erent et sur\nune base de connaissance KB. Vous avez la garantie que toutes les formules qui sont en cons´ equence\nlogique avec KBpeuvent ˆ etre g´ en´ er´ ees via l’algorithme d’inf´ erence.\n7. Supposons un agent logique bas´ e sur un algorithme d’inf´ erence coh´ erent mais non-complet et sur\nune base de connaissance KB. Vous effectuez une requˆ ete ASK ` a cet agent, qui vous retourne une\nformule f. Vous ne pouvez pas ˆ etre certain que cette formule est une cons´ equence logique de KB.\n8. La logique des propositions avec les clauses de Horn est utile car elle permet de rendre la r` egle du\nMonus Ponens coh´ erente.\n9. La clause f4:¬P1∨ ¬P2∨P3∨P4est une clause de Horn.\n10. Afin d’exprimer la connaissance il fait froid au Qu´ ebec , il serait pertinent d’utiliser une logique\nprobabiliste.\nPolytechnique Montr´ eal Page 21 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "fc1ebd32-16fa-4754-a19c-cded9265cdbe",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_10.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\nSolution:\n1. Vrai : les mod` eles de KBsont inclus dans les mod` eles de f1.\n2. Faux : f2est en contradiction avec KB(aucun mod` ele en commun).\n3. Faux : f3est en contingence avec KB(intersection non nulle et non compl` ete).\n4. Vrai : les mod` eles des pr´ emices sont inclus dans ceux de la conclusion.\n5. Faux : il s’agit du Modus Ponens (prouv´ e en cours).\n6. Vrai : car complet.\n7. Faux : on est certain car coh´ erent.\n8. Faux : elle rend le Podus Ponens complet.\n9. Faux : on doit ` a avoir au plus un litt´ eral positif.\n10. Faux : aucun probabilit´ e rentre en jeu. Une logique floue est plus pertinente.\nPolytechnique Montr´ eal Page 22 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "51456bff-8ef6-4ab7-8f69-febaeb276de3",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_11.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\nQuestion 6 (10 points)\nUne compagnie de gestion de produits financiers d´ ecide de cr´ eer un outil de pr´ ediction de la valeur future\nd’une action. On suppose que cette estimation prend une valeur r´ eelle. Une action est repr´ esent´ ee par\ndeux caract´ eristiques : sa valeur actuelle, et la variance de l’action sur la derni` ere semaine. Pour r´ ealiser\ncet objectif, la compagnie d´ ecide de construire un r´ eseau de neurones assez minimaliste. L’architecture\nest la suivante :\n—L[0]: ` a d´ eterminer par vous mˆ eme ´ etant donn´ e la description du probl` eme.\n—L[1]: 1 neurone, avec une activation ReLU .\n—L[2]: ` a d´ eterminer par vous mˆ eme ´ etant donn´ e la description du probl` eme.\nSur base de cette architecture, r´ epondez aux questions suivantes :\n1. Donnez le nombre de neurones qui composent les couches L[0]etL[2].\n2. Donnez les ´ equations de ce r´ eseau pour obtenir une pr´ ediction ` a partir d’un ensemble de donn´ ees en\nentr´ ee. Utilisez la notation matricielle. Veillez ` a bien d´ efinir la fonction d’activation pour la derni` ere\ncouche.\n3. Donnez les dimensions des diff´ erentes matrices et vecteurs X,Z,A,W,b,Yde votre r´ eseau.\nConsid´ erez 100 donn´ ees en entr´ ee.\n4. Donnez le nombre de param` etres devant ˆ etre appris dans ce r´ eseau.\n5. Donnez une fonction d’´ ecart adapt´ e au probl` eme. Formalisez la math´ ematiquement.\n6. Repr´ esentez les op´ erations effectu´ ees dans ce r´ eseau pour calculer la valeur de la fonction d’´ ecart par\nungraphe de d´ ependance . Au niveau de la granularit´ e des op´ erations, vous pouvez consid´ erer une\ncombinaison lin´ eaire , une application d’une fonction d’activation , et le calcul de la fonction d’´ ecart\ncomme op´ erations ´ el´ ementaires.\n7. A l’initialisation, on suppose que tous les param` etres de la matrice W[1]ont ´ et´ e initialis´ es ` a une\nvaleur de 2, tous les param` etres du vecteur b[1]ont ´ et´ e initialis´ es ` a 0, tous les param` etres de la\nmatrice W[2]ont ´ et´ e initialis´ es ` a 1, et que tous les param` etres du vecteur b[2]ont ´ et´ e initialis´ es ` a\n5. Consid´ erez une action dont la valeur actuelle est de 12, et dont la variance est de 20. La valeur\nfuture connue (donn´ ee historique, y) est de 75. Effectuez une passe en avant afin d’obtenir : (1) la\npr´ ediction pour cette donn´ ee, (2) l’´ evaluation de la fonction d’´ ecart pour cette donn´ ee.\n8.´Etant donn´ e cette ´ evaluation de la fonction d’´ ecart, effectuez une passe en arri` ere pour obtenir le\ngradient (c-` a-d, une valeur pour chaque d´ eriv´ ee partielle des param` etres). Vous ˆ etes libres d’utiliser\ndirectement n’importe quel r´ esultat qui a ´ et´ e d´ emontr´ e dans les diapositives du cours pour le calcul\nde vos d´ eriv´ ees partielles. Indice : proc´ edez avec la r` egle du chaˆ ınage.\n9. Finalement, utilisez l’information de votre gradient pour effectuer une ´ etape de descente de gradient.\nUtilisez un taux d’apprentissage de 0.01.\nSolution:\n1.L[0]= 2 (2 caract´ eristiques r´ eelles) et L[2]= 1 (une valeur r´ eelle).\n2. Pour la derni` ere couche, on consid` ere la fonction d’activation identit´ e, car on souhaite obtenir\nune valeur r´ eelle.\nA[0]=X\nZ[1]=W[1]A[0]+b[1]\nA[1]=ReLU\u0000\nZ[1]\u0001\nZ[2]=W[2]A[1]+b[2]\nA[2]=Z[2]\nˆY=A[2]\nPolytechnique Montr´ eal Page 25 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "02af4910-aa18-4c3b-a61f-af3ebd339826",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_12.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\n3. Les matrices sons les suivantes :\nX=A[0]=n[0]×m= 2×100\nZ[1]=A[1]=n[1]×m= 1×100\nˆY=Z[2]=A[2]=n[2]×m= 1×100\nW[1]=n[1]×n[0]= 1×2\nW[2]=n[2]×n[1]= 1×1\nb[1]=n[1]×1 = 1×1\nb[2]=n[2]×1 = 1×1\n4. On a 2 + 1 + 1 + 1 = 5 param` etres.\n5. On a une r´ egression continue, d` es lors, l’erreur quadratique moyenne est adapt´ ee.\nL(ˆy(i), y(i)) = (ˆy(i)−y(i))2\n6. Voici le graphe de d´ ependance.\n7. La pr´ ediction est ˆ y= 69 et l’erreur est de L(ˆy, y) = 36.\n8. Par la r` egle du chaˆ ınage, on a\n∂L(ˆy, y)\n∂W[2]=∂L(ˆy, y)\n∂ˆy×∂ˆy\n∂W[2]\n∂L(ˆy, y)\n∂b[2]=∂L(ˆy, y)\n∂ˆy×∂ˆy\n∂b[2]\n∂L(ˆy, y)\n∂W[1]=∂L(ˆy, y)\n∂ˆy×∂ˆy\n∂A[1]×∂A[1]\n∂Z[1]×∂Z[1]\n∂W[1]\n∂L(ˆy, y)\n∂b[1]=∂L(ˆy, y)\n∂ˆy×∂ˆy\n∂A[1]×∂A[1]\n∂Z[1]×∂Z[1]\n∂b[1]\n9. En appliquant les r` egles de base d’analyse, on peut calculer chaque d´ eriv´ ee partielle.\n∂L(ˆy, y)\n∂ˆy= 2(ˆy−y)\n∂ˆy\n∂W[2]=A[1]\nPolytechnique Montr´ eal Page 26 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "3cb05a53-7499-478a-8f76-68920474ebfa",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-A22_page_13.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8215-Examen final-Automne2022 Matricule:\n∂ˆy\n∂b[2]= 1\n∂ˆy\n∂A[1]=W[2]\n∂A[1]\n∂Z[1]= 1 ou 0 suivant la valeur de Z[1]\n∂Z[1]\n∂W[1]=X\n∂Z[1]\n∂b[1]= 1\n10. Ensuite, on remplace juste avec les valeurs num´ eriques. Notez bien que W[1] est une matrice\nde dimension 1 ×2.\n∂L(ˆy, y)\n∂W[2]= 2(69 −75)×64 =−768\n∂L(ˆy, y)\n∂b[2]= 2(69 −75)×1 =−12\n∂L(ˆy, y)\n∂W[1]= 2(69 −75)×1×1×(12,20) = ( −144,−240)\n∂L(ˆy, y)\n∂b[1]= 2(69 −75)×1×1×1 =−12\n11. La descente de gradient se fait sur chaque d´ eriv´ ee partielle.\nW[2]=W[2]−α∂L(ˆy, y)\n∂W[2]= 1−0.01× −768 = 8 .68\nb[2]=b[2]−α∂L(ˆy, y)\n∂b[2]= 5−0.01× −12 = 5 .12\nW[1]=W[1]−α∂L(ˆy, y)\n∂W[1]= (2,2)−0.01×(−144,−240) = (3 ,44,4,4)\nb[1]=b[1]−α∂L(ˆy, y)\n∂b[1]= 0−0.01× −12 = 0 .12\nPolytechnique Montr´ eal Page 27 / 31 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  }
+]

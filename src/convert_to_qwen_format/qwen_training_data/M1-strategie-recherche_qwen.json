@@ -1,0 +1,1762 @@
+[
+  {
+    "id": "66fdacef-d1c3-4065-aad3-a57444b0102b",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_1.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesModule 1: Stratégies de recherche"
+      }
+    ]
+  },
+  {
+    "id": "92b24063-d21d-49de-aabb-7d1daa070e5c",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_2.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartContenu du cours\n2Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques"
+      }
+    ]
+  },
+  {
+    "id": "5fac7838-23b4-4f53-bff1-732695c8466d",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_3.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartTable des matières\n3Stratégies de recherche1. Déﬁnition et modélisation d'un problème de recherche 2. Agents réﬂexes 3. Agents axés sur la recherche 4. Recherche en arbre (tree search) 5. Recherche sans information: DFS, BFS, UCS, IDS 6. Recherche avec information: greedy search, A* 7. Conception d'heuristiques 8. Recherche en graphe (graph search)Problèmes abordés1. Pacman 2. 8-puzzle 3. Planiﬁcation de routes\nSDEPBACAEHRPQQFCGAHRQQFCGAQP"
+      }
+    ]
+  },
+  {
+    "id": "915cf49e-d7d8-4c36-a882-b58cc3ef569d",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_4.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartCas d'étude: Pacman (1980)\n4\nComment implémenter un agent eﬃcace pour cette tâche ?Objectif: concevoir un agent mangeant tous les points en exécutant le moins de déplacements possiblesHypothèses simpliﬁcatrices: pas de fantômes, et pas de bonus\nActions possibles pour Pacman: déplacement à gauche, droite, haut, ou bas"
+      }
+    ]
+  },
+  {
+    "id": "33831839-c37e-427b-981a-4fa6d515f59e",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_5.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartAgent réﬂexe\n5Première idée\n(1) Observer l'environnement actuel\nEst-ce que cet agent est rationnel ?Avantage: très rapide à exécuterInconvénient: ne considère pas les conséquences des actions faites\n(3) Eﬀectuer l'action(2) Choisir une action en fonction de l'observationVariante: intégration éventuelle d’un mécanisme de mémoireRésultat: une action sur base de l'observation et de la mémoiref:Observation×Mémoire→ActionExemple (Pacman)Mémoire: aucuneObservation (ou perception): la grille du jeuAction: prendre la direction du point le plus procheAgent qui agit en fonction de comment le monde lui apparait (sa perception actuelle)Agent réﬂexe (reﬂex agent)"
+      }
+    ]
+  },
+  {
+    "id": "65040d37-fc92-46d6-900c-396da33580a1",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_6.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\nAgent réﬂexe: exemples\n6\nEst-ce qu'on agit parfois comme un agent réﬂexe ?(1) L'instinct: sans réﬂéchir aux conséquences de nos actionsComportement rationnelS'éloigner d'une source de douleur (main sur une surface brûlante)(2) Par urgence: lorsqu'on a pas le temps de prendre une décision !Freiner en bloc lorsqu'un piéton apparaît brusquement sur la routeSituation 1Situation 2\nComportement non-rationnel\nCligner des yeux lorsqu'une poussière arrive à notre paupière"
+      }
+    ]
+  },
+  {
+    "id": "aa42f3cf-d973-4ab8-8b05-109428aca71c",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_7.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\nAgent axé sur la recherche (planning agent)\n7Remarque: la déﬁnition suppose l'existence d'un objectif, pouvant être atteint par une séquence d'actionsAvantage: exploite de l'information à long terme, menant à une meilleure stratégie que l'agent réﬂexeInconvénient: la simulation des scénarios demandent plus de ressourcesInconvénient: demande de connaître la dynamique du monde (l'impact de chaque action)Principe: diﬀérents scénarios sont simulés, jusqu'à ce qu'une séquence favorable soit trouvée\nExemple pour Pacman: manger tous les pointsAgent qui va dérouler une série de scénarios, découlant des actions permises, aﬁn de trouver une séquence d'actions amenant à la réalisation de l'objectifAgent axé sur la recherche (planning agent)\nDéﬁ principal: dérouler eﬃcacement les diﬀérentes séquences d'actions possibles\nTemps d’exécution: environ 10 secondes d'exécutionNombre d’évaluations: environ 3000 actions ont été évaluées\nComment formaliser ce fonctionnement ?Solution: capture des points en un minimum de mouvements"
+      }
+    ]
+  },
+  {
+    "id": "cdaa8ab0-b17a-47f9-a8b1-9b1b2b4c48fa",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_8.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartFormalisation d'un problème de recherche\n8Ensemble d'étatsEnsemble d'actionsDéﬁnition: toutes les conﬁgurations possibles que peut prendre l'environnement\nCas de Pacman: déplacement à gauche, à droite, en haut, ou en basProblème consistant à trouver la meilleure séquence d'action pour atteindre un état ﬁnal à partir d'un état initial. Il est formellement déﬁni par:Problème de recherche\nS:un ensemble d'états (contenant un état initial et un/des états ﬁnaux)A:un ensemble d'actionsT:(S×A→S):une fonction de transition décrivant le nouvel état émanant d'une actionC:(S×A→ℝ):une fonction décrivant le coût d'eﬀectuer une action à partir d'un état \nInitialFinal\n...Déﬁnition: toutes les actions possibles que peut prendre l’agent"
+      }
+    ]
+  },
+  {
+    "id": "d9b0afc5-8a31-4108-aca6-2d7af93e7916",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_9.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartFormalisation d'un problème de recherche\n9Fonction de transition et de coûtFonction de transition: indique le nouvel état si une action est faite à partir d'un état spéciﬁque\nSolutionDéﬁnition: séquence d'actions amenant un état initial à un état ﬁnal\n(GAUCHE, 1)(DROITE, 1)\n...Transition de Pacman: le mouvement est eﬀectué et le point est mangé, le cas échéantFonction de coût: associe une valeur numérique à l’action réalisée sur cet étatCoût de l’action: un coût unitaire est associé à chaque déplacement\n(HAUT, 1)(DROITE, 1)"
+      }
+    ]
+  },
+  {
+    "id": "667e3b6a-52a2-49ee-b590-011b253d527a",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_10.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartProblème réel de planiﬁcation de routes\n10Objectif : trouver le chemin le plus court entre Arad et Bucarest\nComment modéliser cette situation en un problème de recherche ?"
+      }
+    ]
+  },
+  {
+    "id": "8b76f21f-a688-4c2a-b535-bf1d77ae2cf5",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_11.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartModélisation d'un problème\n11Etape 1: le problème modélisé est résolu via un algorithme de résolution\nOpération consistante à encoder notre problème base d’une formalisation particulièreModélisation d’un problème\nExemple: on peut modéliser un problème sur base de la formalisation des slides précédentsEtape 2: la solution est ré-exprimée comme solution du problème réel\nSibiuR. VilceaPitesti"
+      }
+    ]
+  },
+  {
+    "id": "939800d3-5eef-46ef-83c6-39661540e9a9",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_12.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartModélisation du monde réel\n12Abstraction trop forte: le modèle ne reﬂète pas assez la réalitéAbstraction trop faible: le modèle peut être trop diﬃcile à résoudreSimpliﬁcation de la réalité qui est faite en déﬁnissant le modèleNiveau d’abstraction\nExemple de la planiﬁcation de routesAbstraction: considérer un sous-ensemble de villes et de liaisonsObjectif: atteindre Bucharest à partir d'AradEnsemble d’états: toutes les positions possibles du modèleEtat initial et ﬁnal: Arad et BucharestEnsemble d’actions: toutes les arêtes adjacentes à notre positionFonction de coût: pénalisation égale à la distance de l'arêteFonction de transition: eﬀectuer le déplacement sur l’arête\nComment pourrait-on obtenir une abstraction plus proche de la réalité ?Exemples: plus de points de passages, information temps-réel, présence de travaux, etc. \nUne abstraction faible permet de mieux reﬂéter la réalité, au détriment d'un modèle plus diﬃcile à résoudre"
+      }
+    ]
+  },
+  {
+    "id": "d78c3b96-9745-4f12-b800-ac04ee17cb4a",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_13.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\nIl est important d'être capable de calculer le nombre d'états d'un modèle Taille de l'ensemble des états\n13Objectif: trouver une séquence d'actions amenant un état initial à un état ﬁnalNombre d’éléments diﬀérents dans l’ensemble des états (ou actions) du problème de rechercheTaille de l’ensemble des états (ou actions)\nComment peut-on quantiﬁer la diﬃculté à résoudre d’un problème de recherche ?Réponse: il y a plusieurs facteurs, mais un très important est la taille de l’ensemble des états et d’actionsIntuition: plus le nombre de possibilités est grand, plus il sera diﬃcile de trouver une bonne séquence\nCombien d’états sont présents dans ce problème de recherche ?Principe: on a un état par position possible\nNombre d'états:20Observation: avec plus de villes, j’agrandis mon nombre d’états\nRegardons un cas plus complexeNombre d’actions: au maximum 4 (à Sibiu)"
+      }
+    ]
+  },
+  {
+    "id": "40938bd1-dc81-41e6-ba83-0ebd7b941ec6",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_14.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartTaille de l'ensemble des états\n14Exemple: niveau de Pacman avec 2 fantômes\nPositions possibles pour Pacman: 120Nombre de points à manger: 30Positions possibles pour un fantôme: 12\nCombien d'états comporte cette représentation globale ?\nPacman:120 possibilités\n30 points:2×…×2=230 possibilités\n2 fantomes:12×12 possibilitésNourriture: déﬁni par une valeur binaire (mangé ou non)\nNombre total d'états=120×230×122=18,554,258,718,720Mauvaise nouvelle: la taille de l’espace grandit exponentiellement avec le nombre d’informations considéréesBesoin: on a besoin d’encoder toutes les conﬁgurations de plateau en étatsPacman: déﬁni par sa position (parmi 120 choix)Fantôme: déﬁni par sa position (parmi 12 choix)\nEn pratique: on est souvent intéressé par avoir une borne supérieure sur le nombre d’étatsIntuition: ça nous donne une garantie sur le pire cas qui peut se produire"
+      }
+    ]
+  },
+  {
+    "id": "734c8a02-aa8d-4827-a9b5-e03295ea4753",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_15.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartProblème de recherche 1: chemin entre deux points\n15\nA t-on besoin de toutes les informations disponibles pour résoudre un problème ?Bonne nouvelle: en fonction du problème à résoudre, une partie des informations peut être ignorée Exemple d’un problème: trouver le chemin le plus court pour amener Pacman d'un point A à un point B\nComment pourrait-on modéliser ce problème ?\nBAEnsemble d'états: positions possibles de PacmanEtat initial: coordonnées de la position ATransition et coût: déplacement de Pacman, avec un coût unitaireEtat ﬁnal: coordonnées de la position BActions: gauche, droite, haut, basDétection de l’état ﬁnal: les coordonnées de Pacman sont sur BBas:(x,y)←(x,y−1)Haut:(x,y)←(x,y+1)Gauche:(x,y)←(x−1,y)Droite:(x,y)←(x+1,y)xyEtat ﬁnal:x=xB et y=yBEtat:(x,y)\nCombien a t-on d'états ?Etat initial:x=xA et y=yA\nNombre total d'états=120Conclusion: toutes les informations de l'environnement global ne sont pas nécessairesAnalyse: seulement les positions de Pacman sont utilisées (et non les fantômes ou les nourritures)Remarque: à ce stade, on ne fait que modéliser le problème (sans essayer de le résoudre)"
+      }
+    ]
+  },
+  {
+    "id": "62403193-66c2-4c1b-987a-6471c24cd75f",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_16.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartProblème de recherche 2: manger tous les points\n16Ensemble d'états:\nCombien a t-on d'états ?Etat initial: coordonnées initiales de Pacman, et 0 pour tous les pointsTransition et coût: déplacement et prise de Pacman (coût unitaire)Etat ﬁnal: valeur de 1 pour tous les points (Pacman non important)Actions: gauche, droite, haut, bas (1) Positions possibles de Pacman - celles des points sont ﬁxes (2) Indication binaire pour chaque point (p), indiquant s’il est mangé\nQuelles informations devraient être contenues dans un état ?(1) Les informations nécessaires pour construire la fonction de transition (et qui changent de valeur)(2) Les informations nécessaires pour tester si un état est ﬁnal \nProblème: trouver le chemin le plus court pour manger tous les points\nComment pourrait-on modéliser ce problème ?\nEtat:(x,y,p1,p2,…,pn)Etat initial:(xA,yA,0,0,…,0)Etat ﬁnal:(_,_,1,1,…,1)Nombre de points: 30\nNombre total d'états=120×230=128,849,018,880Remarque: la position des points n’est pas considéré dans l’état car c’est une valeur ﬁxeValeur ﬁxe: valeur utilisée pour les transitions mais non considérée dans la recherche d’une solutionA"
+      }
+    ]
+  },
+  {
+    "id": "b48484da-102b-45ef-9ce9-7e8d71c3aff5",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_17.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartReprésentation du problème par un graphe des états\n17\nComment résoudre un problème de recherche ?Première étape: on va représenter de manière structurée le problème de rechercheReprésentation d’un problème de recherche en un graphe, en liant tous les états par leurs actionsGraphe des états\nNoeud du graphe: un état possibleArête du graphe: une action, liant un état avec son successeurPoids de l'arête: coût de la transitionAvantage: représente explicitement le problème à résoudrePropriété: chaque état n’apparaît qu’une seule fois dans le grapheInconvénient: généralement trop gros pour être mis en mémoire \nSD\nPQHEBACFRG\nAvantage: cette représentation est générique\nCette représentation va nous servir de base pour  concevoir nos premiers algorithmes de résolutionInconvénient: plusieurs diﬃcultés pour la conception d’algorithmes"
+      }
+    ]
+  },
+  {
+    "id": "44538571-e95f-4afb-a2c6-29ae55bec7ad",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_18.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartIllustration d'un algorithme de recherche\n18Etape 0: initialiser la recherche en se plaçant sur l'état initial (S)Etape 1: maintenir une liste de candidats, correspondant à l’ensemble des voisins non étendus (fringe)Etape 2: choisir un état dans cette liste, et étendre cet état (succession)Etape 3: si le nouvel état n'est pas un état ﬁnal (G), répéter le processus (Etapes 1 à 3)\nSD\nPQHEBACFRG\n[state:S,fringe:⟨⟩]Etat initialSD\nPQHEBACFRG\n[state:S,fringe:⟨D,E,P⟩]Mise à jour des voisinsSD\nPQHEBACFRG\n[state:E,fringe:⟨D,P⟩]Succession\nOk ! Construisons un premier algorithme pour aller d’un état initial S à un état ﬁnal Gstate:notre état actuel (en vert dans l'exemple)fringe:l'ensemble des états atteignables depuis un état visité mais pas encore exploré (en jaune)\nRemarque: notez bien que cette représentation est générique, et peut s’appliquer à notre situation Pacman"
+      }
+    ]
+  },
+  {
+    "id": "81cc2d41-9f8d-43b7-b973-91909440b01f",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_19.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartIllustration d'un algorithme de recherche\n19SD\nPQHEBACFRGSD\nPQHEBACFRGSD\nPQHEBACFRG[state:S,fringe:⟨⟩][state:S,fringe:⟨D,E,P⟩][state:E,fringe:⟨D,P⟩]\nSD\nPQHEBACFRG[state:E,fringe:⟨D,P,H,R⟩]SD\nPQHEBACFRG[state:R,fringe:⟨D,P,H⟩]SD\nPQHEBACFRG[state:R,fringe:⟨D,P,H,F⟩]\nSD\nPQHEBACFRG[state:F,fringe:⟨D,P,H⟩]SD\nPQHEBACFRG[state:G,path:S→E→R→F→G]SD\nPQHEBACFRG[state:F,fringe:⟨D,P,H,C,G⟩]"
+      }
+    ]
+  },
+  {
+    "id": "ddd78115-990a-4d50-85c5-ff2d94ad6b52",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_20.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartAlgorithme de recherche en graphe (graph search)\n20\ns=𝗌𝖾𝗅𝖾𝖼𝗍𝖠𝗇𝖽𝖱𝖾𝗆𝗈𝗏𝖾(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)|c𝗇𝗈𝗍𝗂𝗇V}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖦𝗋𝖺𝗉𝗁𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)L={s}V=∅\nV=V∪sL=(L∪C)∖sInitialisation: commencer à l'état initial du problème à résoudre (P)\nSD\nPQHEBACFRG\nStructure de données: garde en mémoire les états déjà visitésFringe: ensemble des états candidatsBoucle: tant qu'on a des candidats à étendre\n... et les ajouter dans la fringe (en empêchant de le régénérer l’état précédent)Extension d’un état: retirer un noeud candidat de la fringe, et l'étendre\nMettre à jour l'ensemble des états visités\nGestion de la fringe: comment choisir le prochain noeud à étendre ?𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:Arrêt: si l'état est ﬁnal, retourner la solution (chemin du noeud initial au ﬁnal)\nCette question va donner lieu à diﬀérents algorithmes de recherchesConsidérer les états successeurs comme candidats, s'ils n'ont pas encore été pris...Sinon…Pas de solution: situation où on a pas réussi à atteindre l’état ﬁnal\nQuel est le point de conception majeur de cet algorithme ?On a ainsi notre premier algorithme de résolution !Bonne nouvelle: oﬀre une excellente base pour plusieurs algorithmes"
+      }
+    ]
+  },
+  {
+    "id": "69046ac6-ad1c-43d0-b0d5-c8943ce83875",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_21.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartAlgorithme de recherche en graphe (graph search)\n21\ns=𝗌𝖾𝗅𝖾𝖼𝗍𝖠𝗇𝖽𝖱𝖾𝗆𝗈𝗏𝖾(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)|c𝗇𝗈𝗍𝗂𝗇V}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖦𝗋𝖺𝗉𝗁𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)L={s}V=∅\nV=V∪sL=(L∪C)∖s\nSD\nPQHEBACFRG\n𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:\nQuelle est la faiblesse majeure de cet algorithme ?Diﬃculté: le nombre d'états est souvent extrêmement grand Caractéristique: il demande de retenir tous les états visités (V)\nNombre d'états pour Pacman:120×230=128,849,018,880Problème 1: la mémoire va vite être saturée\nComment peut-on résoudre ce problème ?Idée: ne pas retenir du tout les états déjà visitésRecherche en arbre: famille d’algorithmes basés sur ce principeAvantage: réduit drastiquement la consommation mémoire Inconvénient: engendre un risque de retomber sur un état déjà vuProblème 2: le coût d’accès à la mémoire sera plus important"
+      }
+    ]
+  },
+  {
+    "id": "36dd7ef3-32d1-4536-a2ff-d2abdace3aad",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_22.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartReprésentation du problème en arbre\n22Le problème est représenté comme un arbre, sur base du graphe des étatsRacine de l'arbre: l'état initial du problèmeNoeud de l'arbre: un état possible (et implicitement les états précédents)Successeurs d'un noeud: tous les états autorisés par la transitionPoids de l'arête: coût de la transitionReprésentation du problème en arbre, sur base du graphe des étatsReprésentation en arbre\nDiﬀérence avec une représentation en graphe: les états peuvent apparaître plusieurs fois\nPropriété 1: les états déjà visités ne sont pas mémorisésPropriété 2: chaque état peut apparaître plusieurs fois dans l'arbrePropriété 3: l'arbre complet est généralement trop grand pour la mémoire (voire inﬁni)Bonne nouvelle: un stockage complet n’est pas nécessaire (on oublie ce qu’on a vu)Noeud dans une recherche en graphe: un état Noeud dans une recherche en arbre: un état et implicitement la séquence d'actions pour y parvenir\nConcrètement, qu’est-ce que ça change au niveau de l’algorithme ?"
+      }
+    ]
+  },
+  {
+    "id": "f8622f0e-7650-497a-9b01-920098a24b1b",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_23.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartAlgorithme de recherche en arbre (tree search)\n23\ns=𝗌𝖾𝗅𝖾𝖼𝗍𝖠𝗇𝖽𝖱𝖾𝗆𝗈𝗏𝖾(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)|c𝗇𝗈𝗍𝗂𝗇V}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖦𝗋𝖺𝗉𝗁𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)L={s}V=∅\nV=V∪sL=(L∪C)∖s𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:\ns=𝗌𝖾𝗅𝖾𝖼𝗍𝖠𝗇𝖽𝖱𝖾𝗆𝗈𝗏𝖾(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖳𝗋𝖾𝖾𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)L={s}L=L∪C𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:V=∅\nGrâce à notre formalisation générique, il n’y a que peu de changementsInconvénient: recherche ralentie par la répétition des étatsAvantage: permet une meilleure eﬃcacité mémoireUnique diﬀérence: les états déjà visités ne sont pas stockésEn pratique: on a un risque de retourner sur un état déjà visitéChoix de conception: toujours la façon de retirer des noeuds de la fringe"
+      }
+    ]
+  },
+  {
+    "id": "36e8c75c-ca03-4d32-9674-fe994e2e4296",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_24.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDeux grandes familles d'algorithmes de recherches\n24SD\nPQHEBACFRG\nSDEPBACAEHRPQQFCGAHRQQFCGAQP\nRecherche en graphe: consommation mémoire plus lourde, mais exécution plus rapideRecherche en arbre: consommation mémoire moins lourde, mais exécution plus lenteRemarque 1: ces deux stratégies ont plusieurs variantes permettant d’autres compromisRemarque 2: elles ont également chacune des diﬃcultés spéciﬁques Recherche en graphe: chaque noeud correspond à un étatRecherche en arbre: chaque noeud est relatif au chemin emprunté"
+      }
+    ]
+  },
+  {
+    "id": "b22e948d-85c0-4fe9-b875-5ce6ad0d7182",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_25.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDiﬃculté de la recherche en arbre\n25SA\nBG\nSABBGAGAGBGBGAG......\nQuelle diﬃculté pratique voyez-vous avec une recherche en arbre ?Exemple pathologique: situation simple à 4 noeuds\nCombien de noeuds comporte l'arbre de recherche relatif ?Réponse: une inﬁnité… (même si le nombre d'états est ﬁni)Danger: si on n'y prend pas garde, une recherche dans un arbre peut cyclerRemarque: la possibilité d'avoir un arbre inﬁni est une considération cruciale pour la recherche en arbre\nCycle: S→A→B→A→B→..."
+      }
+    ]
+  },
+  {
+    "id": "485c1a68-dd26-41d6-852a-b7079a25d6aa",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_26.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartTable des matières\n26Stratégies de recherche1. Déﬁnition et modélisation d'un problème de recherche 2. Agents réﬂexes 3. Agents axés sur la recherche 4. Recherche en arbre (tree search) 5. Recherche sans information: DFS, BFS, UCS, IDS 6. Recherche avec information: greedy search, A* 7. Conception d'heuristiques 8. Recherche en graphe (graph search)Problèmes abordés1. Pacman 2. 8-puzzle 3. Planiﬁcation de routes\nSDEPBACAEHRPQQFCGAHRQQFCGAQP"
+      }
+    ]
+  },
+  {
+    "id": "01387a8e-bdd6-4438-b366-9902fc841e4c",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_27.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartAlgorithme de recherche en arbreSDEPBACAEHRPQQFCGAHRQQFCGAQP\ns=𝗌𝖾𝗅𝖾𝖼𝗍𝖠𝗇𝖽𝖱𝖾𝗆𝗈𝗏𝖾(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖳𝗋𝖾𝖾𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)L={s}L=L∪C𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:V=∅\nQuel est le point de conception majeur de cet algorithme ?Gestion de la fringe: comment choisir le prochain noeud à étendre ?Considération similaire à la recherche en graphe\nRépondre à cette question va donner lieu à diﬀérents algorithmes de recherche"
+      }
+    ]
+  },
+  {
+    "id": "4af6a793-c4a1-42e9-8a81-c9acb2866f1e",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_28.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartCritères de performance d'une recherche\n28\nComment évaluer l'eﬃcacité d'une stratégie de recherche ?Critère 1: la complétude (completeness)Principe: garantie que le recherche va trouver une solution (s'il en existe une)\nCas contraire: garantie qu'un échec est reporté Critère 2: l’optimalité (optimality)Principe: garantie que la recherche retourne la meilleure solution existante\nRemarque: cette solution correspond à celle engendrant le moins de coûtsCritère 3: la complexité temporelle (time complexity)Principe: analyse du temps de calcul nécessaire pour exécuter la recherche\nNotation: souvent exprimée par la notation asymptotique dans le pire des casCritère 4: la complexité spatiale (space complexity)\nPrincipe: analyse de la consommation mémoire nécessaire pour exécuter la rechercheNotation: souvent exprimée par la notation asymptotique dans le pire des cas\nUne bonne analyse d'un algorithme de recherche doit tenir compte de ces quatre aspects\n𝒪(n)Mesure: souvent calculée en fonction du nombre de noeuds explorés"
+      }
+    ]
+  },
+  {
+    "id": "ccce3c1b-6496-4d80-89f5-8d06857d2d75",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_29.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartAnalyse d'une recherche en arbre\n29...\nCombien de noeuds, au plus, y a t-il dans un arbre à facteur de branchement b et de profondeur m ?Niveau 1:1 noeudNiveau 3:b2 noeudsNiveau m:bm noeudsParamètresb:nombre maximum de successeurs (branching factor)bm:profondeur maximale de l'arbre (depth)m: noeud correspondant à un état ﬁnal: noeud de recherche\nNiveau 2:b noeuds\nd:profondeur de la solution la plus proched\n(b=5,m=10)→12,207,030 noeuds(b=20,m=10)→10,778,947,368,420 noeuds(b=5,m=20)→119,209,289,550,780 noeudsBonne nouvelle: on peut concevoir des algorithmes qui n’explorent pas tous les noeuds\n#noeuds=1+b+b2+…+bm=𝒪(bm)"
+      }
+    ]
+  },
+  {
+    "id": "537944b5-bb94-4539-bfdf-38f8e6fb9c55",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_30.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche en profondeur (DFS - depth ﬁrst search)\n30Algorithme de recherche consistant à retirer systématiquement le dernier noeud ajouté à la fringeRecherche en profondeur (DFS - depth ﬁrst search)\nPour avoir un algorithme concret, on doit indiquer quel noeud retirer en priorité de la fringeObservation: cela revient à retirer en priorité le noeud le plus profond dans l'arbrePropriété: la fringe est une structure LIFO (last-in ﬁrst-out - dernier arrivé, premier sorti)𝗉𝗎𝗌𝗁(L,s):ajoute l'élément s à la structure L𝗉𝗈𝗉(L):retire de L le dernier élément ajouté\ns=𝗌𝖾𝗅𝖾𝖼𝗍𝖠𝗇𝖽𝖱𝖾𝗆𝗈𝗏𝖾(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖳𝗋𝖾𝖾𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)L={s}L=L∪C𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:\ns=𝗉𝗈𝗉(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖣𝖾𝗉𝗍𝗁𝖥𝗂𝗋𝗌𝗍𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)𝗉𝗎𝗌𝗁(L,s)𝗉𝗎𝗌𝗁(L,C)𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:L=𝖫𝖨𝖥𝖮()"
+      }
+    ]
+  },
+  {
+    "id": "a9315374-d2b3-439d-a256-54d674fbf70f",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_31.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche en profondeur - exemple\n31\ns=𝗉𝗈𝗉(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖣𝖾𝗉𝗍𝗁𝖥𝗂𝗋𝗌𝗍𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)𝗉𝗎𝗌𝗁(L,s)𝗉𝗎𝗌𝗁(L,C)𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:L=𝖫𝖨𝖥𝖮()ExempleEtape 1:[state:S,fringe:⟨DS,PS,ES⟩]Etape 3:[state:BD,fringe:⟨AB,CD,ED,PS,ES⟩]Etape 2:[state:DS,fringe:⟨BD,CD,ED,PS,ES⟩]Etape 4:[state:AB,fringe:⟨CD,ED,PS,ES⟩]Etape 5:[state:CD,fringe:⟨AC,ED,PS,ES⟩]Etape 7:[state:ED,fringe:⟨HE,RE,PS,ES⟩]Etape 6:[state:AC,fringe:⟨ED,PS,ES⟩]…Notation: l'exposant indique l'état parent d'un état\nSDEPBACAEHRPQQFCGAHRQQFCGAQPstate:S,fringe:⟨DS,PS,ES⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:BD,fringe:⟨AB,CD,ED,PS,ES⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:DS,fringe:⟨BD,CD,ED,PS,ES⟩"
+      }
+    ]
+  },
+  {
+    "id": "0291c285-538f-4aff-b5eb-6467509b520d",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_32.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche en profondeur - illustration\n32SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:S,fringe:⟨DS,PS,ES⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:BD,fringe:⟨AB,CD,ED,PS,ES⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:DS,fringe:⟨BD,CD,ED,PS,ES⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:AB,fringe:⟨CD,ED,PS,ES⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:CD,fringe:⟨AC,ED,PS,ES⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:AC,fringe:⟨ED,PS,ES⟩"
+      }
+    ]
+  },
+  {
+    "id": "d1bcd87f-223b-435e-a301-904a97398a9e",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_33.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche en profondeur - analyse des performances\n33Critère 3: complétude\nQuelles sont les performances d'une recherche en profondeur ?Critère 1: complexité temporelle (pire des cas)Pire des cas: tout l'arbre doit être exploré pour trouver une solutionComplexité temporelle: 𝒪(bm)(très coûteux)Critère 2: complexité spatiale (pire des cas)Principe: revient à évaluer le nombre maximum de noeuds dans la fringeObservation: la profondeur (m) de l'arbre n'est pas bornée (cycle)Complexité spatiale: 𝒪(bm) (très eﬃcace)...bm\nm..................bbbbbbbCritère 4: optimalitéObservation: la recherche s'arrête dès qu'une solution est trouvée, pas forcément de plus faible coûtFringe: contient seulement les noeuds successeurs des noeuds se trouvant sur le chemin actuelObservation: les autres noeuds déjà visités (hors du chemin) ne doivent plus être retenusConséquence: la recherche peut plonger dans une profondeur inﬁnieConclusion négative: la recherche est incomplèteConclusion négative: la recherche n’est pas optimale"
+      }
+    ]
+  },
+  {
+    "id": "6dee5dbe-b0e2-4eb3-ac8b-9d18248d9eff",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_34.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche en largeur (BFS - breadth ﬁrst search)\n34Algorithme de recherche consistant à retirer systématiquement le plus ancien noeud de la fringeRecherche en largeur (BFS - breadth ﬁrst search)\nLe manque de garanties (complétude et optimalité) du DFS est un problème. A t-on une alternative ?Observation: cela revient à retirer en priorité le noeud le moins profond dans l'arbrePropriété: la fringe est une structure FIFO (ﬁrst-in ﬁrst-out - premier arrivé, premier sorti)𝗉𝗎𝗌𝗁(L,s):ajoute l'élément s à la structure L𝗉𝗈𝗉(L):retire l'élément le plus ancien de LBonne nouvelle: le reste est identique à DFS! (une ligne de code de diﬀérence)\ns=𝗉𝗈𝗉(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖣𝖾𝗉𝗍𝗁𝖥𝗂𝗋𝗌𝗍𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)𝗉𝗎𝗌𝗁(L,s)𝗉𝗎𝗌𝗁(L,C)𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:L=𝖫𝖨𝖥𝖮()\ns=𝗉𝗈𝗉(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖡𝗋𝖾𝖺𝖽𝗍𝗁𝖥𝗂𝗋𝗌𝗍𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)𝗉𝗎𝗌𝗁(L,s)𝗉𝗎𝗌𝗁(L,C)𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:L=𝖥𝖨𝖥𝖮()"
+      }
+    ]
+  },
+  {
+    "id": "4bdc1467-9692-4b15-b848-ba088a21b4ff",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_35.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche en largeur (BFS - breadth ﬁrst search)\n35Etape 1:[state:S,fringe:⟨DS,PS,ES⟩]Etape 3:[state:PS,fringe:⟨ES,BD,CD,ED,QP⟩]Etape 2:[state:DS,fringe:⟨PS,ES,BD,CD,ED⟩]Etape 4:[state:ES,fringe:⟨BD,CD,ED,QP,HE,RE⟩]Etape 5:[state:BD,fringe:⟨CD,ED,QP,HE,RE,AB⟩]Etape 7:[state:ED,fringe:⟨QP,HE,RE,AB,AC,HE,RE⟩]Etape 6:[state:CD,fringe:⟨ED,QP,HE,RE,AB,AC⟩]…\ns=𝗉𝗈𝗉(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖡𝗋𝖾𝖺𝖽𝗍𝗁𝖥𝗂𝗋𝗌𝗍𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)𝗉𝗎𝗌𝗁(L,s)𝗉𝗎𝗌𝗁(L,C)𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:L=𝖥𝖨𝖥𝖮()Exemple\nSDEPBACAEHRPQQFCGAHRQQFCGAQPstate:S,fringe:⟨DS,PS,ES⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:PS,fringe:⟨ES,BD,CD,ED,QP⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:DS,fringe:⟨PS,ES,BD,CD,ED⟩"
+      }
+    ]
+  },
+  {
+    "id": "bd77fb39-eabb-4256-b4bf-b8186a46abdf",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_36.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche en largeur - illustration\n36SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:S,fringe:⟨DS,PS,ES⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:PS,fringe:⟨ES,BD,CD,ED,QP⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:DS,fringe:⟨PS,ES,BD,CD,ED⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:ES,fringe:⟨BD,CD,ED,QP,HE,RE⟩SDEPBACAEHRPQQFCGAHRQQFCGAQP\nstate:BD,fringe:⟨CD,ED,QP,HE,RE,AB⟩SDEPBACAEHRPQQFCGAHRQQFCGAQPstate:CD,fringe:⟨ED,QP,HE,RE,AB,AC⟩"
+      }
+    ]
+  },
+  {
+    "id": "f8e82962-4445-442d-92b0-c592ffb2feff",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_37.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche en largeur - analyse\n37Observation: les niveaux inférieurs au premier état ﬁnal doivent être explorés\nObservation: même en cas de profondeur inﬁnie une solution sera trouvée (s’il en existe une)Conclusion positive: optimal si tous les coûts ont la même valeurFringe: peut contenir tous les noeuds d'un niveau spéciﬁque de l'arbreObservation: les autres noeuds visités (niveaux inférieurs) ne doivent plus être retenus\n............dbd noeudsObservation: la solution retournée est celle ayant le moins d'actionsConclusion négative: non-optimal dans le cas généralCritère 3: complétude\nQuelles sont les performances d'une recherche en largeur ?Critère 1: complexité temporelleCritère 2: complexité spatiale (pire des cas)\nCritère 4: optimalitéComplexité temporelle: 𝒪(bd)(très coûteux)Complexité spatiale: 𝒪(bd)(très coûteux)Intuition: on explore niveau par niveauConclusion positive: la recherche est complète...bmd"
+      }
+    ]
+  },
+  {
+    "id": "a93a2254-1a66-4c25-9b31-2a35b56862b8",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_38.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDFS vs BFS: visualisation\n38\nRecherche en largeur\nQuelle stratégie de recherche a été appliquée ?\nRecherche en profondeur\nRecherche en profondeurRecherche en largeur"
+      }
+    ]
+  },
+  {
+    "id": "beea883a-480b-461f-b2c3-92a33c82db56",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_39.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDFS vs BFS: comparaison\n39\nQuand une alternative est-elle préférable à une autre ?\nArgument 1: lorsque l'arbre est borné (moyen d'enlever les cycles)Argument 2: lorsqu'avoir la meilleure solution n'est pas importantArgument 3: lorsque la consommation mémoire doit être limitéeArgument 1: lorsqu’il est important d'obtenir la solution optimale\nEn pratique: souvent, en plan B face à un BFS trop coûteux\nArguments pour une recherche en largeur\nSouhait 1: complétude et optimalité de la recherche en largeurSouhait 2: consommation mémoire similaire à une recherche en profondeurArgument 2: lorsqu'obtenir une solution ne requiert que peu d'actionsArgument 3: lorsqu'on a une très bonne capacité mémoireArguments pour une recherche en profondeur\nPeut-on faire mieux ?On aimerait pouvoir exploiter les points forts des deux méthodes\nComment réaliser cela ?"
+      }
+    ]
+  },
+  {
+    "id": "4d13bbad-7df8-430c-b76f-a197dbbc9321",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_40.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche à profondeur itérée  (Iterative deepening search - IDS)\n40Aucune solution: relancer un DFS jusqu'à un niveau en dessousSolution trouvée: stopper la recherche et retourner la solutionAlgorithme de recherche qui exécute des DFS, en augmentant itérativement la profondeur maximaleRecherche à profondeur itérée (IDS - iterative deepening search)\nMotivation: combiner les avantages d'un DFS avec un BFSbd...1234\ns=𝗉𝗈𝗉(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)|𝖽𝖾𝗉𝗍𝗁(c)≤d}𝗋𝖾𝗍𝗎𝗋𝗇∅𝖣𝖾𝗉𝗍𝗁𝖫𝗂𝗆𝗂𝗍𝖾𝖽𝖲𝖾𝖺𝗋𝖼𝗁(P,d):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)𝗉𝗎𝗌𝗁(L,s)𝗉𝗎𝗌𝗁(L,C)𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:L=𝖫𝖨𝖥𝖮()Complexité spatiale: 𝒪(bd) (héritage du DFS)Complexité temporelle:𝒪(bd)+travail redondantComplétude: recherche complète (héritage du BFS)Optimalité: oui, si les coûts sont identiques (héritage du BFS)\nQu’en est-il des performances ?Intuition: un BFS est simulé en exécutant des DFS successifs\nDFS borné à la profondeur d\n𝖨𝗍𝖾𝗋𝖺𝗍𝗂𝗏𝖾𝖣𝖾𝖾𝗉𝖾𝗇𝗂𝗇𝗀𝖲𝖾𝖺𝗋𝖼𝗁(P):𝖿𝗈𝗋d∈1𝗍𝗈∞:s=𝖣𝖾𝗉𝗍𝗁𝖫𝗂𝗆𝗂𝗍𝖾𝖽𝖲𝖾𝖺𝗋𝖼𝗁(P,d)𝗂𝖿s≠∅:𝗋𝖾𝗍𝗎𝗋𝗇s"
+      }
+    ]
+  },
+  {
+    "id": "7c9b9d3b-e89a-44e3-8526-8232333fb153",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_41.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartIterative deepening search - illustration\n41SDEPBACAEHRPQQFCGAHRQQFCGAQP𝖽𝖾𝗉𝗍𝗁=0SDEPBACAEHRPQQFCGAHRQQFCGAQP𝖽𝖾𝗉𝗍𝗁=1SDEPBACAEHRPQQFCGAHRQQFCGAQP𝖽𝖾𝗉𝗍𝗁=1\nSDEPBACAEHRPQQFCGAHRQQFCGAQP𝖽𝖾𝗉𝗍𝗁=1SDEPBACAEHRPQQFCGAHRQQFCGAQP𝖽𝖾𝗉𝗍𝗁=1\nSDEPBACAEHRPQQFCGAHRQQFCGAQP𝖽𝖾𝗉𝗍𝗁=2SDEPBACAEHRPQQFCGAHRQQFCGAQP𝖽𝖾𝗉𝗍𝗁=2SDEPBACAEHRPQQFCGAHRQQFCGAQP𝖽𝖾𝗉𝗍𝗁=2"
+      }
+    ]
+  },
+  {
+    "id": "686b2658-370b-4a2a-a183-2d7402860952",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_42.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\n#noeuds explorés:db+(d−1)b2+(d−2)b3+…+2bd−1+bdIterative deepening search - analyse\n42\nEst-ce un gros problème ?\nConclusion: en pratique, IDS est une stratégie majoritairement préférable à un DFS ou un BFS simpleObservation: IDS redemande de ré-explorer des noeuds de l'arbre de rechercheDiﬃculté: la recherche souﬀre ainsi de redondance par rapport à DFS ou BFSObservation: c’est particulièrement le cas pour les noeuds proches de la racine\nFait: c’est exact qu'une certaine quantité de travail redondant est nécessaireBonne nouvelle: ce travail redondant est relativement négligeable\nRecherche en largeur 10+100+1,000+10,000+100,000=111,110#noeuds:b+b2+b3+b4+b5\nIterative deepening search50+400+3,000+20,000+100,000=123,450#noeuds:db+(d−1)b2+(d−2)b3+(d−3)b4+b5Observation: seulement environ 11% de noeuds supplémentaires (et s’atténue plus le problème est grand)Observation: le 1er niveau doit être exploré d fois, le 2eme d-1 fois, etc.\nExemple: considérons une situation avec b = 10 et d = 5bd...1234\nExplication: le gros du travail se fait sur le dernier niveau qui est n’exploré qu’une fois dans les deux cas"
+      }
+    ]
+  },
+  {
+    "id": "3785e8e4-ea26-4f5f-ad7f-ca54ea272d5a",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_43.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartProblèmes de recherche avec coûts non identiques\n43SD\nPQHEBACFRG\nToutes nos situations avaient des coûts identiques ! Que se passe t-il si ce n’est pas le cas ?\nSD\nPQHEBACFRG21823911582124432\nDiﬀérence: chaque action a un coût qui lui est propre (p.e., une distance entre deux noeuds)Solution optimale: celle ayant le plus petit coût (somme des coûts des actions faites)\nQue va faire une recherche en largeur ? Nature du BFS: donne la solution la plus proche en termes de nombre d'actionsObservation: cela ne correspond pas toujours à la solution optimale !\nDans cette situation, BFS (et notre version d'IDS) perdent leur comportement optimal"
+      }
+    ]
+  },
+  {
+    "id": "a0eeb9f4-09d1-48f6-9df3-9503363ddbf2",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_44.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche à coût uniforme (UCS - uniform cost search)\n44Coût d'un noeud: correspond à la somme des coûts depuis la racineAlgorithme de recherche consistant à retirer systématiquement le noeud ayant le plus faible coûtRecherche à coût uniforme (UCS - uniform cost search)\nNouvel élément: on intègre une fonction de coût pour un noeudSD\nPQHEBACFRG21823911582124432\ng(n):𝖭𝗈𝖽𝖾→ℝ1:[state:S,fringe:⟨(D,3)S,(P,1)S,(E,9)S⟩]2:[state:PS,fringe:⟨(D,3)S,(E,9)S,(Q,16)P⟩]3:[state:DS,fringe:⟨(E,9)S,(Q,16)P,(B,4)D,(C,11)D,(E,5)D⟩]4:[state:BD,fringe:⟨(E,9)S,(Q,16)P,(C,11)D,(E,5)D,(A,6)B⟩]5:[state:ED,fringe:⟨(E,9)S,(Q,16)P,(C,11)D,(A,6)B,(H,13)E,(R,7)E⟩]6:[state:AB,fringe:⟨(E,9)S,(Q,16)P,(C,11)D,(H,13)E,(R,7)E⟩]7:[state:RE,fringe:⟨(E,9)S,(Q,16)P,(C,11)D,(H,13)E,(F,8)R⟩]8:[state:FR,fringe:⟨(E,9)S,(Q,16)P,(C,11)D,(H,13)E,(G,10)F,(C,11)F⟩]9:[state:ES,fringe:⟨(Q,16)P,(C,11)D,(H,13)E,(G,10)F,(H,17)E,(R,11)E⟩]10:[state:GF,path:S→D→E→R→F→G,cost:10]Exemple: exécution de l’algorithme sur cette situationPrincipe: les coûts sont calculés quand le noeud est dans la frontière\nS,0D,3E,9P,1B,4A,6C,11A,13E,5H,13R,7P,17Q,17Q,32F,8C,11G,10A,13H,17R,11Q,21Q,36F,12C,15G,14A,17Q,16P,21Notation: le nombre après l’état indique son coût"
+      }
+    ]
+  },
+  {
+    "id": "c1436edf-b2d1-42a6-b029-e9dd1b41b070",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_45.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartUCS - Piège classique et algorithme\n45\nPeut-on arrêter la recherche, vu qu'un état ﬁnal est dans la fringe ?Explication: rien n’assure que via E, il n'existe pas un chemin de plus faible coûtConclusion: la recherche est ﬁnie QUE si vous êtes à l'état ﬁnalAlgorithme: implémentation de la fringe par une liste de priorité\ns=𝗉𝗈𝗉(L)C={⟨c,g(c)⟩∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖴𝗇𝗂𝖿𝗈𝗋𝗆𝖢𝗈𝗌𝗍𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)𝗉𝗎𝗌𝗁(L,s,g(s))𝗉𝗎𝗌𝗁(L,C)𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:L=𝖯𝗋𝗂𝗈𝗋𝗂𝗍𝗒𝖰𝗎𝖾𝗎𝖾()Coût: chaque noeud doit contenir en plus l'information de son coûtS,0D,3E,9P,1B,4A,6C,11A,13E,5H,13R,7P,17Q,17Q,32F,8C,11G,10A,13H,17R,11Q,21Q,36F,12C,15G,14A,17Q,16P,21\nEtape 8:[state:FR,fringe:⟨(E,9)S,(Q,16)P,(C,11)D,(H,13)E,(G,10)F,(C,11)F⟩]Attention: même si l'état ﬁnal est dans la fringe, il ne doit pas être étendu en priorité\n𝗉𝗎𝗌𝗁(L,s,g(s)):ajoute s et son coût à la structure L𝗉𝗈𝗉(L):retire l'élément ayant le plus petit coût g(s)\ncoût de c=coût de s+coût de la transition s→cg(c)=g(s)+d(s→c)"
+      }
+    ]
+  },
+  {
+    "id": "cf8ccefe-6d0b-4bd1-a1c9-920da2402bdb",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_46.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartUCS - illustration\n46\nSituation: la zone bleue a un coût supérieurEquivalent à une recherche en largeurSituation: tous les coûts sont identiquesRetourne la solution optimale (et non le BFS)BFS"
+      }
+    ]
+  },
+  {
+    "id": "5a51f776-8eeb-4414-86e6-ea7167045626",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_47.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche à coût uniforme - analyse des performances\n47bb:nombre maximum de successeurs (branching factor)C⋆:coût de la solution optimaleϵ:borne inférieure sur le coût d'une actionC⋆ϵ:profondeur de la solution optimale dans le pire des cas (eﬀective depth)...C⋆ϵdd:profondeur de la solution la plus proche\nCritère 3: complétudeCritère 1: complexité temporelleCritère 2: complexité spatiale (pire des cas)Critère 4: optimalité\nQuelles sont les performances d'une recherche à coût uniforme ?\nConclusion: toutes les solutions se situant avant la profondeur eﬀective doivent être explorées Intuition: tous les noeuds ayant un coût moindre que celui de la meilleure solution seront étendusComplexité temporelle: 𝒪(bC⋆/ϵ) (très coûteux, potentiellement plus que 𝒪(bd))Complexité spatiale: 𝒪(bC⋆/ϵ)Observation: similaire à BFS, mais sur base de la profondeur eﬀective (tous les noeuds du dernier niveau)Bonne nouvelle: recherche complète (hypothèse que les coûts sont positifs et ﬁnis)Bonne nouvelle: la recherche est optimale (même argument que pour la recherche en largeur)"
+      }
+    ]
+  },
+  {
+    "id": "fb05bccb-a948-4222-ae9e-1c5647b7c34c",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_48.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche à coût uniforme\n48\nPropriété: logiquement équivalent à UCS (même ordre d'extension)Exemples: réseaux routiers, télécommunications, etc.Algorithme de DijkstraTerminologie: utilisée par la communauté des sciences informatiquesApplications: principalement pour référer à des problèmes de réseauxRecherche à coût uniforme\nTaille du graphe: souvent raisonnable dans ces applicationsTerminologie: utilisée par la communauté de l’intelligence artiﬁcielleChamps d’application: recherche en graphe et recherche en arbreDiﬃculté: la taille croît exponentiellement avec le nombre d'étatsDiﬃculté: la taille de l’arbre est éventuellement inﬁnieEn fonction de l'implémentation, quelques diﬀérences peuvent exister\nPourquoi doit-on apprendre un nouvel algorithme - et ne pas rester sur Dikstra ?"
+      }
+    ]
+  },
+  {
+    "id": "812a0e98-6003-43a3-a898-a5715a10fdfa",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_49.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche à coût uniforme vs Dijkstra\n49\nI claim that UCS is superior to DA in almost all aspects. It is easier to understand and implement. \nIts time and memory needs are also smaller.\nThe reason that DA is taught in universities and classes around the world is probably only historical.\nI encourage people to stop using and teaching DA, and focus on UCS only.\nPosition paper: Dijkstra's algorithm versus uniform cost search or a case against Dijkstra's algorithm [Felner, 2011]Remarque: il s’agit d’un papier d’opinion, qui garde une certaine subjectivitéReste du papier: analyse de UCS et de Dijkstra Conclusion générale: ne plus utiliser (ni enseigner) Dijkstra, et considérer UCS à la place Opinion personnelle: je préfère également UCS, par l’aspect générique avec les autres algorithmes"
+      }
+    ]
+  },
+  {
+    "id": "715d284a-8395-49c4-a7e8-49c286e6a36f",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_50.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartTable des matières\n50Stratégies de recherche1. Déﬁnition et modélisation d'un problème de recherche 2. Agents réﬂexes 3. Agents axés sur la recherche 4. Recherche en arbre (tree search) 5. Recherche sans information: DFS, BFS, UCS, IDS 6. Recherche avec information: greedy search, A* 7. Conception d'heuristiques 8. Recherche en graphe (graph search)Problèmes abordés1. Pacman 2. 8-puzzle 3. Planiﬁcation de routes\nSDEPBACAEHRPQQFCGAHRQQFCGAQP"
+      }
+    ]
+  },
+  {
+    "id": "941a1b45-4f20-42a9-9d26-4caa29f1744f",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_51.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\nMotivation des stratégies de recherche avec information\n51\n On a déjà vu 4 algorithmes de résolution ! Pourquoi en voir des nouveaux ?Bonne nouvelle: le dernier algorithme vu (UCS) est complet et optimalMauvaise nouvelle: il est très coûteux en termes de mémoire et de temps d’exécution\nQu’est-ce qu’on pourrait faire pour améliorer les performances ?Observation: on n'utilise aucune information spéciﬁque au problème à résoudreObservation: l’exploration se fait de manière symétrique (sur base des coûts) par rapport à l'état initialConséquence: on va autant explorer dans toutes les directions avant d'atteindre l'objectif\nSGSG\nIdée: essayer d’orienter la recherche vers vers des états que l'on pense être de bonne qualitéExemple: de Montréal à Québec, est-ce plus probable de passer par Trois-Rivière ou Toronto ?"
+      }
+    ]
+  },
+  {
+    "id": "ac80d1fe-41f2-4c1b-9dea-ace6d53b43d7",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_52.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartStratégie de recherche avec information (informed search)\n52Critère 1: le type de connaissance à injecter à la rechercheStratégie de recherche qui utilise des connaissances spéciﬁques au problème aﬁn d'orienter la recherche vers des états qui nous paraissent plus prometteursStratégie de recherche avec information (informed search)\nQuels sont les points de conception majeurs de cette famille de méthode ?\nCritère 2: la façon d'injecter cette connaissance dans la stratégie de recherche(1) La nature de la connaissance à injecter(2) La validité et propriétés de la connaissance(4) Le degré de conﬁance que l'on veut avoir dans la connaissance injectée(3) La complexité temporelle pour obtenir cette connaissance(5) Les propriétés souhaitées pour la stratégie (complexité spatiale, temporelle, complétude, optimalité)\nOn rentre vraiment dans de l'intelligence artiﬁcielle,  en insérant une forme d'intelligence à nos stratégies de recherche !"
+      }
+    ]
+  },
+  {
+    "id": "c6f66642-b4c9-44db-9ee9-d1438f1817b1",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_53.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartFonction heuristique\n53Intuition que l'on a sur le coût nécessaire pour atteindre un état ﬁnal à partir d'un certain étatFonction heuristique\nh(n)=coût estimé pour atteindre un état ﬁnal à partir d'un état nIntuition: on va privilégier l'exploration des états dont l'heuristique retourne une faible valeur\n737,6\nAvez-vous des idées d'heuristiques pour ce problème ?Travail supplémentaire: elles doivent généralement être conçues spéciﬁquement pour chaque problème(1) Distance euclidienne: chemin à vol d'oiseau(2) Distance de Manhattan: chemin le plus court sur une grille\nQuelle heuristique vous semble de meilleure qualité ?Intuitivement: la distance de Manhattan, car elle donne une idée plus précise du coût de chaque étatPrincipe: une heuristique donne une information sur à quel point un état est coûteux\nOn va voir par la suite des techniques pour concevoir de bonnes heuristiques"
+      }
+    ]
+  },
+  {
+    "id": "ae673ab1-b185-44e5-86d6-72ef7111d066",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_54.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche gloutonne (greedy best-ﬁrst search)\n54Algorithme de recherche consistant à retirer le noeud le moins coûteux selon l’heuristiqueRecherche gloutonne (greedy best-ﬁrst search)\nBesoin: avoir déﬁni une heuristique pour le problèmeh(n):𝖭𝗈𝖽𝖾→ℝImplémentation: identique à UCS (seulement la priorité change)\ns=𝗉𝗈𝗉(L)C={⟨c,g(c)⟩∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖴𝗇𝗂𝖿𝗈𝗋𝗆𝖢𝗈𝗌𝗍𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)𝗉𝗎𝗌𝗁(L,s,g(s))𝗉𝗎𝗌𝗁(L,C)𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:L=𝖯𝗋𝗂𝗈𝗋𝗂𝗍𝗒𝖰𝗎𝖾𝗎𝖾()\nObservation: on a passé du temps à avoir une bonne formalisation, mais c’est rentable ! Principe: chaque état est évalué selon la fonction heuristique\ns=𝗉𝗈𝗉(L)C={⟨c,h(c)⟩∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖦𝗋𝖾𝖾𝖽𝗒𝖲𝖾𝖺𝗋𝖼𝗁(P,h):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)𝗉𝗎𝗌𝗁(L,s,h(s))𝗉𝗎𝗌𝗁(L,C)𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:L=𝖯𝗋𝗂𝗈𝗋𝗂𝗍𝗒𝖰𝗎𝖾𝗎𝖾()\nAttention: on n’a plus aucune notion de coût déjà généré (comme avec UCS)"
+      }
+    ]
+  },
+  {
+    "id": "fee2bf32-1988-46ee-8698-83dee0d073bd",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_55.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche gloutonne (greedy best-ﬁrst search)\n55......\nMauvaise nouvelle: la recherche n’est pas complète (même problème que le DFS)En pratique: les performances peuvent être bonnes si l'heuristique est adaptéeDiﬃculté majeure: le manque de garanties théoriques\nQuelles sont les performances d'une recherche gloutonne ?Critère 1: complexité temporelleCritère 2: complexité spatialeComplexité temporelle: 𝒪(bm)Pire des cas: agit comme un mauvais DFSPire des cas: agit comme un mauvais BFSComplexité spatiale: 𝒪(bm)Critère 3: complétudeCritère 4: optimalitéMauvaise nouvelle: très haut risque de tomber sur une solution sous-optimaleIl y a une distinction entre pire cas théorique et bons résultats en pratique\nAmélioration possible: apporter plus de garanties à cet algorithme"
+      }
+    ]
+  },
+  {
+    "id": "f1474d21-fa26-433c-b767-15d7157c6c67",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_56.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche gloutonne - exemples\n56\nQue va faire une recherche gloutonne dans ces situations ?\n\"La fonction heuristique,  vous déﬁnirez\"\nRéponse: ça dépend de l'heuristique qui a été choisie !\nHeuristique: distance de Manhattan entre l'état actuel et l'état ﬁnal\nAttention: sans déﬁnir l'heuristique, cette question n'a aucun sens\nObservation: la solution retournée n’est pas la meilleure"
+      }
+    ]
+  },
+  {
+    "id": "b9e5be71-efd6-40ed-91ef-0da52548ecc2",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_57.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche gloutonne - exemple\n57\nAvez-vous des idées d'heuristiques pour ce problème ?Objectif: trouver le chemin le plus court pour aller de Arad à BucharestHeuristique: la distance à vol d'oiseau semble être un choix raisonnableRecherche gloutonne: sélectionne le successeur ayant la plus faible coût estiméValeur heuristique (vol d'oiseau) de chaque état\nIdéalement: l’heuristique ne doit pas être trop coûteuse à calculer (c’est bien le cas ici)"
+      }
+    ]
+  },
+  {
+    "id": "37a7e16c-ca60-47a0-8620-e02aea4e2a97",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_58.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche gloutonne - exécution de l'exemple\n58\nEtape 1:[state:A,fringe:⟨(S,253)A,(T,329)A,(Z,374)A⟩]Etape 3:[state:FS,fringe:⟨TA,ZA,AS,OS,RS,SF,BF⟩]Etape 2:[state:SA,fringe:⟨(T,329)A,(Z,374)A,(A,366)S,(F,176)S,(O,380)S,(R,193)S⟩]Etape 4:[state:BF,path:A→S→F→B,cost:450]Arad, 366Sibiu, 253Timisoara, 329Zerind, 374Arad, 366Fagaras, 176Oradea, 380R. Vilcea, 193Sibiu, 253Bucharest, 0Solution trouvée !\nEst-ce que notre solution est optimale ?Exemple: exécution de l’algorithme"
+      }
+    ]
+  },
+  {
+    "id": "d930410e-e9b1-4768-8e86-1af943d39257",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_59.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche gloutonne - exemple\n59Arad, 366Sibiu, 253Timisoara, 329Zerind, 374Etape 1:[state:A,fringe:⟨SA,TA,ZA⟩]Arad, 366Sibiu, 253Timisoara, 329Zerind, 374Arad, 366Fagaras, 176Oradea, 380R. Vilcea, 193Etape 2:[state:SA,fringe:⟨TA,ZA,AS,FS,OS,RS⟩]Arad, 366Sibiu, 253Timisoara, 329Zerind, 374Arad, 366Fagaras, 176Oradea, 380R. Vilcea, 193Sibiu, 253Bucharest, 0Etape 3:[state:FS,fringe:⟨TA,ZA,AS,OS,RS,SF,BF⟩]Arad, 366Sibiu, 253Timisoara, 329Zerind, 374Arad, 366Fagaras, 176Oradea, 380R. Vilcea, 193Sibiu, 253Bucharest, 0Etape 4:[state:BF,path:A→S→F→B,cost:450]"
+      }
+    ]
+  },
+  {
+    "id": "77a453ce-37f6-4679-83ff-4431097ae8d4",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_60.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche gloutonne - analyse de la solution\n60\nCoût de notre solution: g(Arad→Sibiu→Fagaras→Bucharest)→140+99+211=450Coût d'une autre solution: g(Arad→Sibiu→R. Vilcea→Pitesti→Bucharest)→140+80+97+101=418Arad, 366Sibiu, 253Timisoara, 329Zerind, 374Arad, 366Fagaras, 176Oradea, 380R. Vilcea, 193Sibiu, 253Bucharest, 0\nEst-ce que notre solution est optimale ?\nPourquoi a t-on manqué cette meilleure solution ?Défaut de notre heuristique: elle a complètement négligé R. Vilcea au détriment de FagarasObservation: il s'agit pourtant d'un choix raisonnable, car le coût déjà eﬀectué depuis Arad est moindreg(Arad→Sibiu→Fagaras)→140+99=239g(Arad→Sibiu→R. Vilcea)→140+80=220\nLa recherche gloutonne ne tient pas compte des coûts déjà engendrés !"
+      }
+    ]
+  },
+  {
+    "id": "cde16603-6fb5-47bd-8966-aa8d263355aa",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_61.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartMotivation d'une nouvelle stratégie\n61(2) Tenter d'avoir une une vision du futur, en tant qu'intuitionQuestion philosophique: compliqué à répondre, mais on peut suivre deux principes(1) Tenir compte de nos connaissances antérieures, en tant qu'expérience\nStratégie UCS: considère uniquement les coûts déjà générés\nEn pratique: souvent nos décisions personnelles tiennent comptes de ces deux aspects\nLa combinaison de ces deux aspects forme un des algorithmes de recherche les plus réputé en IAAvantage: ﬁable (optimal)Inconvénient: lentStratégie gloutonne: considère uniquement les coûts futurs estimésAvantage: peut accélérer la recherche si l’heuristique est bonneInconvénient: non-ﬁable\nQuel est le lien avec nos stratégies de recherche ?\nIdée: créer une stratégie tenant à la fois compte du passé et du futur"
+      }
+    ]
+  },
+  {
+    "id": "949d607b-e7e7-4a8b-bf19-431e62c30bf6",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_62.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartStratégie de recherche A* (A-star search)\n62g(s): coût du noeud s (similaire à UCS)h(s): heuristique au noeud s (estimation des coûts futurs)Stratégie qui consiste à retirer le noeud en fonction des coûts passés et d’une heuristiqueStratégie de recherche A* (A-star search)\nConstruction de la fonction: somme des coûts passés et du coût heuristique\nPriorité A*:f(s)=g(s)+h(s)Utilisation de la fonction: sélectionner le prochain noeud à explorer dans la ﬁle de prioritéBonne nouvelle: encore une fois, on ne change quasi rien à notre algorithme\ns=𝗉𝗈𝗉(L)C={⟨c,g(c)+h(c)⟩|c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖠𝖲𝗍𝖺𝗋𝖲𝖾𝖺𝗋𝖼𝗁(P,h):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)𝗉𝗎𝗌𝗁(L,s,f(s))𝗉𝗎𝗌𝗁(L,C)𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:L=𝖯𝗋𝗂𝗈𝗋𝗂𝗍𝗒𝖰𝗎𝖾𝗎𝖾()f(s)=g(s)+h(s)\nBonne nouvelle: pour le principe de l'algorithme, ouiMauvaise nouvelle: il nous reste à étudier ses propriétés"
+      }
+    ]
+  },
+  {
+    "id": "3b7814c9-ad97-4293-934a-eab2ceef0955",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_63.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartIllustration - UCS vs Greedy vs A*\n63Recherche à coût uniformeRecherche gloutonne\nRecherche A*(S,0,6)(A,1,5)(B,2,6)(D,4,2)(E,9,1)(C,3,7)(G,6,0)(D,10,2)(G,12,0)(s,g(s),h(s))\nEtape 1:[state:S,fringe:⟨(A,1)S⟩]Etape 1:[state:S,fringe:⟨(A,5)S⟩]Etape 2:[state:AS,fringe:⟨(B,2)A,(D,4)A,(E,9)A⟩]Etape 3:[state:BA,fringe:⟨(D,4)A,(E,9)A,(C,3)B⟩]Etape 4:[state:CB,fringe:⟨(D,4)A,(E,9)A⟩]Etape 5:[state:DA,fringe:⟨(E,9)A,(G,6)D⟩]Etape 4:[state:GD,path:S→A→D→G(6)]Etape 2:[state:AS,fringe:⟨(B,6)A,(D,2)A,(E,1)A⟩]Etape 3:[state:EA,fringe:⟨(B,6)A,(D,2)A,(D,2)E⟩]Etape 4:[state:DE,fringe:⟨(B,6)A,(D,2)A,(G,0)D⟩]Etape 5:[state:GD,path:S→A→E→D→G(12)]SCABDEG8111312h = 6h = 7h = 5h = 6h = 1h = 2h = 0\nEtape 2:[state:A,fringe:⟨(B,8)A,(D,6)A,(E,10)A⟩]Etape 1:[state:S,fringe:⟨(A,6)S⟩]Etape 3:[state:DA,fringe:⟨(B,8)A,(E,10)A,(G,6)D⟩]Etape 6:[state:GD,path:S→A→D→G(6)]Le coût de chaque noeud est évalué par une fonction heuristique"
+      }
+    ]
+  },
+  {
+    "id": "9253e455-3355-4691-b64c-5e3f3fe911c8",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_64.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche A* - exemple\n64\nChemin optimal  découvert avec moins  de noeuds étendus\nRecherche gloutonnePeu de noeuds étendus mais non optimal\nRecherche à coût uniformeOptimal mais beaucoup de noeuds étendus"
+      }
+    ]
+  },
+  {
+    "id": "4ad11300-973d-4304-83dc-8b0ddd4314b1",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_65.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche A* - propriétés\n65Bonne nouvelle: la recherche est complète (si tous les coûts sont positifs et que la solution a un coût ﬁni)\nMauvaise nouvelle: mêmes diﬃcultés qu’une recherche gloutonne en cas de mauvaise heuristique(1) Heuristiques admissibles(2) Heuristiques consistantesSGA135h = 7h = 6h = 0\nEtape 1:[state:S,fringe:⟨(A,7)S,(G,5)S⟩]Etape 2:[state:GS,path:S→G(5)]Une solution non optimale est obtenueIntuition: similaire à la recherche à coût uniforme\nEst-ce que la recherche A* est optimale ?\nEst-ce que la recherche A* est complète ?\nExemple: regardons un cas simple\nCause: notre heuristique a donné une estimation trop coûteuse à un étatObservation: une mauvaise solution a eu une meilleure priorité qu'un noeud de la solution optimale  \nUne des forces d’A* est qu’il est possible de concevoir des heuristiques empêchant cette situation"
+      }
+    ]
+  },
+  {
+    "id": "3e7102d0-af30-41ad-8e39-31127f6a8d9d",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_66.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartHeuristique admissible\n66Une heuristique est admissible (ou optimiste) si elle ne surestime jamais le coût pour atteindre le meilleur état ﬁnalHeuristique admissible\n0≤h(n)≤h⋆(n), pour tout état nh⋆(n) indique le coût optimal pour atteindre l'état ﬁnal à partir de nPrincipe: une heuristique admissible garantit que le coût optimal d'un noeud ne sera jamais sur-estiméEtape 1:[state:S,fringe:⟨(A,3)S,(G,5)S⟩]Etape 2:[state:AD,fringe:⟨(G,5)S,(G,4)A⟩]SGA135h = 4h = 2h = 0\nEtape 3:[state:GA,path:S→A→G(4)]Intuition: l'heuristique ne va jamais empêcher l'extension du noeud, s'il peut appartenir au chemin optimalAutrement dit: l’heuristique va toujours donner une valeur inférieure au coût réel optimal du noeudAvec une heuristique admissible, on a la garantie qu'une recherche A* en arbre est optimaleOptimalité d'une recherche A* en arbre\nh⋆(G)=0h⋆(A)=3h⋆(S)=4\nDéﬁnir une heuristique admissible est un point de conception majeur pour une recherche A*"
+      }
+    ]
+  },
+  {
+    "id": "d8684a7f-f76d-4dd3-8be7-09d01eefd63f",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_67.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartPreuve d'optimalité\n67h(n): fonction heuristique appliqué à l'état du noeud ng(n): coût pour atteindre le noeud nh⋆(n): coût optimal pour atteindre un état ﬁnal depuis nSupposons que:f(n)=g(n)+h(n): fonction de priorité de l'algorithme A*C⋆: coût de la solution optimalePreuve par contradictionPropriété à prouver: si h(n) est admissible, alors A* est optimalg⋆(n): coût optimal pour atteindre un état n depuis l'état initial\nD'un côté, on a de (1):C: coût d'une solution non optimale (chemin en zigzag)(2) h(n) est admissible: h(n)≤h⋆(n)f(n)=g(n)+h(n)(déﬁnition de A*)f(n)≥C>C⋆ (Il existe forcément un noeud n appartenant au chemin optimal qui n'a pas été étendu)D'un autre côté, on a de (2):f(n)=g⋆(n)+h(n) (car n appartient au chemin optimal)f(n)≤g⋆(n)+h⋆(n) (déﬁnition d'une heuristique admissible)f(n)≤C⋆ (déﬁnition du coût du chemin optimal)(1) A* avec la fonction de priorité f retourne un chemin de coût non-optimal (C>C⋆)Contradiction !Si l'heuristique est admissible, alors A* ne peut pas retourner une solution non-optimaleSnGh(n)h⋆(n)g⋆(n)n: noeud appartenant au chemin optimalSnGh(n)"
+      }
+    ]
+  },
+  {
+    "id": "3ae8446b-8002-44e6-ac99-bda8cfa7af4d",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_68.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartExemples d'heuristiques (non)-admissibles\n68\nEst-ce que les heuristiques suivantes sont admissibles ?h(n)=0\nh(n)=h⋆(n)h(n)=𝖬𝖺𝗇𝗁𝖺𝗍𝗍𝖺𝗇𝖣𝗂𝗌𝗍𝖺𝗇𝖼𝖾(n,G)h(n)=𝖲𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖢𝗈𝗌𝗍𝖦𝗋𝖾𝖾𝖽𝗒(n)h(n)=𝖤𝗎𝖼𝗅𝗂𝖽𝗂𝖺𝗇𝖣𝗂𝗌𝗍𝖺𝗇𝖼𝖾(n,G)h(n)=𝖲𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖢𝗈𝗌𝗍𝖡𝖥𝖲(n)Heuristisque admissible: 0≤h(n)≤h⋆(n), pour tout état n\nNon ! risque de surestimer le coût de la solutionOui ! impossible de faire mieux que la distance à vol d'oiseauOui ! même raisonnement, car on se déplace sur une grilleOui ! mais inutile car plus coûteux que A*Oui ! mais inutile... connaître cette valeur revient à avoir la solutionh(n)=𝖲𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖢𝗈𝗌𝗍𝖣𝖥𝖲(n)Non ! risque de donner un coût non-optimale (sur-estimation)Notez que cela est vrai car les coûts sont unitaires !Oui ! mais inutile... (recherche réduite à UCS)f(n)=g(n)+0"
+      }
+    ]
+  },
+  {
+    "id": "c05e8a66-35f9-4853-81a9-5523d0399ea8",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_69.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartTable des matières\n69Stratégies de recherche1. Déﬁnition et modélisation d'un problème de recherche 2. Agents réﬂexes 3. Agents axés sur la recherche 4. Recherche en arbre (tree search) 5. Recherche sans information: DFS, BFS, UCS, IDS 6. Recherche avec information: greedy search, A* 7. Conception d'heuristiques 8. Recherche en graphe (graph search)Problèmes abordés1. Pacman 2. 8-puzzle 3. Planiﬁcation de routes\nSDEPBACAEHRPQQFCGAHRQQFCGAQP"
+      }
+    ]
+  },
+  {
+    "id": "10523bd1-ae59-45ba-a392-dc8b812207f7",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_70.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartConstruction d'heuristiques - techniques et bonnes pratiques\n70\nComment construire des bonnes heuristiques (admissibles) ?Mauvaise nouvelle: très diﬃcile de répondre à cette question !Raison: il s'agit plus d'un art qu'une science exacteBonne nouvelle: il existe néanmoins des astuces et des bonnes pratiques\nIdée: utiliser une solution du problème relaxé pour obtenir une heuristique admissible\nRelaxation forte: heuristique plus facile à calculer mais peu précise (grosse simpliﬁcation du problème)Relaxation faible: heuristique plus précise mais plus dure à obtenir (faible simpliﬁcation du problème)\n?Problème auquel on a retiré certaines contraintes aﬁn de le rendre plus facile à résoudreRelaxation d’un problème\nExemple: relaxations possible pour Pacman\nUne relaxation forte (aucun mur) met en évidence la distance de Manhattan comme heuristique"
+      }
+    ]
+  },
+  {
+    "id": "2af4193f-0cae-4ce2-a982-2ee55e8f41bd",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_71.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartConstruction d'heuristiques - techniques et bonnes pratiques\n71Inconvénient: coût de calcul supplémentaire pour obtenir les diﬀérentes heuristiquesSupposition: il faut qu’on ait plusieurs heuristiques disponiblesAvantage: si vos diﬀérentes heuristiques sont admissibles, alors leur maximum l'est aussiAu lieu de choisir une heuristique, en évaluer plusieurs, et prendre la meilleure pour chaque noeud Collection d’heuristiques\nh(n)=max(h1(n),h2(n),…,hk(n))\nUne heuristique h2 domine h1 si elle est strictement plus précise que cette dernièreHeuristique dominante\nh1(n)<h2(n), pour chaque état nh(n)=0h⋆(n)max(h1(n),h3(n))h1(n)h2(n)h3(n)Estimation parfaite du coûtHeuristique nulleh3(n) domine h2(n)Graphe de dominance: relations explicites des dominances entre vos diﬀérentes heuristiques"
+      }
+    ]
+  },
+  {
+    "id": "173babb3-b51d-4416-b114-b5102282c7f5",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_72.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartConstruction d'heuristiques - considérations pratiques\n72\nQuelle heuristique est plus précise entre h1(n) et h2(n) ?h(n)=0h⋆(n)max(h1(n),h3(n))h1(n)h2(n)h3(n)Estimation parfaite du coûtHeuristique nulleh3(n) domine h2(n)Diﬃcile à répondre ! il existe des états où h1 est plus précise et inversement\nEn pratique, est-il préférable d'utiliser h2(n) ou h3(n) ?Réponse: aucune heuristique ne domine l'autrePossibilité de conception: prendre le maximum entre les deux pour l'estimation d'un état\nEn pratique: une heuristique dominée mais plus rapide peut être plus intéressante à utiliserCertitude: l'heuristique h3 domine h2, elle est donc plus préciseIncertitude: on n'a aucune information sur le temps de construction de l'heuristiqueObtenir h3 est potentiellement beaucoup plus lent que h2 (à l'extrême, h* est inconcevable à obtenir)\nLa vitesse d'exécution d'une heuristique est également une considération importante !"
+      }
+    ]
+  },
+  {
+    "id": "11282a62-d41a-4114-996e-0d9652132dc4",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_73.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartExemple illustratif - 8-puzzle\n73\nEtat initial (s)\nEtat ﬁnal\nQuelle est la taille de l'espace d'états ?Observation: chaque pièce est unique et n'est placée qu'une seule foisEtats: chaque position possible du plateauActions: déplacer la case vide (G,D,H,B)Coût: unitaire pour chaque déplacementTransition: déplacement de la caseModélisation\nHeuristiquesNombre d'états: 9!=362880\nAvez-vous une idée d'heuristique ?\nChoix 1: nombre de pièces placées incorrectementRelaxation: les pièces peuvent se téléporter directement à leur position ﬁnaleProblème du 8-puzzleObjectif: déplacer les pièces aﬁn de les ordonnerCoût: eﬀectuer le moins de mouvements possibles\nChoix 2: distance de Manhattan cumulée de chaque pièceRelaxation: les pièces peuvent se déplacer sans conﬂit à leur position ﬁnaleContrainte: une pièce ne peut se déplacer que dans le trou\nNote: il s'agit d'une borne supérieure car toutes les conﬁgurations ne sont pas atteignableshttps://mathworld.wolfram.com/15Puzzle.html\nh1(s)=1+1+1+1+1+1+1+1=8\nh2(s)=3+1+2+2+2+3+3+2=18"
+      }
+    ]
+  },
+  {
+    "id": "52ae7d9d-1350-4760-810e-ca8dc839eea8",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_74.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartExemple illustratif - 8-puzzle\n74\nQuelle heuristique vous parait la plus précise ?Analyse des performancesAnalyse 1: A* bat la stratégie BFS, même avec l'heuristique simpleAnalyse 2: l’heuristique 2 est largement plus précise que l'heuristique 1Résultats moyens sur 100 puzzles aléatoires pour chaque dAnalyse 3: on peut facilement démontrer qu'elle domine l'autreConseils de conception\nEn pratique: il est parfois utile d'avoir des heuristiques non-admissiblesA temps d'exécution égal: préférez une heuristique ayant de plus grandes valeursConseil: lorsque vous avez plusieurs bonnes heuristiques, prenez leur maximum\nd:coût de la solution optimaleNombre de noeuds explorés avant de trouver la solution\nConseil: ayez toujours en tête la complexité temporelle de vos heuristiquesExemple: une heuristique précise mais lente ne vaut peut-être pas le coup...Attention: le temps d'exécution n'est pas pris en compte (négligeable ici)"
+      }
+    ]
+  },
+  {
+    "id": "f833829a-adcd-41dd-a660-483d7b97c774",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_75.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\nhttps://corail-research.github.io/Construction d'heuristiques - techniques supplémentaires\n75Conception d'heuristiques par des connaissances expertesIdée: utiliser nos propres connaissances du problème (ou celles d'un expert) pour concevoir l'heuristiqueCela revient à être capable de quantiﬁer adéquatement le coût de chaque état\nConception d'heuristiques par apprentissage automatiqueInconvénient: diﬃcile de s'assurer de l'admissibilité de l'heuristiqueInconvénient: compliquer à concevoir et à calibrerInconvénient: souvent incomplet (p.e., les positions précises des pièces ne sont pas prises en compte)Exemple: évaluer la qualité d'un état du 8-puzzlex1(n):nombre de tuiles mal placéesPrincipe: identiﬁer les caractéristiques d'un état, et de les pondérer en fonction de leur importance\nIdée: utiliser de l'apprentissage automatique pour construire l'heuristiqueDéceler automatiquement les caractéristiques (+ le poids)Un de mes sujets de recherches principaux :-)Avantage: permet d'intégrer des connaissances très variées et non trivialesh(n)=w1x1(n)+w2x2(n)x2(n):nombre de paires de tuiles adjacentes qui ne sont pas adjacentes dans l'état ﬁnalw1,w2:poids associé aux deux caractéristiques (à déterminer par l'expert)"
+      }
+    ]
+  },
+  {
+    "id": "d3d17dba-1d72-43d5-b463-6fb9114a2989",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_76.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartTable des matières\n76Stratégies de recherche1. Déﬁnition et modélisation d'un problème de recherche 2. Agents réﬂexes 3. Agents axés sur la recherche 4. Recherche en arbre (tree search) 5. Recherche sans information: DFS, BFS, UCS, IDS 6. Recherche avec information: greedy search, A* 7. Conception d'heuristiques 8. Recherche en graphe (graph search)Problèmes abordés1. Pacman 2. 8-puzzle 3. Planiﬁcation de routes\nSDEPBACAEHRPQQFCGAHRQQFCGAQP"
+      }
+    ]
+  },
+  {
+    "id": "6fd3cde5-f395-4810-a23a-037e69222c5e",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_77.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRappel: recherche en graphe\n77SD\nPQHEBACFRG\ns=𝗌𝖾𝗅𝖾𝖼𝗍𝖠𝗇𝖽𝖱𝖾𝗆𝗈𝗏𝖾(L)C={c∈𝗌𝗎𝖼𝖼𝖾𝗌𝗈𝗋𝗌(s,P)|c𝗇𝗈𝗍𝗂𝗇V}𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖦𝗋𝖺𝗉𝗁𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P)L={s}V=∅\nV=V∪sL=(L∪C)∖s𝗂𝖿s=𝗀𝗈𝖺𝗅𝖲𝗍𝖺𝗍𝖾(P):𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖾𝗅𝗌𝖾:Rappel: on a vu qu'il était possible de construire une recherche en graphe\nAvantage: on ne revisite pas le même état lors de la rechercheInconvénient: on doit garder tous les états vus en mémoire, ce qui peut être très coûteuxPrincipe: maintenir un ensemble des états déjà visités\nJusqu'à présent nos analyses se sont concentrées sur les recherches en arbre"
+      }
+    ]
+  },
+  {
+    "id": "1f4aee3f-20d9-42db-af23-07dd76ff44ff",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_78.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartPerformances de la recherche en graphe\n78Mauvaise nouvelle: l’algorithme A* souﬀre d'une diﬃculté supplémentairePrincipe: ajout d'un mécanisme de mémoire pour retenir les noeuds visités\nA t-on les mêmes algorithmes (DFS, BFS, A*, etc.) avec la recherche en graphe ?\nCas particulier de la recherche A*Bonne nouvelle: nos algorithmes peuvent être utilisés presque sans modiﬁcation\nUne heuristique admissible n'est plus suﬃsante pour garantir l'optimalitéGénéralité de nos stratégiesInconvénient majeur: la consommation mémoire sera plus importantePire des cas: tous les états doivent être retenusPossibilités de mitiger cette diﬃculté (retenir qu'un certain nombre d'états)\nIntroduction du concept d'heuristique consistante \nOn doit avoir une propriété plus forte pour cela"
+      }
+    ]
+  },
+  {
+    "id": "6eaea674-2d72-4c02-9215-f1eb049fa4d2",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_79.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartRecherche A* en graphe: cas pathologique\n79SA\nBCG11123h = 2h = 4h = 1h = 1h = 0Notez que l'heuristique est admissibleRecherche A* en arbre\nSolution optimale obtenue\nProblème: notre heuristique a autorisé l'extension de (C,3,1) avant (C,2,1)(S,0,2)(A,1,4)\n(G,5,0)(G,6,0)(B,1,1)(C,2,1)(C,3,1)(1)(2)(3)(4)(5)(6)Recherche A* en graphe(S,0,2)(A,1,4)\n(G,6,0)(B,1,1)(C,3,1)(1)(2)(3)(4)(5)Solution non-optimale obtenue\nQuel est le soucis selon vous ?Problème: le noeud (C,3,1) a été étendu avant (C,2,1), or (C,3,1) n'appartient pas au chemin optimalConséquence: une recherche en graphe ne va jamais étendre (C,2,1), car l'état C a déjà été exploréConséquence suivante: la solution optimale ne sera ainsi jamais découverteLe soucis vient de l'heuristique appliquée à l'état ACas pathologiqueV={S,B}V={S}V={S,B,C}"
+      }
+    ]
+  },
+  {
+    "id": "f333d7a3-d6b4-4bd8-9309-83de75a283ff",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_80.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartHeuristique consistante\n80SA\nBCG11123h = 2h = 4h = 1h = 1h = 0Ce blocage vient du fait que l'heuristique appliquée en A et en C a sur-estimé le coût d'aller à C (3 vs 1)h(A)−h(C)≤c(A→C)Heuristique non consistanteAvec h(A) = 2Heuristique consistante4−1≤1(Incorrect)\nSolution optimale trouvéeUne heuristique est consistante si sa valeur appliquée à un arc de transition ne surestime jamais le coût de l'arcHeuristique consistante\nh(n)−h(n′ )≤c(n→n′ ), pour toutes paires d'états-sucesseurs (n→n′ )Propriété 1: une heuristique consistante est également admissible (l'inverse n'est pas vrai !)Propriété 2: une heuristique consistante est optimale pour A* avec une recherche en grapheCoût de l'arc: 1Estimation heuristique: 32−1≤1(Correct)Conséquence: aller à C via A est considéré (à tort) comme une mauvaise transitionHeuristique consistante: assure qu'un état ne peut être exploré QUE via le chemin optimal(S,0,2)(A,1,2)\n(G,5,0)(G,6,0)(B,1,1)(C,2,1)(C,3,1)(1)(2)(3)(4)(5)h=2"
+      }
+    ]
+  },
+  {
+    "id": "7e1a1dd8-61e0-4a3d-87eb-6ecda0fa0761",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_81.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\nApplications\n81\nStarGoalPathﬁndingObjectif: trouver un chemin adéquat dans un environnement parsemé d'obstaclesApplications: gestion d'entrepôts, déplacement dans les jeux vidéos, etc.\nExploration de graphesReprésentation standard de systèmes complexes (réseaux routiers, sociaux, etc.)\nExemples: réseaux routiers, réseaux sociaux, représentation de connaissances, etc.Planiﬁcation de tâchesObjectif: trouver une séquence d’actions pour réaliser une tâcheApplications: chaîne de production, séquençage général de tâches, etc."
+      }
+    ]
+  },
+  {
+    "id": "dea58736-e87a-43b6-a35e-d2c0d08fb9c1",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_82.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartTable des matières\n82Stratégies de recherche1. Déﬁnition et modélisation d'un problème de recherche 2. Agents réﬂexes 3. Agents axés sur la recherche 4. Recherche en arbre (tree search) 5. Recherche sans information: DFS, BFS, UCS, IDS 6. Recherche avec information: greedy search, A* 7. Conception d'heuristiques 8. Recherche en graphe (graph search)Problèmes abordés1. Pacman 2. 8-puzzle 3. Planiﬁcation de routes\nSDEPBACAEHRPQQFCGAHRQQFCGAQP"
+      }
+    ]
+  },
+  {
+    "id": "a8c81b03-7912-4cd4-9e74-1938947c363d",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_83.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartSynthèse des notions vues\n83Conception d'heuristiques: relaxation, connaissances expertes, etc.Stratégies sans informationProblèmes de rechercheMotivation: planiﬁer d'une séquence d'actions pour aller d'un état initial à un état ﬁnalObjectif idéal: trouver la séquence engendrant le moins de coûts\nStratégies avec informationRecherche en profondeur...\nSGRecherche gloutonne: rapide mais sans garantieRecherche A*: combinaison de la recherche gloutonne et de coût uniformeInclusion d'une heuristique (information du problème) pour accélérer la rechercheHeuristique admissible: A* avec une recherche en arbre est optimalHeuristique consistante: A* avec une recherche en arbre/graphe est optimal...Recherche en largeur...Iterative deepening search...Recherche à coût uniformePatron de résolution générique: recherche en graphe ou en arbre"
+      }
+    ]
+  },
+  {
+    "id": "42d68aef-2585-40b2-985e-d74ad4529ea2",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_84.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartConseils pratiques\n84Stratégie de rechercheConception d'heuristiquesPour commencer: faites des heuristiques simples et complexiﬁez les progressivementImplémentationTechnique de relaxation: souvent un bon point de départAu long de votre travail: testez régulièrement vos algorithmes sur des situations simplesA vériﬁer: les noeuds étendus sont bien ceux attendusUne heuristique précise n'est pas toujours la meilleure en pratique (temps d'exécution)Recherche en graphe: implémentez la mémoire par un ensemble (set), et non une listePour commencer: considérez d'abord la recherche en graphe\nUne grande partie de votre code peut-être réutilisé pour les diﬀérentes stratégies !\nSi l'optimalité n'est pas requise n'ayez pas peur d'avoir des heuristiques non admissiblesEnsuite: passez en recherche en arbre si vous avez des problèmes de mémoire\nAttention: il est très facile d'avoir des bugs cachés !A vériﬁer: la solution obtenue est bien optimale (sur des petits problèmes)"
+      }
+    ]
+  },
+  {
+    "id": "d8c3f8d8-0246-45f7-9945-33c249f8e2ad",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_85.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartMéthodes avancées et limitation de nos stratégies\n85Autres stratégies de rechercheIterative-deepening A* search (IDA*): principe de IDS mais pour A*Recherche bidirectionnelle: recherche à partir de l'état initial et de l'état ﬁnal et les faire se rencontrerSimpliﬁed memory-bounded A* (SMA*): A* en indiquant une borne sur la mémoire à utiliserConceptions d'heuristiquesWeighted A*: perdre l'optimalité pour accélérer la recherche via une heuristique faiblement non admissibleDécomposer le problème en sous-problèmes et résoudre les sous-problèmes pour obtenir une heuristiquePré-calculer certaines solutions et les insérer comme estimations heuristiquesLimitations(1) L'environnement considéré à présent est entièrement observable, statique, et déterministe(2) Recherche avec adversaireMéthodes de pruning: enlever les cycles dans une recherche en arbre\nQue faire quand ces propriétés ne sont pas présentes ?Comment agir en présence d'un adversaire ?Lectures complémentaires (non obligatoires) disponibles sur MoodleSujet du prochain module"
+      }
+    ]
+  },
+  {
+    "id": "ad3a2559-cf37-4030-ab34-be491bf69294",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_86.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartDernières illustrations\n86\nGeometric A-Star Algorithm: An Improved A* Algorithm for AGV Path Planning in a Port Environment [Tang et al., 2021]\nRecherche en profondeurRecherche en largeur\nRecherche gloutonneRecherche A*A* bidirectionnelStartGoal\nNote: la déﬁnition du problème fait que les coûts ne sont pas totalement unitaires (expliquant pourquoi BFS n'est pas optimal)"
+      }
+    ]
+  },
+  {
+    "id": "cc9fcdc8-32e1-48a0-92bf-eb5dd994b0e9",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_87.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin CappartExemples de questions d'examen\n871. Modéliser une situation comme un problème de recherche (états, actions, coût, succession) 2. Savoir évaluer la taille d'un espace de recherche 3. Savoir appliquer correctement un algorithme de recherche sur une situation donnée 4. Savoir construire des heuristiques non-triviales pour résoudre diﬀérents problèmesThéoriePratique1. Expliquer le fonctionnement et les propriétés d'une stratégie de recherche vue 2. Donner les avantages/inconvénients d'une stratégie de recherche par rapport à une autre 3. Expliquer ce qu'est une heuristique admissible ou consistante, et l'implication de ces propriétés\nhttps://xkcd.com/761/"
+      }
+    ]
+  },
+  {
+    "id": "b0392aff-1c58-4c95-80c4-6ef8ecb2409f",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\M1-strategie-recherche_page_88.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "Quentin Cappart\nDALLE: Pacman lost in a labyrinth on an oil painting"
+      }
+    ]
+  }
+]

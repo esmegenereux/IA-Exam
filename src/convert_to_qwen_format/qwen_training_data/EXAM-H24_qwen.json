@@ -1,0 +1,302 @@
+[
+  {
+    "id": "27ebe8b3-619c-4e0a-8a5b-ed451ba0c57c",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_1.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175 : Examen final (Hiver 2024) - A. Guichard, Q. Cappart Note finale ↓\nDate : 24/04/2024 Nombre de questions : 8 Total des points : 40\nMatricule : Nom : Temps : 2h30 heures\nQuestion: 1 2 3 4 5 6 7 8 Total\nPoints: 0 5 10 5 5 5 5 5 40\nScore:\nInstructions\n1. La documentation papier et ´ electronique sur cl´ e USB est autoris´ ee.\n2. L’examen doit se r´ ealiser de mani` ere individuelle. Il est strictement interdit de collaborer."
+      }
+    ]
+  },
+  {
+    "id": "14a0c379-177c-4044-8288-40d3fa8d40ad",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_2.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\nQuestion 2 (5 points)\nR´ epondez succinctement ` a chacune des questions en justifiant ` a chaque fois votre r´ eponse. Une bonne\nr´ eponse sans justification (ou avec une une justification erron´ ee) ne recevra aucun point.\n1.(1 point) Consid´ erez la situation o` u un agent doit sortir d’un labyrinthe en effectuant le moins de\nd´ eplacement possible. Un d´ eplacement peut se faire soit en haut, en bas, ` a gauche, ou ` a droite. De\nplus, le labyrinthe comporte des portails magiques , permettant ` a l’agent de se t´ el´ eporter directement\n` a un autre endroit du labyrinthe. Par exemple, si l’agent va sur le portail orange, il sera t´ el´ eport´ e\n` a l’autre portail orange. Vous concevez une recherche A⋆pour r´ esoudre ce probl` eme en utilisant la\ndistance de Manhattan entre une position et la sortie comme heuristique. Est-ce que la recherche est\noptimale ?\nSolution: L’heuristique n’est pas admissible car elle peut surestimer le coˆ ut du trajet restant ` a\nparcourir ` a partir d’un point car elle ne prend pas les t´ el´ eporteurs en compte. Par exemple : le\nvaleur heuristique de la premi` ere case du labyrinthe vaut 15 alors qu’il est solvable en 11 actions\nen prenant le t´ el´ eporteur bleu. La recherche n’est pas optimale.\n2.(1 point) Compl´ etez les valeurs minimax de l’arbre suivant puis indiquez les branches qui seront\n´ elagu´ ees lors d’un ´ elagage alpha-beta. Pour cette question, il n’est pas n´ ecessaire de justifier votre\nr´ eponse ni de pr´ eciser les bornes alpha et beta, barrez juste les branches de l’arbre.\nPolytechnique Montr´ eal Page 3 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "b32625fb-bdbd-43fb-87b0-bd7eaea59521",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_3.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\nSolution:\nPolytechnique Montr´ eal Page 4 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "42c58cf7-1831-40b4-8fc1-4a45def28587",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_4.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\n3.(1 point) Le probl` eme des n-reines consiste ` a placer nreines sur un ´ echiquier de taille n×nde sorte\n` a ce qu’aucune ne se retrouve sur la mˆ eme ligne, colonne, diagonale qu’une autre. Vous souhaitez\nr´ esoudre ce probl` eme avec une recherche locale bas´ ee sur du hill climbing . Comme solution initiale,\nvous placez chaque reine al´ eatoire sur une colonne. Chaque colonne comporte ainsi une et une seule\nreine. Votre fonction de voisinage consiste ` a bouger une reine et ` a la placer ` a une autre case de sa\ncolonne. Malheureusement, apr` es l’ex´ ecution de votre recherche, vous convergez vers une solution\nnon r´ ealisable. Vous h´ esitez alors ` a modifier votre fonction de voisinage pour bouger deux reines au\nlieu d’une seule lors d’un mouvement local. Donnez un avantage et un inconv´ enient de cette id´ ee.\nSolution: Par exemple :\n—Avantage : Un voisinage plus large peut permettre de ”voir plus loin” et sortir d’un\nminimum local.\n—Inconv´ enient : Agrandir le voisinage est consid´ er´ e comme une m´ ethode d’intensification\nqui am` ene dans de moins bons minimums locaux. Autre possibilit´ e : un voisinage plus\nlarge est plus long ` a parcourir.\n4.(1 point) Consid´ erez le r´ eseau de neurone ci-dessous. La premi` ere couche repr´ esent´ ee indique le\nnombre de caract´ eristiques et la derni` ere couche indique une pr´ ediction d’une seule valeur pour une\nclassification binaire. De plus, la fonction tanh est utilis´ ee comme activation non-lin´ eaire de la couche\ncach´ ee. Combien de param` etres ` a apprendre comporte ce r´ eseau ?\nSolution: 16 poids et 5 biais soit 21 param` etres.\nPolytechnique Montr´ eal Page 5 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "3f5f10f5-fb2f-44b6-8076-79b0beb8b1cf",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_5.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\n5.(1 point) Vous souhaitez identifier les tentatives de phishing dans vos mails via un apprentissage\nnon-supervis´ e. Pour cela, vous relevez 2 caract´ eristiques : le nombre de fautes dans le mail ainsi que\nle nombre de liens pr´ esents dans le mail. Combien de param` etres devriez-vous apprendre si vous\nutilisez un mod` ele bas´ e sur une loi normale multi-vari´ ee ?\nSolution: 2 param` etres pour l’esp´ erance, 2 +22−2\n2= 3 param` etres pour la matrice de variance-\ncovariance soit 5 param` etres au total.\nPolytechnique Montr´ eal Page 7 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "fd44c6a3-c167-48ce-88be-bd885f4a3170",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_6.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\nQuestion 3 (10 points)\nJohnny est bon chanteur mais mauvais ´ electricien, les lampes de ses 4 pi` eces sont reli´ ees de sorte ` a ce que\nallumer ou ´ eteindre une lampe, va basculer l’´ etat des lampes adjacentes (en haut, en bas, ` a gauche, et ` a\ndroite). Ainsi en ´ eteignant la lampe en haut ` a gauche (1,1) celle en bas ` a gauche (2,1) va s’´ eteindre aussi,\nmais la lampe en haut ` a droite (1,2) va s’allumer ! Apr` es un concert ` a s’en casser la voix, il aimerait\nbien se coucher sans avoir ` a courir dans toutes les pi` eces de la maison. Le probl` eme ` a r´ esoudre consiste\n` a ´ eteindre toutes les lumi` eres en effectuant le moins d’actions.\nFormellement, la maison est repr´ esent´ ee par une grille de largeur net de longueur n. Chaque case ci,j\ncontient une lampe qui peut ˆ etre soit allum´ ee (1) ou ´ eteinte (0). Basculer l’´ etat d’une case basculera\nl’´ etat des cases adjacentes. Ainsi, basculer la case ci,jdonnera donc :\nci,j= 1−ci,j\nci+1,j= 1−ci+1,j\nci−1,j= 1−ci−1,j\nci,j+1= 1−ci,j+1\nci,j−1= 1−ci,j−1\n1.(2 points) Formalisez ce probl` eme comme un probl` eme de recherche en identifiant bien quels sont\nles ´ etats, les actions, la fonction de transition, et la fonction de coˆ ut de votre mod` ele. Il n’est\npas n´ ecessaire de donner une formalisation math´ ematique stricte. L’important est que le correcteur\ncomprenne clairement vos diff´ erentes entit´ es.\n2.(1 point) Donnez le nombre d’´ etats de votre formulation, ainsi que le nombre d’actions qui sont\npossibles ` a un ´ etat ( branching factor ). Exprimez votre solution en fonction de la taille de la grille\n(n×n).\n3.(4 points) D´ eterminez la s´ equence d’actions qui sera obtenue en ex´ ecutant une recherche en largeur ` a\npartir de l’´ etat pr´ esent´ e plus haut : ⟨c1,1= 1, c1,2= 0, c2,1= 1, c2,2= 1⟩. Consid´ erez que les ´ etats sont\najout´ es dans la fringe dans l’ordre croissant de bascule (on ajoute d’abord l’´ etat o` u on a bascul´ e la\ncellule c1,1, puis celui o` u on a bascul´ e c1,2, puis c2,1puisc2,2.) Indiquez chaque ´ etape de l’algorithme.\n`A chaque ´ etape, veillez ` a bien indiquer votre ´ etat actuel, ainsi que les nœuds pr´ esents dans la liste\ndes ´ etats candidats ( fringe ). Consid´ erez une recherche en graphe (et non en arbre). Pr´ ecis´ ement, un\n´ etat ne sera pas ajout´ e dans la liste des ´ etats candidats ( fringe ) si et seulement s’il a d´ ej` a ´ et´ e visit´ e.\nAfin d’´ eviter de vous faire dessiner un grand nombre de sch´ emas, un patron d’ex´ ecution vous est mis\ndisponible aux pages suivantes. Vous pouvez repr´ esenter un ´ etat seulement par une repr´ esentation\nvisuelle. Barrez les cases qui ne sont pas n´ ecessaires.\n4.(1 point) Combien d’actions doit faire Johnny pour ´ eteindre toutes les pi` eces avec cette solution ?\n5.(1 point) Avez-vous la garantie que cette solution est optimale ? Justifiez.\n6.(1 point) Proposez une heuristique pour ce probl` eme. Indiquez si elle est admissible ou non (avec\njustification).\nSolution:\n1. Proposition d’une formulation (des variations sont possibles) :\n—Etat : un tuple repr´ esentant l’´ etat de chaque cellule 0 ou 1.\nPolytechnique Montr´ eal Page 8 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "7aa93ec5-fcd4-4472-8a03-e5dc8d775f62",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_7.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\n—Action : basculer l’etat d’une des cellule\n—Fonction de transition : basculer l’´ etat des cellules adjacentes\n—Fonction de coˆ ut : incr´ ement de 1 pour chaque mouvement.\n2. Chaque cellule peut etre allum´ ee ou ´ eteinte. Il y a donc 2n∗n´ etats. Chaque cellule peut ˆ etre\nbascul´ ee, il y a n∗ncellules donc n∗nactions possibles.\n3. Notez bien qu’on ex´ ecute une recherche en graphe, et que d` es lors, on retient les ´ etats d´ ej` a\nvus. Attention ` a ne pas confondre le nombre d’´ etats visit´ es et le coˆ ut de la solution retourn´ ee.\nL’ex´ ecution est montr´ ee plus bas.\n4. Johnny doit faire 2 actions : basculer l’´ etat de la pi` ece 3 puis celle de la pi` ece 4.\n5. Une recherche en largeur ` a coˆ ut unitaire s’apparente ` a une ex´ ecution UCS. La solution trouv´ ee\nest optimale.\n6. Une heuristique possible est le nombre de pi` ece encore allum´ ees. Celle-ci n’est pas admissible\ncar une action peut ´ eteindre plusieurs pi` ece du fait de la nature du probl` eme. Pour trouver\nune heuristique admissible, il faudrait prendre en compte les lumi` eres allum´ ees adjacentes.\nElle est plus difficile ` a d´ efinir.\nPolytechnique Montr´ eal Page 9 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "6df6bdf5-7c85-4e04-a747-adb5f30befda",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_8.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\nQuestion 4 (5 points)\nSoit l’arbre de recherche MCTS partiellement construit suivant :\nLes valeurs ( x/y) de chaque noeud nindiquent respectivement le score total cumul´ e du noeud via les\nsimulations ( U(n)) et le nombre total de simulation ayant impliqu´ e le noeud ( N(n)). La r` egle de s´ election\nutilis´ ee pour la phase de s´ election est la suivante :\nUCB 1(n) =U(n)\nN(n)+ 2s\nlnN(Parent (n))\nN(n)(1)\n1.(3 points) R´ ealisez 3 it´ erations compl` etes de l’algorithme MCTS sur cet arbre. C’est ` a dire que\nvous devez r´ ealiser les ´ etapes de s´ election, d’expansion, de simulation, et de backpropagation 3 fois.\nIndiquez apr` es chaque it´ eration l’arbre mis-` a-jour. Pour la phase d’expansion, supposez que deux\nnouveaux noeuds sont g´ en´ er´ es, et que celui utilis´ e pour la simulation est celui de gauche. Pour les\nsimulations, consid´ erez que les scores suivants sont obtenus : -2, 4, et puis 5. Des arbres partiels vous\nsont fournis pour acc´ el´ erer la r´ ealisation de cet exercice. Barrez ceux que vous n’utilisez pas. Pour\nvous aider dans cette tache, une table est fournie pour calculer les valeurs UCB1 des noeuds plus\nrapidement. `A titre d’exemple, la valeur UCB1 d’un noeud ( −1/3) ayant un parent ( x/6) est 1.212.\n2.(1 point) `A l’issue de ces simulations, quelle action le joueur actuel devrait jouer (a, b, ou c) ?\n3.(1 point) Donnez 2 raisons d’utiliser MCTS plutˆ ot qu’un algorithme minimax avec ´ elagage alpha-beta\ndans le cas d’une strat´ egie de recherche adversarielle.\nU(n) /N(n)N(Parent (n))1 2 3 4 5 6 7 8\n-2 / 1 -2.0 -0.335 0.096 0.355 0.537 0.677 0.79 0.884\n-2 / 2 -1.0 0.177 0.482 0.665 0.794 0.893 0.973 1.039\n-1 / 3 -0.333 0.628 0.877 1.026 1.132 1.212 1.277 1.332\n0 / 0 inf inf inf inf inf inf inf inf\n0 / 1 0.0 1.665 2.096 2.355 2.537 2.677 2.79 2.884\n0 / 2 0.0 1.177 1.482 1.665 1.794 1.893 1.973 2.039\n1 / 2 0.5 1.677 1.982 2.165 2.294 2.393 2.473 2.539\n2 / 1 2.0 3.665 4.096 4.355 4.537 4.677 4.79 4.884\n3 / 1 3.0 4.665 5.096 5.355 5.537 5.677 5.79 5.884\n3 / 4 0.75 1.583 1.798 1.927 2.019 2.089 2.145 2.192\n4 / 1 4.0 5.665 6.096 6.355 6.537 6.677 6.79 6.884\n4 / 2 2.0 3.177 3.482 3.665 3.794 3.893 3.973 4.039\n4 / 3 1.333 2.295 2.544 2.693 2.798 2.879 2.944 2.998\n5 / 2 2.5 3.677 3.982 4.165 4.294 4.393 4.473 4.539\n5 / 3 1.667 2.628 2.877 3.026 3.132 3.212 3.277 3.332\n6 / 2 3.0 4.177 4.482 4.665 4.794 4.893 4.973 5.039\n7 / 5 1.4 2.145 2.337 2.453 2.535 2.597 2.648 2.69\nPolytechnique Montr´ eal Page 16 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "83601f41-aef2-49d3-a79a-3595a7566700",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_9.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\nSolution:\n1. Attention, la derni` ere it´ eration n’a pas de phase d’extension !\n2. Il choisira l’action b car c’est celle qui a ´ et´ e le plus simul´ e ( Nle plus grand)\n3. MCTS peut ˆ etre plus avantageux si une heuristique est difficile ` a d´ efinir ou si le facteur de\nbranchement est grand (D’autres r´ eponses sont possibles).\nPolytechnique Montr´ eal Page 17 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "ecc8fe36-2d84-44ee-9879-4d69ed06ad57",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_10.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\nQuestion 5 (5 points)\nJohnny est bon chanteur mais mauvais n´ egociateur. Arnaqu´ e par ses labels, il doit produire plus d’albums\nqu’il ne le peut. Chaque album Ain´ ecessite un temps d’´ ecriture Tiet entraˆ ıne une p´ enalit´ e de retard Pi\npour chaque jour pass´ e apr` es une deadline Di. Une situation avec 4 albums vous est pr´ esent´ ee dans le\ntableau ci-dessous.\nAlbum A1A2A3A4\nTemps d’´ ecriture 2 1 3 1\nDeadline 4 1 2 2\nP´ enalit´ e 1 3 5 3\nJohnny ne peut pas ´ ecrire plusieurs albums en mˆ eme temps. Une solution possible est de commencer\nl’´ ecriture de l’album 1 au temps 0, de l’album 2 au temps 2, de l’album 3 au temps 3, et de l’album 4\nau temps 6. Une repr´ esentation visuelle de cette solution vous est pr´ esent´ ee ci-dessous.\nDans cette solution, les albums 1, 2, 3 et 4 sont en retard de respectivement 0, 2, 4 et 5 jours donnant\nainsi une somme des p´ enalit´ es ` a 0 ×1 + 2×3 + 4×5 + 5×3 = 41. Johnny aimerait trouver dans quel\nordre ´ ecrire ses albums afin de minimiser les p´ enalit´ es de retard ` a payer aux labels. Pour cette question,\nil ne vous est pas demand´ e de r´ esoudre compl` etement ce probl` eme, mais simplement de proposer une\nr´ esolution bas´ ee sur la recherche locale et d’ex´ ecuter quelques ´ etapes de l’algorithme.\n1.(1 point) Proposez un mod` ele de recherche locale en vue de r´ esoudre ce probl` eme. En particulier,\nveillez ` a bien d´ efinir les ´ el´ ements suivants :\n(a) Votre espace de recherche. Indiquez le plus pr´ ecis´ ement possible quelle est sa taille.\n(b) Une m´ ethode pour obtenir une solution initiale.\n(c) Une fonction d’´ evaluation pour caract´ eriser la qualit´ e d’un ´ etat.\n(d) Une fonction de voisinage. Indiquez le plus pr´ ecis´ ement la taille de celui-ci.\n2.(3 points) Ex´ ecutez 2 it´ erations de l’algorithme du hill climbing en utilisant comme solution initiale\nla solution pr´ esent´ ee plus haut et comme fonction de voisinage et d’´ evaluation celles propos´ ees en\n(1). Vous ne devez pas indiquer tous les voisins de votre voisinage, prenez en juste 3 au maximum\n(qui sont coh´ erents avec la d´ efinition de votre voisinage), et faites la s´ election parmi ces 3 voisins. Des\ngrilles vous sont fournies pour dessiner plus bas, n’oubliez pas d’indiquer la valeur de votre fonction\nd’´ evaluation ` a chaque it´ eration.\n3.(1 point) Quelle est le risque d’utiliser un algorithme de type hill climbing ? Comment mitiger ce\nrisque ?\nSolution:\n1. Proposition d’une formulation (des variations sont possibles) :\n—Espace de recherche : L’ensemble des s´ equences (permutations des albums) possible. Il\nest de l’ordre de n! o` unest le nombre d’albums ` a ´ ecrire. Ici il est donc de taille 4! = 24.\n—Solution initiale : al´ eatoire ou dans l’ordre croissant des deadlines ou tout autre fonction\nprenant en compte les deadlines, p´ enalit´ es et/ou dur´ ee.\n—Fonction d’´ evaluation : La somme pond´ er´ ee des p´ enalit´ es.\n—Fonction de voisinage : 2-SWAP (inversion de la position de 2 albums) de taille 6\n(Pn−1\nii=n∗(n−1)\n2). Ou encore insertion d’un album ` a un autre endroit de la s´ equence de\ntaille 6 aussi (le calcul est le mˆ eme).\nPolytechnique Montr´ eal Page 21 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "775a8a5b-e75a-4b24-ac8d-f72789fbcfad",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_11.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\n2. Nous utiliserons le voisinage 2-SWAP pour cet exemple.\n3. L’algorithme du hill climbing tombe facilement dans des minimums locaux, l’ajout de m´ etaheuristiques\n(simulated annealing, tabu search, algorithmes g´ en´ etiques, etc.) ou de restarts peut mitiger\ncela.\nPolytechnique Montr´ eal Page 22 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "2671f1dc-000d-4783-94e0-99134c729129",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_12.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\nQuestion 6 (5 points)\nSoit le mod` ele de probl` eme combinatoire suivant. La contrainte Odd(x) force la variable x` a prendre une\nvaleur impaire.\nsatisfy\nsubject to x2=y (c1)\ny+z≤8 ( c2)\nOdd(x) ( c3)\nx, y, z ∈ {1, . . . , 10}\n1.(0.5 point) Indiquez la taille de l’espace de recherche si on souhaite r´ ealiser une recherche exhaustive.\n2.(4 points) Appliquez l’algorithme du point fixe pour r´ eduire au maximum les domaines de chaque\nvariable. Indiquez les domaines r´ esultants apr` es chaque propagation.\n3.(0.5 point) Indiquez la taille restante de l’espace de recherche.\nSolution:\n1. La taille de l’espace de recherche est de 10 ∗10∗10 = 1000\n2. — file de propagation initiale : {c1, c2, c3}\n— propagation de c1:x={1,2,3}, y={1,4,9}, z={1, ...,10}, file de propagation : {c2, c3}\n— propagation de c2:x={1,2,3}, y={1,4}, z={1, ...,7}, file de propagation : {c3, c1}\n— propagation de c3:x={1,3}, y={1,4}, z={1, ...,7}, file de propagation : {c1}\n— propagation de c1:x={1}, y={1}, z={1, ...,7}, file de propagation : {c2}\n— propagation de c2:x={1}, y={1}, z={1, ...,7}, file de propagation : {}\n3. Apr` es l’ex´ ecution de l’algorithme du point fixe, la taille de l’espace de recherche est de\n1∗1∗7 = 7\nPolytechnique Montr´ eal Page 28 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "fc91bb31-a510-4f36-8082-5ed80ba7c28b",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_13.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\nQuestion 7 (5 points)\nPassionn´ e de myrm´ ecologie (l’´ etude des fourmis), vous d´ ecidez d’impl´ ementer un agent logique pour\nvous aider ` a identifier l’esp` ece des fourmis que vous ´ etudiez. L’id´ ee est simple, grˆ ace ` a internet vous\nconstruisez une base de connaissance, ensuite, lorsque vous trouverez une fourmi ` a identifier, vous ajou-\nterez temporairement les caract´ eristiques de celle-ci (op´ eration TELL) puis questionneriez votre agent\npour connaˆ ıtre l’esp` ece (op´ eration ASK). La base de connaissances que vous bˆ atissez est la suivante.\nTailleDiff ⇒ Caste\n(Caste ∧Graine )⇒ Messor\n(Caste ∧Miellat )⇒ Camponotus\n(TeteRouge ∧Messor )⇒MessorBarbarus\n(CorpsNoir ∧Messor )⇒MessorCapitatus\n(CorpsRouge ∧Pique )⇒ Myrmica\nPour information, les symboles Graine etMiellat r´ ef` erent au r´ egime alimentaire (le miellat ´ etant un\nliquide sucr´ e). Le symbole Caste r´ ef` ere ` a la pr´ esence de diff´ erentes ouvri` eres sp´ ecialis´ ees dans la colonie\n(Major, minor). Le symbole Pique r´ ef` ere au fait que certaines fourmis sont urticantes. Les symboles\nTeteRouge ,CorpsRouge ,CorpsNoir r´ ef` erent aux caract´ eristiques physiques des fourmis. Les autres\nsymboles r´ ef` erent ` a l’esp` ece sp´ ecifique d’une fourmi. Cette base de connaissance est ´ evidemment sim-\nplifi´ ee pour la question.\n1.(3 points) Au d´ etour d’un chemin, vous trouvez une colonie qui poss` ede des fourmis de diff´ erentes\ntailles, avec une tˆ ete rouge et qui transportent des graines. Vous souhaitez identifier l’esp` ece. Pour\ncela, vous ajoutez les formules suivantes ` a votre base de connaissances : TailleDiff ,Graines , et\nTetesRouges . Vous voulez v´ erifier si les fourmis observ´ ees sont des MessorBarbarus . Appliquez\nit´ erativement la r` egle d’inf´ erence suivante pour confirmer cette hypoth` ese.\np1, . . . , p n(p1,∧··· ∧ pn)⇒q\nq. (2)\n2.(1 point) Est-ce que cet algorithme d’inf´ erence est coh´ erent pour cette base de connaissance ? Justi-\nfiez.\n3.(1 point) Est-ce que cet algorithme d’inf´ erence est complet pour cette base de connaissance ? Justifiez.\nSolution:\n1. —TailleDiff TailleDiff ⇒Caste\nCaste(3)\n—\nCaste, Graine (Caste ∧Graine )⇒Messor\nMessor(4)\n—\nMessor, TetesRouges (Messor ∧TetesRouges )⇒MessorBarbarus\nMessorBarbarus(5)\n— On g´ en` ere le litt´ eral MessorBarbarus , La fourmi est bien une Messor Barbarus.\n2. R´ eponse ` a la question 2 et 3, On observe que l’on se place dans la logique des clauses de\nHorn. Dans cette logique, le modus ponens est coh´ erent et complet. Les questions peuvent\nˆ etre aussi r´ epondu via model checking.\nPolytechnique Montr´ eal Page 31 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "f3822830-157e-419f-b89a-be0b09f600e8",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_14.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\nQuestion 8 (5 points)\nSoit la fonction de coˆ ut suivante : J(w1, w2, w3) = (2 w2\n1+5w2w3)2, avec w1,w2etw3´ etant des param` etres\n` a apprendre.\n1.(1 point) Dessinez le graphe de d´ ependance de cette fonction.\n2.(3 point) Les param` etres sont initialis´ es aux valeurs w1= 1, w2= 2, et w3= 1. Effectuez deux\n´ etapes de descente de gradient en utilisant un taux d’apprentissage de 0 .1. Veillez ` a bien d´ etailler\nvos calculs et ` a indiquer les valeurs des param` etres et du coˆ ut apr` es chaque it´ eration.\n3.(1 point) Apr` es ces 2 it´ erations, que pensez-vous de la valeur de ce taux d’apprentissage ? Devrait-on\nle diminuer, l’augmenter, ou garder sa valeur ?\nSolution:\n1. Un graphe plus simple que celui propos´ e est possible.\n2. Les passes en avant sont disponible ci-dessous.\n— Premi` ere backpropagation\nδJ\nδw1=δJ\nδe∗δe\nδc∗δc\nδa∗δa\nδw1= 2e∗1∗2∗2w1= 24∗1∗2∗2 = 96 (6)\nδJ\nδw2=δJ\nδe∗δe\nδd∗δd\nδb∗δb\nδw2= 2e∗1∗5∗w3= 24∗1∗5∗1 = 120 (7)\nδJ\nδw3=δJ\nδe∗δe\nδd∗δd\nδb∗δb\nδw3= 2e∗1∗5∗w2= 24∗1∗5∗2 = 240 (8)\nw1=w1−0.1∗δJ\nδw1=−8.6 (9)\nw2=w2−0.1∗δJ\nδw1=−10 (10)\nw3=w3−0.1∗δJ\nδw1=−23 (11)\n— Seconde backpropagation\nδJ\nδw1=δJ\nδe∗δe\nδc∗δc\nδa∗δa\nδw1= 2e∗1∗2∗2w1= 2495 .84∗1∗2∗−17.2 =−85856 .896 (12)\nδJ\nδw2=δJ\nδe∗δe\nδd∗δd\nδb∗δb\nδw2= 2e∗1∗5∗w3= 2495 .84∗1∗5∗ −22 =−274542 .4 (13)\nδJ\nδw3=δJ\nδe∗δe\nδd∗δd\nδb∗δb\nδw3= 2e∗1∗5∗w2= 24∗1∗5∗ −10 =−124792 (14)\nw1=w1−0.1∗δJ\nδw1= 8577 .0896 (15)\nw2=w2−0.1∗δJ\nδw1= 27444 .24 (16)\nw2=w3−0.1∗δJ\nδw1= 12457 .2 (17)\n3. On observe que les poids oscillent de valeurs extrˆ emes positives ` a des valeurs extrˆ emes\nn´ egatives. C’est symptomatique d’un taux d’apprentissage trop ´ elev´ e. il faut r´ eduire le taux\nd’apprentissage.\nPolytechnique Montr´ eal Page 33 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  },
+  {
+    "id": "853a9fb3-1e7b-4568-ba00-5a4c84602e67",
+    "conversations": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "image": "src\\convert_to_llava_format\\qwen_training_data\\images\\EXAM-H24_page_15.png"
+          },
+          {
+            "text": "Explain the content of this page from the AI course material."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": "INF8175-Examen final-Hiver2024 Matricule:\nPolytechnique Montr´ eal Page 34 / 36 D´ ept. de g´ enie informatique et g´ enie logiciel"
+      }
+    ]
+  }
+]
