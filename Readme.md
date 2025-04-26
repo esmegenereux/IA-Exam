@@ -1,88 +1,108 @@
-## Key Components
+# LLaVA Course Material Training Project
 
-### Content Organization
+This project enables training a LLaVA (Large Language and Vision Assistant) model on course materials, allowing it to understand and explain educational content that combines text and images.
 
-- **extracted_content/**: Contains processed course materials organized by modules
-  - Each module directory (e.g., `M1-strategie-recherche/`) contains:
-    - `images/`: Extracted images from course materials
-    - `*_text.json`: Extracted text content
-    - `*_summary.json`: Module summaries and metadata
+## What You Can Do With This Project
 
-### Training Pipeline
+1. **Process Course Materials**
+   - Extract text and images from PDF course materials
+   - Organize content by modules
+   - Convert materials into a format suitable for AI training
 
-- **LLaVA/**: Contains the core LLaVA model implementation and training scripts
-- **llava_training_data/**: Houses the formatted training data ready for model consumption
-  - Includes conversation pairs and image references structured for LLaVA training
+2. **Train a Custom LLaVA Model**
+   - Fine-tune LLaVA on your specific course content
+   - Create a model that understands your course's unique terminology and structure
+   - Generate explanations of course materials
 
-### Processing Tools
+3. **Manage Training Data**
+   - Organize course materials by modules
+   - Process and format images and text
+   - Create structured training datasets
 
-- **pdf_processing/**: Tools for extracting and processing content from PDF documents
-- **src/**: Custom implementation for data processing and format conversion
+## Project Structure
 
-## Project Structure and Organization
+### Core Components
 
-The project follows a clear separation of concerns between framework code and project-specific code:
-
-- **LLaVA/**: Contains the core LLaVA framework code
+- **LLaVA/**: Core framework code
   - Base model implementation
   - Training infrastructure
-  - Core vision-language model capabilities
-  - `train_llava.py`: Configures and runs the LLaVA training process
+  - `train_llava.py`: Training configuration and execution
 
-- **src/**: Contains project-specific code
-  - Custom data processing and conversion utilities
-  - `convert_to_llava_format.py`: Converts course materials into LLaVA training format
-  - Handles project-specific data structures and requirements
+- **src/**: Project-specific code
+  - `convert_to_llava_format.py`: Data conversion utilities
+  - Custom processing scripts
 
-This separation allows for:
-- Clear distinction between framework and project code
-- Easier maintenance and updates of both components
-- Better organization of project-specific adaptations
-- Cleaner integration with the LLaVA framework
+- **extracted_content/**: Processed course materials
+  - Organized by modules (e.g., `M1-strategie-recherche/`)
+  - Contains images and text content
+  - Includes module summaries
 
-## Setup and Installation
+- **llava_training_data/**: Formatted training data
+  - Structured conversation pairs
+  - Image references
+  - Ready for model training
 
-1. Install required dependencies:
+- **pdf_processing/**: PDF extraction tools
+  - Content extraction utilities
+  - Image processing scripts
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.10+
+- CUDA-capable GPU (recommended)
+- Sufficient disk space for course materials and model checkpoints
+
+### Installation
+
+1. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Set up the LLaVA environment:
+2. Set up LLaVA environment:
 ```bash
-# Create and activate conda environment
 conda create -n llava python=3.10
 conda activate llava
-
-# Install PyTorch and other dependencies
 pip install torch torchvision torchaudio
 ```
 
-3. Prepare the training data:
-   - Place course materials in `Class docs/`
-   - Run PDF processing scripts to extract content
-   - Verify extracted content in `extracted_content/`
+## Usage Guide
 
-## Training Process
+### 1. Prepare Course Materials
 
-1. Data Preparation:
-   - Course materials are processed and organized by module
-   - Images and text are extracted and structured
-   - Content is converted to LLaVA training format
+1. Place your course materials in `Class docs/`
+2. Run PDF processing scripts to extract content
+3. Verify extracted content in `extracted_content/`
 
-2. Model Training:
+### 2. Convert to Training Format
+
+Run the conversion script:
 ```bash
-python train_llava.py
+python src/convert_to_llava_format.py
 ```
 
-The training script is configured to:
-- Use BF16 precision for efficient training
-- Implement gradient accumulation for memory efficiency
-- Save checkpoints periodically
-- Handle modular course content structure
+This will:
+- Process extracted content
+- Create training-ready datasets
+- Organize data in `llava_training_data/`
 
-## Model Configuration
+### 3. Train the Model
 
-The training configuration includes:
+Start training:
+```bash
+python LLaVA/train_llava.py
+```
+
+The training process:
+- Uses BF16 precision for efficiency
+- Implements gradient accumulation
+- Saves checkpoints periodically
+- Handles modular course content
+
+## Current Configuration
+
 - Base model: LLaVA-v1.5-7b
 - Vision encoder: CLIP ViT-L/14
 - Training parameters:
@@ -92,27 +112,30 @@ The training configuration includes:
   - Weight decay: 0
   - Warmup ratio: 0.03
 
-## Requirements
+## Next Steps
 
-- Python 3.10+
-- PyTorch
-- Transformers library
-- CUDA-capable GPU (recommended)
-- See `requirements.txt` for complete list of dependencies
+1. **Immediate Improvements**
+   - Implement validation pipeline
+   - Add support for additional document formats
+   - Enhance image processing capabilities
+   - Implement multi-GPU training support
 
-## Notes
+2. **Model Enhancement**
+   - Experiment with different model architectures
+   - Fine-tune hyperparameters
+   - Add support for more complex course structures
 
-- The project is structured to handle modular course content
-- Training data is organized by course modules for better management
-- Image processing maintains original module structure
-- Checkpoints are saved regularly during training
+3. **Feature Development**
+   - Add interactive model testing
+   - Implement content generation capabilities
+   - Develop evaluation metrics
+   - Create visualization tools for training progress
 
-## Future Improvements
-
-- Implement validation pipeline
-- Add support for additional document formats
-- Enhance image processing capabilities
-- Implement multi-GPU training support
+4. **Documentation**
+   - Add detailed API documentation
+   - Create usage examples
+   - Document best practices
+   - Add troubleshooting guide
 
 ## License
 
