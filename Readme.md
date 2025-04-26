@@ -56,16 +56,26 @@ This project enables training a LLaVA (Large Language and Vision Assistant) mode
 
 ### Installation
 
-1. Install dependencies:
+1. Clone the repository and initialize submodules:
+```bash
+git clone https://github.com/esmegenereux/LLaVA.git
+cd LLaVA
+git submodule update --init --recursive
+```
+
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Set up LLaVA environment:
+3. Set up LLaVA environment:
 ```bash
 conda create -n llava python=3.10
 conda activate llava
-pip install torch torchvision torchaudio
+python -m pip install --upgrade pip
+pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu118
+pip install -e .
+pip uninstall bitsandbytes
 ```
 
 ## Usage Guide
