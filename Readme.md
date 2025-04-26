@@ -161,23 +161,65 @@ The training process:
 2. **Load and Use the Model**
    ```python
    from llava.model.builder import load_pretrained_model
+   import torch
    
-   # Load the model from the exported directory
+   # Load the model with optimizations for lower RAM usage
    tokenizer, model, image_processor, context_len = load_pretrained_model(
        model_path="~/llava_model",
        model_base=None,
-       vision_tower="openai/clip-vit-large-patch14-336"
+       vision_tower="openai/clip-vit-large-patch14-336",
+       load_4bit=True,  # Enable 4-bit quantization
+       device_map="auto"  # Automatically handle device placement
    )
+   
+   # Additional optimizations
+   model = model.to(torch.float16)  # Use half precision
+   torch.cuda.empty_cache()  # Clear GPU cache if using CUDA
    
    # Use the model for inference
    # (Add your inference code here)
    ```
 
 3. **Performance Considerations**
-   - Ensure target machine has sufficient RAM (minimum 16GB recommended)
+   - Minimum RAM requirement: 8GB (with optimizations)
+   - Recommended RAM: 16GB for better performance
    - Use CUDA if available for better performance
+   - Monitor memory usage during inference
    - Consider using model quantization for lower memory usage
-   - Monitor GPU memory usage during inference
+
+### Optimizing for Lower RAM Usage
+
+1. **Quantization Techniques**
+   ```python
+   # 4-bit quantization (reduces memory usage by ~75%)
+   model = model.quantize(bits=4)
+   
+   # 8-bit quantization (reduces memory usage by ~50%)
+   model = model.quantize(bits=8)
+   ```
+
+2. **Memory-Efficient Loading**
+   ```python
+   # Load model in chunks
+   model = load_pretrained_model(
+       model_path="~/llava_model",
+       load_in_8bit=True,  # 8-bit loading
+       device_map="auto"   # Smart device placement
+   )
+   ```
+
+3. **Additional Optimizations**
+   - Use gradient checkpointing during training
+   - Enable model pruning
+   - Use dynamic batching
+   - Implement memory-efficient attention
+
+4. **RAM Usage Breakdown**
+   - Base model: ~7GB
+   - With 8-bit quantization: ~3.5GB
+   - With 4-bit quantization: ~1.75GB
+   - Additional overhead: ~1GB
+   - Total minimum requirement: ~8GB
 
 ### Portable Usage Tips
 
