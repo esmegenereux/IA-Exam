@@ -1,0 +1,744 @@
+[
+  {
+    "id": "ab4700a8-a779-41e2-91e8-1bf21220e702",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesModule 4: Programmation par contraintes"
+      }
+    ]
+  },
+  {
+    "id": "594f5f41-070a-4042-8be7-cd1ea4cc5d70",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartContenu du cours\n2Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques"
+      }
+    ]
+  },
+  {
+    "id": "7c80313c-b395-4e78-a5b4-db946844518c",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n3Programmation par contraintes1. Limitations et diﬃcultés de la recherche locale 2. Concepts et principes fondamentaux de la programmation par contraintes 3. Formalisation des problèmes combinatoires  4. Modélisation en programmation par contraintes 5. Recherche avec retours-arrières (backtracking search)  6. Propagation de contraintes (arc consistency) 7. Algorithme du point ﬁxe 8. Fonctionnement d'un solveur de programmation par contraintes\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW"
+      }
+    ]
+  },
+  {
+    "id": "f0078b09-1cef-4163-b7bc-e61c7529859c",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartRetour sur le module précédent\n4Problèmes combinatoires (CSP ou COP)Objectif: Trouver une solution faisable (ou optimale) parmi un ensemble ﬁni de solutions\nNature d’une solution: un état, qui nous est inconnu (et non une séquence d’action)InvestissementCoût ($)Revenu espéré dans 10 ans ($)A2001 000B2001 000C2001 000D50010 000E50010 000F80013 000G3007 000Budget maximal de 1000 $\nRecherche localePrincipe: amélioration itérative d'une solution en sélectionne une nouvelle solution dans un voisinageAméliorations indispensables: utilisation de mécanismes variés pour s'échapper des minima locaux"
+      }
+    ]
+  },
+  {
+    "id": "3590efec-1731-4d14-a0eb-a9dbecabadae",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_5.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartLimitations de la recherche locale\n5Limitation 1: absence de garantiesPropriété: l’espace de recherche n'est pas entièrement exploréConséquence: impossibilité de prouver qu'un problème est infaisableConséquence: impossibilité de prouver qu'une solution trouvée est optimaleMalgré son potentiel, on n’a aucune garantie sur nos résultatsLimitation 2: diﬃculté d’utilisationBesoin: requiert l’implémentation d’un algorithme de rechercheImplication: choix de conception non triviaux (voisinage, métaheuristique, etc.)Implication: eﬃcacité de l’implémentation (structures de données, langage, etc.)Conséquence: souvent hors de portée des non-experts Or, ces problèmes se produisent dans énormément de contextes diﬀérents !\nOn se retrouve bloqué si notre problème n’a aucune solution\nL’implémentation d’une recherche locale eﬃcace n’est pas une tâche aisée"
+      }
+    ]
+  },
+  {
+    "id": "426a178c-4e86-4ee5-900f-317e27ed5ed6",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_6.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMéthodes de résolution exhaustive intelligente\n6On a ainsi toujours une recherche exhaustive... mais qui intègre une forme d'intelligenceUtilisation d'heuristique: essayer d'abord les solutions les plus prometteusesIntégration de raisonnements logiques: supprimer les solutions que l'on sait mauvaises à coup sûrProgrammation en nombres entiers (MAGI - MTH6404) Résolution SAT (module sur les agents logiques)Programmation par contraintes (ce module)Principe 1: ne pas avoir peur d'un algorithme à complexité exponentielle dans le pire des casPrincipe 2: rajouter des mécanismes aﬁn d’accélérer le processus de résolutionDiﬃculté: on a toujours une complexité exponentielleConséquence: la taille deviendra toujours problématiqueExemples d’algorithmes de résolution de ce type\nQu'en est-il de la facilité d'utilisation ?Temps  d'exécution\nTaille du problèmeRecherche  exhaustive intelligenteRecherche exhaustive (bruteforce)Recherche  locale\nRetournons à notre idée d’utiliser une approche complète: la recherche exhaustive intelligente"
+      }
+    ]
+  },
+  {
+    "id": "9c904195-1aa3-4031-b0be-f8104e7dd817",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_7.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartParadigme de programmation\n7Philosophie d'un language de programmationProgrammation impérative: programmation par algorithmes (séquence d'instructions)Programmation orientée-objet: utilisation d'objets comme briques logicielles Programmation fonctionnelle: utilisation de fonctions comme briques logiciellesJava: programmation impérative, orientée-objet, fonctionnelle (Java 8)C: programmation impérative, procéduraleObjectif: rendre facile l'utilisation de certains paradigmes de programmationPython: programmation impérative, fonctionnelle, orientée-objetBeaucoup de langages populaires sont impératifs, orientés-objet, et fonctionnelsProgrammation déclarativeObjectif: l'utilisateur ne doit pas implémenter une solution à son problème, mais seulement le décrireBoite à outils spéciﬁque pour programmer des solutions à des problèmes par l'informatiqueParadigme de programmation\nOpposition à la programmation impérative (description et non résolution)HTML: donne le rendu d'une page Web à partir d'une description de contenuSQL: donne des informations dans une base de données à partir d'une requête"
+      }
+    ]
+  },
+  {
+    "id": "9d5b3549-a9b4-4ea5-a500-2b08f70563e9",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_8.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartA la poursuite du Saint-Graal\n8\nNotre rêve: existe t'il un language déclaratif pour résoudre un problème combinatoire ?Le Saint-Graal de l'informatique\"Est-il possible qu'un ordinateur résolve un problème  seulement sur base de sa description ?\"Opposition forte à une formulation impérative (façon de résoudre le problème)La recherche locale, telle que vue, suit un paradigme impératifProgrammation par contraintesParadigme de programmation dédié à la résolution de problèmes combinatoiresInterface déclarative pour l'utilisateur ﬁnal (description du problème à résoudre)Résolution interne basée sur de la recherche et des raisonnements logiques\nE. Freuder\"Constraint Programming represents one of the closest approaches  computer science has yet made to the Holy Grail of Programming:The user states the problem, the computer solves it\"https://freuder.wordpress.com/"
+      }
+    ]
+  },
+  {
+    "id": "41b47ef2-cfc4-4c2a-8dbd-b222f0732074",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_9.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartPrincipaux paradigmes de programmation\n9Programmation  par contraintesnondeterminism?Observable\nMore declarative Less declarativeYes No\nNamed stateUnnamed state (seq. or conc.)functionalprogrammingprogrammingImperative\nLazydeclarativeconcurrentprogrammingprogrammingdataflowConcurrentconstraintprogrammingconstraintprogrammingConstraint (logic)programmingRelational & logicprogrammingDeterministiclogic programmingsynchron.+ by−need + thread+ single assign.HaskellLazyfunctionalprogrammingdataflowprogrammingDeclarativeconcurrentprogrammingADTfunctionalprogrammingADTimperativeprogrammingImperativesearchprogrammingEvent−loopprogrammingMulti−agentprogrammingMessage−passingconcurrentprogramming\nDataflow andOz, Alice, Curry Oz, Alice, CurryCLU, OCaml, OzE in one vatContinuationprogramming\nLogic andconstraints message passingMessage passing Shared state+ nondeterministic(channel)Oz, Alice, Curry, Excel,AKL, FGHC, FCP+ synch. on partial termination\nStrong synchronousprogrammingFunctional reactiveprogramming (FRP)Weak synchronousprogrammingNondet. stateErlang, AKLchoicedataflowprogrammingConcurrent logicprogrammingNondeterministicFunctional\nLazy functionalprogrammingobject−orientedThe principal programming paradigms\n+ closure+ cell (state)\nImperative+ unification\"More is not better (or worse) than less, just different.\"\nobject−orientedprogrammingConc. imperativeScheme, ML, Scala\nOz, Alice, ScalaSmalltalk, Java,E, Oz, Alice,CSP, Occam,publish/subscribe,tuple space (Linda)FunctionalFunctionalprogrammingFirst−orderfunctionalprogramming+ procedureData structures onlyTuring equivalentrecordDescriptivedeclarativeprogrammingXML,S−expression\n+ logical time instantsCLP, GecodePipes, MapReduceFrTime, SLEsterel, Lustre, SignalLIFE, AKLExplanationsAbased on a coherent set of principles or a mathematical theory.  See thebookConcepts, Techniques, and Models of Computer Programming.v2.01 © 2023 by Peter Van Royis an approach to programming a computerprogramming paradigm\nOz, Alice, AKL+ portMulti−agentdataflowprogramming+ local cellActive objectprogrammingObject−capabilityprogramming\nnative fashion.  This flexibility is not shown in the chart. as Scheme, are flexible enough to implement many paradigms in almosttinkering in particular are orthogonal to this chart.  Some languages, such(introspection and reflection).  Syntactic extensibility and kernel languageprotocols and generics), to full−fledged tinkering with the kernel language programming combined with syntactic support (e.g., meta−object programming, syntactic extensibility (e.g., macros), to higher−order language.  The term covers many different approaches, from higher−order Metaprogramming is another way to increase the expressiveness of aTyping is not completely orthogonal: it has some effect on expressiveness. Axes orthogonal to this chart are typing, aspects, and domain−specificity. program’s specification.  A domain−specific language should be definablein any paradigm (except when the domain needs a particular concept). Aspects should be completely orthogonal, since they are part of asequence of values in time.  Its expressive power is strongly influenced bythe paradigm that contains it.  We distinguish four levels of expressiveness,State is the ability to remember information, or more precisely, to store awhich differ in whether the state is unnamed or named, deterministic ornondeterministic, and sequential or concurrent.  The least expressive isfunctional programming (threaded state, e.g., DCGs and monads:unnamed, deterministic, and sequential).  Adding concurrency givesdeclarative concurrent programming (e.g., synchrocells: unnamed,deterministic, and concurrent).  Adding nondeterministic choice givesconcurrent logic programming (which uses stream mergers: unnamed,(e.g., client/server).  Named state is important for modularity.nondeterministic, and concurrent).  Adding ports or cells, respectively,gives message passing or shared state (both are named, nondeterministic,and concurrent).  Nondeterminism is important for real−world interactionwithout interference from other paradigms.  It does not mean that thereis a perfect fit between the language and the paradigm.  It is not enoughthat libraries have been written in the language to support the paradigm.The language’s kernel language should support the paradigm.  Whenthere is a family of related languages, usually only one member of the family is mentioned to avoid clutter.  The absence of a language doesnot imply any kind of value judgment.When a language is mentioned under a paradigm, it means that part ofthe language is intended (by its designers) to support the paradigmThe chart classifies programming paradigms according to their kernelabstractions can be defined).  Kernel languages are ordered according tothe creative extension principle: a new concept is added when it cannot beencoded with only local transformations.  Two languages that implementprogrammer, because they make different choices about whatthe same paradigm can nevertheless have very different \"flavors\" for thelanguages (the small core language in which all the paradigm’sprogramming techniques and styles to facilitate.  All paradigms that supportfunctional programming can also support object−oriented programming.\nJava, OCaml+ closureembeddings+ solver+ thread+ single assignment+ thread+ thread\n+ log+ cell(state)\nFunctionalSQL embeddingsProlog, SQL+ searchHaskell, ML, E(unforgeable constant)+ cellPascal, CSNOBOL, Icon, Prolog+ search(channel)+ portScheme, ML(equality)+ name\n+ by−need synchronization+ by−needsynchronization+ thread+ continuation\nLazy concurrentShared−stateconcurrentprogrammingSoftwaretransactionalmemory (STM)object−orientedprogrammingStatefulCe que vous êtes  généralement  habitués à faire\nhttps://webperso.info.ucl.ac.be/~pvr/paradigms.html"
+      }
+    ]
+  },
+  {
+    "id": "584d57dd-320e-4f12-b4ca-e2740a188f98",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_10.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartProgrammation par contraintes (CP)\n10Programmation par contraintes (constraint programming - CP)Nature: paradigme de programmation pour résoudre des problèmes combinatoiresObjectif: permettre à l'utilisateur de décrire facilement le problème à résoudre via un modèleFonctionnement: résolution basée sur de la recherche et sur des raisonnements logiquesComposant 1: construction d’un modèleObjectif: agit comme une interface entre l’utilisateur et le solveur, pour qu'il puisse décrire son problèmeComposant 3: mécanisme de propagationObjectif: réaliser des raisonnements logiques pour réduire l'espace de rechercheProcessus quasi invisible pour l'utilisateurComposant 2: mécanisme de rechercheObjectif: réaliser une recherche exhaustive intelligente de solutionsN’implique que des faibles interactions avec l’utilisateur (idéalement aucune)\nProgrammation par contraintes = modèle + recherche + propagation\nPartie non déclarative,  formant l'algorithme de résolutionL’utilisateur doit être capable de décrire son problème (responsabilité principale de l’utilisateur)"
+      }
+    ]
+  },
+  {
+    "id": "fafe7ce9-20dc-4821-a996-50af565f6444",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_11.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n11Programmation par contraintes1. Limitations et diﬃcultés de la recherche locale 2. Concepts et principes fondamentaux de la programmation par contraintes 3. Formalisation des problèmes combinatoires  4. Modélisation en programmation par contraintes 5. Recherche avec retours-arrières (backtracking search)  6. Propagation de contraintes (arc consistency) 7. Algorithme du point ﬁxe 8. Fonctionnement d'un solveur de programmation par contraintes\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW"
+      }
+    ]
+  },
+  {
+    "id": "3c14e8ba-2d8a-47c0-bee6-233bc00df22f",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_12.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartModélisation de problèmes combinatoires\n12Quelles sont nos décisions possibles ?Quels sont nos choix ?Quels sont les choix qui sont autorisés ?Eventuellement, que souhaite t-on optimiser ?Problème déﬁni par un ensemble de variables (X), des domaines discrets pour chaque variable (D), et un ensemble de contrainte (C)Problème de satisfaction combinatoire (CSP)\nCSP=⟨X,D,C⟩Résoudre un CSP revient à trouver une assignation de chaque variable qui satisfait toutes les contraintes du problèmeProblème déﬁni par un ensemble de variables (X), des domaines discrets pour chaque variable (D), un ensemble de contrainte (C), et une fonction objectif (O)Problème d'optimisation combinatoire (COP)\nCOP=⟨X,D,C,O⟩Résoudre un COP revient à trouver une assignation de chaque variable qui satisfait toutes les contraintes du problème et qui optimise la fonction objectif\nRegardons les éléments qui doivent être déﬁnis"
+      }
+    ]
+  },
+  {
+    "id": "1518914d-0f93-4c54-860b-aff51102682b",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_13.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartVariables et domaines\n13Variable de décisionDéﬁnition: une décision qui doit être faiteLes choix possibles sont déﬁnis par le domaine de la variableDomaineDéﬁnition: un ensemble de valeurs possibles pour une variableDomaine de graphes:D(x)={,,,}Choix entre diﬀérentes moléculesDomaine binaire:D(x)={0,1}Choix d'un investissement ou nonDomaine entier:D(x)={1,2,…,9}Choix dans une grille de SudokuEt plein d'autres possibilités ! (en fait, n'importe quel domaine peut être imaginé)Domaine décimal:D(x)={1.5,1.9,2.4}Choix d'une quantité fractionnaire\nQuel serait un bon choix de variables et de domaines pour le carré magique ?xi,j:chiﬀre dans la case (i,j) Domaines:∀i,jD(xi,j)={1,2,3,4,5,6,7,8,9}Recherche exhaustive:99=387420489 solutions à testeri\njx1,1x2,1x3,1x1,2x2,2x3,2x1,3x2,3x3,3\nQuel chiﬀre mettre  dans cette case ?\nTaille du problème:9 variables, avec chacune 9 valeurs possibles"
+      }
+    ]
+  },
+  {
+    "id": "c0223e34-5598-48a0-bf26-69173057df9f",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_14.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartContraintes\n14ContraintesDéﬁnition: restriction sur les valeurs possibles que peuvent prendre les variables\nForce: un très large éventail de contraintes est disponible pour l'utilisateur\nContraintes arithmétiquesx1≠2x2−3x3x1+3x2≤5x23x1−x2=2x2\nContraintes logiquesx1∨x2((x1=5)∧(x2≤3))⟹(x3=2)\nContraintes extensives\nSeulement certaines conﬁgurations  de valeurs sont autorisées123413122435532671012x1x2x3x4\nContraintes globalesles quatre variables doivent prendre une valeur diﬀérenteallDiﬀerent(x1,x2,x3,x4)atMost(n,[x1,x2,x3,x4],v)Au plus n variables peuvent prendre la valeur vincreasing([x1,x2,x3,x4])les variables doivent prendre des valeurs croissantes\nhttps://sofdem.github.io/gccat/Catalogue de contraintes: plus de 400 contraintes diﬀérentes répertoriéesExtensibilité: il est également possible de construire de nouvelles contraintesUne des tâches d'un concepteur de solveur de programmation par contraintesObjectif 2: réduire l'espace de recherche par des raisonnements logiques (propagation)Objectif 1: permettre à l’utilisateur d’exprimer aisément un grand nombre de relations (Saint-Graal)Objectif 3: détecter les solutions (éventuellement partielles) qui sont infaisables"
+      }
+    ]
+  },
+  {
+    "id": "059aee64-522a-4165-8481-4f3b95ebbca4",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_15.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartExemple du catalogue des contraintes globales\n15\nhttps://sofdem.github.io/gccat/gccat/Calldiﬀerent.html\nChaque page contient également d’autres détails sur la contrainte (algorithme, exemple, etc.)"
+      }
+    ]
+  },
+  {
+    "id": "32362ada-41f8-4162-a777-9a316308f595",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_16.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nMagicSquaresubject to:satisfyFonction objectif et modèle du carré magique\n16Fonction objectifDéﬁnition: expression à maximiser ou minimiser pour un COP\nminn∑i=1ximaxn∑i=1x2i−x31\n∀j∈{1,…,n}n∑i=1xi,j=Tn∑i=1xi,i=Tn∑i=1xi,n−i+1=Tn∑j=1xi,j=T∀i∈{1,…,n}\nxi,j∈{1,…,n2}∀i,j∈{1,…,n}Somme sur les colonnes vaut 15Somme sur les rangéesSomme de la diagonale montanteSomme de la diagonale descendanteToutes les valeurs sont diﬀérentes\nOn a un carré de cases à remplirOn considère une variable par caseModèle du carré magique\nallDiﬀerent([x1,1,…,x3,3])Objectif de satisfaction: remplir un carré 3x3 (n x n) avec les nombres de 1 à 9 (n*n)Contrainte 1: chaque case doit avoir un nombre diﬀérentContrainte 2: la somme de chaque colonne, rangée, et diagonale doit valoir 15 (T)\ni\njx1,1x2,1x3,1x1,2x2,2x3,2x1,3x2,3x3,3"
+      }
+    ]
+  },
+  {
+    "id": "29000432-d072-47b9-87b6-3768806b2254",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_17.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartFormulation déclarative\nxi,j∈{1,…,n2}∀j∈{1,…,n}n∑j=1xi,j=Tn∑i=1xi,j=Tn∑i=1xi,i=Tn∑i=1xi,n−i+1=T∀i∈{1,…,n}\n∀i,j∈{1,…,n}MagicSquareallDiﬀerent([x1,1,…,x3,3])subject to:satisfyFormulation déclarative d'un problème combinatoire\nMinizincPrincipe: language de modélisation pour des problèmes combinatoiresCaractéristiques: open-source, populaire, et compatible avec plusieurs solveursDevoir 2: une partie consiste à modéliser et résoudre des problèmes combinatoires avec ce langage17"
+      }
+    ]
+  },
+  {
+    "id": "3d5159b5-d2c9-4cb6-8c61-6e4a4aeed3dd",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_18.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMinizinc\n18Nature: langage de modélisation déclarative pour des problèmes combinatoiresFonction: agir comme une interface avec diﬀérent solveursObjectif: permettre à l’utilisateur de se focaliser sur la modélisation\nhttps://www.minizinc.orgForce: riche catalogue de contraintes (> 100)Force: permet de conﬁgurer le processus de résolutionMinizinc\nPlusieurs ressources sont disponibles sur Moodle pour vous aiguiller dans l’apprentissageCe n’est donc pas un algorithme de résolution, mais juste une interface Force: compatible avec plusieurs solveurs (Gecode, Chuﬀed, etc.)MOOC introductif\nType de pédagogie: story-based learning et résolution de problèmesRessource gratuite pour se familiariser avec MiniZinchttps://www.coursera.org/lean/basic-modelingDe manière plus large, apprend à modéliser et résoudre des CSPs/COPs"
+      }
+    ]
+  },
+  {
+    "id": "c8193c8e-c4c9-4e6f-96cc-64bc88df236a",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_19.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n19Programmation par contraintes1. Limitations et diﬃcultés de la recherche locale 2. Concepts et principes fondamentaux de la programmation par contraintes 3. Formalisation des problèmes combinatoires  4. Modélisation en programmation par contraintes 5. Recherche avec retours-arrières (backtracking search)  6. Propagation de contraintes (arc consistency) 7. Algorithme du point ﬁxe 8. Fonctionnement d'un solveur de programmation par contraintes\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW"
+      }
+    ]
+  },
+  {
+    "id": "323778e5-58d7-4e88-aab0-a4d5806aacd6",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_20.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlgorithme de résolution\n20\nProgrammation par contraintes = modèle + recherche + propagation\nConception: par des chercheurs et ingénieurs (informatique, logiciel, ou mathématique)\nSolveur de programmation par contraintesPhilosophie: cacher l’algorithme de résolution pour l'utilisateur qui veut résoudre le problème combinatoireFonctionnement: Les solveurs CP modernes sont basés à la fois sur de la recherche, et de la propagation\nRegardons comment ces deux aspects sont combinés pour former un solveur"
+      }
+    ]
+  },
+  {
+    "id": "dee875a9-c61b-4cb9-8b76-a86e9fefe95d",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_21.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartPhase de recherche\n21Formalisation du problème de recherche\nPeut-on réutiliser les idées de nos méthodes de recherche du module 1 ?Bonne nouvelle: les principes généraux de nos idées peuvent être ré-utilisés Diﬃculté: il y a quelques adaptations pour rendre la recherche eﬃcaceEtats: chaque combinaison d'assignations variable/valeurEnsemble des actions: assigner à une variable spéciﬁque une valeur de son domaineCoût: l'impact sur la fonction objectif de l'assignationTransition: réaliser une assignationPrincipe: considérer chaque assignation partielle de l'ensemble des variables comme étatsEtat initial: l'assignation vide (aucune variable n'a de valeur assignée)Exemple: coloriage de carteObjectif: colorier une carte avec 3 couleursEtat ﬁnal: toutes les variables ont une valeur respectant les contraintes\nContrainte: deux pays frontaliers ne peuvent pas avoir la même couleur\nPremière étape: formaliser la situation comme un problème de recherche"
+      }
+    ]
+  },
+  {
+    "id": "04796d29-9b77-485c-9665-e0d9d3009a1b",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_22.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartExemple: coloriage de carte\n22\nEnsemble des régions:v∈V({WA,NT,SA,Q,NSW,V,T})Ensemble des frontières entre deux régions:(u,v)∈E\nTaille du problème:37=2187 possibilités\nSatisfySubject toxu≠xvxv∈{𝗋𝖾𝖽,𝗀𝗋𝖾𝖾𝗇,𝖻𝗅𝗎𝖾}∀(u,v)∈E∀v∈V\nQuelle stratégie de recherche vous semble la plus adaptée ?Solution: assignation complète des variablesCes états correspondent à des noeuds feuilles d'un arbre de rechercheCaractéristique: la profondeur de l’arbre est bornée par le nombre de variablesVariables indiquant la couleur d'une région:xv\nWANTSAQ\nTVNSWBranche de l’arbre: assignation d'une valeur à une variable\nUne recherche en profondeur (DFS) semble être un bon point de départModélisation du CSP: besoin de déﬁnir nos entités précédentes"
+      }
+    ]
+  },
+  {
+    "id": "4164b38f-e8b6-4ca9-9b85-0b17027a3e26",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_23.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartColoriage de carte: visualisation de l'arbre de recherche\n23WANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW...xWA=𝗀𝗋𝖾𝖾𝗇xWA=𝗋𝖾𝖽xWA=𝖻𝗅𝗎𝖾xT=𝗋𝖾𝖽xT=𝖻𝗅𝗎𝖾xT=𝗀𝗋𝖾𝖾𝗇..................\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW...\nCombien de noeuds feuilles sont présents avec cette formulation ?Observation: on a n variables ayant chacune un domaine de d valeursPremier niveau: on considère tous les couples variables/valeurs→n×dDeuxième niveau: on a une variable de moins à considérer→(n−1)×d par noeud parent Assignation complète: lorsque les n variables ont chacune une valeur\nNombre de feuilles: (n×d)×((n−1)×d)×((n−2)×d)×…×d=n!dn"
+      }
+    ]
+  },
+  {
+    "id": "04492602-43a5-490f-aa37-b03b57042f46",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_24.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartRéduction de l'espace de recherche\n242187 coloriages complets:11022480 feuillesWANTSAQ\nTVNSWOn a n variables avec d valeurs possibles\nPeut-on réduire l'espace de recherche ?Bonne nouvelle: on peut exploiter une propriété des problèmes combinatoiresL'ordre des actions (assignation des variables) n'a pas d'inﬂuence sur la solution ﬁnale obtenueCommutativité des problèmes combinatoires\nObservation: quelque soit l'ordre des assignations, la solution ﬁnale obtenue est la mêmeConséquence directe: on ne peut considérer qu'une seule variable par niveauWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWxT=𝗀𝗋𝖾𝖾𝗇xWA=𝖻𝗅𝗎𝖾xNT=𝗀𝗋𝖾𝖾𝗇xSA=𝗋𝖾𝖽xQ=𝖻𝗅𝗎𝖾xNSW=𝗀𝗋𝖾𝖾𝗇xV=𝖻𝗅𝗎𝖾WANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWxWA=𝖻𝗅𝗎𝖾xNT=𝗀𝗋𝖾𝖾𝗇xQ=𝖻𝗅𝗎𝖾xSA=𝗋𝖾𝖽xV=𝖻𝗅𝗎𝖾xNSW=𝗀𝗋𝖾𝖾𝗇xT=𝗀𝗋𝖾𝖾𝗇\nUn problème avec dn assignations complètes possibles donne un espace de recherche avec n!dn feuilles"
+      }
+    ]
+  },
+  {
+    "id": "84cb9a52-e5b8-43d8-9736-38771c48af4c",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_25.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAmélioration 1: considérer une variable par niveau\n25Formalisation améliorée du problème de rechercheProblème de recherche: le même qu’avant, sauf qu'on ne va considérer qu'une seule variable par niveauPrincipe: on va ﬁxer un ordre des variablesOrdre des variables:xWA→xNT→xSA→xQ→xNSW→xV→xT\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWxWAxNT...\nCombien de noeuds feuilles sont présents avec cette formulation ?Observation: on a n variables et d choix par niveau\nNombre de feuilles: dn (identique au nombre de coloriages possibles)Remarque: n donne la profondeur de l’arbre, et d correspond au facteur de branchement"
+      }
+    ]
+  },
+  {
+    "id": "ff25533a-5840-47a0-9b21-fe01710fee8a",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_26.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartExploration de l’arbre - recherche en profondeur\n26WANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWxWAxNTxSAxQxNSWxVxT\nQue pensez-vous de cette idée ?(1) Un conﬂit apparent a été généré tôt dans l'arbre(2) Enormément de noeuds seront explorés avant que ce conﬂit ne soit enlevéSituation actuelle: on a un arbre de recherche où chaque solution potentielle correspond à un noeud feuilleIntuition: on veut tester pouvoir tester rapidement les noeuds feuillesIdée 1: la recherche en profondeur permet cela, avec un bon contrôle sur la consommation mémoire\n(3) Or, on sait qu’aucune solution faisable ne sera possible tant qu’il y a un un conﬂit\nNotre prochaine étape est d’explorer cet arbre de recherche"
+      }
+    ]
+  },
+  {
+    "id": "5a02ee4b-4c6b-4953-86e7-8e278f1a3d30",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_27.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAmélioration 2: détection des conﬂits\n27Conséquence: énormément de noeuds seront explorés avant qu'une alternative viable soit testée\nAvez-vous une idée pour empêcher ce comportement ?Observation: il n'y a aucun intérêt d'étendre un état qui contient déjà un conﬂitNouvelle idée: faire un retour en arrière sur le noeud parent dans l’arbre dès qu'un conﬂit est détecté\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nNotre recherche en profondeur simple est extrêmement sensible aux conﬂits arrivant tôt dans l'arbre\nCette stratégie est connue sous le nom de recherche à retours-arrières"
+      }
+    ]
+  },
+  {
+    "id": "b5fb7c48-ff75-477a-be84-95432322781b",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_28.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartRecherche avec retours-arrières (backtracking search)\n28Recherche en profondeur où on remonte au noeud parent dès qu’un conﬂit est détectéRecherche avec retours-arrières (backtracking search)\nNote: un conﬂit se produit lorsqu’il y a au moins une contrainte du problème qui n’est pas respectée\ns=𝗉𝗈𝗉(L)𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖡𝖺𝖼𝗄𝗍𝗋𝖺𝖼𝗄𝗂𝗇𝗀𝖲𝖾𝖺𝗋𝖼𝗁(P):𝗐𝗁𝗂𝗅𝖾L≠∅:s={}𝗉𝗎𝗌𝗁(L,s)L=𝖫𝖨𝖥𝖮()⟨X,D,C⟩=P\n𝗂𝖿𝖿𝖾𝖺𝗌𝗂𝖻𝗅𝖾(s′ ,C):𝗉𝗎𝗌𝗁(L,s′ )x=𝗌𝖾𝗅𝖾𝖼𝗍𝖴𝗇𝖺𝗌𝗌𝗂𝗀𝗇𝖾𝖽𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾(s,X)𝖿𝗈𝗋𝖾𝖺𝖼𝗁v∈D(x):s′ =s∪{x←v}𝗂𝖿𝖺𝗌𝗌𝗂𝗀𝗇𝗆𝖾𝗇𝗍𝖢𝗈𝗆𝗉𝗅𝖾𝗍𝖾𝖽(s):𝗋𝖾𝗍𝗎𝗋𝗇s\nNote: pour un COP, on ne peut pas s’arrêter dès qu’on a une solution car on souhaite trouver la meilleureUn problème correspond à un CSPEtat initial: aucune assignation variable/valeur n’est faiteStructure last-in ﬁrst-out (LIFO) similaire à un DFSEtat ﬁnal: si l’assignation est complète, on retourne la solution trouvéeAmélioration 1: on sélectionne une variable qui n’est pas encore assignéeOn branche sur toutes les valeurs possibles du domaine de la variable choisieOn ajoute l’assignation considérée à la solution partielle actuelleAmélioration 2: on ne branche QUE si l’assignation est valide (active le backtracking)Note: cet algorithme est essentiellement un DFS, on intègre juste les 2 améliorations précédentes"
+      }
+    ]
+  },
+  {
+    "id": "70e42f8c-d2fd-4c32-af1f-8799ca133640",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_29.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartRecherche avec retours-arrières (backtracking search)\n29WANTSAQ\nTVNSWs={}WANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWxWAs={xWA:𝗋𝖾𝖽}s={xWA:𝗀𝗋𝖾𝖾𝗇}s={xWA:𝖻𝗅𝗎𝖾}xWAxNT𝖡𝖠𝖢𝖪𝖳𝖱𝖠𝖢𝖪!WANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWs={xWA:𝗋𝖾𝖽,xNT:𝗋𝖾𝖽}WANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW…\ns={xWA:𝗋𝖾𝖽,xNT:𝗀𝗋𝖾𝖾𝗇}xWAxNTs={xWA:𝗋𝖾𝖽,xNT:𝖻𝗅𝗎𝖾}WANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW"
+      }
+    ]
+  },
+  {
+    "id": "1cc873c8-5632-4090-aa4d-26328c4929ed",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_30.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartPhase de recherche en programmation par contraintes\n30\nPoint de départ: recherche basée sur une stratégie DFSAmélioration 1: exploitation de la commutativité pour réduire l'espace de rechercheAmélioration 2: retour en arrière dès qu'un conﬂit a été détecté\nhttps://en.wikipedia.org/wiki/Backtracking\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nAller plus loinOrdre des variables: inﬂuence sur l'eﬃcacité de la rechercheOrdre des valeurs: inﬂuence sur l'eﬃcacité de la rechercheAmélioration 1: utilisation d'heuristiques pour déterminer de bons ordresAmélioration 2: raisonnements logiques pour réduire l'espace de rechercheLecture complémentaire disponible sur MoodleEconomie de mémoire: n’étendre qu’un successeur au lieu de tous𝒪(bm)→𝒪(m):avec m le nombre de variables et b le nombre de valeursPreuve : raisonnement similaire à celui fait pour la complexité spatiale du DFS\nProgrammation par contraintes = modèle + recherche + propagation\nRésultat: recherche à retours-arrières"
+      }
+    ]
+  },
+  {
+    "id": "49f708cf-c6ce-4bf5-88a7-090f42532a3b",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_31.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n31Programmation par contraintes1. Limitations et diﬃcultés de la recherche locale 2. Concepts et principes fondamentaux de la programmation par contraintes 3. Formalisation des problèmes combinatoires  4. Modélisation en programmation par contraintes 5. Recherche avec retours-arrières (backtracking search)  6. Propagation de contraintes (arc consistency) 7. Algorithme du point ﬁxe 8. Fonctionnement d'un solveur de programmation par contraintes\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW"
+      }
+    ]
+  },
+  {
+    "id": "99f5a0f9-a012-42e3-9dda-5bd1bc74a8f6",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_32.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartPhase de recherche en programmation par contraintes\n32\nPeut-on améliorer notre processus de résolution ?Responsabilité des contraintes(1) Fournir des facilités de modélisation pour l'utilisateur (modeling support)(2) Permettre de détecter des conﬂits pour un retour-arrière (feasability checking)(3) Réduire le domaine des variables en enlevant des valeurs que l'on sait impossible (propagation)Importance: un des mécanismes principaux d'un solveur CPImpact: permet de réduire drastiquement l'espace de rechercheMécanisme complémentaire à une stratégie de rechercheRéduction de la taille des domaines via des raisonnements logiques appliqués sur les contraintesPropagation de contraintes (constraint propagation)\nProgrammation par contraintes = modèle + recherche + propagationRaisonnements logiques"
+      }
+    ]
+  },
+  {
+    "id": "6f5f0876-2f81-45c8-a8a3-4b87e33c1928",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_33.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartPropagation de contraintes: exemple introductif\n33Taille du problème:|D(x)|×|D(y)|=100 combinaisons variables/valeursExemple: simple CSP avec une contrainte d’inégalité\nSatisfySubject tox≥3+2yx∈{1,…,10}y∈{1,…,10}\nPeut-on réduire la taille des domaines en exploitant la contrainte ?Principe: analysons quelle est la meilleure situation si on veut satisfaire l’inégalitéSituation la moins restrictive: avoir le plus petit y possible (inégalité 'plus grand')Certitude: x ne peut pas avoir une valeur en dessous de 5\nx≥3+2y→x≥5,𝖺𝗏𝖾𝖼y=1\ny≤x−32→y≤3.5,𝖺𝗏𝖾𝖼x=10Certitude: y ne peut pas avoir une valeur au dessus de 3.5Domaine de x après la propagation:{5,…,10}Domaine de y après la propagation:{1,2,3}(1) Point de vue de la variable x(2) Point de vue de la variable ySituation la moins restrictive: avoir le plus grand x possible (inégalité 'plus petit’)\nOn n’a plus que 18 combinaisons valides, sans aucune recherche eﬀectuée"
+      }
+    ]
+  },
+  {
+    "id": "fbe0ddc4-9db2-481d-8b76-976449bf3485",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_34.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartCohérence d'arc\n34Mécanisme central: principe de la cohérence d'arc (arc consistency)Soit une contrainte binaire, qui implique deux variables x et y Cohérence/consistance d’arc (arc consistency)\nLa variable x est arc-consistent avec y, si pour chaque valeur de son domaine,  il existe au moins une valeur dans le domaine de y permettant de satisfaire la contrainte Intuition: chaque valeur de x doit avoir une valeur de y permettant de satisfaire la contrainte\nSatisfySubject toy=x2x∈{0,1,2,3}y∈{0,1,4,7,9}\nEst-ce que x est arc-consistent avec y selon la contrainte ?Oui: chaque valeur de x a un valeur support dans y\nEst-ce que y est arc-consistent avec x ? Support manquant: ⟨y=7→⊥⟩Non: la valeur 7 n'a aucun support dans xSupports: ⟨x=0→y=0⟩,⟨x=1→y=1⟩,⟨x=2→y=4⟩,⟨x=3→y=9⟩Conclusion: on peut donc retirer sécuritairement la valeur 7 de y\nBonne nouvelle: oui! il existe plusieurs méthodes, ayant chacune leurs forces et faiblesses Mauvaise nouvelle: cela implique qu’il y a de nouveaux algorithmes à implémenter\nExemple: simple CSP avec une contrainte binaire quelconque"
+      }
+    ]
+  },
+  {
+    "id": "a61bbb6c-bef1-49c2-8ed3-105320896f4e",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_35.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartPropagateur de contraintes\n35Note: souvent, plusieurs propagateurs sont disponibles par contrainte et diﬀèrent par deux propriétésForce de propagation: qualité des raisonnements logiques pour réduire les domaines Vitesse de propagation: eﬃcacité temporelle des raisonnements logiquesEn pratique: un propagateur doit être implémenté pour chaque contrainte présente dans un solveur CP\nD(x)=D(x)\\vx𝖯𝗋𝗈𝗉𝖺𝗀𝖺𝗍𝗂𝗈𝗇𝖠𝖢(x,y,c):𝖿𝗈𝗋𝖾𝖺𝖼𝗁vx∈D(x):𝗂𝖿𝗇𝗈𝗏𝖺𝗅𝗎𝖾vy𝖿𝗋𝗈𝗆D(y)𝖺𝗅𝗅𝗈𝗐𝗌c𝗐𝗂𝗍𝗁vx𝗍𝗈𝖻𝖾𝗌𝖺𝗍𝗂𝗌𝖿𝗂𝖾𝖽:Champ d’application: fonctionne pour chaque contrainte binaireBeaucoup d'améliorations existantes: AC3, AC4, AC5, AC6, AC2001En pratique: le propagateur doit être appelé au moins deux fois (pour x et y)Complexité temporelle: 𝒪(d2) (taille des domaines)Objectif: propage la contrainte binaire c(x,y) pour la variable xBoucle: on parcourt toutes les valeurs du domaine de xCondition: si une valeur de x n’est pas supportée par une valeur de yRésultat: alors on l'enlève du domaine de x (pruning)Algorithme eﬀectuant la propagation pour une contrainte (ou un type de contrainte)Propagateur de contraintes (propagator)\nExemple: regardons un propagateur dédié aux contraintes binaires pour obtenir la cohérence d’arc"
+      }
+    ]
+  },
+  {
+    "id": "6f2780b8-cd02-41df-a092-a2bf020d6fb2",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_36.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartLimitation de la cohérence d'arc\n36\nEst-ce qu'on peut éliminer toutes les conﬁgurations infaisables ?xyz\nc1:x≠yc2:x≠zc3:y≠z(1) c1(x→y):toutes les valeurs de x ont un support dans y(2) c1(y→x):toutes les valeurs de y ont un support dans xMauvaise nouvelle: inconsistance non détectée (2 couleurs/3 variables) Notre situation: le conﬂit est dû à la combinaison de plusieurs contraintes Diﬃculté: la consistence d'arc ne détecte que les conﬂits de chaque contrainte prise individuellementAutres formes de cohérenceK-consistence: principe de la cohérence d'arc, mais pour k variables (cohérence plus forte) Contraintes globales: algorithme de propagation dédié et spéciﬁque à la contrainte (p.e., alldiﬀerent)Obtenir une consistence plus forte est généralement plus coûteux !Bound-consistence: cohérence d'arc, mais appliquée sur les bornes des domaines (cohérence moins forte)Essai: appliquons la cohérence d’arc sur les trois contraintes(3)c2etc3:résultat similaire\nOn a besoin de notions de cohérence plus forte pour gérer cette situation (et avoir un propagateur dédié)"
+      }
+    ]
+  },
+  {
+    "id": "b7910ef5-6955-44a3-86a1-c91cf40a962b",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_37.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartGestion des propagations\n37\nSatisfySubject tox≥3+2yx∈{1,…,10}y∈{1,…,10}Subject tox≥3+2y(c1)x≤8(c2)\nEst-il possible de réduire davantage les domaines ? \nDomaine initialx∈{1,…,10}y∈{1,…,10}\nAprès la propagation de c1x∈{5,…,10}y∈{1,2,3}\nAprès la propagation de c2x∈{5,…,8}y∈{1,2,3}Etat actuel: les deux contraintes ont été propagées une seule foisOui: le fait d'avoir modiﬁé la variable x via c2 rend possible de nouvelles propagations via c1Modiﬁcation: La valeur 3 de y n'a aucun support dans x, on peut donc la retirer du domaine\nA chaque fois qu'une valeur est retirée du domaine d'une variable,  on doit re-propager toutes les contraintes impliquant la variable modiﬁéeGestion des propagations\ny≤x−32→y≤2.5,𝖺𝗏𝖾𝖼x=8\nx∈{5,…,8}y∈{1,2}\nComment gérer les CSPs avec plusieurs contraintes ?"
+      }
+    ]
+  },
+  {
+    "id": "1a61b0ec-d8b6-4db6-8a77-5bdac085c245",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_38.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nAlgorithme du point-ﬁxe\n38Algorithme du point ﬁxe (ﬁx-point algorithm)Fonction: réalisation concrète de la gestion des propagations dans un solveur CPObjectif: propager successivement les contraintes jusqu'à ce que les domaines ne peuvent plus être réduits𝖥𝗂𝗑𝖯𝗈𝗂𝗇𝗍(P):𝗐𝗁𝗂𝗅𝖾Q≠∅:D′ =𝗉𝗋𝗈𝗉𝖺𝗀𝖺𝗍𝖾(c)⟨X,D,C⟩=P𝗉𝗎𝗌𝗁(Q,C)Q=𝖥𝖨𝖥𝖮()c=𝗉𝗈𝗉(Q)𝗂𝖿𝗍𝗁𝖾𝗋𝖾𝗂𝗌𝖺𝗇𝖾𝗆𝗉𝗍𝗒𝖽𝗈𝗆𝖺𝗂𝗇𝗂𝗇D′ :𝗋𝖾𝗍𝗎𝗋𝗇𝖿𝖺𝗂𝗅𝗎𝗋𝖾X′ ={x∈X|D′ (x)≠D(x)}𝗉𝗎𝗌𝗁(Q,C′ )C′ =𝖼𝗈𝗇𝗌𝗍𝗋𝖺𝗂𝗇𝗍𝗌𝖨𝗇𝗏𝗈𝗅𝗏𝖾𝖽𝖡𝗒(X′ )D=D′ 𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗎𝖼𝖼𝖾𝗌𝗌On maintient une liste des contraintes à propagerToutes les contraintes doivent être propagées au moins une foisTant qu'il reste des contraintes à propager......On prend une contrainte (ordre FIFO - autres choix possibles)...On la propage et on accède aux domaines modiﬁésSi un des domaines est vide, on retourne un échec (pas de solutions)Sinon, on accède aux variables modiﬁées par la propagationOn rajoute les contraintes impliquées dans la listeOn met à jour les domainesSituation ou tous les domaines sont non-videsLe point de conception majeur est l'implémentation des algorithmes de propagation"
+      }
+    ]
+  },
+  {
+    "id": "38b34fd6-a286-40eb-a22a-ed2cf06ad32b",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_39.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlgorithme du point ﬁxe: exemple\n39\nSatisfyx∈{1,…,10}y∈{1,…,10}Subject tox≥3+2ySubject tox≥3+2y(c1)x≤8(c2)z∈{1,…,10}z=y+1(c3)y∈{1,…,10}z∈{1,…,10}Q=⟨c1,c2,c3⟩x∈{1,…,10}(1) Situation initialey∈{1,2,3}z∈{1,…,10}Q=⟨c2,c3⟩x∈{5,…,10}(2) Propagation de c1 (consistence d’arc)(3) Propagation de c2 (consistence d’arc)y∈{1,2,3}z∈{1,…,10}Q=⟨c3,c1⟩x∈{5,…,8}La contrainte c1 est rajoutée dans la queue car elle dépend d'une variable modiﬁée (x)(4) Propagation de c3 (consistence d’arc)y∈{1,2,3}z∈{2,3,4}Q=⟨c1⟩x∈{5,…,8}Aucune contrainte n'est ajoutée car la variable modiﬁée (z) n'est pas impliquée dans les autres contraintes(5) Propagation de c1 (consistence d’arc)y∈{1,2}z∈{2,3,4}Q=⟨c3⟩x∈{5,…,8}La contrainte c3 est rajoutée dans la queue car elle dépend d'une variable modiﬁée (x)(6) Propagation de c3 (consistence d’arc)y∈{1,2}z∈{2,3}Q=⟨⟩x∈{5,…,8}Aucune contrainte n'est ajoutée car la variable modiﬁée (z) n'est pas impliquée dans les autres contraintes(7) La queue est vide: l'algorithme du point ﬁxe s'arrête"
+      }
+    ]
+  },
+  {
+    "id": "ea9ed5a3-578c-4d35-837a-d75a191e5044",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_40.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nhttps://github.com/minicp/minicp/blob/master/src/main/java/ minicp/engine/core/MiniCP.javaAlgorithme du point-ﬁxe et propagation en pratique\n40\n𝖥𝗂𝗑𝖯𝗈𝗂𝗇𝗍(P):𝗐𝗁𝗂𝗅𝖾Q≠∅:D′ =𝗉𝗋𝗈𝗉𝖺𝗀𝖺𝗍𝖾(c)⟨X,D,C⟩=P𝗉𝗎𝗌𝗁(Q,C)Q=𝖥𝖨𝖥𝖮()c=𝗉𝗈𝗉(Q)𝗂𝖿𝗍𝗁𝖾𝗋𝖾𝗂𝗌𝖺𝗇𝖾𝗆𝗉𝗍𝗒𝖽𝗈𝗆𝖺𝗂𝗇𝗂𝗇D′ :𝗋𝖾𝗍𝗎𝗋𝗇𝖿𝖺𝗂𝗅𝗎𝗋𝖾X′ ={x∈X|D′ (x)≠D(x)}𝗉𝗎𝗌𝗁(Q,C′ )C′ =𝖼𝗈𝗇𝗌𝗍𝗋𝖺𝗂𝗇𝗍𝗌𝖨𝗇𝗏𝗈𝗅𝗏𝖾𝖽𝖡𝗒(X′ )D=D′ 𝗋𝖾𝗍𝗎𝗋𝗇𝗌𝗎𝖼𝖼𝖾𝗌𝗌\nhttps://github.com/minicp/minicp/blob/master/src/main/java/ minicp/engine/constraints/Equal.java\nD(x)=D(x)\\vx𝖯𝗋𝗈𝗉𝖺𝗀𝖺𝗍𝗂𝗈𝗇𝖠𝖢(x,y,c):𝖿𝗈𝗋𝖾𝖺𝖼𝗁vx∈D(x):𝗂𝖿𝗇𝗈vy𝖿𝗋𝗈𝗆D(y)𝖺𝗅𝗅𝗈𝗐𝗌c𝗐𝗂𝗍𝗁vx𝗍𝗈𝖻𝖾𝗌𝖺𝗍𝗂𝗌𝖿𝗂𝖾𝖽:XYContrainte: x = yVx"
+      }
+    ]
+  },
+  {
+    "id": "0156e800-10f2-41c2-9ef2-06709a42d747",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_41.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n41Programmation par contraintes1. Limitations et diﬃcultés de la recherche locale 2. Concepts et principes fondamentaux de la programmation par contraintes 3. Formalisation des problèmes combinatoires  4. Modélisation en programmation par contraintes 5. Recherche avec retours-arrières (backtracking search)  6. Propagation de contraintes (arc consistency) 7. Algorithme du point ﬁxe 8. Fonctionnement d'un solveur de programmation par contraintes\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW"
+      }
+    ]
+  },
+  {
+    "id": "9d4a566a-cd71-4af7-b67d-6ce513824930",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_42.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartProcessus de résolution en programmation par contraintes\n42\nModèle Minizinc (input du solveur)\nSatisfySubject toxu≠xvxv∈{𝗋𝖾𝖽,𝗀𝗋𝖾𝖾𝗇,𝖻𝗅𝗎𝖾}∀(u,v)∈E∀v∈VModélisation mathématique\nWANTSAQ\nTVNSWCSP à résoudre\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nSolveur de programmation par contraintesWANTSAQ\nTVNSWSolution\nProgrammation par contraintes = modèle + recherche + propagation"
+      }
+    ]
+  },
+  {
+    "id": "ae417ac0-3ba1-4aad-97c5-773c4b9d3b0c",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_43.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartFonctionnement d'un solveur CP\n43WANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nRecherche: recherche à retours-arrières (backtracking search)Propagation: propagateur propre à chaque contrainte (p.e., arc-consistency)\nComment ces trois mécanismes sont agencés dans un solveur ?(1) La recherche est lancée sur le problème initial(2) L'algorithme du point ﬁxe est exécuté à chaque noeud de l'espace de rechercheAinsi, à chaque fois qu'on assigne une valeur à une variable, on réduit au maximum les domaines(3) Lorsqu'un domaine est vide, notre conﬁguration actuelle est infaisable et on eﬀectue un retour arrièreLa plupart des solveurs modernes sont basés sur ce mécanisme\nGecode (C++)\nGestion des propagation: algorithme du point ﬁxe"
+      }
+    ]
+  },
+  {
+    "id": "07539c3c-8bd5-4221-98d1-9c23e7894683",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_44.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\ns=𝗉𝗈𝗉(L)\n𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇𝖢𝖯𝖲𝗈𝗅𝗏𝖾𝗋(P):\n𝗐𝗁𝗂𝗅𝖾L≠∅:s={}𝗉𝗎𝗌𝗁(L,s)L=𝖫𝖨𝖥𝖮()⟨X,D,C⟩=P\nx=𝗌𝖾𝗅𝖾𝖼𝗍𝖴𝗇𝖺𝗌𝗌𝗂𝗀𝗇𝖾𝖽𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾(s,X)𝖿𝗈𝗋𝖾𝖺𝖼𝗁v∈D(x):s′ =s∪{x←v}𝗂𝖿𝖺𝗌𝗌𝗂𝗀𝗇𝗆𝖾𝗇𝗍𝖢𝗈𝗆𝗉𝗅𝖾𝗍𝖾𝖽(s):𝗋𝖾𝗍𝗎𝗋𝗇sPseudo-code d’un solver CP\n44Application du point ﬁxe pour réduire les domaines (D change après l’opération)\n𝗌𝗍𝖺𝗍𝗎𝗌𝗂𝗌𝗌𝗎𝖼𝖼𝖾𝗌𝗌:𝗉𝗎𝗌𝗁(L,s′ )𝗌𝗍𝖺𝗍𝗎𝗌=𝖥𝗂𝗑𝖯𝗈𝗂𝗇𝗍(s′ ,P)𝗌𝗍𝖺𝗍𝗎𝗌=𝖥𝗂𝗑𝖯𝗈𝗂𝗇𝗍(s,P)𝗌𝗍𝖺𝗍𝗎𝗌𝗂𝗌𝖿𝖺𝗂𝗅𝗎𝗋𝖾:𝗋𝖾𝗍𝗎𝗋𝗇𝗇𝗈𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇Si un domaine est vide, on sait déjà que le problème est infaisable\nApplication du point ﬁxe sur un noeud de rechercheSeulement si on a que des domaines non-vides, alors on peut brancherEn pratique: d’autres mécanismes sont nécessaires pour rendre le solveur plus eﬃcace\nLe principe général est une recherche à retours-arrières qui intègre le point-ﬁxe à chaque noeud de l’arbreStructure générale: recherche à retours-arrières (slides précédents)"
+      }
+    ]
+  },
+  {
+    "id": "6f9f91f5-99a0-4ff9-8cd4-a01578533e8e",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_45.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartRecherche + propagation: illustration\n45WANTQNSWVSATWANTSAQ\nTVNSWEtat initial: toutes les variables ont les trois couleurs dans leur domaineExécution du point ﬁxe: aucune modiﬁcation des domainesPoint ﬁxe: rouge enlevé de NT et SAxWA=𝗋𝖾𝖽WANTQNSWVSATPoint ﬁxe: vert enlevé de NSW, NT et SA\nEmpty domain !Branchement de la rechercheBranchement de la recherchePoint ﬁxe: bleu enlevé de NSW et SADomaine vide pour SABacktrackxV=𝗀𝗋𝖾𝖾𝗇xQ=𝗀𝗋𝖾𝖾𝗇xV=𝖻𝗅𝗎𝖾Diﬀérence mineure par rapport à l’algorithme précédent: je n’étends qu’un noeud à la foisExemple: problème de coloration de graphe"
+      }
+    ]
+  },
+  {
+    "id": "de1a1e45-81d9-40fc-a3a9-eb3a3e679726",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_46.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartVisualisation du processus sur Mizininc\n46\n591951519Solution  infaisable\n4,67,927,94,61,351,38Solution  non-complete\n672943518Solution  faisable"
+      }
+    ]
+  },
+  {
+    "id": "66fdf170-53f2-4413-b317-cd99810dbc14",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_47.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nEn pratique…\n47\nNombre de solutions faisables: 7040Nombre de backtracks (failures): 202 754Nombre de noeuds explorés dans l’arbre: 419 587\nSituation: carré magique de taille 4x4 où on cherche TOUTES les solutions"
+      }
+    ]
+  },
+  {
+    "id": "8a895ae2-0ef4-40af-8acb-5a8c4dde70cb",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_48.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartConception de solveurs\n48Chaque solveur existant a son propre équilibre entre ces critèresCritères fondamentauxEﬃcacité: performance des mécanismes internes pour résoudre le problèmeExpressivité: le nombre de contraintes disponibles pour l'utilisateurSimplicité d'utilisation: la facilité qu'a l'utilisateur à prendre le solveur en main et à le manipulerModularité: la possibilité de modiﬁer et d'améliorer le solveur (à des ﬁns de recherche par exemple)\nIls diﬀèrent par plusieurs choix de conceptionLangage de programmationStructure de donnéesMécanismes supplémentaires (apprentissage, heuristiques de recherche, etc.)Algorithme des propagateursConception de solveurs\nGecode (C++)\nCP Optimizer"
+      }
+    ]
+  },
+  {
+    "id": "12e06b20-1a11-439f-a62c-0d300a1950fe",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_49.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n49Programmation par contraintes1. Limitations et diﬃcultés de la recherche locale 2. Concepts et principes fondamentaux de la programmation par contraintes 3. Formalisation des problèmes combinatoires  4. Modélisation en programmation par contraintes 5. Recherche avec retours-arrières (backtracking search)  6. Propagation de contraintes (arc consistency) 7. Algorithme du point ﬁxe 8. Fonctionnement d'un solveur de programmation par contraintes\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW"
+      }
+    ]
+  },
+  {
+    "id": "894feb33-8329-4a0c-95b4-b2ecd1045365",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_50.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartSynthèse des notions vues\n50Formalisation des problèmes combinatoires (CSP et COP)VariablesDomainesContraintesFonction objectif\nSatisfySubject toxu≠xvxv∈{𝗋𝖾𝖽,𝗀𝗋𝖾𝖾𝗇,𝖻𝗅𝗎𝖾}∀(u,v)∈E∀v∈V\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSWWANTSAQ\nTVNSWWANTSAQ\nTVNSW\nWANTSAQ\nTVNSW\nRecherche à  retours arrières\nModèle du problèmePropagateurs de contraintes  et algorithme point ﬁxe\nProgrammation par contraintes = modèle + recherche + propagation"
+      }
+    ]
+  },
+  {
+    "id": "48dc6577-35ac-466c-b5ca-e51d2fccf9e4",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_51.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAller plus loin en CP\n51LimitationsLimitation: croissance exponentielle du nombre de possibilitésDiﬃcultés: performances fort dépendantes à la qualité du modèle construitLimitation: pas toujours la méthode la plus eﬃcace en pratiquePoints non abordésImplémentation d'autres algorithmes de propagationElaboration d'heuristiques de rechercheStructures de données utilisées dans un solveurAstuces pour construire des bons modèlesCombinaison avec de la recherche locale\nAller plus loin...Coursera - https://www.coursera.org/lean/basic-modelingINF6101 - Programmation par contraintes (Gilles Pesant)\nCours en ligne MiniCP - http://www.minicp.org/"
+      }
+    ]
+  },
+  {
+    "id": "4bcad2d8-5cf2-4175-a58e-edaf7cd45ed9",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_52.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartExemples de questions d'examen\n521. Savoir modéliser adéquatement un problème comme un CSP ou un COP 2. Savoir appliquer le backtracking search sur un exemple 3. Savoir appliquer l'algorithme du point ﬁxe sur un exempleThéoriePratique1. Expliquer les diﬀérences entre la recherche locale et la programmation par contraintes 2. Expliquer ce qu'est la propagation, et savoir l'illustrer sur un exemple 3. Expliquer en quoi la recherche DFS pure n'est pas adaptée pour la résolution de CSP"
+      }
+    ]
+  },
+  {
+    "id": "8b959d82-9304-4d78-9977-8a6175af852d",
+    "image": "extracted_content\\M4-programmation-par-contraintes\\images\\page_53.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesProgrammation par contraintes: FIN\nDALLE: Painting of Monet, a woodchopper with the Holy Grail"
+      }
+    ]
+  }
+]

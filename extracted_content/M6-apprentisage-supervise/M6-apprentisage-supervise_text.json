@@ -1,0 +1,242 @@
+[
+  {
+    "page": 1,
+    "text": " \nQuentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesModule 6: Apprentissage supervisé"
+  },
+  {
+    "page": 2,
+    "text": "Quentin CappartContenu du cours\n2Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques \n"
+  },
+  {
+    "page": 3,
+    "text": "Quentin CappartTable des matières\n3Apprentissage supervisé1. Motivation et intérêt de l'apprentissage automatique 2. Classiﬁcation des principaux types d'apprentissage 3. Déﬁnition de l'apprentissage supervisé 4. Méthode de la régression linéaire simple 5. Apprentissage par descente de gradient 6. Méthode de la régression linéaire multiple 7. Méthode de la régression logistique 8. Graphe de dépendance, forward pass, et backward pass\nσ(z)=11+e−z"
+  },
+  {
+    "page": 4,
+    "text": "Quentin CappartApprentissage automatique\n4\nPouvez-vous donner quelques exemples d'applications usuelles ?\nNous utilisons régulièrement des outils basés sur de l'apprentissage automatique dans notre vie quotidienne\nhttps://support.apple.com/en-ca/102381\nApplication: reconnaissance faciale pour vos appareils personnels"
+  },
+  {
+    "page": 5,
+    "text": "Quentin CappartReconnaissance de caractères (OCR - optical character recognition)\n5Application 3: dispatching automatique de lettres postalesApplication 2: reconnaissance de réponses dans un formulaire administratif\nhttps://viso.ai/computer-vision/optical-character-recognition-ocr/\nObjectif simple, mais il est très diﬃcile de construire manuellement un algorithme pour cette tâcheApplication 1: reconnaissance de caractères dans une facture"
+  },
+  {
+    "page": 6,
+    "text": "Quentin CappartConduite autonome\n6\nhttps://www.tesla.com/AI"
+  },
+  {
+    "page": 7,
+    "text": "Quentin CappartTraduction automatique du langage\n7\nEn 2020: la traduction n'est pas parfaite, mais donne néanmoins l’idée généraleIntérêt: peut servir de base à de meilleures traductions\n2020\n2022\n2023\nEn 2021, 2022 et 2023: la traduction s’est continuellement améliorée"
+  },
+  {
+    "page": 8,
+    "text": "Quentin CappartMoteur de recherche\n8\nTâche 2: donner les pages Web les plus probablesTâche 1: l’auto-complétion de ma rechercheSpéciﬁcité: pour cela, on souhaite tenir compte du proﬁl de la personne (p.ex., sa localisation)"
+  },
+  {
+    "page": 9,
+    "text": "Quentin CappartChatbots vocaux\n9\nTâche 1: reconstruction d'une phrase à partir d'une onde acoustiqueTâche 2: analyse de la requêteTâche 3: réponse à donner ou prise de décision\nhttps://powervirtualagents.microsoft.com/fr-ca/voicebots-conversational-ai/Applications: support pour des clients, utilisation domestique, etc."
+  },
+  {
+    "page": 10,
+    "text": "Quentin CappartChatbots textuels\n10\nhttps://play.aidungeon.io/Application 2: support clientèle sur un site webApplication 3: générateur d’histoires à des ﬁns récréatives\nApplication 1: support d’aide générale personnalisée"
+  },
+  {
+    "page": 11,
+    "text": "Quentin CappartApplication en robotique\n11\nhttps://openai.com/blog/learning-dexterity/"
+  },
+  {
+    "page": 12,
+    "text": "Quentin CappartApplications dans le domaine médical\n12\nhttps://spectrum.ieee.org/consumer-electronics/audiovideo/deep-learning-reinvents-the-hearing-aid\nDeep Q-learning for simultaneous beam orientation and trajectory optimization for Cyberknife [Kafaei et al., 2021]Application 1: prothèse auditive pour mal-entendantsApplication 2: amélioration du processus de traitement pour une radiothérapie"
+  },
+  {
+    "page": 13,
+    "text": "Quentin CappartApprentissage pour les jeux\n13\nAlphaStar: Mastering the real-time strategy game StarCraft II [DeepMind, 2019]\nPlaying Atari with Deep Reinforcement Learning [DeepMind, 2013]Mastering the game of Go with deep neural networks and tree search [DeepMind, 2016]\nObjectif: utiliser les jeux comme environnement pour développer et tester des IAs (module 2)"
+  },
+  {
+    "page": 14,
+    "text": "Quentin CappartGénérateur d’images - créations artistiques\n14Image style transfer using convolutional neural networks [Gatys et al. 2016]\nhttps://deepart.io (la plateforme n’est plus disponible)\nStyle de Turner\nStyle de Van GoghStyle de Munch"
+  },
+  {
+    "page": 15,
+    "text": "Quentin CappartGénérateur d’images - créations artistiques\n15\nGénérateurs d’imagesPopularité: génération d’images rigolotes, plausibles et liées à la requêteObjectif: générer des images à partir d’une description textuelle\nLogiciels: DALL-E, Midjourney, Stable diﬀusion, etc.\nGénération: via la version payante de DALL-EHierarchical Text-Conditional image Generation with CLIP Latents [OpenAI, 2022 - Dall-E 2]"
+  },
+  {
+    "page": 16,
+    "text": "Quentin CappartGénération automatique\n16\nUne seule de ces photos provient d'une vraie personne, laquelle ?\nhttps://thispersondoesnotexist.com/Et je n’en suis pas sûr!Danger: ouvre la porte à de nombreuses dérives éthiques (dernier module)ABCDEF"
+  },
+  {
+    "page": 17,
+    "text": "Quentin CappartAutres applications et ressources\n17\n[N-BEATS, Oreshkin et al. 2020]\nObjectif: rendre disponible diﬀérentes applications et leurs données relativesParticularité: tâches présentées sous la forme de compétitionsObservation: de plus en plus d'entreprises passent par Kaggle pour la résolution de leurs problèmeshttps://www.youtube.com/watch?v=Bui3DWs02h4\nAutre application: détection de spamAutre application: prédiction de ventes\nEt encore un grand nombre d’applications, avec énormément d’exemples sur le Web\n"
+  },
+  {
+    "page": 18,
+    "text": "Quentin CappartDéﬁnition de l'apprentissage automatique\n18\nDéﬁnition moderne de l’apprentissage automatique (parmi d'autres)\"A computer program is said to learn from experience E  with respect to some task T and some performance measure P,  if its performance on T, as measured by P, improves with experience E\"http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mitchell/ftp/mlbook.html\nTom Mitchell (1997)(2) L'apprentissage a besoin d'expériences passées (E - données)(3) Besoin d'avoir un moyen d'évaluer les performances d'un modèle (P)(1) L'apprentissage est dédié pour une tâche précise (T)Trois éléments fondamentaux apparaissent:\nConfusion avec l'intelligence artiﬁcielle\"Most of what is labeled AI today, particularly in the public sphere,  is actually machine learning (ML), a term in use for the past several decades\"https://hdsr.mitpress.mit.edu/pub/wot7mkc1/release/8Michael Jordan (2019)\nL’apprentissage automatique n’est qu’un sous-domaine de l'intelligence artiﬁcielleConfusion malheureusement très fréquente (et véhiculée par les médias)"
+  },
+  {
+    "page": 19,
+    "text": "Quentin CappartContenu du cours\n19Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques \n"
+  },
+  {
+    "page": 20,
+    "text": "Quentin CappartObjectif de l'apprentissage automatique\n20\nVentes précédentes\"This movie was far better  than the trailer made it look.\"Review\nDashcam\nFreinerPrédiction\nScorePrédiction\nVentes futuresPrédiction\nL’objectif est de construire une fonction capable d'eﬀectuer une prédiction, pour une situation spéciﬁque\nNotez la grande variété des situations pouvant être considérées (utile dans énormément de contextes)"
+  },
+  {
+    "page": 21,
+    "text": "Quentin CappartIntérêt de l'apprentissage automatique\n21\nPourquoi ne pas résoudre ces problèmes avec les techniques déjà vues ?Raison 1: certaines tâches sont très diﬃciles à résoudre avec les techniques précédentes\nExemple: eﬀectuer une reconnaissance d'imagesApproche traditionnelle: déceler manuellement des caractéristiquesApprentissage: exploiter les similarités avec d'autres photos déjà vuesApproche naïve: mémoriser tous les chiﬀres vus dans une base de données\nRéalité: plusieurs méthodes d'apprentissage utilisent des algorithmes connusExemple: un clustering peut se faire avec de la recherche localeCette deuxième option est plus facile (et eﬃcace) à mettre en oeuvre\nConclusion: la frontière entre les diﬀérents modules n'est pas si stricte...Raison 2: on souhaite avoir une approche applicable à des situations qui ne sont pas encore rencontrées\nExemple: eﬀectuer une reconnaissance de chiﬀres écrits à la mainDiﬃculté: incapable de généraliser à des nouveaux chiﬀres, similaires, mais non-vusRaison 3: en quelques sortes, on va utiliser des algorithmes déjà vus\n"
+  },
+  {
+    "page": 22,
+    "text": "Quentin CappartPrincipaux types d'apprentissage\n22Apprentissage superviséCaractéristique: apprentissage qui utilise des données labellisées (la vraie valeur est connue - ground truth)Analogie de l’apprentissage: un professeur qui enseigne des notions Diﬃculté: on doit avoir ces données à disposition en suﬃsance\nAnalogie de l’exécution: l’élève reproduit dans de nouveaux contextesApprentissage non-superviséExemple: détecter une anomalie (malware parmi des programmes sains)Caractéristique: apprentissage qui n’utilise aucune donnée labellisée\nObjectif: apprendre des associations de similarité entre les donnéesExemple: regrouper les données semblables (clustering)Diﬃculté: on a pas de label de référence pour aider l’apprentissageApprentissage par renforcement\nCaractéristique: apprendre par expériences et essais-erreurs via un signal de récompenseSignal de récompense: positif en cas de bonne action, négatif sinonDiﬃculté: important de savoir comment récompenser les actions faitesObjectif: obtenir le plus de récompenses lors de ces actionsFonctionnement: l’agent réalise toute une série d’actions"
+  },
+  {
+    "page": 23,
+    "text": "Quentin CappartLimitations de l'apprentissage automatique\n23\nAvez-vous des exemples ?Limitations: certaines tâches ne sont pas propices à l'apprentissage automatiqueCritères à considérer: eﬃcacité, éthique, données disponibles, etc.(1) Tâches très bien résolues avec des algorithmes traditionnelsExemple: trier une listeExemple: trouver le plus court chemin entre deux noeuds\nApproches liées: neural reasoning, neural combinatorial optimizationExemple: résoudre eﬃcacement un problème combinatoire(2) Tâches nécessitant des garantiesNon-conseillé pour des systèmes critiques où une erreur est coûteuse à réparer\nDiﬃculté: l’apprentissage automatique ne réalise que des prédictionsConséquence: il y a un risque que les prédictions soient erronéesApproches liées: machine learning with guarantees, safe machine learning"
+  },
+  {
+    "page": 24,
+    "text": "Quentin CappartLimitations de l'apprentissage automatique\n24\n(3) Tâches trop coûteuse pour utiliser un modèleExemple: systèmes temps-réels\n(4) Tâches avec peu ou aucune donnée disponible(5) Situations éthiques délicatesDiﬃculté: entraîner un modèle peut demander des ressources conséquencesRessources: temps d’exécution, temps d’entraînement, mémoire spatiale, etc.\nExemple: prédiction d'une maladie rareRéalité: entraîner un modèle demande des données (idéalement labellisées)Diﬃculté: ces données ne sont pas toujours disponiblesExemple: prédiction si un étudiant doit être admis à une université ou nonExemple: prédiction si une personne a droit à un prêt hypothécaireDiﬃculté: on doit faire attention à ce genre de situation et empêcher la discriminationApproches liées: few-shot learning, zero-shot learning, détection d’anomaliesApproches liées: Fairness-aware AI, Trustworthy machine learningApproches liées: deep learning on FPGA\nPour un grand nombre de situations, l’apprentissage automatique n’est pas l’approche à privilégier"
+  },
+  {
+    "page": 25,
+    "text": "Quentin CappartTable des matières\n25Apprentissage supervisé1. Motivation et intérêt de l'apprentissage automatique 2. Classiﬁcation des principaux types d'apprentissage 3. Déﬁnition de l'apprentissage supervisé 4. Méthode de la régression linéaire simple 5. Apprentissage par descente de gradient 6. Méthode de la régression linéaire multiple 7. Méthode de la régression logistique 8. Graphe de dépendance, forward pass, et backward pass\nσ(z)=11+e−z"
+  },
+  {
+    "page": 26,
+    "text": "Quentin CappartMise en situation: le problème de l'étudiant\n26Problème de l'étudiantMise en situation: suite à ces notes de l'intra, un étudiant se demande combien il obtiendra à son examen(1) Un étudiant est caractérisé par sa note à l'intra\nPremière étape: construire une formalisation du problèmeSon idée: il se base sur les résultats des étudiants de l'année précédentex∈[0..10](2) Le résultat est la note à l'examen ﬁnaly∈[0..10](3) On souhaite construire une fonction de prédictionf:[0..10]→[0..10]Problème visant à construire une fonction de prédiction retournant une valeur continueProblème de régression\nf:X→ℝ\nNote: on peut également restreindre la prédiction à un intervalle de valeurs continues"
+  },
+  {
+    "page": 27,
+    "text": "Quentin CappartFormalisation du problème\n27(2) Les données sont utilisées pour construire une fonction de prédictionPrincipes de l'apprentissage supervisé\nNotations et vocabulaire général(3) Utilisation de la fonction pour prédire la valeur de nouvelles situations(1) Présence de données historiques, dont on connait la vraie valeurEnsemble d’entraînement (training set): les données utilisées pour construire la fonctionD:{(x(1),y(1)),(x(2),y(2)),…,(x(m),y(m))}m:taille de l'ensembleDonnée (data): une association entre en ensemble de caractéristiques (features) et un label (x(i),y(i)),avec x∈[0..10]ety∈[0..10]x(i):caractéristique de la donnée i (on vera par la suite qu'on peut avoir plusieurs caractéristiques)y(i):label de la donnée i(la vraie valeur, ou encore l'étiquette)Fonction de prédiction: fonction donnant une valeur à partir des caractéristiques en entrée f:[0..10]→[0..10]Valeur prédite: valeur de sortie de la fonction pour de nouvelles données ̂y=f(x) (le chapeau indique qu'on a une valeur estimée)m=20\n"
+  },
+  {
+    "page": 28,
+    "text": "Quentin CappartFonction de prédiction\n28Principe: préconception que l'on fait sur notre fonctionHypothèse: concept fondamental en apprentissage automatique\nNote: hypothèse très simple mais néanmoins très utile\nNotre objectif est de construire une fonction de prédiction. Quelle forme de fonction utiliser ? (linéaire, polynomiale, exponentielle, etc.)Exemple: fonction linéaireFonction de prédiction ayant la forme suivante:Approximation par une fonction linéaire\n̂y=f(x)=w.x+bx:caractéristique (feature)w,b:paramètres de la fonction (parameters)w:poids de la caractéristique x (weight)b:biais (bias or intercept)Paramètres: déﬁnissent le type de la droiteObjectif: trouver des valeurs adéquates pour ces paramètresVotre tâche: vous devez déﬁnir l’hypothèse qui vous semble pertinente"
+  },
+  {
+    "page": 29,
+    "text": "Quentin CappartRégression linéaire simple\n29f(x)=0.76x+0.96\nf(x)=−0.5x+9Intuition: on souhaite obtenir la droite qui donne une bonne approximation de nos données\nObservation: la fonction de droite semble être de meilleure qualité\nComment déterminer ces paramètres (w et b) ?\n̂y=f(x)=w.x+bApproximation linéaireRappel: cela revient à déterminer la droite (pente et intercept)\nTâche consistant à déterminer la meilleure approximation linéaire entre une variable (x) et son label (y)Régression linéaire\n"
+  },
+  {
+    "page": 30,
+    "text": "Quentin CappartFonction d’écart\n30Intuition: on veut construire la fonction (linéaire) qui approxime le mieux nos donnéesMétrique possible: considérer l’écart entre la fonction et les points connus\nxy(x(1),y(1))(x(2),y(2))(x(3),y(3))(x(4),y(4))̂y=w.x+b̂y(2)−y(2)f(x(2))−y(2)(w.x(2)+b)−y(2)\nComment formaliser la qualité d'une fonction par rapport à nos données ?Diﬃculté: la notion d’écart n’est pas bien déﬁnieEn pratique, il existe plusieurs façons de calculer cet écart\nExemple: l'écart quadratique→L(̂y(i),y(i))=(̂y(i)−y(i))2Fonction déﬁnissant l’écart qu’un modèle de  prédiction a avec un certain point de l’espaceFonction d’écart (loss function)\nL(̂y(i),y(i))→écartIntérêt: évite que les écarts positifs et négatifs se compensentIntérêt: donne une forte pénalité pour les grands écartsIntérêt: cet écart est une fonction diﬀérentiable\nUn objectif possible est de minimiser la somme de tous ces écarts"
+  },
+  {
+    "page": 31,
+    "text": "Quentin CappartFormalisation de l'apprentissage supervisé\n31Fonction combinant les écarts avec tous les points de l’ensemble considéréFonction de coût (cost function)\nJ(w,b):m⨁i=1L(̂y(i),y(i))→écart totalIntuition: il s’agit d’une mesure d'à quel point une prédiction est loin de l’ensemble des donnéesm⨁i=1:opérateur combinant les diﬀérents écarts obtenues via la fonction d'écartw,b:paramètres de la fonction (parameters)Note: par cette formulation, on remarque que l’évaluation du coût dépend des valeurs des paramètres\nNote: la fonction de coût (et d’écart) dépendent du type de prédiction à réaliserTâche de régression: erreur quadratique moyenneTâche de classiﬁcation: entropie croiséeTâche consistant à déterminer les paramètres (w et b) qui minimisent une fonction de coûtApprentissage supervisé\nminw,bJ(w,b)"
+  },
+  {
+    "page": 32,
+    "text": "Quentin CappartRetour au problème de l’étudiant\n32\nFonction de coût communément utilisée pour des tâches de régressionErreur quadratique moyenne (mean squared error)\n=12mm∑i=1(̂y(i)−y(i))2 avec ̂y(i)=w.x(i)+bJ(w,b)=12mm∑i=1L(̂y(i),y(i))Note: le facteur 1/2 ne change rien aux écarts, mais va simpliﬁer les futurs calculsNotre tâche: minimiser cette fonction et ainsi obtenir notre équation de droite(̂y(2)−y(2))2\n"
+  },
+  {
+    "page": 33,
+    "text": "Quentin CappartDescente de gradient\n33Descente de gradient: méthode (parmi d'autres) pour minimiser une fonctionFonctionnement: améliore les paramètres étape par étape en suivant la direction donnée par le gradientHypothèse: nécessite d'avoir une fonction de coût principalement diﬀérentiable \n(2) La direction du mouvement à prendre(3) L’intensité du mouvement à prendre\nComment minimiser cette fonction ?\nBasé sur trois ingrédients essentiels:\nAnalogie: cette méthode peut être vue comme un hill climbing (module 3) dans un espace continu(1) Le choix d'une position initiale\nJ(w,b)=12mm∑i=1(̂y(i)−y(i))2 avec ̂y(i)=w.x(i)+bErreur quadratique moyenne\nDiﬀérence: on va exploiter le fait que la fonction soit diﬀérentiable pour déterminer la direction à prendreOn itère jusqu’à ce qu’un critère d’arrêt soit atteint"
+  },
+  {
+    "page": 34,
+    "text": "Quentin Cappart\nJ(w)=w2Exemple d’une descente de gradient (fonction à 1 paramètre)\n34Cas 1: w est positifConséquence: la mise à jour va diminuer w\nw>0→dJ(w)dw>0Cas 2: w est négatifEtape d’une descente de gradient: mise à jour des paramètres\nFonction à minimiser: J(w)=w2,w∈ℝ(2) Direction: obtenue avec la dérivée de J(w)(3) Intensité: obtenue par une valeur positive(1) Initialisation: valeur aléatoire pour wIl s’agit de la direction de la pente la plus forte\ndJ(w)dw=2w\nα∈]0,1]Il s’agit du taux d’apprentissage (learning rate)\nw←w−αdJ(w)dwDans notre exemple, il y a trois situations possiblesConséquence: la mise à jour va augmenter wCas 3: w est nulConséquence: la descente de gradient a convergé\nw<0→dJ(w)dw<0\nw=0→dJ(w)dw=>0\nAppliquons cette idée sur des fonctions ayant plus de paramètres"
+  },
+  {
+    "page": 35,
+    "text": "Quentin CappartDescente de gradient dans le cas général\n35Une seule variable: la direction de la plus forte pente est donnée par la dérivéePlusieurs variables: la direction de la pente la plus forte est donnée par le gradientGradient d'une fonction: vecteur constitué des dérivées partielles de chaque variable\nJ(w,b)=12mm∑i=1(̂y(i)−y(i))2 avec ̂y(i)=w.x(i)+bExemple: erreur quadratique moyenne \n∇J(w,b)=(∂J∂w,∂J∂b)Etape d’une descente de gradient: mise à jour de tous les paramètres suivant sa dérivée partielle\nw=w−α∂J(w,b)∂w\nb=b−α∂J(w,b)∂bUtilisation du gradient: la fonction de coût doit être diﬀérentiable (en grande partie)\nGradient: ∇f(x1,…,xn)=(∂f∂x1,…,∂f∂xn)"
+  },
+  {
+    "page": 36,
+    "text": "Quentin CappartConvexité et gradient de la fonction de coût\n36\nA t-on une convergence vers un minimum global ?Bonne nouvelle: oui, dans ce cas précisMauvaise nouvelle: non, dans le cas généralLa diﬀérence vient de la convexité de la fonctionUne fonction est convexe si, pour deux positions quelconques de la fonction, la droite liant les deux points est toujours au dessus de la fonctionConvexité\nCondition: pour cela, il faut que le taux d’apprentissage ne soit pas trop grandPropriété: une fonction convexe garantit que la descente de gradient converge vers le minimum global\nJ(w,b)=12mm∑i=1(̂y(i)−y(i))2Erreur quadratique moyenne avec ̂y(i)=w.x(i)+b\nRégression linéaire avec une erreur quadratique moyenne: la fonction de coût est convexe (parabole)"
+  },
+  {
+    "page": 37,
+    "text": "Quentin Cappart\n(3) Application des règles d'analyse: ∂J(w,b)∂w=12m(∂((w.x(1)+b−y(1))2)∂w+…+∂((w.x(m)+b−y(m))2)∂w)Gradient de la fonction de coût\n37\n(1) Gradient: ∇J(w,b)=(∂J∂w,∂J∂b)\n(2) Dérivée partielle selon w: ∂J(w,b)∂w=∂(12m∑mi=1(w.x(i)+b−y(i))2)∂wRègles d'analyse\nd(ax+bx)dx=d(ax)dx+d(bx)dxd(ax)dx=ad(x)dx\nFonction à dériver: J(w,b)=12mm∑i=1(w.x(i)+b−y(i))2\n(4) Dérivée partielle pour une donnée spéciﬁque: ∂((w.x(i)+b−y(i))2)∂w=2x(i)(w.x(i)+b−y(i))=2x(i)(̂y(i)−y(i))Procédure: calculs basés sur des règles d'analyse\nContribution de la donnée i  pour le paramètre w\n(5) Terme ﬁnal: ∂J(w,b)∂w=12m(2x(1)(̂y(1)−y(1))+…+2x(m)(̂y(m)−y(m)))=1mm∑i=1x(i)(̂y(i)−y(i))Moyenne de la  contribution  de chaque donnée\nQuel est le gradient de notre fonction de coût ?\nOn sort le terme constant, et on applique la dérivée partielle à chaque élément de la somme"
+  },
+  {
+    "page": 38,
+    "text": "Quentin CappartDescente de gradient: algorithme\n38Modèle une fois entraîné: ̂y=0.76x+0.96\nOn calcule la prédiction du modèle actuel On évalue le gradientItération de descente de gradient selon w\n𝗋𝖾𝗉𝖾𝖺𝗍𝗎𝗇𝗍𝗂𝗅𝖼𝗈𝗇𝗏𝖾𝗋𝗀𝖾𝗇𝖼𝖾:w,b=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝗂𝗓𝖾𝖱𝖺𝗇𝖽𝗈𝗆𝗅𝗒()𝖼𝗈𝗆𝗉𝗎𝗍𝖾̂y(i)∀i∈{1,…,m}𝖼𝗈𝗆𝗉𝗎𝗍𝖾∂J∂w,∂J∂b𝖼𝗈𝗆𝗉𝗎𝗍𝖾J(w,b)w=w−α∂J∂wb=b−α∂J∂b𝗋𝖾𝗍𝗎𝗋𝗇w,b𝗀𝗋𝖺𝖽𝗂𝖾𝗇𝗍𝖣𝖾𝗌𝖼𝖾𝗇𝗍(D,α):Entrée: l’ensemble d’entraînement et le taux d’apprentissageOn donne une valeur initiale aléatoire aux paramètresOn itère tant qu’on est pas arrivé à convergenceOn évalue la fonction de coût\nJ(w,b)=12mm∑i=1(̂y(i)−y(i))2\n̂y=f(x)=w.x+b\n∂J(w,b)∂w=1mm∑i=1x(i)(̂y(i)−y(i))Itération de descente de gradient selon b\n∂J(w,b)∂b=1mm∑i=1(̂y(i)−y(i))Dérivation laissée en exerciceNote: il ne s’agit pas de la meilleure approche pour une régression linéaireAvantage: processus général qu’on va adapter à des cas plus complexesExemples: régression multiple, logistique, et réseaux de neurones"
+  },
+  {
+    "page": 39,
+    "text": "Quentin CappartTable des matières\n39Apprentissage supervisé1. Motivation et intérêt de l'apprentissage automatique 2. Classiﬁcation des principaux types d'apprentissage 3. Déﬁnition de l'apprentissage supervisé 4. Méthode de la régression linéaire simple 5. Apprentissage par descente de gradient 6. Méthode de la régression linéaire multiple 7. Méthode de la régression logistique 8. Graphe de dépendance, forward pass, et backward pass\nσ(z)=11+e−z"
+  },
+  {
+    "page": 40,
+    "text": "Quentin CappartRégression linéaire multiple\n40Problème de l'étudiantMise en situation: l’étudiant souhaite maintenant utiliser plusieurs caractéristiques (x) pour sa prédiction\nDonnée d'entrainement:(x(i),y(i))x(i):vecteur des caractérisques de la donnée ix(i)j:caractéristique jde la donnée iIntuition: l'idée est d'avoir une représentation plus ﬁdèle de la réalité\nPrincipe: identique à la régression linéaireDiﬃculté: plus diﬃcile à visualiser (espace à n dimension)Diﬀérence: une donnée est maintenant représentée par un vecteur de caractéristiques\nFonction de prédiction ayant la forme suivante:Fonction de prédiction linéaire généralisée\n̂y=w1x1+w2x2+…+wnxn+b=wTx+bx1,…,xn:caractéristiques d'une donnée du problèmeb,w1,…,wn:paramètres devant être apprisy(i):label de la donnée i(inchangé)\n̂y=(w1…wn)×(x1…xn)+b=wTx+b"
+  },
+  {
+    "page": 41,
+    "text": "Quentin Cappart\n𝗋𝖾𝗉𝖾𝖺𝗍𝗎𝗇𝗍𝗂𝗅𝖼𝗈𝗇𝗏𝖾𝗋𝗀𝖾𝗇𝖼𝖾:w,b=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝗂𝗓𝖾𝖱𝖺𝗇𝖽𝗈𝗆𝗅𝗒()𝖼𝗈𝗆𝗉𝗎𝗍𝖾̂y(i)∀i∈{1,…,m}𝖼𝗈𝗆𝗉𝗎𝗍𝖾∂J∂w1,…,∂J∂wn,∂J∂b𝖼𝗈𝗆𝗉𝗎𝗍𝖾J(w1,…,wn,b)w1=w1−α∂J∂w1b=b−α∂J∂b𝗋𝖾𝗍𝗎𝗋𝗇w1,…,wn,bwn=wn−α∂J∂wn…𝗀𝗋𝖺𝖽𝗂𝖾𝗇𝗍𝖣𝖾𝗌𝖼𝖾𝗇𝗍(D,α):Régression linéaire multiple\n41\nCombien de paramètres a t-on avec n caractéristiques ?Cas général: pour n caractéristiques, on a n+1 paramètresx et w sont maintenant des vecteurs\nx∈ℝn\nw∈ℝn\nb∈ℝ\nJ(w1,…,wn,b)=12mm∑i=1(̂y(i)−y(i))2\n̂y=f(x)=wTx+b\n∂J(w1,…,wn,b)∂wj=1mm∑i=1x(i)j(̂y(i)−y(i))∀j∈{1,…,n}\n∂J(w,b)∂b=1mm∑i=1(̂y(i)−y(i))le gradient propre à un paramètre considère uniquement la caractéristique qui lui y est liée\nLe fonctionnement suit exactement le même principe que précédemment"
+  },
+  {
+    "page": 42,
+    "text": "Quentin CappartTable des matières\n42Apprentissage supervisé1. Motivation et intérêt de l'apprentissage automatique 2. Classiﬁcation des principaux types d'apprentissage 3. Déﬁnition de l'apprentissage supervisé 4. Méthode de la régression linéaire simple 5. Apprentissage par descente de gradient 6. Méthode de la régression linéaire multiple 7. Méthode de la régression logistique 8. Graphe de dépendance, forward pass, et backward pass\nσ(z)=11+e−z"
+  },
+  {
+    "page": 43,
+    "text": "Quentin Cappart\nhttp://wiki.fast.aiMise en situation: prédiction d'une réussite\n43Prédiction d'une réussite\n(1) L’étudiant est représenté par deux caractéristiquesx1∈ℝ: le nombre d'heures passées à étudier\n(4) La prédiction peut ensuite se faire suivant un seuilf(x)=̂y≥0.5→Réussitef(x)=̂y<0.5→EchecMise en situation: l’étudiant souhaite maintenant savoir s'il va réussir ou non son examenCaractéristiques: Il se base sur deux critères, le nombre d'heures d'étude, et de repos\nSon idée: se baser sur les informations des étudiants précédentsx2∈ℝ: le nombre d'heures passées à dormir la veille de l'examen(2) Le résultat est une valeur binairey∈{0,1}: l'étudiant a t-il réussi ou non ?(3) On souhaite construire une fonction donnant une probabilité de succèsf:ℝ2→[0,1]: fonction qui retourne une probabilité de succès\n"
+  },
+  {
+    "page": 44,
+    "text": "Quentin CappartIntroduction à la régression logistique\n44\nQue pensez-vous de l'utilisation d'une régression linéaire ?Diﬃculté: des valeurs très grandes peuvent être prédites (négatives ou positives)Notre situation: on souhaite obtenir une probabilité de succès (valeur entre 0 et 1)Conséquence: la régression linéaire n’est pas le modèle le plus adaptéRégression logistique: étant donné une donnée x, on veut construire une fonction donnant une probabilité̂y≈1:probable de réussir̂y≈0:probable de rater\n̂y≈0.5:décision incertaineExigence: on doit obtenir une valeur entre 0 et 1Idée de conception: construire une fonction compressant n'importe quelle valeur réelle entre 0 et 1Fonction compressant n'importe quelle valeur réelle entre 0 et 1Fonction sigmoïde\nσ(z):ℝ→[0,1]=11+e−z\n̂y=ℙ(y=1|x) avec ̂y la probabilité de réussite à l'examen"
+  },
+  {
+    "page": 45,
+    "text": "Quentin CappartFonction sigmoide et régression logistique\n45Fonction sigmoide: compresse une valeur réelle entre 0 et 1(1) Cas où z est positivement grand: σ(z)=11+0=1Interprétation: on est conﬁant sur la réussite(2) Cas où z est négativement grand: σ(z)=11+∞=0Interprétation: on est conﬁant sur l’échec(3) Cas où z est nul: σ(z)=11+1=0.5Interprétation: on est incertain sur le choixAvantage supplémentaire: la fonction est diﬀérentiable\nf(x)=̂y≥0.5→Réussitef(x)=̂y<0.5→Echec\nIdée: réaliser une combinaison linéaire (comme avant) mais suivie ensuite d’une fonction sigmoïdeFonction de prédiction ayant la forme suivante:Régression logistique\n̂y=σ(wTx+b) avec ̂y∈[0,1]x:vecteur des caractéristiques d'une donnée du problèmeb,w:paramètres devant être appris (w est un vecteur)Note: on peut ensuite déﬁnir un seuil de décision pour la classiﬁcation ﬁnale"
+  },
+  {
+    "page": 46,
+    "text": "Quentin CappartFonction d’écart communément utilisée pour des tâches de de classiﬁcation binaireErreur de l’entropie croisée binaire (binary cross entropy loss)\nL(̂y,y)=−(ylog(̂y)+(1−y)log(1−̂y)) avec ̂y=σ(wTx+b)Fonction d'écart pour la régression logistique\n46\nComment caractériser la qualité d'une régression logistique ?Objectif: mesurer l'écart entre valeur prédite et la vraie valeur via une fonction d’écartEcart nul: indique une prédiction parfaite sur nos données\nCas 1: situation ou y=0 (valeur d'échec - l'étudiant a raté l'examen)Intuition: cette fonction pénalise l’écart entre la prédiction et une vraie valeur de 1 ou de 0Conséquence: pousse ̂y à être petit (̂y→0)Impact sur la fonction: L(̂y,0)=−log(1−̂y)\nCas 2: situation ou y=1 (valeur de succès - l'étudiant a réussi l'examen)Conséquence: pousse ̂y à être grand (̂y→1)Impact sur la fonction: L(̂y,1)=−log(̂y)"
+  },
+  {
+    "page": 47,
+    "text": "Quentin CappartFonction de coût pour la régression logistique\n47\nJ(w,b)=1mm∑i=1L(̂y(i),y(i))=−1mm∑i=1(y(i)log(̂y(i))+(1−y(i))log(1−̂y(i)))Avec ̂y(i)=σ(wTx(i)+b) et σ(z)=11+e−zFonction de coût d’une régression logistique\nEtape 2: prendre l'écart moyen de toutes ces prédictions\nPrincipe: exactement pareil que précédemment, mais avec notre nouvelle fonction de perte\n{(x(1),y(1)),(x(2),y(2)),…,(x(m),y(m))}→̂y(i)≈y(i)∀i∈{1,…,m}→σ(wTx(i)+b)≈y(i)Etape 1: eﬀectuer la régression logistique sur toutes les données d’entraînement\nPreuve: https://math.stackexchange.com/questions/1582452/logistic-regression-prove-that-the-cost-function-is-convexPropriété: cette fonction est diﬀérentiable et peut donc être minimisée par une descente de gradient Propriété: cette fonction est également convexe, on a ainsi une convergence vers un minimum global"
+  },
+  {
+    "page": 48,
+    "text": "Quentin CappartCalcul du gradient\n48J(w,b)=1mm∑i=1L(̂y(i),y(i))=−1mm∑i=1(y(i)log(̂y(i))+(1−y(i))log(1−̂y(i)))Avec ̂y(i)=σ(wTx(i)+b) et σ(z)=11+e−z\nFonction de coût\nBonne nouvelle: malgré l'apparence complexe, cette tâche n'est pas si diﬃcile !Astuce: procéder par une décomposition en trois étapesEtape 1: exprimer la fonction en un graphe de dépendances (computation graph)Etape 2: évaluer la fonction avec la valeur actuelle des paramètres (forward pass)Etape 3: utiliser la règle du chaînage (chain rule) pour calculer les dérivées partielles (backward pass)\nJ(w1,w2,w3)=5(3w1+w2w23)Exemple: on veut faire une descente de gradient sur cette fonctionGénéralité de cette approche: il s’agit également du fonctionnement d’un réseau de neurone"
+  },
+  {
+    "page": 49,
+    "text": "Quentin CappartGraphe de dépendances et passe en avant (forward pass)\n49a=3w1w1w2w3J=5db=w23c=w2bd=a+cReprésentation d’une expression numérique en une série d’opérations élémentairesGraphe de dépendances (computation graph)\nIntuition: il s’agit de mettre en évidence toutes les opérations élémentaires ainsi que leurs dépendancesExemple: on veut faire une descente de gradient sur cette fonction\nCalcul du coût de la fonction de prédiction, selon la valeur actuelle des paramètres (w et b)Passe en avant (forward pass)\nExemple: supposons qu’on ait les valeurs suivantes pour les 3 paramètres9321551211\nJ(w1,w2,w3)=5(3w1+w2w23)\nw1=3,w2=2,w3=1"
+  },
+  {
+    "page": 50,
+    "text": "Quentin CappartPasse en arrière (backward pass)\n50Règle du chaînage\ndzdx=dzdy×dydxsi z dépend de y,  et si y dépend de x.a=3w1w1w2w3J=5db=w23c=w2bd=a+cCalcul de la valeur des dérivées partielles de chaque paramètre pour obtenir le gradientPasse en arrière (backward pass or backpropagation)\nNote: pour ce calcul, on commence à la dernière valeur calculée, et on remonte jusqu’aux paramètresPrincipe: on utilise la règle du chaînage pour évaluer les dérivées partielles∂J∂w1=∂J∂d×∂d∂a×∂a∂w1=5×1×3=15∂J∂w2=∂J∂d×∂d∂c×∂c∂w2=5×1×b=5b=5w23=5∂J∂w3=∂J∂d×∂d∂c×∂c∂b×∂b∂w3=5×1×w2×2w3=10w2w3=20\nJ(w1,w2,w3)=5(3w1+w2w23)\n∇J(w1,w2,w3)=(∂J∂w1,∂J∂w2,∂J∂w3)"
+  },
+  {
+    "page": 51,
+    "text": "Quentin CappartDernière étape: descente de gradient\n51a=3w1w1w2w3J=5db=w23c=w2bd=a+c\nSituation actuelle: on a l’évaluation de notre gradient pour les valeurs actuels de nos paramètresProchaine étape: utiliser ces valeurs pour eﬀectuer la descente de gradientw3←w3−α×20=1−0.1×20=−1w1←w1−α×15=3−0.1×15=1.5w2←w2−α×5=2−0.1×5=1.5Taux d'apprentissage: α=0.1Nouvelles valeurs: w1=1.5,w2=1.5,w3=−1Valeurs actuelles: w1=3,w2=2,w3=1Par la suite: refaire la passe en avant et en arrière avec ces nouvelles valeurs\nJ(w1,w2,w3)=5(3w1+w2w23)\nw1=3,w2=2,w3=1\n∇J(w1,w2,w3)=(∂J∂w1,∂J∂w2,∂J∂w3)=(15,5,20)"
+  },
+  {
+    "page": 52,
+    "text": "Quentin CappartGraphe de dépendance en pratique…\n52\nCe principe peut être utilisé pour diﬀérentier des fonctions très complexes\nyoutube.com/watch?v=VMj-3S1tku0"
+  },
+  {
+    "page": 53,
+    "text": "Quentin Cappart\nGraphe de dépendances sur notre fonction d'écart\n53\nAvec ̂y=σ(wTx+b) et σ(z)=11+e−zL(̂y,y)=−(ylog(̂y)+(1−y)log(1−̂y))Rappel\ndlog(x)dx=1x\nObjectif: calculer le gradientPrincipe: construire le graphe de dépendancez=w1x1+…+wnxn+bx1bwnw1xn...L(̂y,y)=−(ylog(̂y)+(1−y)log(1−̂y))̂y=σ(z)∂L(̂y,y)∂̂y=−ŷy+1−y1−̂y=−y(1−̂y)+̂y(1−y)̂y(1−̂y)=−y+̂yy+̂y−̂yŷy(1−̂y)=̂y−ŷy(1−̂y)Dérivation complète: https://math.stackexchange.com/questions/78575/ derivative-of-sigmoid-function-sigma-x-frac11e-x\n∂z∂wi=xi∂z∂b=1\n∂̂y∂z=σ(z)(1−σ(z))=̂y(1−̂y)\nProchaine étape: passe en arrière avec la règle du chainage∂L∂wi=∂L∂̂y×∂̂y∂z×∂z∂wi=̂y−ŷy(1−̂y)×̂y(1−̂y)×xi=xi(̂y−y)∂L∂b=∂L∂̂y×∂̂y∂z×∂z∂b=̂y−ŷy(1−̂y)×̂y(1−̂y)×1=̂y−y\n∇L(̂y,y)=(∂L∂w1,…,∂L∂wn,∂L∂b)\nOn a ainsi nos dérivées partielle, et donc notre gradient !"
+  },
+  {
+    "page": 54,
+    "text": "Quentin CappartIntégration de la fonction de coût\n54\nJ(w,b)=1mm∑i=1L(̂y(i),y(i))=1m(L(̂y(1),y(1))+…+L(̂y(m),y(m)))Dernière étape: intégrer la fonction de coûtPrincipe: identique à une régression linéaire, mais avec une autre fonction d'écartEtat actuel: le gradient de chaque terme de la fonction de perte est connu\n∂L(̂y(i),y(i))∂b=(̂y(i)−y(i)) pour toutes les données i\n∂J(w,b)∂wj=1m(∂L(̂y(1),y(1))∂wj+…+∂L(̂y(m),y(m))∂wj)∀j∈{1,…,n}Gradient de la fonction de coût: simple application des règles d’analyse\n∂J(w,b)∂b=1m(∂L(̂y(1),y(1))∂b+…+∂L(̂y(m),y(m))∂b)\n∂L(̂y(i),y(i))∂wj=x(i)j(̂y(i)−y(i))pour toutes les données i et paramètres wjRègles d'analyse\nd(ax+bx)dx=d(ax)dx+d(bx)dxd(ax)dx=ad(x)dx\n"
+  },
+  {
+    "page": 55,
+    "text": "Quentin CappartToutes les briques assemblées - problème de l’étudiant\n55∂J(w,b)∂b=1m(∂L(̂y(1),y(1))∂b+…+∂L(̂y(m),y(m))∂b)∂J(w,b)∂w1=1m(∂L(̂y(1),y(1))∂w1+…+∂L(̂y(m),y(m))∂w1)∂J(w,b)∂w2=1m(∂L(̂y(1),y(1))∂w2+…+∂L(̂y(m),y(m))∂w2)Passe en arrière (backward pass) Passe en avant (forward pass)J(w,b)=1mm∑i=1L(̂y(i),y(i))  avec  ̂y(i)=σ(wTx(i)+b)\navec ∂L(̂y(i),y(i))∂wi=x(i)i(̂y(i)−y(i)) et ∂L(̂y(i),y(i))∂b=(̂y(i)−y(i))\nCode disponible sur Moodle"
+  },
+  {
+    "page": 56,
+    "text": "Quentin CappartTable des matières\n56Apprentissage supervisé1. Motivation et intérêt de l'apprentissage automatique 2. Classiﬁcation des principaux types d'apprentissage 3. Déﬁnition de l'apprentissage supervisé 4. Méthode de la régression linéaire simple 5. Apprentissage par descente de gradient 6. Méthode de la régression linéaire multiple 7. Méthode de la régression logistique 8. Graphe de dépendance, forward pass, et backward pass\nσ(z)=11+e−z"
+  },
+  {
+    "page": 57,
+    "text": "Quentin CappartSynthèse des notions vues\n57\nApprentissage automatique\"A computer program is said to learn from experience E  with respect to some task T and some performance measure P,  if its performance on T, as measured by P, improves with experience E\"http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mitchell/ftp/mlbook.html\n(2) L'apprentissage a besoin d'expériences passées (E - données)(3) Besoin d'avoir un moyen d'évaluer les performances d'un modèle (P)(1) L'apprentissage est dédié pour une tâche précise (T)Apprentissage supervisé: minimiser d'un coût entre une prédiction et les données connues(1) Régression linéaire simple(2) Régression linéaire multiple(3) Régression logistiquePlusieurs modèles possibles:\nAlgorithme d’apprentissage: par descente de gradient via un graphe de dépendance(4) Et d’autres !\n"
+  },
+  {
+    "page": 58,
+    "text": "Quentin CappartLimitation de nos méthodes de régression\n58\nQuelles sont les limitations de nos méthodes de régression actuelles ?\nLimitation: notre prédictions sont une combinaison linéaire des variables (éventuelle sigmoidisée)En pratique: ce n’est pas souvent le cas !Figure de droite: données non linéairement séparablesConclusion: il nous faut une fonction de prédiction plus expressive !Figure de gauche: séparation linéaire acceptableHypothèse sous-jacente: les données sont linéairement séparables (ou presque)\n"
+  },
+  {
+    "page": 59,
+    "text": "Quentin CappartExemples de questions d'examen\n591. Eﬀectuer une étape de descente de gradient pour une fonction simple tout en détaillant les diﬀérentes étapes (graphe de dépendance, passe en avant, et passe en arrière)ThéoriePratique1. Donner et expliquer une fonction d'écart ou de coût pour une régression donnée 2. Décrire la fonction sigmoide, ses intérêts, et donner un cas d'utilisation 3. Expliquer les diﬀérences entre features et paramètres 4. Expliquer le principe de la descente de gradient\n"
+  },
+  {
+    "page": 60,
+    "text": " \nQuentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesApprentissage supervisé: FIN\nDALLE: A student calculating his chance to succeed at the exam, oil pastel drawing"
+  }
+]

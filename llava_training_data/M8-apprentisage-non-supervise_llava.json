@@ -1,0 +1,576 @@
+[
+  {
+    "id": "7f6f26ee-f342-42ed-8224-29e4891d4040",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesModule 8: Apprentissage non-supervisé"
+      }
+    ]
+  },
+  {
+    "id": "3fa48459-2485-4753-b034-2657234fabe6",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartContenu du cours\n2Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques"
+      }
+    ]
+  },
+  {
+    "id": "6c2d5d1f-0b8d-4bd3-aea7-c97eeb47f05d",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n3Apprentissage non-supervisé1. Déﬁnition et applications de l'apprentissage non-supervisé 2. Formalisation du problème de regroupement (clustering) 3. Algorithme K-means 4. Formalisation du problème de détection d'anomalies 5. Notion de statistique: maximum de vraisemblance 6. Modélisation par des distributions normales univariées 7. Modélisation par une distribution normale multivariée"
+      }
+    ]
+  },
+  {
+    "id": "4c6dce04-e979-4ac9-bcd0-243a43ad7395",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartApprentissage non-supervisé\n4Apprentissage superviséPrincipe: apprentissage qui se fait à l'aide de données dont on connaît la vraie valeur\nD:{(x(1),y(1)),(x(2),y(2)),…,(x(m),y(m))}Ce label est indispensable pour entraîner un modèle (minimiser la fonction de coût)\n Vraie valeur (ground truth): Pour chaque donnée x(i), on connaît le label y(i)\nQue se passe t-il si on a pas accès à ces labels ? \nType d’apprentissage qui se fait sûr base de données non-labelliséesApprentissage non-supervisé\nNote: on a quand même besoin de données, mais sans la présence d’un labelIntuition: la tâche est plus compliquée car on a moins d’information à disposition\nD:{x(1),x(2),…,x(m)}\nOn n’a plus aucun moyen d’entraîner le modèle…"
+      }
+    ]
+  },
+  {
+    "id": "f71b2282-824a-4464-9a88-0f5da824a955",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_5.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDiﬀérences avec l'apprentissage supervisé\n5Apprentissage supervisé: apprentissage d’une fonction de séparation\nD:{(x(1),y(1)),(x(2),y(2)),…,(x(m),y(m))}\nD:{x(1),x(2),…,x(m)}Point commun: cela revient à la minimisation d’une fonction coût (ou la maximisation d’une précision)Apprentissage non-supervisé: apprentissage d’une fonction de regroupement ou d’exclusion"
+      }
+    ]
+  },
+  {
+    "id": "b4674a0c-88ca-4e6d-8083-0715119e222c",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_6.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartApplication: segmentation du marché\n6Segmentation du marchéOpération eﬀectuée en marketing stratégique pour diviser la demande en plusieurs groupes cohérents\nObjectif: permet de déﬁnir des oﬀres ciblées à chaque groupeEtape 1: établir les caractéristiques des diﬀérents clients (critères géographiques, civils, individuels, etc.)Etape 2: regrouper les clients similaires en un groupe cohérent (cluster)Etape 3: établir des oﬀres ou des stratégies ciblées pour chacun des groupes\nApplications: problème présent dans énormément de contextes impliquant une clientèle à toucher"
+      }
+    ]
+  },
+  {
+    "id": "dfce6a53-3dd7-47fc-a0dd-e167d45cbbc5",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_7.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nApplication: cybersécurité\n7Détection de comportements frauduleux\nObjectif: permet de contrôler automatiquement les comportements suspects dans un réseauOpération eﬀectuée en cybersécurité pour surveiller le comportement d'utilisateurs dans un réseauEtape 1: établir les caractéristiques des diﬀérents utilisateurs (ressources utilisées, position actuelle, etc.)Etape 2: établir un proﬁl d'utilisation normale en fonction des utilisateurs présentsEtape 3: détecter les comportements inhabituels\nAn interactive visual analytics approach for network anomaly detection through smart labeling [Fan et al., 2019]"
+      }
+    ]
+  },
+  {
+    "id": "1ae8a57b-45b9-4360-89a9-6ebd15faff7a",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_8.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartApplication: systèmes de recommandation\n8Systèmes de recommandationOpération consistant à recommander un ensemble d'entités à un utilisateurEtape 1: établir les caractéristiques des utilisateurs (préférences, achats précédents, etc.)Etape 2: déceler les entités qu'un utilisateur serait enclins à vouloir \nApplications: énormément d’utilisations dans le commerce en ligne"
+      }
+    ]
+  },
+  {
+    "id": "ac5e1539-48fb-4a58-8306-80526306e429",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_9.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartApplication: visualisation de données\n9Visualisation de donnéesObjectif: oﬀrir une représentation visuelles des données à des ﬁns d'analyse par un humain\nMise en évidence de migrations importantes inattenduesCluster des pays ex-URSS avec l'EthiopieVisualizing Data using t-SNE [van der Maaten and Hinton, 2008]Réduction de données de 100 dimensions à 2Les mots semblables sont projetés à proximitéThe World Migration Network: rankings, groups and gravity models [Cappart and Thonet, 2015]\nVersion lisible: https://lvdmaaten.github.io/tsne/ (Words in 2D)"
+      }
+    ]
+  },
+  {
+    "id": "ac2c5664-c98a-4bb4-9ca8-b20f95300a91",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_10.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n10Apprentissage non-supervisé1. Déﬁnition et applications de l'apprentissage non-supervisé 2. Formalisation du problème de regroupement (clustering) 3. Algorithme K-means 4. Formalisation du problème de détection d'anomalies 5. Notion de statistique: maximum de vraisemblance 6. Modélisation par des distributions normales univariées 7. Modélisation par une distribution normale multivariée"
+      }
+    ]
+  },
+  {
+    "id": "4287db43-1689-41db-a01e-6c247f30e706",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_11.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartProblème du regroupement (clustering)\n11Construction du cluster: besoin de déﬁnir un algorithme dédiéProblème consistant à regrouper les données similaires en groupes (clusters) cohérentsProblème du regroupement (clustering)\nNote: il s’agit d’une des grandes familles d'application de l'apprentissage non-supervisé\nEvaluation d’un clustering: besoin de déﬁnir une fonction de coût"
+      }
+    ]
+  },
+  {
+    "id": "520b2502-477b-4292-8b52-b49250a35a70",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_12.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlgorithme K-means\n12Initialisation: choisir k valeurs aléatoirement, correspondant au centre de k clustersAlgorithme K-meansEtape 1: regrouper les données au centre (centroïdes) du cluster le plus procheEtape 2: mettre à jour les centres des clusters, en fonction des données qui y ont été ajoutées/retiréesEtape 3: répéter les étapes (1) à (3) jusqu’à convergencePrincipe: déﬁnir le centre de k groupes, et associer les données au groupe ayant le centre le plus proche\nEtape d’initialisation\nEtape 1: assignation au cluster le plus proche\nEtape 2: mise à jour des centresDéﬁnition des centres: de manière itérative, en 3 étapes successives à partir d’une valeur initiale\nStratégie de regroupement: les nouvelles données sont assignées au cluster ayant le centre le plus proche Convergence: l’itération n’a pas changé les centres des clusters"
+      }
+    ]
+  },
+  {
+    "id": "5cbf010c-31d5-41ff-b649-e27542a5a9ea",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_13.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlgorithme K-means - visualisation\n13Situation initiale\nAssignation au cluster le plus proche\nMise à jour des centres\nAssignation au cluster le plus proche\nMise à jour des centres\nAssignation au cluster le plus proche\nLe processus est répété jusqu'à ce que les centres ne bougent plus (convergence)"
+      }
+    ]
+  },
+  {
+    "id": "acf49e81-2f09-429b-a15a-45e8aa65bbde",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_14.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlgorithme K-means - Formalisation\n14Notationsk:le nombre de clusters{x(1),x(2),…,x(m)}:les données d'entraînementx(i)∈ℝn:dimension d'une donnée (nombre de caractéristiques)μj:le centre du cluster j:∀j∈{1,…,k}c(i):indice du cluster où la donnée i a été assignéeμj∈ℝn:dimension du centre du clusterμc(i):centre du cluster où la donnée i a été assignéeObjectif: minimiser la distance moyenne entre les données et le centre du cluster associéFonction de coût d’un regroupement\nJ(c(1),…,c(m),μ1,…,μj)=1mm∑i=1x(i)−μc(i)2 avec x(i)−μc(i)2=(x(i)1−μ1,c(i))2+…+(x(i)n−μn,c(i))2 (pour n caractéristiques)Intuition: cela correspond à la moyenne des distances euclidiennes entre chaque donnée et le centre associé\nVisualisation pour des données ayant deux caractéristiques numériques (réelles)x(42)μrougeμvertk=2 (cluster rouge et vert)x(i)−μc(i)2=x(42)−μvert2c(42)=vert"
+      }
+    ]
+  },
+  {
+    "id": "5b0d0230-25a3-4bec-9722-0b64e52c935d",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_15.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlgorithme K-means\n15\nμj=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝗂𝗓𝖾𝖱𝖺𝗇𝖽𝗈𝗆𝗅𝗒()∀j∈{1,…,k}𝗋𝖾𝗉𝖾𝖺𝗍𝗎𝗇𝗍𝗂𝗅𝖼𝗈𝗇𝗏𝖾𝗋𝗀𝖾𝗇𝖼𝖾:∀i∈{1,…,m}:c(i)=𝖺𝗋𝗀𝗆𝗂𝗇j∥x(i)−μj∥2𝗋𝖾𝗍𝗎𝗋𝗇c(1),…,c(m),μ1,…,μk∀j∈{1,…,k}:μj=𝖼𝗈𝗆𝗉𝗎𝗍𝖾𝖬𝖾𝖺𝗇𝖵𝖺𝗅𝗎𝖾(P)𝖪𝖬𝖾𝖺𝗇𝗌(D,k):\nP={x(i)∈Dc(i)=j}On donne en entrée le jeu de données et le nombre de clusters souhaitésOn place les centres initiaux aléatoirementEtape 1: on assigne les données au cluster le plus procheOn ne considère que les données associées au cluster actuel dans l’itérationOn retourne les assignations de chaque donnée, et les centres des clustersSituation initiale\nAssignation au cluster le plus proche\nMise à jour des centroïdesEtape 2: on calcule le nouveau centre du cluster, étant donné les points liésPrincipe: chaque itération va rapprocher les centres d’un groupe de données et ainsi réduire le coût actuel"
+      }
+    ]
+  },
+  {
+    "id": "3d31df7c-3e99-4934-b3bb-fb2e86e2ba87",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_16.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAnalyse de l'algorithme\n16\nEst-ce que cet algorithme va converger ? Bonne nouvelle: chaque étape rapproche les centres des donnéesConvergence: assurée car le coût est borné (jamais négatif)Conséquence: chaque étape réduit ainsi le coût J\nEst-ce que la solution obtenue est optimale  ?  Mauvaise nouvelle: on risque de tomber dans un minimum localAugmentation du risque: lorsqu’on augmente le nombre de clusters ou le nombre de caractéristiques\nμj=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝗂𝗓𝖾𝖱𝖺𝗇𝖽𝗈𝗆𝗅𝗒()∀j∈{1,…,k}𝗋𝖾𝗉𝖾𝖺𝗍𝗎𝗇𝗍𝗂𝗅𝖼𝗈𝗇𝗏𝖾𝗋𝗀𝖾𝗇𝖼𝖾:∀i∈{1,…,m}:c(i)=𝖺𝗋𝗀𝗆𝗂𝗇j∥x(i)−μj∥2𝗋𝖾𝗍𝗎𝗋𝗇c(1),…,c(m),μ1,…,μk∀j∈{1,…,k}:μj=𝖼𝗈𝗆𝗉𝗎𝗍𝖾𝖬𝖾𝖺𝗇𝖵𝖺𝗅𝗎𝖾(P)𝖪𝖬𝖾𝖺𝗇𝗌(D,k):\nP={x(i)∈Dc(i)=j}"
+      }
+    ]
+  },
+  {
+    "id": "4dd06a99-d89e-4286-8389-8ce07603fd64",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_17.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAmélioration de l'algorithme\n17\nAvez-vous une idée pour pallier cette diﬃculté ? Module 3: déterminer les meilleurs clusters est un COPCadre général: minimiser cette fonction de coût est NP-diﬃcileModules 3 et 4: méthodes pour résoudre ce genre de problèmesProgrammation par contraintes: diﬃcile à mettre en oeuvreDiﬃculté: le problème implique énormément de variables\nAlgorithme K-means: algorithme de recherche localeEtapes 1 et 2: mouvements locaux pour minimiser le coûtInitialisation: points de départ de la rechercheStratégie actuelle: de type Hill climbing sans diversiﬁcationExemples: redémarrages, initialisation intelligente, ou utilisation de métaheuristiquesDiﬃculté: forte chance de rester coincé dans un minimum localNP-hardness of Euclidean sum-of-squares clustering [Aloise et al., 2009]Bonne nouvelle: on a vu plusieurs méthodes pour mitiger ce problème"
+      }
+    ]
+  },
+  {
+    "id": "9c7dabc1-b3ae-4078-8766-23417b8716ec",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_18.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartK-means avec des redémarrages\n18Méthode de redémarrages\n𝖿𝗈𝗋i∈1𝗍𝗈Γ:𝗋𝖾𝗍𝗎𝗋𝗇s⋆𝖪𝖬𝖾𝖺𝗇𝗌𝖶𝗂𝗍𝗁𝖱𝖾𝗌𝗍𝖺𝗋𝗍(D,k,Γ):s=𝖪𝖬𝖾𝖺𝗇𝗌(D,k)𝗂𝖿J(s)<J(s⋆):s⋆=ss⋆=⊥Observation: la solution où l’algorithme converge dépend des positions initiales des clustersAmélioration simple: redémarrer plusieurs fois l’algorithme et prendre la meilleure solution trouvée\nNote: montre les connexions entre les diﬀérentes modes de l’intelligence artiﬁcielleAutres améliorations: utilisation de métaheuristiques (algorithmes génétiques)\nμj=𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝗂𝗓𝖾𝖱𝖺𝗇𝖽𝗈𝗆𝗅𝗒()∀j∈{1,…,k}𝗋𝖾𝗉𝖾𝖺𝗍𝗎𝗇𝗍𝗂𝗅𝖼𝗈𝗇𝗏𝖾𝗋𝗀𝖾𝗇𝖼𝖾:∀i∈{1,…,m}:c(i)=𝖺𝗋𝗀𝗆𝗂𝗇j∥x(i)−μj∥2𝗋𝖾𝗍𝗎𝗋𝗇c(1),…,c(m),μ1,…,μk∀j∈{1,…,k}:μj=𝖼𝗈𝗆𝗉𝗎𝗍𝖾𝖬𝖾𝖺𝗇𝖵𝖺𝗅𝗎𝖾(P)𝖪𝖬𝖾𝖺𝗇𝗌(D,k):\nP={x(i)∈Dc(i)=j}\nHG-means: A scalable hybrid genetic algorithm for minimum sum-of-squares clustering [Gribel and Vidal, 2019]Avantage: très facile à mettre en oeuvre"
+      }
+    ]
+  },
+  {
+    "id": "a21f063c-78ea-4bf9-bb99-663dd442e75a",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_19.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlgorithme K-means: initialisation des centres des clusters\n19\nComment initialiser aléatoirement les centres ?\nk-means++: The advantages of careful seeding [Arthur and Vassilvitskii, 2006]Option 1: Initialisation totalement aléatoirePrincipe: les valeurs sont initialisées aléatoirement dans une zone délimitéeDiﬃculté: les centres peuvent se retrouver loin des donnéesConclusion: convergence plus lente et méthode peu utiliséePrincipe: les valeurs initiales sont prises aléatoirement sur des donnéesAvantage: méthode simple avec de bons résultats en pratiqueDiﬃculté: certains placements sont moins pertinents que d’autresOption 2: initialisation aléatoire sur des donnéesExemple: 2 centres initialisés très proches l’un de l’autre\nAlgorithme k-means++:  algorithme implémentant ce principePrincipe: choisir des centres initialement bien distants des autresOption 3: initialisation aléatoire contrôlée sur les données"
+      }
+    ]
+  },
+  {
+    "id": "edd9c11f-6d9f-4d4d-9625-6b8cd446e740",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_20.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartChoix du nombre de clusters\n20Diﬃculté de la tâche: choix pas toujours clair, et qui peut être subjectifAlternatives: plusieurs critères de sélection sont possibles\nOption 2: décision en fonction de l'objectif subséquentExemple: on souhaite que le marché soit divisé en exactement 3 segmentsPrincipe: le choix est fait sur base de l'objectif de la tâche de clusteringOption 1: décision itérativeObservation: augmenter le nombre de cluster va réduire le coûtPrincipe: augmenter ce nombre jusqu'à ce que la réduction soit minimeExemple de gauche: prendre 4 ou 5 cluster semble approprié\nOption 3: utilisation d’un autre algorithme de regroupementAﬃnity propagation: le choix de ce nombre est intégré dans l'algorithme\nCombien de clusters doit-on déﬁnir pour ces données ?"
+      }
+    ]
+  },
+  {
+    "id": "248db088-9b99-4aee-95e5-0bac16fea00c",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_21.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nTâche de regroupement: autres alternatives\n21\nhttps://scikit-learn.org/stable/modules/clustering.htmlIl existe énormément de variantes et d’autres algorithmes pour réaliser une tâche de regroupementAlgorithme K-modes: dédié aux données avec des catégories en caractéristiquesAlgorithme K-prototypes: dédié aux données avec caractéristiques quelconques"
+      }
+    ]
+  },
+  {
+    "id": "18071c41-9d42-4afc-ab16-7ce10137fded",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_22.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n22Apprentissage non-supervisé1. Déﬁnition et applications de l'apprentissage non-supervisé 2. Formalisation du problème de regroupement (clustering) 3. Algorithme K-means 4. Formalisation du problème de détection d'anomalies 5. Notion de statistique: maximum de vraisemblance 6. Modélisation par des distributions normales univariées 7. Modélisation par une distribution normale multivariée"
+      }
+    ]
+  },
+  {
+    "id": "2e469264-1404-4a03-8d7e-73e649067218",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_23.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDétection d'anomalies\n23Objectif: prédire la probabilité qu'une nouvelle donnée soit habituelleDécision: si la probabilité est inférieure à un seuil, alors c'est une anomalieProblème consistant à repérer les données hors-normes  par rapport à ensemble de données dans la normeDétection d’anomalies (anomaly detection)\nPrincipe de la détection d'anomaliesEtape 2: construire un modèle reﬂétant une utilisation normale du système, sur base de ces donnéesEtape 3: utiliser ce modèle aﬁn de prédire si une nouvelle utilisation est normale ou suspecteEtape 1: collecter un ensemble de données d'utilisation normale d'un système"
+      }
+    ]
+  },
+  {
+    "id": "febeddb9-b9a8-4f0b-be14-22e093ad1367",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_24.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDétection d'anomalies - Formalisation\n24{x(1),x(2),…,x(m)}:les données d'entraînementx(i)∈ℝn:dimension de chaque donnée (nombre de caractéristiques)̂y=f(x):ℙ(x est une utilisation normale du système)̂y≥ϵ:la donnée x est dans la normêy<ϵ:la donnée x est une anomaliex(𝗍𝖾𝗌𝗍):donnée de test\nUtilisation CPUUtilisation RAM\nHypothèse que l’on va faire: chaque caractéristique est régie par une loi normale qui lui est propreEn dessous du seuil: considéré comme une anomalieϵ=0.75ϵ=0.5ϵ=0.1Le gestionnaire pourra ensuite analyser cette utilisation en détail\nComment créer une fonction pour cette tâche ?ϵ∈[0,1]:seuil de décision pour la considération d'une anomalieExemple: ensemble de données à deux caractéristiquesCela va passer par la déﬁnition d’une hypothèse sur la fonction\nL’objectif est d’apprendre une fonction de prédiction"
+      }
+    ]
+  },
+  {
+    "id": "d7ef2466-5093-4119-89db-53ff156d6f0a",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_25.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDistribution normale (gausienne)\n25\nLoi normale: p(x|μ,σ2)=1σ2πexp(−(x−μ)22σ2)σ2:variance (paramètre de la loi)x∼𝒩(μ,σ2):x prend une valeur tirée d'une distibution normale de paramètres μ,σ2μ:espérance (paramètre de la loi)Hypothèse: chaque caractéristique est tirée d'une loi normale spéciﬁquex1∼𝒩(μ1,σ21)x2∼𝒩(μ2,σ22)xn∼𝒩(μn,σ2n)…Conséquence: chaque caractéristique a ses propres paramètres, relatifs à une loi normale\nCombien de paramètres doit-on déterminer pour des données à n caractéristiques ?Loi normale: comporte 2 paramètres (espérance, et variance)\nIdée: les paramètres des ces lois normales sont appris à l’aide des données disponiblesTotal: 2n paramètres car on a n lois normales dans notre modèle"
+      }
+    ]
+  },
+  {
+    "id": "fbc15b17-6dce-4b9a-9581-f50f789a35dc",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_26.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartFonction de vraisemblance\n26\nComment déterminer ces paramètres ?Objectif: obtenir la loi normale qui est la plus plausible (ou vraisemblable) par rapport à nos données\nBesoin: formaliser mathématiquement cette notion de vraisemblanceMesure de la vraisemblance d'une distribution statistiques pour les données considéréesFonction de vraisemblance (likelihood function)\nL(μ,σ2|x(1),…,x(m))=p(x(1)|μ,σ2)×…×p(x(m)|μ,σ2)\nNote: cette fonction donne un score d’à quel point le modèle (la loi normale) ﬁtte les donnéesPrincipe du calcul: on prend le produit des probabilités de chaque donnée étant donné la loiCondition: suppose que les données sont indépendantes, et identiquement distribuées\nAttention: confusion courante entre la notion de probabilité et de vraisemblanceProbabilité: plausibilité d'obtenir un évènement aléatoire selon un certain modèleVraisemblance: plausibilité d'un modèle, étant donné l'observation de réalisations d'une variable aléatoire"
+      }
+    ]
+  },
+  {
+    "id": "d3d84c14-6f37-473d-bcd6-7f48ed80c6ed",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_27.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartEstimation du maximum de vraisemblance\n27Problème consistant à trouver les paramètres d'une loi normale aﬁn de maximiser la fonction de vraisemblance par rapport aux données observées Maximum de vraisemblance (maximum likelihood estimation - MLE)\nmaxμ,σ2L(μ,σ2|x(1),…,x(m))Note: cette déﬁnition peut également être étendue à des modèles qui ne sont pas des lois normales\nQuelles sont ces valeurs ?Intuition: on souhaite construire la loi normale la plus plausible par rapport aux données Objectif: trouver les valeurs des deux paramètres maximisant la fonction de vraisemblance\nPreuve: https://www.youtube.com/watch?v=Dn6b9fCIUpMAttention: notez bien qu'on a une loi normale par caractéristique des donnéesRésultat: ces paramètres donnent la loi normale la plus vraisemblable pour nos données\nBonne nouvelle: il s’agit d’un résultat statistique connu\nNote: la déﬁnition des paramètres peut être beaucoup plus diﬃcile avec d’autres modèles\nμ=1mm∑i=1x(i)\nσ2=1mm∑i=1(x(i)−μ)2"
+      }
+    ]
+  },
+  {
+    "id": "440c7241-64d8-4661-815d-90e014b5f7ac",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_28.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartEstimations des paramètres pour la détection d'anomalies\n28Hypothèse 1: chaque caractéristique vient d'une loi normale spéciﬁque…Objectif: trouver les meilleurs paramètres relatifs à la distribution normale de chaque paramètreHypothèse 2: les caractéristiques sont considérées indépendantes des autres \nDonnées d'entrainement\nDistribution de l'utilisation CPU\nDistribution de l'utilisation RAMModèle ﬁnal: probabilité jointe des distributions de chaque caractéristique (leur multiplication) \n̂y=p(x1|μ1,σ21)×…×p(xn|μn,σ2n)=n∏j=1p(xj|μj,σ2j)Suppose l'indépendance entre chaque caractéristique\nx1∼𝒩(μ1,σ21)\nxn∼𝒩(μn,σ2n)"
+      }
+    ]
+  },
+  {
+    "id": "ef2c4e73-3d25-4cc8-a196-ed1b6d7dcce1",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_29.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlgorithme de détection d'anomalies\n29Phase d'entraînement\nPhase d'évaluationObjectif: déterminer les paramètres des lois normales\n𝗋𝖾𝗍𝗎𝗋𝗇μ1,σ21,…,μn,σ2n𝖿𝗈𝗋j∈{1,…,n}:μj=1mm∑i=1x(i)jσ2j=1mm∑i=1(x(i)j−μj)2𝖠𝗇𝗈𝗆𝖺𝗅𝗒𝖣𝖾𝗍𝖾𝖼𝗍𝗂𝗈𝗇𝖳𝗋𝖺𝗂𝗇𝗂𝗇𝗀(D):On utilise les données d'entraînementPour chaque caractéristique…...On calcule les deux paramètresOn retourne tous les paramètres (c-à-d, le modèle)\n̂y=n∏j=1p(x(𝗍𝖾𝗌𝗍)j|μj,σ2j)𝗂𝖿̂y<ϵ:𝗋𝖾𝗍𝗎𝗋𝗇𝖺𝗇𝗈𝗆𝖺𝗅𝗒𝖿𝗈𝗋x(𝗍𝖾𝗌𝗍)𝖾𝗅𝗌𝖾:𝗋𝖾𝗍𝗎𝗋𝗇𝗋𝖾𝗀𝗎𝗅𝖺𝗋𝖽𝖺𝗍𝖺𝖿𝗈𝗋x(𝗍𝖾𝗌𝗍)=n∏j=11σ2πexp(−(x−μj)22σ2j)𝖠𝗇𝗈𝗆𝖺𝗅𝗒𝖣𝖾𝗍𝖾𝖼𝗍𝗂𝗈𝗇(x(𝗍𝖾𝗌𝗍),ϵ,μ1,σ21,…,μn,σ2n):Objectif: calculer la probabilité qu'une nouvelle donnée soit régulièreOn utilise les lois normales déterminées précédemmentOn calcule la probabilité jointe que la nouvelle donnée soit régulièreSi elle est en dessous du seuil, on la considère comme une anomalie \nNotre modèle est le produit des lois normales de chaque caractéristique"
+      }
+    ]
+  },
+  {
+    "id": "a7d570b0-6dfb-43f0-a379-349c2fb970de",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_30.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartLimitations de notre modèle\n30\nQuelles sont les limitations de notre modèle ?Exemple: considérons les données suivantes\nEst-ce que la donnée rouge est une anomalie ou non ?\nLimitation: l’indépendance des caractéristiques est une hypothèse trop restrictive pour ces situationsVisuellement: il semble que oui car elle est fort diﬀérente de nos données d'entraînementDans notre modèle: chaque caractéristique prise séparément possède une valeur probableSoucis: on ne tient pas compte de la corrélation entre nos caractéristiquesDiﬃculté: cette anomalie ne sera pas probablement pas détectée par notre modèleNature de l’anomalie: c’est d'avoir une valeur basse pour x1 et une haute pour x2 simultanément"
+      }
+    ]
+  },
+  {
+    "id": "649ff107-b984-433f-9dcf-da7be2b18dcf",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_31.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDistribution normale multivariée\n31Principe clef: la probabilité d’occurence pour chaque caractéristique est régit par sa propre loi normaleμ∈ℝ:espéranceσ2∈ℝ:variance\nModèle actuel: ̂y=p(x1|μ1,σ21)×…×p(xn|μn,σ2n)=n∏j=1p(xj|μj,σ2j)Total:2n paramètres\nComment peut-on tenir compte des corrélations entre les caractéristiques ?Modèle basé sur une distribution normale multivariée\n̂y=p(x|μ,Σ)=1(2π)n/2×𝚍𝚎𝚝(Σ)1/2exp(−12(x−μ)TΣ−1(x−μ))Σ∈ℝn×n:matrice variance-covariance (variance/covariance entre chaque paire de caractéristiques)μ∈ℝn:vecteur des espérances (une valeur pour chaque caractéristique)Principe: il s’agit d’une généralisation de la loi normale à plusieurs dimensions\nDiﬀérence fondamentale: permet d'exprimer la corrélation entre les caractéristiquesApprentissage: déterminer les paramètres du modèleIntuition: on aura un modèle plus expressif que le précédent"
+      }
+    ]
+  },
+  {
+    "id": "418dd518-5988-4125-a01e-712f6cb7090c",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_32.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart32Distribution normale multivariée - visualisation\nEspérance centrée en (0,0)Même variance pour chaque caractéristiqueEspérance centrée en (0,0)Les caractéristiques x1 sont plus disperséesEspérance centrée en (-2,3)Même varianceDiagonale de la matrice: correspond à la variance de chaque caractéristiqueμ=(00)\nΣ=(1001)\nμ=(00)\nΣ=(5001)\nμ=(−23)\nΣ=(1001)\nCes distributions pouvaient déjà être modélisée avec notre premier modèle (covariances nulles)"
+      }
+    ]
+  },
+  {
+    "id": "7570d4b5-01b9-405e-a708-7a4314ea6840",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_33.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart33Distribution normale multivariée - visualisation\nLes deux caractéristiques ont  tendance à augmenter ensembleExpressivité du modèle: ces situations ne pouvaient pas être modélisées avec notre premier modèleCovariance positiveUne caractéristique a tendance à  diminuer lorsque l'autre augmenteCovariance négativeSituation quelconqueμ=(00)\nΣ=(10.90.91)\nμ=(00)\nΣ=(1−0.5−0.51)\nμ=(−12)\nΣ=(0.6−0.7−0.71)\nGénéralité: s’adapte à n’importe quel nombre de dimensions"
+      }
+    ]
+  },
+  {
+    "id": "d114d355-28ad-4341-8d20-ba41bb5606cb",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_34.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nMaximum de vraisemblance: maxμ,ΣL(μ,Σ|x(1),…,x(m))Détection d'anomalies - second modèle\n34Total: n+n+(n2−n)2 paramètres paramètres à déterminer (contre 2n dans notre modèle précédent)\nObjectif: trouver la meilleure loi normale multivariéePrincipe: prendre les paramètres maximisant la fonction de vraisemblanceBonne nouvelle: il s’agit encore d’un résultat statistique connuNotez bien que chaque donnée est un vecteur de dimension n x 1\nCombien de paramètres doit-on déterminer pour n caractéristiques ?Vecteur de n paramètresMatrice symétrique de taille n x nVecteur des moyennes: μ=(−12)Matrice variance/covariance: Σ=(0.6−0.7−0.71)Exemple: considérons des données à deux caractéristiques\nAttention: ne pas oublier de considérer que la matrice variance/covariance est symétrique\nμ=1mm∑i=1x(i)\nΣ=1mm∑i=1(x(i)−μ)(x(i)−μ)T"
+      }
+    ]
+  },
+  {
+    "id": "dc423c8f-8f0b-4bce-b4cd-7d8b0a177638",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_35.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlgorithme de détection d'anomalies - second modèle\n35Phase d'entraînement\nPhase d'évaluationObjectif: déterminer les paramètres de la loi normale multivariéeOn utilise les données d'entraînement\nOn retourne tous les paramètres (c-à-d, le modèle)Objectif: calculer la probabilité qu'une nouvelle donnée soit régulièreOn utilise la loi normale multivariée déﬁnieEn dessous du seuil: on considère la donnée comme une anomalie La probabilité est déﬁnie selon cette loi normale\n𝗋𝖾𝗍𝗎𝗋𝗇μ,Σμ=1mm∑i=1x(i)Σ=1mm∑i=1(x(i)−μ)(x(i)−μ)T𝖠𝗇𝗈𝗆𝖺𝗅𝗒𝖣𝖾𝗍𝖾𝖼𝗍𝗂𝗈𝗇𝖳𝗋𝖺𝗂𝗇𝗂𝗇𝗀𝖬𝗎𝗅𝗍𝗂(D):\nDéﬁnition du vecteur des espérancesDéﬁnition de la matrice variance/covariance\n̂y=p(x(𝗍𝖾𝗌𝗍)|μ,Σ)𝗂𝖿̂y<ϵ:𝗋𝖾𝗍𝗎𝗋𝗇𝖺𝗇𝗈𝗆𝖺𝗅𝗒𝖿𝗈𝗋x(𝗍𝖾𝗌𝗍)𝖾𝗅𝗌𝖾:𝗋𝖾𝗍𝗎𝗋𝗇𝗋𝖾𝗀𝗎𝗅𝖺𝗋𝖽𝖺𝗍𝖺𝖿𝗈𝗋x(𝗍𝖾𝗌𝗍)=1(2π)n/2×𝚍𝚎𝚝(Σ)1/2exp(−12(x−μ)TΣ−1(x−μ))𝖠𝗇𝗈𝗆𝖺𝗅𝗒𝖣𝖾𝗍𝖾𝖼𝗍𝗂𝗈𝗇𝖬𝗎𝗅𝗍𝗂(x(𝗍𝖾𝗌𝗍),ϵ,μ,Σ):"
+      }
+    ]
+  },
+  {
+    "id": "e055c871-cb68-486e-8c98-06741c4222b3",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_36.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartComparaison entre les deux modèles\n36\nQuelles sont les forces et faiblesses des deux modèles ?\nAvantage: croissance linéaire des paramètres avec le nombre de caractéristiquesInconvénient: manque d'expressivité pour considérer les corrélations Avantage: très peu coûteux à calculerDistribution normale univariée\n̂y=n∏j=1p(xj|μj,σ2j)=n∏j=11σ2πexp(−(x−μj)22σ2j)μ∈ℝ:espéranceσ2∈ℝ:variance\n#paramètres:2nDistribution normale multivariée\n̂y=p(x|μ,Σ)=1(2π)n/2×𝚍𝚎𝚝(Σ)1/2exp(−12(x−μ)TΣ−1(x−μ))Σ∈ℝn×n:matrice covarianceμ∈ℝn:vecteur des espérances\n#paramètres:2n+(n2−n)2Inconvénient: la croissance des paramètres est maintenant quadratiqueAvantage: le modèle assez expressif pour capturer les corrélationsInconvénient: plus coûteux à calculer (inversion d’une matrice)Diﬃculté: requiert un grand nombre de données (au moins plus que n) pour avoir une matrice inversible"
+      }
+    ]
+  },
+  {
+    "id": "59e8a591-b4d4-47a4-868d-3d5203a61d6f",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_37.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDiﬀérences avec l'apprentissage supervisé\n37\nQue pensez-vous de cette idée ?\nD:{(x(1),y(1)),(x(2),y(2)),…,(x(m),y(m))}\n(x(i),y(i))avec y(i)=0→donnée régulière(x(i),y(i))avec y(i)=1→anomalieIdée: collecter un grand nombre de données concernant la tâche à étudier\nApprentissage supervisé: suppose un grand nombre d’exemples de chaque classeDiﬃculté: on a rarement un nombre suﬃsant de données pour les anomaliesAnomalie: diﬃcile à caractériser (peu semblable à tout ce qu'on a pu voir)Même si on peut avoir beaucoup de données concernant les cas sains\nApprentissage non-supervisé: pas sensible à cette diﬃculté\nConséquence: il peut être intéressant de passer à une méthode superviséeAu ﬁl du temps: on peut avoir assez de données pour caractériser une anomalieExemple: détection de spams (qui sont devenus très fréquents)Passage progressif à de l’apprentissage supervisé"
+      }
+    ]
+  },
+  {
+    "id": "435e433b-ff42-4bb3-8415-2e77db433c5e",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_38.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n38Apprentissage non-supervisé1. Déﬁnition et applications de l'apprentissage non-supervisé 2. Formalisation du problème de regroupement (clustering) 3. Algorithme K-means 4. Formalisation du problème de détection d'anomalies 5. Notion de statistique: maximum de vraisemblance 6. Modélisation par des distributions normales univariées 7. Modélisation par une distribution normale multivariée"
+      }
+    ]
+  },
+  {
+    "id": "599b4494-fa53-48bf-8984-b77d970a18b0",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_39.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartSynthèse des notions vues\n39Cours donnés à PolytechniqueINF8111: Fouille de données (Daniel Aloise)LOG6308: Systèmes de recommandation (Michel Desmarais)\nApprentissage non-superviséDéﬁnition: apprentissage qui se fait sur base de données non-labelliséesPrincipe: exploitation de la similarité entre les données pour l'apprentissage\nD:{x(1),x(2),…,x(m)}Problème de regroupementObjectif: regrouper les données similaires en groupes (clusters) cohérentsMéthode de résolution: algorithme K-meansPrincipe: recherche locale pour minimiser une fonction de coûtAméliorations possibles: redémarrages, choix des positions initiales, etc.\nProblème de détection d'anomalies\nObjectif: prédire la probabilité qu’une nouvelle donnée soit régulièreModélisation: produit de lois normales univariées ou une loi normale mutivariéePrincipe: maximiser une fonction de vraisemblance"
+      }
+    ]
+  },
+  {
+    "id": "0b506643-3045-4476-882f-d35c99150684",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_40.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nExemples de questions d'examen\n401. Eﬀectuer plusieurs itérations de l'algorithme k-means sur un jeu de donnée 2. Savoir détecter si une donnée est une anomalie à l'aide des modèles vusThéoriePratique1. Donner deux applications et exemple d'application de l'apprentissage non-supervisés 2. Expliquer les garanties de convergence de l'algorithme k-means 3. Expliquer les avantages/inconvénients des deux modèles pour la détection d'anomalie"
+      }
+    ]
+  },
+  {
+    "id": "6a6cf28d-19fc-4a59-a6d4-04c3eb8f8311",
+    "image": "extracted_content\\M8-apprentisage-non-supervise\\images\\page_41.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartINF8215 - Intelligence artiﬁcielleMéthodes et algorithmesApprentissage non-supervisé: FIN\nDALLE: Detecting an anomaly, by Picasso"
+      }
+    ]
+  }
+]

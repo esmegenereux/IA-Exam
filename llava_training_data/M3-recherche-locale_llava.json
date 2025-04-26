@@ -1,0 +1,884 @@
+[
+  {
+    "id": "0071272a-de8b-4bf6-90ce-be1a8ba288c9",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesModule 3: Recherche locale"
+      }
+    ]
+  },
+  {
+    "id": "ab7716a5-3838-49b6-af6a-106e4b66513a",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartContenu du cours\n2Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques"
+      }
+    ]
+  },
+  {
+    "id": "6f2b0cd7-1d0e-4cea-a685-92c0e7b701a4",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n3Recherche locale1. Problèmes combinatoires de satisfaction et d'optimisation 2. Concepts et principes fondamentaux de la recherche locale 3. Formalisation de la recherche locale 4. Algorithme du hill climbing 5. Diﬃculté des minima locaux 6. Notion de voisinage connecté 7. Méthodes des redémarrages (restarts) 8. Algorithme du recuit simulé (simulated annealing)"
+      }
+    ]
+  },
+  {
+    "id": "64b2f374-d1c4-43fb-8fc6-168ccf311b0e",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartRetour sur les modules précédents\n4Stratégies de recherche (module 1)Objectif: trouver la meilleure séquence d'actions pour atteindre un état ﬁnal à partir d'un état initial\nSolution: une séquence d'actions permettant d'atteindre l'état ﬁnal\nRecherche adversarielle (module 2)Objectif: trouver les meilleures actions à exécuter dans un environnement compétitif\nSolution: une politique de sélection d’actions pour atteindre un état ﬁnal\nDans les deux cas, on souhaite trouver la façon d'atteindre un état ﬁnal, possiblement connu"
+      }
+    ]
+  },
+  {
+    "id": "36a81e5b-f2b1-4158-8dfb-96fac81ab8d2",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_5.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartIntroduction aux problèmes combinatoires\n5\nEst-ce que tous les problèmes ont ce même objectif ?\nCaractéristiques de ces problèmes: l'état ﬁnal nous est inconnu et diﬃcile à trouverObservation fondamentale: la séquence d'actions pour parvenir à un état ﬁnal n'est pas importanteNon: il existe certains problèmes pour lesquels on ne cherche pas une séquence d’actions\nSolution au problème: trouver un état qui satisfait toutes les contraintes du problèmeDiﬃculté: l’état ﬁnal doit respecter plusieurs contraintes\nSudoku\nEntreposage de caissesCréation d’un horaire sans conﬂit\nChoix d’une solution: entre plusieurs solutions faisables, on préfère généralement la moins coûteuse\nLes problèmes de ce type sont connus sous le nom de problèmes combinatoires"
+      }
+    ]
+  },
+  {
+    "id": "1dabe117-c56c-45e8-b8a4-ec12f7643fb9",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_6.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartProblèmes combinatoires de satisfaction\n6Objectif: trouver une solution faisable parmi un ensemble de solutionsSituation avec aucune solution: l’objectif est de prouver qu'il n’en existe aucuneProblèmes combinatoires de satisfaction (constraint satisfaction problem - CSP)\nTrouver une aiguille dans une botte de foinSolutions faisables: souvent exprimées par le biais de contraintes"
+      }
+    ]
+  },
+  {
+    "id": "6dc4085b-e6b9-410e-aaf0-c9966eaedd2e",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_7.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nExemples pratiques de CSPs\n7Objectif: planiﬁer la maintenance d’appareils d’un réseau de distribution d’énergie Réalisation d’un horaire de maintenance\nConﬁguration autoriséeObjectif: acheter un nouvel ordinateur pour un faire tourner un logicielContraintes:Budget: Max 2000 $CADMémoire vive: Min 16 Go de RAMProcesseur : Intel Core i7-8700K ou AMD Ryzen 5 3600XDisque dur: SSD, min 128 Go...\nCas pratique: utilisé par des fabricants pour donner des produits compatibles avec les besoins d'un client \nContraintes:Finir toutes les maintenance endéans l’annéePas d’interruption de services dans le réseauEmpêcher la maintenance simultanée de deux appareils..."
+      }
+    ]
+  },
+  {
+    "id": "7be645e3-1a51-405c-8f8f-a92bf24245ae",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_8.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartExemples pratiques de CSPs\n8\nhttps://www.dell.com/fr-ca/shop/gaming-and-games/sr/game-desktopsContraintesSolutions faisables"
+      }
+    ]
+  },
+  {
+    "id": "ffa8e94b-d8c6-40ee-85a5-8d62bc65a0ec",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_9.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartProblèmes combinatoires d'optimisation\n9Objectif: trouver la meilleure solution faisable parmi un ensemble de solutionsProblèmes combinatoires d'optimisation (constraint optimisation problem - COP)\nTrouver le plus gros lingot d'or dans une botte de foinSituation avec aucune solution: l’objectif est de prouver qu'il n’en existe aucuneSolutions faisables: souvent exprimées par le biais de contraintesQualité d’une solution: souvent exprimée par le biais d’une fonction objectif"
+      }
+    ]
+  },
+  {
+    "id": "73606fa9-ce8e-47a8-a913-b6169002b505",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_10.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartExemple pratique de COPs\n10Investissement ﬁnancierObjectif: choisir un ensemble d'investissements maximisant le revenu espéré étant donné un budget limitéInvestissementCoût ($)Revenu espéré dans 10 ans ($)A2001 000B2001 000C2001 000D50010 000E50010 000F80013 000G3007 000Contrainte: budget maximal de 1000 $AABBAABBS1S1S2S2S3S3S4S4S5S5S6S6S7S7S8S8Objectif: amener des patients à l'hôpital et les ramener après leur soin (minimiser distance des ambulances) Contraintes: capacité des véhicules, respect des horaires des soinsProblèmes de transport"
+      }
+    ]
+  },
+  {
+    "id": "59e98072-d1e3-46e4-83e8-0d53637438f6",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_11.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartIntérêt pratique de résoudre ces problèmes \n11Exemple: impression d’aﬃchesEconomies:1m2 de papier spécial par impressionNombre d'opérations:60 par jourEconomies annuelles:21900m2 de papierContexte: un imprimeur utilise une grande toile d'un format ﬁxe pour imprimer des commandes de photosObjectif: minimiser la surface non-utilisée par les photosContraintes: pas de chevauchements entre les aﬃchesImportance en industrieContexte industriel: ce genre de problème arrive énormément (formalisation très générale)Raison: beaucoup d'opérations doivent être eﬀectuées un grand nombre de foisIntérêt pratique: eﬀectuer eﬃcacement ces opérations entraine des gains signiﬁcatifs sur le long termeOpportunité pour vous: pouvoir résoudre eﬃcacement ces problèmes est une compétence très demandée !Exemple: production de composants, transport de biens, stockage, etc.Oﬀre à Polytechnique: plusieurs cours ne sont dédiés qu'à la résolution de ce type de problèmes\nhttps://www.coursera.org/lecture/automated-reasoning-sat/ general-introduction-and-an-application-to-poster-printing-l7QIO"
+      }
+    ]
+  },
+  {
+    "id": "1702cd54-5c86-424a-b641-2b5348826c98",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_12.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDiﬃculté des problèmes combinatoires\n12Clairement pas réalisable d’utiliser cette stratégie dans cette situation !Explication: on ne connaît pas d'algorithmes à complexité temporelle polynomiale pour les résoudre \nhttps://www.youtube.com/ watch?v=AgtOCNCejQ8\nUne étude des classes de complexité est en dehors du cadre de notre coursScience étonnante: vidéo introductive très bien faite à ce sujet\nPrincipe: essayer une solution, évaluer le résultat, et répéter jusqu'à ce qu’une bonne solution soit trouvée1047tests1000×109tests/seconde=4.63×1044secondes≈5.35×1039années9 possibilités par case→951>1047 possibilités51 cases à compléterDiﬃculté intrinsèque: ces problèmes sont pour la plupart NP-complets ou NP-diﬃcilesConséquence: le temps d’exécution devient vite irraisonnable (croissance exponentielle)\nEst-ce que ces problèmes sont diﬃciles à résoudre ?\nJ’ai accès à un super-calculateur, est-ce vraiment irréaliste de tout tester ?Autre ressource: le cours INF6102 que je donne à l’hiver"
+      }
+    ]
+  },
+  {
+    "id": "fe370eab-8a02-4568-8f43-82c4603f3eba",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_13.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartLimitations de la recherche exhaustive simple\n13Résolution par recherche exhaustive (bruteforce)Diﬃculté: la méthode atteint vite ses limites (conséquence d’une complexité exponentielle)Exemple: le problème de l'investissement implique des décisions binaires (sélection ou non)2 investissements: 4 possibilités3 investissements: 8 possibilités4 investissements: 16 possibilitésn investissements: 2^n possibilités\nInvestissementCoût ($)Revenu espéré dans 10 ans ($)A2001 000B2001 000C2001 000D50010 000E50010 000F80013 000G3007 000Utilité: résolution envisageable pour les problèmes ayant un petit espace de recherche (peu de décisions) Principe: essayer une solution, évaluer le résultat, et répéter jusqu'à ce qu’une bonne solution soit trouvée\nOption 1: ne pas avoir peur d'un algorithme à complexité exponentielle dans le pire des casOption 2: se contenter d'un algorithme approximatif (non-exhaustif), et s'arrêter si une solution est trouvée"
+      }
+    ]
+  },
+  {
+    "id": "d3dedd27-5649-4ddb-bbd4-1d837cc7cd1c",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_14.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartOption 1 - méthodes de résolution exhaustive intelligente\n14On a ainsi toujours une recherche exhaustive... mais qui intègre une forme d'intelligenceUtilisation d'heuristique: essayer d'abord les solutions les plus prometteusesIntégration de raisonnements logiques: supprimer les solutions que l'on sait mauvaises à coup sûr\nProgrammation en nombres entiers (MAGI - MTH6404) Résolution SAT (module sur les agents logiques)Programmation par contraintes (module suivant)Principe 1: ne pas avoir peur d'un algorithme à complexité exponentielle dans le pire des casPrincipe 2: rajouter des mécanismes aﬁn d’accélérer le processus de résolution\nQuels mécanismes peut-on intégrer à une recherche exhaustive ?\nTemps  d'exécution\nTaille du problèmeRecherche  exhaustive intelligenteRecherche exhaustive (bruteforce)Diﬃculté: on a toujours une complexité exponentielleConséquence: la taille deviendra toujours problématiqueExemples d’algorithmes de résolution de ce typeStratégie de recherche qui s’arrête lorsqu'on a la certitude que la solution trouvée est optimaleRecherche complète (exhaustive)"
+      }
+    ]
+  },
+  {
+    "id": "a22fcdff-0dbe-486c-95c2-fc0c4be094b2",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_15.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartOption 2 - méthodes de résolution non exhaustive (recherche incomplète)\n15Principe 1: abandonner l'exhaustivité de la recherche pour améliorer les performancesPrincipe 2: explorer un sous-ensemble des solutions, et prendre la meilleure trouvée actuellementSolution 1Solution 2Solution 3Solution 5435Solution 10589......Temps  d'exécution\nTaille du problèmeRecherche  exhaustive intelligenteRecherche exhaustive (bruteforce)Recherche  IncomplèteAvantage: processus de résolution beaucoup plus eﬃcace au niveau du temps d'exécutionAvantage: fonctionne très bien pour résoudre de très grands problèmesInconvénient: on perd la garantie de trouver la meilleure solution (l’espace non entièrement exploré)Inconvénient: impossibilité de prouver qu'un problème est infaisableRecherche locale: méthode de résolution incomplète par excellence (ce module)Métaheuristiques: améliorations indispensables à une recherche locale (INF6102)Stratégie de recherche qui arrête son exécution lorsqu’un critère d'arrêt est atteintRecherche incomplète (non exhaustive)\nNote: le critère d’arrêt est autre qu’une exploration complète"
+      }
+    ]
+  },
+  {
+    "id": "60572218-b2c2-4183-878d-b041a910bde7",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_16.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n16Recherche locale1. Problèmes combinatoires de satisfaction et d'optimisation 2. Concepts et principes fondamentaux de la recherche locale 3. Formalisation de la recherche locale 4. Algorithme du hill climbing 5. Diﬃculté des minima locaux 6. Notion de voisinage connecté 7. Méthodes des redémarrages (restarts) 8. Algorithme du recuit simulé (simulated annealing)"
+      }
+    ]
+  },
+  {
+    "id": "cef74aca-2eb2-48f0-b5f8-581f071277c7",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_17.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartRecherche locale - exemple introductif\n17Exemple: les quatre reines de Westeros\nObjectif: placer les reines sur une grille sans qu'elles ne s'attaquent mutuellementRésolution du problème par recherche locale(1) InitialisationChaque reine est placée aléatoirement sur une colonneSolution initiale, qui est infaisable(2) Amélioration de la solutionOn bouge la reine ayant le plus de conﬂits...... sur la case de sa colonne réduisant le plus ses conﬂitsOn répète jusqu'à qu'on ne sache plus améliorer la solutionRésultat: résolution en seulement 4 étapesTaille du problèmeTotal:4×4×4×4=256 conﬁgurations possibles"
+      }
+    ]
+  },
+  {
+    "id": "edf8786f-701d-4130-8dce-15f3da686a2f",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_18.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartPrincipes de la recherche locale\n18Procédure simpliﬁée de recherche localeEtape 2: on se déplace de solutions en solutions en eﬀectuant des mouvements locauxLes mouvements locaux possibles forment un voisinageVoisinage: ensemble des mouvements locaux pouvant être fait à partir de notre solution actuelleLa recherche correspond à une exploration dans un graphe ou chaque noeud est une solution candidateIntuition de la procédureEtape 1: on démarre d'une solution initiale\nLa recherche locale améliore la solution en ne considérant qu'un sous-ensemble d'autres solutionsObjectif: on veut se déplacer au long terme sur la meilleure solution possibleEtape 3: on arrête de se déplacer une fois qu'un critère d'arrêt est atteint\nNotez bien qu’une solution est un état, et non une séquence d’actions (module 1)"
+      }
+    ]
+  },
+  {
+    "id": "50e89509-02f9-4f23-9283-74d466e7c27e",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_19.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartRecherche locale - formalisation préliminaire\n19FormalisationS:l'ensemble des solutions possiblesN(S→2S):une fonction de voisinages∈S:une solution spéciﬁqueN(s):le voisinage de sf(S→ℝ): une fonction d'évaluationf(s):la valeur de la solution sProblème des quatre reinesReprésentation d'une solutionS:[⟨1,1,1,1⟩,⟨2,1,1,1⟩,…,⟨4,4,4,4⟩]Vecteur de 4 éléments, donnant la ligne de chaque reineEnsemble des solutions: les solutions pouvant être générées\nf(⟨1,2,1,4⟩):10Solution initiale: solution où démarre la rechercheVoisinage: bouger une seule reine sur sa colonneN(⟨1,2,1,4⟩):[⟨2,2,1,4⟩,⟨3,2,1,4⟩,⟨4,2,1,4⟩,⟨1,1,1,4⟩,…]Fonction d’évaluation: nombre de conﬂits de la solutions:⟨1,2,1,4⟩\n1234"
+      }
+    ]
+  },
+  {
+    "id": "157590fd-4c25-4fdf-a151-e0d8e4c70779",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_20.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nRecherche locale - Algorithme préliminaire\n20Question 4: comment choisir un nouvel état dans notre voisinage ?Question 2: comment déﬁnir un voisinage ? Question 3: comment déﬁnir une fonction d'évaluation ?Pseudo-code d'une recherche locale\nQuestions à résoudreQuestion 1: comment choisir une solution initiale ?𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖺𝗇𝗂𝗇𝗂𝗍𝗂𝖺𝗅𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇sG=[n∈N(s)𝗌𝗎𝖼𝗁𝗍𝗁𝖺𝗍f(n)<f(s)]𝗐𝗁𝗂𝗅𝖾|G|>0:𝗌𝖾𝗅𝖾𝖼𝗍𝖺𝗇𝖾𝗐𝗌𝗈𝗅𝗎𝗍𝗂𝗈𝗇s𝖿𝗋𝗈𝗆GG=[n∈N(s)𝗌𝗎𝖼𝗁𝗍𝗁𝖺𝗍f(n)<f(s)]𝗋𝖾𝗍𝗎𝗋𝗇s\nQuestion 5: est-ce que cet algorithme donne la meilleure solution ?Diﬀérents choix existent, et donnent lieu à diﬀérents algorithmes\nCes choix dépendent aussi du problème considéré"
+      }
+    ]
+  },
+  {
+    "id": "48f3b067-d8a0-464d-adde-cbf5ce037ac4",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_21.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartRecherche locale - formalisation\n21Fonction qui indique les solutions pouvant être atteintes à partir d'une solution spéciﬁqueFonction de voisinage\nN(s):S→2SFonction qui indique quels voisins d'une solution sont valides pour une sélectionFonction de validité\nL(N(s),s):2S×S→2SFonction qui sélectionne un voisin d'une solution parmi ceux éligibles dans le voisinageFonction de sélection\nQ(L(N(s),s),s):2S×S→SFonction qui donne une valeur sur la qualité d'une solutionFonction d'évaluation\nf:S→ℝ"
+      }
+    ]
+  },
+  {
+    "id": "3a4f637f-5b39-48e6-978c-b1e370734cfb",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_22.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\n𝖫𝗈𝖼𝖺𝗅𝖲𝖾𝖺𝗋𝖼𝗁(N,L,Q,f,Θ):Recherche locale - Algorithme\n22s=𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖨𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗈𝗅𝗎𝗍𝗂𝗈𝗇()G=[n∈N(s)]𝖿𝗈𝗋k∈1𝗍𝗈Θ:𝗂𝖿f(s)<f(s⋆):𝗋𝖾𝗍𝗎𝗋𝗇s⋆V=[n∈L(G,s)]s⋆=ss=Q(V,s)s⋆=sConception de ces fonctions pour eﬀectuer la rechercheHeuristique de recherche locale\nEntrées: fonction de voisinage, validité, sélection, évaluation, et d'arrêtGénération d'une solution initialeOn itère jusqu'à ce qu'un critère d'arrêt soit atteintFonction qui déﬁni quand la recherche doit se terminerCritère d'arrêt\nΘ\nCas standard: une limite sur le nombre d'itérations ou le temps d'exécution\nDéﬁnition du voisinageDéﬁnition des voisins valides (on ﬁltre les voisins pour ne garder que ceux valides)Sélection d'un voisinMise à jour de la meilleure solution trouvée (minimisation)On retient la meilleure solution trouvée actuellementAlgorithme de recherche locale\nValeur de retour: la meilleure solution trouvée"
+      }
+    ]
+  },
+  {
+    "id": "8d6730ef-84ca-4b48-887b-a6527490e83d",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_23.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartRecherche locale - Algorithme\n23\ns=𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖨𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗈𝗅𝗎𝗍𝗂𝗈𝗇()G=[n∈N(s)]𝖿𝗈𝗋k∈1𝗍𝗈Θ:𝗂𝖿f(s)<f(s⋆):𝗋𝖾𝗍𝗎𝗋𝗇s⋆𝖫𝗈𝖼𝖺𝗅𝖲𝖾𝖺𝗋𝖼𝗁(N,L,Q,f,Θ):V=[n∈L(G,s)]s⋆=ss=Q(V,s)s⋆=sProblème des quatre reinesFonction de voisinage: bouger une reine sur sa colonne \nN(⟨1,2,1,4⟩):[⟨2,2,1,4⟩,⟨3,2,1,4⟩,⟨4,2,1,4⟩,⟨1,1,1,4⟩,…]Fonction de validité: uniquement les voisins réduisant le nombre de conﬂitsL(N(s),s):[n∈N(s)𝗌𝗎𝖼𝗁𝗍𝗁𝖺𝗍f(n)<f(s)]Fonction de sélection: prendre le voisin réduisant le plus les conﬂitsQ(L(N(s),s),s):𝖺𝗋𝗀𝗆𝗂𝗇f(s)(L(N(s),s))Fonction d’évaluation: compter le nombre de conﬂits d'une solutionf(s):#𝖼𝗈𝗇𝖿𝗅𝗂𝖼𝗍𝗌𝗂𝗇s\nRemarque: il ne s’agit qu’un modèle parmi d’autresQuestion 2: comment déﬁnir ces fonctions ?Questions à résoudreQuestion 1: comment choisir une solution initiale ?Question 3: est-ce que cet algorithme nous donne la meilleure solution ?"
+      }
+    ]
+  },
+  {
+    "id": "c04f105f-64a5-42f0-b0c6-abec88f5bbb7",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_24.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlgorithme du Hill climbing\n24Avantage: facilite la construction d’algorithmes\nEn cas d’égalité: on choisi un voisin aléatoirement parmi les meilleursFonction de validité: tous les voisins qui améliorent la solution actuelleL(N(s),s):[n∈N(s)𝗌𝗎𝖼𝗁𝗍𝗁𝖺𝗍f(n)<f(s)]Fonction de sélection: le meilleur parmi tous ces voisinsQ(L(N(s),s),s):k∼H𝗐𝗂𝗍𝗁𝗉𝗋𝗈𝖻𝖺𝖻𝗂𝗅𝗂𝗍𝗒1|H|Les fonctions de voisinage et d'évaluation dépendent du problèmeH:[n∈L(N(s),s)𝗌𝗎𝖼𝗁𝗍𝗁𝖺𝗍f(n)=mink∈L(N(s),s)f(k)]Intérêt de notre formalisme\nA t-on d'autres choix pour la fonction de sélection ?\ns=𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖨𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗈𝗅𝗎𝗍𝗂𝗈𝗇()G=[n∈N(s)]𝖿𝗈𝗋k∈1𝗍𝗈Θ:𝗂𝖿f(s)<f(s⋆):𝗋𝖾𝗍𝗎𝗋𝗇s⋆𝖫𝗈𝖼𝖺𝗅𝖲𝖾𝖺𝗋𝖼𝗁(N,L,Q,f,Θ):V=[n∈L(G,s)]s⋆=ss=Q(V,s)s⋆=sRecherche locale consistant à choisir le meilleur voisin à chaque itérationAlgorithme du Hill climbing\nCela permet ainsi diﬀérentes constructions basées sur le même noyauAvantage: déﬁni sans ambiguïté le fonctionnement dans la recherche"
+      }
+    ]
+  },
+  {
+    "id": "a3a49b65-b1d2-44a3-8afe-46d625ecf8d4",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_25.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartProblème des reines: fonctions de sélection\n25Fonction de sélection 1: meilleur voisinFonction de sélection 2: premier voisin améliorantAvantage: retourne le meilleur voisinInconvénient: requiert l’évaluation de tout le voisinage, ce qui peut être coûteuxAvantage évident: ne nécessite pas d’évaluer systématiquement tout le voisinageInconvénient: amène à une sélection sous optimalePrincipe: sélectionner le meilleur voisin selon la fonction d’évaluationComplexité: O(n2) (demande de considérer toutes les paires variables/valeurs)\nComplexité: O(n2) (demande de considérer toutes les paires variables/valeurs dans le pire des cas)\nnnPrincipe: bouger une reine sur une case de sa colonneTaille du voisinage: n reines donne un voisinage de n2 voisinsFonction de voisinage considérée\nQuelle est la complexité de cette sélection ?Principe: sélectionner le premier voisin qui améliore la solution\nQ(L(N(s),s),s):𝖿𝗂𝗋𝗌𝗍k∈L(N(s),s)\nQuelle est la complexité de cette sélection ?En pratique: la complexité moyenne est nettement meilleure, malgré la complexité quadratique"
+      }
+    ]
+  },
+  {
+    "id": "a41fe715-45f0-4939-af08-326423f53e72",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_26.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartProblème des reines: fonctions de sélection\n26Limitation actuelle: on doit considérer un voisinage entier dans le pire des cas\nAvantage: on garde l'idée qu'on souhaite trouver un bon voisin qui améliore, à plus faible coûtFonction de sélection 3: max/min-conﬂictsAmélioration possible: faire la sélection sur un sous-ensemble du voisinageEtape 1: on prend la reine ayant le plus de conﬂits (max)Etape 2: on prend la ligne donnant le moins de conﬂits (min)Complexité: 𝒪(n+n)=𝒪(n)Fonction de sélection 4: min-conﬂictsEtape 1: on prend une reine aléatoireEtape 2: on prend la ligne donnant le moins de conﬂits (min)Avantage supplémentaire: favorise la diversiﬁcation (plus à venir là dessus)\nnn\nQuelle est la complexité de cette sélection ?Etape 1: n opérations pour trouver le maxEtape 2: n opérations pour trouver le min\nQuelle est la complexité de cette sélection ?Etape 1: nombre constant d’opérations pour le choix aléatoireEtape 2: n opérations pour trouver le minComplexité: 𝒪(1+n)=𝒪(n)Remarque: ces quatre fonctions oﬀrent plusieurs compromis entre qualité et rapidité des mouvements"
+      }
+    ]
+  },
+  {
+    "id": "69987d79-7a27-4665-8ba1-f1cf9df284c6",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_27.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n27Recherche locale1. Problèmes combinatoires de satisfaction et d'optimisation 2. Concepts et principes fondamentaux de la recherche locale 3. Formalisation de la recherche locale 4. Algorithme du hill climbing 5. Diﬃculté des minima locaux 6. Notion de voisinage connecté 7. Méthodes des redémarrages (restarts) 8. Algorithme du recuit simulé (simulated annealing)"
+      }
+    ]
+  },
+  {
+    "id": "caa7a4db-5237-459c-bcba-3a6d342c7c38",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_28.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartProblème combinatoire de satisfaction (CSP) - Carré magique\n28\ns=𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖨𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗈𝗅𝗎𝗍𝗂𝗈𝗇()G=[n∈N(s)]𝖿𝗈𝗋k∈1𝗍𝗈Θ:𝗂𝖿f(s)<f(s⋆):𝗋𝖾𝗍𝗎𝗋𝗇s⋆𝖫𝗈𝖼𝖺𝗅𝖲𝖾𝖺𝗋𝖼𝗁(N,L,Q,f,Θ):V=[n∈L(G,s)]s⋆=ss=Q(V,s)s⋆=sCarré magique(1) Chaque case doit avoir un nombre diﬀérentObjectif: remplir un carré 3x3 (n x n) avec les nombres de 1 à 9 (n*n)Contraintes:(2) La somme de chaque colonne, rangée, et diagonale doit valoir 15 (T)\nModèle de recherche localeModéliser une résolution en recherche locale revient à déﬁnir diﬀérents éléments\nEtape suivante: intégrer ces éléments dans un algorithme de résolutionElement 1: l’ensemble des solutions (espace de recherche)Element 2: la solution initiale (point de départ de la recherche)Element 3: la fonction d’évaluation (qualité d’une solution)Element 4: la fonction de voisinage (génération de nouvelles solutions)Element 5: la fonction de validité (ﬁltrage des solutions non voulues)Element 6: la fonction de sélection (déplacement sur une nouvelle solution)Notre modélisation va nous permettre d’introduire de nouveaux concepts"
+      }
+    ]
+  },
+  {
+    "id": "48246e5d-4f1d-4c25-8001-f65be38ba5a9",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_29.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartCarré magique - modélisation par recherche locale\n29\nEnsemble des solutionsDéﬁnition: toutes les solutions que l'on permet de créerPlusieurs choix de conception sont possiblesChoix 1: chaque case a un nombre entre 1 et 9\n99=387420489 solutionsChoix 2: les nombres 1 à 9 sont répartis dans la grilleChoix 2: génère un espace environ 1000 fois plus petit\"Les petits espaces de recherche,  tu préfèreras\"\nQuel choix vous paraît préférable ?La déﬁnition de l'espace de recherche dépend de la façon dont les contraintes sont considéréesContrainte du problème restant toujours satisfaite dans chaque solution de l'espaceContrainte dure (hard constraint)\nContrainte du problème pouvant être non-satisfaite dans une solution de l'espaceContrainte molle (soft constraint)\nChoix 1: les deux contraintes sont mollesChoix 2: la contrainte indiquant que les nombres doivent être diﬀérents est dure\n9!=362880 solutions"
+      }
+    ]
+  },
+  {
+    "id": "d3f05366-95b4-46b6-9678-8cb3e0053de5",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_30.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nCarré magique - solution initiale et voisinage\n30\n692158437\nQue proposeriez-vous comme fonction de voisinage pour ce problème ?Solution initialeGénération aléatoire: en créer une aléatoirement qui satisfait toutes les contraintes duresAstuce: une génération aléatoire est souvent simple et eﬃcace (bonne diversiﬁcation)\nVoisinage 2-swap: permuter deux chiﬀres dans le tableauSouhait: avoir un voisinage permettant d'améliorer la solution, sans être trop couteux à calculerErreur fréquente: le voisinage doit aussi toujours préserver nos contraintes dures\n592168437\n591268437\n591263487Notre choix d’espace de recherche: il suﬃt de permuter aléatoirement tous les chiﬀres dans la grille\nAu plus il y a de contraintes dures, au plus on est limité dans la déﬁnition du voisinageExemple invalide: un voisinage consistant à modiﬁer la valeur d'une case n'est pas valide"
+      }
+    ]
+  },
+  {
+    "id": "0e362d14-1eac-48bd-b23b-916b5f8f8984",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_31.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartCarré magique - fonction d'évaluation\n31\n692158437\n69215843717141411111717181814181312111716\n69215843717918\n1111221219\nQue proposeriez-vous comme fonction d'évaluationFonction d’évaluation 1: nombre de conﬂits\n8 conﬂits8 conﬂits8 conﬂitsInconvénient: la fonction d'évaluation n'est pas très informativeCause: les solutions du voisinage ne peuvent pas être diﬀérenciées adéquatementConséquence: la recherche risque de devenir complètement aléatoireObservation: on a souvent des conﬂits partoutPrincipe: compter le nombre de contraintes molles qui ne sont pas respectéesDans notre cas, on a un conﬂit pour chaque ligne, colonne, et diagonale diﬀérente de 15\n692158437"
+      }
+    ]
+  },
+  {
+    "id": "3f43d436-607a-4b15-8cbd-13c68d1d9d4c",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_32.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartCarré magique - fonction d'évaluation\n32Fonction d’évaluation 2: pondération par le degré de non-satisfaction\n42241123\n6921584371714141414171415\n12111120\nConﬂits pondérés : 19\n6921584370\n1101\n1101516151414141615Conﬂits pondérés : 5\n692158437Avantage: cette fonction permet d'orienter plus expressivement la rechercheDans notre cas, chaque conﬂit est pondéré par l'écart qu'il a avec la valeur recherchée (15)\n6921584371714141111171718\nConﬂits pondérés : 9Une solution faisable est trouvée\"Des fonctions d'évaluation expressives, tu préfèreras\"\nPrincipe: pondérer chaque conﬂit par une mesure d'un degré de non-satisfaction\n692158437"
+      }
+    ]
+  },
+  {
+    "id": "94d3c6bf-fbb2-4541-9f81-5e9f74f961d2",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_33.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartCarré magique - récapitulatif\n33Modèle de recherche localeEspace de recherche: les nombres 1 à 9 sont répartis dans la grilleSolution initiale: les nombres sont répartis aléatoirement dans la grilleVoisinage: solutions pouvant être générées par un swap de deux nombresFonction d’évaluation: somme des conﬂits pondérés de chaque contrainte molleAlgorithme de résolutionHill climbing: sélection du meilleur voisin\n692158437\n692158437\ns=𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖨𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗈𝗅𝗎𝗍𝗂𝗈𝗇()G=[n∈N(s)]𝖿𝗈𝗋k∈1𝗍𝗈Θ:𝗂𝖿f(s)<f(s⋆):𝗋𝖾𝗍𝗎𝗋𝗇s⋆𝖫𝗈𝖼𝖺𝗅𝖲𝖾𝖺𝗋𝖼𝗁(N,L,Q,f,Θ):V=[n∈L(G,s)]s⋆=ss=Q(V,s)s⋆=sFonction de sélection: implicite dans l’algorithme de résolutionFonction de validité: implicite dans l’algorithme de résolution\nExemple d’implémentation disponible dans les exercices du moduleOn a un modèle de satisfaction pure (juste trouver une solution faisable)"
+      }
+    ]
+  },
+  {
+    "id": "8a19a524-6d3c-40cb-9763-b75b2975711b",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_34.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n34Recherche locale1. Problèmes combinatoires de satisfaction et d'optimisation 2. Concepts et principes fondamentaux de la recherche locale 3. Formalisation de la recherche locale 4. Algorithme du hill climbing 5. Diﬃculté des minima locaux 6. Notion de voisinage connecté 7. Méthodes des redémarrages (restarts) 8. Algorithme du recuit simulé (simulated annealing)"
+      }
+    ]
+  },
+  {
+    "id": "591f942d-a249-4816-b05b-a69548d1f937",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_35.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartEtat actuel de la situation\n35Modélisation d'une recherche localeObjectif: concevoir un espace de recherche, une fonction de voisinage, de sélection, et d'évaluationOn a vu plusieurs techniques et bonnes pratiques de conception pour rendre la recherche eﬃcaceDéﬁnition de l'espace de recherche: contraintes dures ou mollesFonction de sélection: trouver un bon compromis entre qualité de la sélection et complexité calculatoireCes notions ont été appliquées concrètement sur deux problèmes (un autre à venir dans le devoir)Algorithme de résolution\ns=𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖨𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗈𝗅𝗎𝗍𝗂𝗈𝗇()G=[n∈N(s)]𝖿𝗈𝗋k∈1𝗍𝗈Θ:𝗂𝖿f(s)<f(s⋆):𝗋𝖾𝗍𝗎𝗋𝗇s⋆𝖫𝗈𝖼𝖺𝗅𝖲𝖾𝖺𝗋𝖼𝗁(N,L,Q,f,Θ):V=[n∈L(G,s)]s⋆=ss=Q(V,s)s⋆=sObjectif: exécuter la recherche locale déﬁnie précédemmentHeuristique de recherche: déﬁnition de ce modèleHill climbing: sélectionner à chaque étape le meilleur voisin améliorantVariantes possibles: sélectionner un voisin améliorant\nEst-ce qu'on obtient toujours la meilleure solution ?\nEst-ce qu'on obtient toujours une solution faisable ?"
+      }
+    ]
+  },
+  {
+    "id": "87ac01fa-2f40-41e4-a0d3-d908e24aeeba",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_36.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDiﬃcultés d'un minimum local\n36Algorithme du hill climbingPrincipe: choisir le meilleur voisin à chaque itérationEn cas d’égalité: en choisir un aléatoirement parmi les meilleurs\nQuelles sont les limitations de cet algorithme ?Exécution: la recherche s'arrête une fois que la solution actuelle est meilleure que tous ses voisinsDiﬃculté: en général, on a aucune garantie que cette solution est optimale, voire même faisableSolution meilleure que tous les voisins, mais qui n'est pas forcément la meilleure globalementMinimum local (ou maximum local)\ns est un minimum local↔f(s)≤f(n)∀n∈N(s)La meilleure (ou l’une des meilleure) solution de l'espace de recherche (S)Minimum global (ou maximum global)\ns est un minimum global↔f(s)≤f(s′ )∀s′ ∈SRemarque 2: notez bien que ces notions dépendent de la fonction d'évaluation utiliséeRemarque 1: par déﬁnition, un minimum global est également un minimum local (mais particulier)"
+      }
+    ]
+  },
+  {
+    "id": "1f893872-cc5c-46da-a7a4-0047a6bf0385",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_37.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartVisualisation d'un minimum local\n37Solution initiale\nMinimum localMinimum globalItération de  hill climbing"
+      }
+    ]
+  },
+  {
+    "id": "9a96b887-7b91-482a-9461-6bde1b7e1c43",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_38.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDiﬃcultés d'un minimum local\n38Visualisation d'une recherche locale\nAVoisinage: eﬀectuer un mouvement (G,D,H,B)Fonction d'évaluation: indiqué par le dégradé de couleur\nConverge t-on vers un minimum global ?Oui: dans le cas de cet exemple précis\nQu'est-ce qui cause l'apparition de minima locaux ?Raison 1: le voisinage n'est pas connectéIntuition: le minimum global est parfois impossible à atteindre à partir d'une autre solutionRaison 2: il peut exister plus d'un minimum localEn pratique: c'est rarement le casSolution initiale: coin supérieur gauche\nRaison d’apparition: éventuellement la conséquence d'une mauvaise conception du voisinageHill climbing: donne seulement l’assurance d’amener à un minimum localIntuition: il existe parfois (souvent) plusieurs minima locaux et seulement peu d’entre eux sont globauxRaison d’apparition: la fonction d'évaluation est non convexe (cas très fréquent)Conséquence: un minimum global pourra ainsi être manqué"
+      }
+    ]
+  },
+  {
+    "id": "ec9ce6db-b69a-4c46-aa60-d2b2e05dcc4e",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_39.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartVoisinage connecté et non connecté\n39Un voisinage est connecté, si à partir de n'importe quelle solution de l'espace de recherche,  il est possible d'atteindre un minimum global via la fonction de voisinage Voisinage connecté\nRéciproquement, un voisinage non connecté est un voisinage qui ne respecte pas cette propriétéProblème combinatoire de satisfaction: revient à pouvoir obtenir une solution faisableProblème combinatoire d'optimisation: revient à pouvoir obtenir la meilleure solution faisableEn supposant que la fonction d'évaluation est cohérente par rapport à la fonction objectifVoisinage 1: mouvement d'une case (G,D,H,B)Voisinage 2: mouvement d'une ou de deux cases (G,D,H,B)\nEst-ce que ces voisinages sont connectés ?\nANONOUI\nNotion de connectivité: propriété du voisinage et non du problèmeAction possible: pallier la diﬃculté d'un voisinage non connecté en un trouvant un autreC'est pourquoi il est important de pouvoir repérer si un voisinage est connecté"
+      }
+    ]
+  },
+  {
+    "id": "75e781a4-f7bf-44e6-89fd-52ae344d3d47",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_40.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartPreuve de connectivité\n40Intérêt de la connectivitéIl est toujours intéressant d'avoir un voisinage connectéAvantage: plus grande liberté à la recherche pour trouver de bonnes solutionsAvantage: peut donner des garanties théoriques de convergence (p.e., simulated annealing) Avantage: un voisinage non connecté peut être très diﬃcile à exploiter pour obtenir la solution optimale\nA\nIdée: construire une recherche amenant au minimum global en utilisant que les mouvements du voisinage\nComment prouver qu'un voisinage est connecté ?\nAstuce: supposer qu'on connaisse le minimum global et utiliser cette information pour diriger la rechercheIntuition: si on peut la construire pour une solution quelconque, alors le voisinage est connectéDiﬃculté: déﬁnir un voisinage connecté n’est pas toujours aisé\nComment construire cette recherche ?La construction de cette recherche est communément appelée preuve de connectivité Exemples regardons cela pour le problème du carré magique"
+      }
+    ]
+  },
+  {
+    "id": "705baa85-1a59-45f6-83cc-2ddeb26188a5",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_41.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\n𝖬𝖺𝗀𝗂𝖼𝖲𝗊𝗎𝖺𝗋𝖾𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗏𝗂𝗍𝗒():Preuve de connectivité: problème du carré magiqueProblème du carré magiqueVoisinage: permuter deux chiﬀres (2-swap)Espace de recherche: toutes les permutations de chiﬀreso:on pose oi,j le chiﬀre à la position (i,j) d'une solution faisables:on pose si,j le chiﬀre à la position (i,j) d'une solution initiale quelconque (permutation de chiﬀes)\nEst-ce que ce voisinage est connecté ?n×n:taille de la grille\n𝗌𝗐𝖺𝗉(si,j,oi,j)𝗋𝖾𝗍𝗎𝗋𝗇⟨s1,1…,sn,n⟩⟨s1,1…,sn,n⟩=𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖱𝖺𝗇𝖽𝗈𝗆𝖯𝖾𝗋𝗆𝗎𝗍𝖺𝗍𝗂𝗈𝗇()𝖿𝗈𝗋(i,j)∈1𝗍𝗈n:𝗂𝖿si,j≠oi,j:On génère une solution quelconque (permutation aléatoire)Pour chaque case de la grillesi le chiﬀre de la case n'est pas celui de la solution faisable......On permute avec le bon chiﬀre (mouvement local autorisé par le voisinage)On retourne ﬁnalement la solution construite, qui est optimale\n276951438o:⟨o1,1,…,o3,3⟩\n123456789s:⟨s1,1,…,s3,3⟩\nRésultat: on a construit une recherche amenant à une solution faisable, le voisinage est donc connecté ! \n123456789s1,1s2,3s2,1"
+      }
+    ]
+  },
+  {
+    "id": "ffd1c266-3854-4265-825f-0d32d1b123ce",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_42.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n42Recherche locale1. Problèmes combinatoires de satisfaction et d'optimisation 2. Concepts et principes fondamentaux de la recherche locale 3. Formalisation de la recherche locale 4. Algorithme du hill climbing 5. Diﬃculté des minima locaux 6. Notion de voisinage connecté 7. Méthodes des redémarrages (restarts) 8. Algorithme du recuit simulé (simulated annealing)"
+      }
+    ]
+  },
+  {
+    "id": "83150488-f067-4f73-877b-1a535cb3ea96",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_43.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartInsuﬃsance des voisinages connectés\n43\nEst ce qu'avoir un voisinage connecté est suﬃsant pour garantir une solution faisable ?"
+      }
+    ]
+  },
+  {
+    "id": "266495d1-98ea-4743-abeb-8be83a8b0099",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_44.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMinimum local\n44Mauvaise nouvelle: la connectivité n'est pas une propriété suﬃsante pour obtenir un minimum globalDéﬁ des minima locauxMinimum local: solution meilleure que tous les voisins, mais pas la meilleure globalement\nA\n∀n∈N(s):f(s)≤f(n)\nRisque: l’algorithme de hill climbing risque de tomber misérablement dans un minimum localVoisinage: mouvement d'une case (G,D,H,B)\nProblématique aussi présente dans d'autres champs de l'intelligence artiﬁcielle (p.e., machine learning)Conséquence: s’échapper d'un minimum local est un des déﬁs principaux dans une recherche localeBesoin: leur présence justiﬁe à elle seule le développement d’un grand nombre de nouvelles stratégies\nComment peut-on s'échapper d'un minimum local ?Cause: apparition lorsqu’on a plusieurs minima à notre fonction d’évaluationOpposition avec un minimum global, qui est le meilleur de tous les minima"
+      }
+    ]
+  },
+  {
+    "id": "48f56ebc-9464-45b9-a0af-e63985034c73",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_45.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMinimum local: stratégies de résolution\n45Stratégie 1: changer son voisinage (p.e., agrandissement simple)Stratégie 2: commencer à un autre point de départ (p.e., redémarrages aléatoires)Stratégie 3: accepter de dégrader notre solution actuelle (p.e., simulated annealing)Stratégie 4: accepter de dégrader notre solution actuelle avec une mémoire (p.e., recherche tabou)Les méta-heuristiques sont une réalisation concrète de ces stratégiesSolution initiale\nMinimum localMinimum globalItération de  hill climbing\nComment peut-on s'échapper d'un minimum local ?"
+      }
+    ]
+  },
+  {
+    "id": "0a711d43-ce28-4d61-8526-041a894df5e2",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_46.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartIdée 1: Augmentation de la taille du voisinage\n46Inconvénient: devient plus coûteux à explorerInconvénient: pas toujours facile à déﬁnirInconvénient: solution souvent insuﬃsante pour s'échapper d'un minimum localAvantage: donne la possibilité de faire de meilleurs mouvementsIdée 1: augmentation de la taille du voisinagePrincipe: déﬁnir la fonction de voisinage de sorte à intégrer un plus grand nombre de voisins"
+      }
+    ]
+  },
+  {
+    "id": "ce45aa36-d6dd-40fc-b72d-5d8126a667c2",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_47.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartCarré magique - voisinage plus grand\n47L'exploration du voisinage devient vite beaucoup très coûteux (similaire au k-opt)\n692158437\nAvez-vous une idée d'un voisinage plus grand ?\n5921684372-swap\n692158437\n5921684373-swap\n2-swap: complexité temporelle de O(n2),avec n le nombre de cases\nEst-ce que cela nous garantit au moins d'obtenir de meilleures solutions ?3-swap: complexité temporelle de O(n3),avec n le nombre de cases4-swap: complexité temporelle de O(n4),avec n le nombre de casesk-swap: complexité temporelle de O(nk),avec n le nombre de cases\nQuelle est la complexité d'une sélection du meilleur voisin dans ce voisinage ?"
+      }
+    ]
+  },
+  {
+    "id": "124a7885-0373-4623-aebe-bf753a5b2ead",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_48.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartCarré magique - voisinage plus grand\n48Carré magique de taille 4x4Voisinage du 2-swap: 0.04 secondes par itérationVoisinage du 3-swap: 3.32 secondes par itération\nNombre d'itérationsNombre de conﬂits pondérés\nCarré magique de taille 5x5\nVoisinage du 2-swap: 0.11 secondes par itérationVoisinage du 3-swap: 13.82 secondes par itérationObservation 3: le temps du 3-swap a considérablement augmenté\nQu'observe t-on dans ce résultat ?Observation 1: le 3-swap réalise de meilleurs mouvements au débutObservation 2: il tombe dans un minimum local de moins bonne qualitéOn a des observations similairesObservation 4: le temps du 2-swap augmente plus faiblement Fonction de sélection: le meilleur voisin \nFonction de sélection: le meilleur voisin \nAinsi, considérer seulement un voisinage plus grand n'est généralement pas une amélioration suﬃsante"
+      }
+    ]
+  },
+  {
+    "id": "053f4b1f-c17f-47ca-9984-e9e5d3e3d5a6",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_49.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartRedémarrage à une autre situation initiale\n49Inconvénient: mécanisme pas suﬃsant pour découvrir les meilleures solutionsIdée 2: redémarrer aléatoirement la rechercheEtape 2: une fois le minimum est atteint, relancer une recherche à partir d'une autre solution initialeEtape 1: lancer une procédure de recherche locale jusqu'à tomber dans un minimum (peut-être local)La nouvelle solution initiale est déterminée aléatoirement parmi celles de l'espace de recherche\nAvantage: procédé très facile à mettre en oeuvreAvantage: favorise une exploration diversiﬁée de l'espaceInconvénient: les redémarrages augmentent le temps d'exécution de la recherche"
+      }
+    ]
+  },
+  {
+    "id": "081e895d-c906-4e8c-accd-7b3101070c68",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_50.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartCarré magique - méthodes des redémarrages\n50Carré magique de taille 4x4Carré magique de taille 5x5\n2-swap avec 10 redémarrages: 3.53 secondes au totalCertains des redémarrages ont permis de résoudre le problème !R1R2R3Chaque crête indique qu'un restart est eﬀectué\nNombre d'itérations2-swap avec 10 redémarrages: 12.58 secondes au totalCette fois ci, aucune solution faisable n'est trouvée\nAvez-vous une idée pour améliorer les performances ?\nLes redémarrages permettent de découvrir des nouveaux minima\nAu mieux, il reste 3 conﬂitsEn pratique: on s’arrête une fois une solution faisable trouvée"
+      }
+    ]
+  },
+  {
+    "id": "13eacbfa-a49e-463a-b71a-51816d34eac6",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_51.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartCarré magique - méthodes des redémarrages\n51Carré magique de taille 5x5Carré magique de taille 6x6Nombre d'itérationsMeilleure solution actuellement trouvée\nSolution faisable trouvéeLa ﬁgure indique la meilleure solution trouvée actuellementNombre de redémarrages: 100Temps d'exécution: 122.27 secondesUne solution faisable est trouvée après 780 mouvements locaux\nTemps d'exécution: 300 secondes\nEt avec plus de restarts ou un voisinage plus grand ?Vous pourrez expérimenter cela par vous même (via le code donné dans les exercices du module)La meilleure solution trouvée a deux conﬂitsNombre de redémarrages: 100Aucune solution faisable n'est trouvée\nDiﬃculté: la probabilité qu'une solution aléatoire amène à une solution faisable devient plus petite"
+      }
+    ]
+  },
+  {
+    "id": "f5904843-62fe-4377-bcf3-c02638deee65",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_52.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\n𝖿𝗈𝗋i∈1𝗍𝗈Γ:𝗋𝖾𝗍𝗎𝗋𝗇s⋆𝖫𝗈𝖼𝖺𝗅𝖲𝖾𝖺𝗋𝖼𝗁𝖶𝗂𝗍𝗁𝖱𝖾𝗌𝗍𝖺𝗋𝗍(N,L,Q,f,Θ,Γ)s=𝖫𝗈𝖼𝖺𝗅𝖲𝖾𝖺𝗋𝖼𝗁(N,L,Q,f,Θ)𝗂𝖿f(s)<f(s⋆):s⋆=ss⋆=⊥Recherche locale avec restarts\n52Algorithme de recherche locale avec redémarrage\nParamètre à déﬁnir: un critère d'arrêt sur le nombre de redémarrages\ns=𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖨𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗈𝗅𝗎𝗍𝗂𝗈𝗇()G=[n∈N(s)]𝖿𝗈𝗋k∈1𝗍𝗈Θ:𝗂𝖿f(s)<f(s⋆):𝗋𝖾𝗍𝗎𝗋𝗇s⋆𝖫𝗈𝖼𝖺𝗅𝖲𝖾𝖺𝗋𝖼𝗁(N,L,Q,f,Θ):V=[n∈L(G,s)]s⋆=ss=Q(V,s)s⋆=sPrincipe: on exécute simplement plusieurs recherches locales\nBonne pratique: exploitez entièrement le temps d'exécution qui vous est allouéLes redémarrages permettent de s'adapter à n'importe quel temps d'exécutionSi votre recherche locale prend 1 minute, et que vous en avez 10 à disposition...... redémarrez ! et gardez le meilleur résultat trouvéAvantage 1: mécanisme très simple qui s'intègre facilement avec les algorithmes de recherche localeAvantage 2: favorise la diversiﬁcation de la recherche"
+      }
+    ]
+  },
+  {
+    "id": "d9349dea-ea36-457f-8e67-810bffa2bfd8",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_53.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartIdée 3: dégrader notre solution actuelle\n53Idée 3: autoriser de dégrader notre solutionObjectif: dégrader intelligemment la solution pour s'échapper d'un minimum localSolution initiale\nMinimum localMinimum globalItération de  hill climbing\nSimulated annealing\nGenetic algorithms\nTabu search\nCe module: étude du simulated annealing (recuit simulé)Lectures complémentaires (et INF6102): recherche tabou et algorithmes génétiques"
+      }
+    ]
+  },
+  {
+    "id": "9dbf45a2-2bfc-4d4d-9d22-2d32984aefc0",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_54.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartSimulated annealing - inspiration naturelle\n54\nPrincipes de la métallurgieDébut du processusHaute température: le métal est malléable\nFin processusTout au long du processusPrincipe: diminution progressive de la températureObjectif: forger une forme avec du métalMétal froid: non malléable et prend une forme déﬁnitiveMétal chaud: malléable et peut être modeléDonne au forgeron la possibilité de modiﬁer la forme du métal, selon le produit ﬁnal vouluDonne la possibilité de maîtriser la solidiﬁcation du métalFaible température: le métal est solide et non malléableLe métal prend sa forme ﬁnale\nUne réduction brusque risque de donner un résultat non stable\nSimulated annealing: From basics to applications [Delahaye et al., 2019]"
+      }
+    ]
+  },
+  {
+    "id": "b3e6d5cd-2bae-4679-946a-512214072481",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_55.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMétaheuristique du simulated annealing (recuit simulé)\n55Fonctionnement généralRègle de sélection: on tire aléatoirement un voisinCas 1: s'il améliore la solution courante, on l'accepteCas 2: sinon, on l'accepte avec une certaine probabilité pΔ(n,s)=f(n)−f(s)Interprétation: cette valeur donne une mesure d'à quel point un voisin est pire que la solution actuelleProbabilité de sélection\nIntuition de la sélection: plus le mouvement est mauvais, plus la probabilité de sélection sera faible(1) On considère la diﬀérence de coût du voisin n, par rapport à notre solution actuelle sΔ(n,s)>0 et élevé:voisin qui dégrade fort la solutionΔ(n,s)>0 et faible:voisin qui dégrade faiblement la solutionΔ(n,s)≤0→f(n)≤f(s):voisin qui améliore ou maintient la solution (pour une minimisation)\nNote: ce schéma probabiliste est également connu sous le nom d'algorithme de Metropolis-HastingsPrincipe: permettre la sélection de voisins moins bon que la solution actuelle\nIdée générale: la probabilité dépend de la qualité du voisin, et du nombre d'itérations déjà eﬀectuées\n(2) Au plus la recherche avance, au plus on va éviter de dégrader la solutionInterprétation: on veut faire converger la recherche"
+      }
+    ]
+  },
+  {
+    "id": "acdbff32-60f3-4cf8-8fee-30be74ad1208",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_56.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartSimulated annealing - Principe de sélection\n56Fonction de sélectionPrincipe 1: on accepte toujours un voisin qui améliore la solution actuellePrincipe 2: on accepte un voisin dégradant avec une certaine probabilité, qui dépend de la qualité du voisinPrincipe 3: cette probabilité décroit avec le temps et dépend d'un paramètreSélection en cas de non-dégradationΔ(n,s)=f(n)−f(s) (diﬀérence du coût d'un voisin avec la solution actuelle)Situation de non-dégradation: Δ(n,s)≤0Un voisin améliorant est toujours choisiSélection en cas dégradationSituation de dégradation: Δ(n,s)>0Intuition 1: la probabilité est modulée pour être plus propice à accepter des voisins faiblement dégradant\nP(n,s,t)=e−Δ(n,s)t (probabilité de sélection)\nΔ(n,s)P(n,s,t)\nΔ(n,s) élevé:on a une faible probabilité de sélectionΔ(n,s) faible:on a une haute probabilité de sélectionIntuition 2: La probabilité est paramètrée par une valeur t, qui est appelée la température de l'algorithmeFaible dégradation: très haute probabilité de sélectionHaute dégradation:  probabilité de sélection quasi nulle"
+      }
+    ]
+  },
+  {
+    "id": "0d050c07-1a9d-4977-9119-3f493f3d10c0",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_57.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartSimulated annealing - température de l'algorithme\n57Haute température: haute probabilité d'accepter un mauvais voisinFaible température: faible probabilité d'accepter un mauvais voisin\nProcédure générale: diminuer la température au ﬁl de la recherche\nΔ(n,s)P(n,s,t)\nSchéma de décroissance:tk+1=αtk (typiquement, α est entre 0.8 et 0.99)Température initiale:t0 (valeur assez élevée pour autoriser toutes les sélections) En pratique, la constante multiplicative de décroissance est un paramètre à calibrer par l'utilisateur\nQuel est l'impact de la température sur la sélection ?\nQuand préfère t-on avoir une faible ou haute température ?Début de la recherche: on veut favoriser l'exploration de l'espace aﬁn de découvrir plein de solutionsFin de la recherche: on veut favoriser l'exploitation d'une solution aﬁn d'obtenir le meilleur coût possiblePrincipe: réduire la température selon une suite géométriqueSchéma de décroissance géométriqueCritère d'arrêt:lorsqu'on n'observe plus aucune amélioration dans la recherche\nP(n,s,t)=e−Δ(n,s)t (probabilité de sélection)"
+      }
+    ]
+  },
+  {
+    "id": "0d474b23-c6f9-4f77-9064-fc5a538c09f9",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_58.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartSimulated annealing - algorithme\n58\ns=𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾𝖨𝗇𝗂𝗍𝗂𝖺𝗅𝖲𝗈𝗅𝗎𝗍𝗂𝗈𝗇()G=[n∈N(s)]𝖿𝗈𝗋k∈1𝗍𝗈Θ:\n𝗋𝖾𝗍𝗎𝗋𝗇s⋆𝖲𝗂𝗆𝗎𝗅𝖺𝗍𝖾𝖽𝖠𝗇𝗇𝖾𝖺𝗅𝗂𝗇𝗀(N,L,Q,f,Θ,t0,α):V=[n∈L(G,s)]s⋆=sc∼V𝗐𝗂𝗍𝗁𝗎𝗇𝗂𝖿𝗈𝗋𝗆𝗉𝗋𝗈𝖻𝖺𝖻𝗂𝗅𝗂𝗍𝗒𝗂𝖿Δ≤0:s=cΔ=f(c)−f(s)s=c𝖾𝗅𝗂𝖿Δ>0∧𝗌𝗎𝖼𝖼𝖾𝗌𝗌𝗐𝗂𝗍𝗁𝗉𝗋𝗈𝖻𝖺𝖻𝗂𝗅𝗂𝗍𝗒e−Δt:t=t0\nt=αt𝗂𝖿f(s)<f(s⋆):s⋆=sLa fonction de validité doit permettre des voisins dégradantUn voisin non-dégradant est toujours prisUn voisin qui dégrade est choisi selon  la probabilité de sélectionMise à jour de la températureVariante 1: schéma de décroissance polynomialeEntrée: critère d'arrêt, température initiale, et taux de décroissanceOn commence avec la recherche avec la température initiale\nVariante 2: intégration d'un mécanisme de redémarrageVariante 3: augmentation de la température quand la recherche ne progresse plusRésultat théorique: convergence vers l'optimum si les paramètres sont bien calibrésEn pratique: cette convergence est plus lente qu'une recherche exhaustive\nOn choisi aléatoirement un voisin"
+      }
+    ]
+  },
+  {
+    "id": "6313dc8b-cace-4956-b75f-e2729b4e585c",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_59.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartZoo des métaheuristiques\n59Zoo des métaheuristiques\nhttps://en.wikipedia.org/wiki/Table_of_metaheuristicsIl existe un nombre impressionnant de méthodes autres que le simulated annealingChacune ont leurs forces, faiblesses, et champs d'application\nTendance: la pertinence de nombreuses métaheuristiques a été justiﬁée par leur inspiration naturelleJellyﬁsh SearchCuckoo searchAfrican Bufallo optimizationEmperor Penguins Colony\nIterated local searchTabu searchGenetic algorithmsAnt colony optimization\nAller plus loin: Métaheuristiques appliquées au génie informatique (INF6102 - cours que je donne)Ces méthodes sont communément appelées métaheuristiques\nL'inspiration naturelle des méta-heuristiques est souvent un argument marketing et non scientiﬁqueExemples: quelques unes parmi les plus connues (et eﬃcaces)"
+      }
+    ]
+  },
+  {
+    "id": "f1f2ec08-a457-4190-bf68-912254484a54",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_60.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartTable des matières\n60Recherche locale1. Problèmes combinatoires de satisfaction et d'optimisation 2. Concepts et principes fondamentaux de la recherche locale 3. Formalisation de la recherche locale 4. Algorithme du hill climbing 5. Diﬃculté des minima locaux 6. Notion de voisinage connecté 7. Méthodes des redémarrages (restarts) 8. Algorithme du recuit simulé (simulated annealing)"
+      }
+    ]
+  },
+  {
+    "id": "4d245163-cae9-4349-8683-f8201301af6e",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_61.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartSynthèse des notions vues\n61Problèmes combinatoiresSatisfaction (CSP): trouver une solution satisfaisant un ensemble de contraintesOptimisation (COP): CSP où on souhaite également optimiser une fonction objectif\nUne solution est un état, qui nous est inconnu, et non une séquence d'action\nInvestissementCoût ($)Revenu espéré dans 10 ans ($)A2001 000B2001 000C2001 000D50010 000E50010 000F80013 000G3007 000Budget maximal de 1000 $\nRecherche localePrincipe: résolution en se déplaçant de solutions en solutions via des mouvements locauxHill climbing: sélection systématique du meilleur voisinRisque: être bloqué dans un minimum local\nMécanismes d'améliorationIdée 1: utiliser un voisinage connectéIdée 3: redémarrer aléatoirement la rechercheIdée 4: accepter de dégrader sa solution (p.e., simulated annealing)Idée 2: agrandir le voisinage"
+      }
+    ]
+  },
+  {
+    "id": "c811a7d5-e0ab-49b1-8bb0-b955128f718a",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_62.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartExemples de questions d'examen\n621. Savoir appliquer un algorithme de recherche locale  2. Proposer une résolution basée sur la recherche locale pour résoudre un problème (solution initiale, fonction de voisinage, fonction de sélection, etc.) 3. Peser le pour et le contre entre deux fonctions de voisinagesThéoriePratique1. Expliquer le fonctionnement d'un algorithme vu 2. Donner les avantages/inconvénients d'un voisinage large au lieu de restreint 3. Expliquer les principes généraux de la recherche locale"
+      }
+    ]
+  },
+  {
+    "id": "2a8cc971-6ccb-48b2-b251-d16c725bc638",
+    "image": "extracted_content\\M3-recherche-locale\\images\\page_63.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesRecherche locale: FIN\nDALLE: A queen climbing a mountain in an impressionist style"
+      }
+    ]
+  }
+]

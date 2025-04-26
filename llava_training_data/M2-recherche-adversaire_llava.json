@@ -1,0 +1,1080 @@
+[
+  {
+    "id": "93bdb343-a827-4b87-8337-af9e77d1eb2d",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesModule 2: Recherche adversarielle"
+      }
+    ]
+  },
+  {
+    "id": "83212f61-71eb-4909-bd33-2355c714f88a",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartContenu du cours\n2Considérations pratiques et sociétalesModule 10: Utilisation en industrie, éthique, et philosophie Raisonnement par recherche (essais-erreurs avec de l'intuition)Module 1: Stratégies de recherche Module 2: Recherche en présence d'adversaires Module 3: Recherche locale \nRaisonnement par apprentissageModule 6: Apprentissage supervisé Module 7: Réseaux de neurones et apprentissage profond Module 8: Apprentissage non-supervisé Module 9: Apprentissage par renforcement \nRaisonnement logiqueModule 4: Programmation par contraintes Module 5: Agents logiques"
+      }
+    ]
+  },
+  {
+    "id": "a67faf46-9928-4129-8532-a0d1dfc2a79f",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nXXXXXXOOOOOOXXX..................Table des matières\n3Recherche adversarielle1. Motivation de la recherche adversarielle 2. Catégorisation d'environnements compétitifs et des jeux 3. Stratégie de recherche minimax 4. Mécanisme du alpha-beta pruning 5. Conception de fonctions d'évaluation (heuristiques) 6. Mécanismes supplémentaires d'amélioration 7. Arbre de recherche de Monte-Carlo (Monte-Carlo tree search) 8. Extension à d'autres familles de jeux (plusieurs adversaires, présence d'aléatoire, etc.) 9. Exemples et historique d'agents dédiés aux jeux"
+      }
+    ]
+  },
+  {
+    "id": "a5a8fb7f-c405-4d8a-b5d6-a5e21dbbf49e",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMotivation\n4Limitation des stratégies de recherche vuesHypothèse sous-jacente: l’agent est seul à agir dans son environnement, et rien n'interfère avec luiAvantage: permet de modéliser un grand nombre de situations et de problèmesInconvénient: l’hypothèse est trop restrictive pour des situations impliquant d'autres agentsNos agents actuels sont conçus pour réaliser la meilleure séquence d'actions aﬁn d'atteindre un objectifEnvironnement compétitifEnvironnement dans lequel plusieurs agents évoluent aﬁn de réaliser un objectif qui leur est propreCaractéristiques: engendre généralement de la compétition ou de la coopération entre les agentsStratégie de recherche qui tient compte du fait que l'agent doit réaliser son objectif dans un environnement compétitif, contre un ou des adversairesRecherche adversarielle"
+      }
+    ]
+  },
+  {
+    "id": "e9d63167-e90b-4546-bc85-767dab51b836",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_5.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartEnvironnements compétitifs réels\n5Vous avez un objectif en tête, mais votre interlocuteur aussi !Exemple 3: négociations\nExemple: négociation de salaires, marchandage, etc.Chacun d'entre vous veut tirer un avantage de l'accordImplique généralement des objectifs communs, et individuelsExemple: achat d'une maison, vente aux enchères, appel d'oﬀre\nExemple 1: achat d'un bien avec plusieurs acheteursVous êtes plusieurs à vouloir acheter un bienObjectif de l’acheteur: acheter le bien au prix le plus basObjectif du vendeur: vendre son bien au plus haut prixExemple 2: ﬁxer le prix d'un produit\nPlusieurs entreprises ont mis en vente un produit similaireObjectif de chaque entreprise: avoir une bonne part de marchéAction possible pour une entreprise: baisser le prix, mais pas trop !\nLa plupart des environnements réels sont compétitifs"
+      }
+    ]
+  },
+  {
+    "id": "2f342334-3e86-4256-97c3-509ebe4ea18a",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_6.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartEnvironnement compétitif populaire: les jeux\n6Raison 2: règles bien déﬁnies et sans ambiguïtéRaison 3: facilité pour comparer et évaluer les agents Raison 5: diﬀérents niveaux de complexité en fonction du jeu choisi\nRaison 1: environnement contrôlable et facilement représentable Raison 4: évite les aléas des environnements réels\nLes jeux constituent l'environnement compétitif par excellence pour développer des nouvelles stratégies"
+      }
+    ]
+  },
+  {
+    "id": "690668d5-f8d5-4298-bcaa-65f75c9c6f62",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_7.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDiﬀérentes catégories de jeuxAxes principaux: aléatoire, nombre de joueurs, information disponible, somme du jeu, temps-réel, etc.Présence d'aléatoireJeu déterministe: aucun aléatoire n'est impliquéJeu stochastique: une part d'aléatoire est présente\nNombre de joueursCatégorie: un seul ou plusieurs adversairesDynamique du jeu: donne lieu à des alliances, trahisons, conﬂits d'intérêts, etc.\nPlusieurs adversaires: les stratégies des joueurs sont parfois alignées (coopération)Exemple: à un moment du jeu, on se met ensemble contre le joueur le plus fortInformations disponiblesInformation parfaite: on connait parfaitement l'environnementInformation incomplète: certaines données de l'environnement sont inconnues\n7Certaines informations ne peuvent être disponibles qu'à un joueur spéciﬁque Ses stratégies peuvent ﬂuctuer au cours de la partie en fonction de notre intérêt\nIl existe une multitude de jeux, déﬁnis par diﬀérentes caractéristiques"
+      }
+    ]
+  },
+  {
+    "id": "3a089799-36e4-415f-85a0-613c2cac348b",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_8.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDiﬀérentes catégories de jeux\n8Somme du jeuJeu à somme nulle: ce qui est bon pour un joueur est mauvais pour l'autre (compétition pure)Formellement: la somme des gains d'un joueurs avec les pertes des autres vaut 0Exemple: aux échecs, une victoire (1) d'un joueur engendre une défaite de l'autre joueur (-1)Jeu à somme non nulle: ce qui est bon pour un joueur n'est pas forcément mauvais pour l'autre\nMême à deux joueurs, la coopération ou l'indiﬀérence est possibleDynamique du jeuJeux physiquesTour par tour: chaque joueur eﬀectue leurs actions tour par tourLimitation de temps: le temps de décision pour chaque joueur est limité (exemple: tournoi d'échecs)Temps réel: chaque joueur eﬀectue ses actions en temps réel\nConclusionIl existe une multitude de type de jeux diﬀérentsChaque jeu possède certaines caractéristiques, à des degrés diﬀérents\nCaractéristique: implique généralement des aspects mécanique et de robotiqueDiﬃculté: l’environnement plus diﬃcile à contrôler (qu'est-ce qu'une action ?)"
+      }
+    ]
+  },
+  {
+    "id": "c41009cb-6740-4f57-93f6-a55d2c92896c",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_9.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartCatégorie de référence\n9Cheminement scientiﬁque: Les chercheurs en IA ont commencé à s'intéresser à une catégorie de jeuxRaison: il s’agit de la catégorie conceptuellement la plus simple et servant de base pour les autres variantesCatégorie de référence: deux joueurs, déterministe, tour par tour, à information parfaite, et à somme nullePar contre, elle oﬀre déjà un déﬁ intéressant de part le nombre immense de possibilités :-)\nDans un premier temps: c’est à cette catégorie de jeux que nous nous intéresserons principalementDans un deuxième temps: on verra ensuite comment étendre nos algorithmes à d'autres catégoriesCe domaine est très vaste, et nous ne pourront malheureusement pas tout couvrir\nQuelle catégorie de jeux va t-on considérer pour la conception de nos algorithmes ?"
+      }
+    ]
+  },
+  {
+    "id": "2fec3807-5d51-4b69-9eb7-c86c979e89d0",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_10.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartFormalisation standard d'un jeu\n10Un jeu de cette famille peut être formellement déﬁni par les éléments suivants:Jeux déterministe, tour par tour, à information parfaite, à somme nulle\nS:un ensemble d'états (contenant un état initial (s0) et un/des états terminaux)𝖺𝖼𝗍𝗂𝗈𝗇𝗌:(S→2A):l'ensemble des actions permises à l'état s𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇:(S×A→S):retourne le nouvel état émanant d'une action à un état précédent𝗍𝗎𝗋𝗇:(S→P):le joueur devant jouer à l'état s𝗎𝗍𝗂𝗅𝗂𝗍𝗒:(S×P→ℝ):score obtenu pour un joueur à un état terminal spéciﬁque𝗂𝗌𝖳𝖾𝗋𝗆𝗂𝗇𝖺𝗅:(S→{0,1}):indique si un état est terminal (le jeu est terminé)A:un ensemble d'actionsP:l'ensemble des joueurs de la partie (2 dans notre cadre)\nSimilarité 1: l’ensemble des états, des actions, et la fonction de transition forment un graphe des étatsDiﬀérences: les autres éléments rajoutent le concept de joueurs multiples, avec chacun leur scoreSimilarité 2: la dynamique du jeu peut ainsi également se représenter comme un arbre de recherche\nEn réalité, c'est très similaire à la déﬁnition d'un problème de recherche (module 1)"
+      }
+    ]
+  },
+  {
+    "id": "65c384c6-2b21-405b-ade0-636852eb5404",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_11.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartExemple: Tic-tac-toe\n11\nEtat initialActions possibles\nEtats terminauxComme le jeu est à somme nulle, le score pour le joueur 2 est l'opposé de celui du joueur 110-1-101Score du premier joueur\nJoueur 1 (X)Joueur 2 (O)"
+      }
+    ]
+  },
+  {
+    "id": "0cf397d7-f3fe-41bf-928e-498a955b8394",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_12.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartSolution pour un joueur\n12\nQue peut-on faire ?Diﬃculté: on ne sait pas ce que l'adversaire va jouer !A l’idéal: on souhaite une politique qui va nous amener à gagner le jeuTerminologie: on parle également d'une politique de sélectionFonction qui indique l'action à faire pour un état spéciﬁquePolitique de sélection (policy)\nπ:S→A\nObjectif du premier joueur: maximiser son score (fonction d'utilité une fois un état terminal atteint)Objectif du deuxième joueur: minimiser le score du premier joueur (jeu à somme nulle)Conséquence: cela revient à prévoir tous les coups à l'avance dans le jeu\nAttention: notez la diﬀérence avec le module 1 ou une solution est une séquence d'action\nUne solution pour un joueur revient à savoir quoi jouer pour chaque état \nHypothèse: on suppose que l’adversaire à un comportement rationnel (optimal)Autrement dit: il va jouer au mieux pour réaliser son objectifRépondre à cette question amène à déﬁnir la notion de solution optimale"
+      }
+    ]
+  },
+  {
+    "id": "c1893264-c1df-4fa2-a6f5-1e8f54e6d31b",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_13.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartIntuition d'une stratégie de recherche optimale\n13Idée: est de considérer que l'adversaire (et nous-même) allons jouer au mieux pour réaliser notre objectifLe premier joueur veut maximiser son score (joueur MAX)Le deuxième joueur veut minimiser le score du premier joueur (joueur MIN): noeud correspondant au tour du joueur MAX (pointe vers le haut pour maximiser): noeud correspondant au tour du joueur MIN (pointe vers le bas pour minimiser)\n46212835214\nQuelle est la meilleure action à réaliser pour le joueur actuel (MAX) ?Noeud racine: indique le joueur qui doit jouer (3 actions possibles)Noeuds terminaux: contiennent le score du joueur actuel (MAX)ABC\nRegardons ce comportement sur un arbre de recherche"
+      }
+    ]
+  },
+  {
+    "id": "1bce3e42-00d7-455b-a004-8c56064214d3",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_14.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartIntuition d'une stratégie de recherche optimale\n14Principe: le meilleur score atteignable pour MAX est 14 via l'action CAction: le joueur MAX décide de réaliser l'action C\nQue pensez vous de ce raisonnement ?Faille: on ne tient pas compte de ce que va faire le joueur MINComportement optimal: le joueur MIN réagira en choisissant l'action FRésultat: cela amène à un score de 2 pour MAX\n46212835214ABCDEF\nPremière idée"
+      }
+    ]
+  },
+  {
+    "id": "711b8c90-bef1-4edf-b3ba-3e3f4663d5c0",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_15.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartIntuition d'une stratégie de recherche optimale\n1546212835214ABCPrincipe: pour chaque état, calculer le score pouvant être obtenu\n322min(3,12,8)min(2,4,6)min(14,5,2)max(3,2,2)3Calcul du score: de manière récursive depuis les états terminauxHypothèse: les deux joueurs ont un comportement optimal (ils sont rationnel)Le score d'un état MIN reprend le score minimum de ses successeursLe score d'un état MAX reprend le score maximum de ses successeurs\nL'action optimale pour MAX est A, ce qui lui amènera à un score de 3 (si MIN fait un coût optimal)\nDeuxième idée"
+      }
+    ]
+  },
+  {
+    "id": "72802e47-93a5-4aa4-9de6-77371378b74c",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_16.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartValeur Minimax\n16Valeur qui indique le score ﬁnal (pour le joueur MAX) qui sera obtenu à partir d'un état, si les deux joueurs jouent de façon optimaleValeur Minimax\n𝗎𝗍𝗂𝗅𝗂𝗍𝗒(s,𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋)𝗂𝖿𝗂𝗌𝖳𝖾𝗋𝗆𝗂𝗇𝖺𝗅(s)maxa∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)𝗆𝗂𝗇𝗂𝗆𝖺𝗑(𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a))𝗂𝖿𝗍𝗎𝗋𝗇(s)=𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋mina∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)𝗆𝗂𝗇𝗂𝗆𝖺𝗑(𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a))𝗂𝖿𝗍𝗎𝗋𝗇(s)=𝗆𝗂𝗇𝖯𝗅𝖺𝗒𝖾𝗋𝗆𝗂𝗇𝗂𝗆𝖺𝗑(s)={324623128325214𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋𝗆𝗂𝗇𝖯𝗅𝖺𝗒𝖾𝗋"
+      }
+    ]
+  },
+  {
+    "id": "5c3e42c8-2041-4338-abce-4ecef19d6ac1",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_17.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartStratégie de recherche minimax\n17\n𝗆𝖺𝗑𝖵𝖺𝗅𝗎𝖾(s):v⋆=−∞m⋆=⊥𝖿𝗈𝗋𝖾𝖺𝖼𝗁a∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)⟨v,_⟩=𝗆𝗂𝗇𝖵𝖺𝗅𝗎𝖾(s′ )s′ =𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a)𝗂𝖿v>v⋆:v⋆=vm⋆=a𝗋𝖾𝗍𝗎𝗋𝗇⟨v⋆,m⋆⟩\n𝗆𝗂𝗇𝗂𝗆𝖺𝗑𝖲𝖾𝖺𝗋𝖼𝗁(s0):⟨v,m⟩=𝗆𝖺𝗑𝖵𝖺𝗅𝗎𝖾(s0)𝗋𝖾𝗍𝗎𝗋𝗇⟨v,m⟩𝗂𝖿𝗂𝗌𝖳𝖾𝗋𝗆𝗂𝗇𝖺𝗅(s):𝗋𝖾𝗍𝗎𝗋𝗇⟨𝗎𝗍𝗂𝗅𝗂𝗍𝗒(s,𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋),⊥⟩\n𝗆𝗂𝗇𝖵𝖺𝗅𝗎𝖾(s):𝗂𝖿𝗂𝗌𝖳𝖾𝗋𝗆𝗂𝗇𝖺𝗅(s):v⋆=∞m⋆=⊥𝖿𝗈𝗋𝖾𝖺𝖼𝗁a∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)⟨v,_⟩=𝗆𝖺𝗑𝖵𝖺𝗅𝗎𝖾(s′ )s′ =𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a)𝗂𝖿v<v⋆:v⋆=vm⋆=a𝗋𝖾𝗍𝗎𝗋𝗇⟨v⋆,m⋆⟩𝗋𝖾𝗍𝗎𝗋𝗇⟨𝗎𝗍𝗂𝗅𝗂𝗍𝗒(s,𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋),⊥⟩Terminal: on retourne le scoreAucune action n'est choisie à ce stadeOn analyse toutes les actionsScore pour les états MAX\nOn retourne la meilleure action et sa valeurOn prend le score des états successeurs (MIN)On se met du point de vue du joueur MAXOn retourne la meilleure action (m) et sa valeur (v)On lance la recherche au noeud racine\nLe score est initialisé à la plus petite valeur\nValeur obtenue à la racine: reﬂète le résultat obtenu si les deux joueurs sont optimauxL'action choisie est celle permettant ce scénarioS'il est meilleur (plus grand) que celui actuel...On le retient, ainsi que l'action46212835214s0\nFormalisons ce fonctionnement par un algorithme"
+      }
+    ]
+  },
+  {
+    "id": "09266dfb-c347-4533-a50e-57862fe27a99",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_18.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartIllustration de l'algorithme minimax\n18ac462b1283d5214Exécution de l'algorithmeEtape 1:a=max(b,c,d)Etape 2:a=max(min(3,12,8),c,d)Etape 3:a=max(3,c,d)Etape 4:a=max(3,min(2,4,6),d)Etape 5:a=max(3,2,d)Etape 6:a=max(3,2,min(14,5,2))Etape 7:a=max(3,2,2)Etape 8:a=3On cherche à calculer la valeur de l'état a\nQuel type de recherche cet algorithme exécute ?Eﬃcacité de l'algorithmeAnalyse: l’algorithme revient à faire une recherche en profondeur exhaustiveComplet et optimal: en supposant que le jeu ne soit pas inﬁniComplexité temporelle: 𝒪(bm)(très coûteux) - requiert d'explorer TOUT l'arbreComplexité spatiale: 𝒪(bm) (très eﬃcace)Mauvaise nouvelle: l’algorithme impraticable pour la plupart des jeuxBonne nouvelle: il sert néanmoins de base pour construire des algorithmes plus eﬃcaces"
+      }
+    ]
+  },
+  {
+    "id": "9c108559-15b5-49b9-96c6-b3d822fa96a0",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_19.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartLimitation de la recherche minimax\n19b:nombre moyen de possibilités par coup dans le jeu (branching factor)m:nombre moyen de coups pour ﬁnir le jeu (profondeur de l'arbre - ply)Observation générale: le nombre de coups disponibles varie souvent au cours d’une partieb=4m=9Taille de l'arbre: 49=262144\nPossible pour minimaxExemple: tic-tac-toe\nIl est intéressant d’avoir une idée du nombre d’états possibles dans un jeu\nb=2.8m=70Taille de l'arbre: 2.870≈1031\nTrop coûteux pour minimaxExemple: jeu de damesb=35m=80Taille de l'arbre: 3580≈10123\nTrop coûteux pour minimaxExemple: jeu d’échecs\nb=250m=150Taille de l'arbre: 250150≈10359\nTrop coûteux pour minimaxExemple: jeu de GoRegardons quelques exemples de jeu…\nCependant, on est arrivé à avoir des performances surhumaines pour ces jeu (champions du monde battus)Intérêt: cela va nous donner une idée de la diﬃculté du jeu \nhttps://en.wikipedia.org/wiki/Game_complexity"
+      }
+    ]
+  },
+  {
+    "id": "7193e68d-f9fc-4f7c-8009-a1ef1d378cf9",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_20.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartPistes d'amélioration\n20\nAvez vous des idées d'amélioration pour notre recherche minimax ?(1) Eviter d'eﬀectuer du calcul inutile (ne pas explorer certaines parties de l'arbre)(2) Ne réﬂéchir qu'un certain nombre de coups à l'avance (réduire la profondeur de la recherche) (3) Ne considérer que les actions les plus prometteuses (réduire le facteur de branchement)(4) Intégrer d'autres mécanismes à la recherche (mémoire, connaissance experte, apprentissage, etc.)Ces améliorations peuvent amener à des agents de très bonne qualité, sur base d'un minimax(5) Utiliser une autre stratégie de recherche (Monte-Carlo tree search - MCTS)\nStockﬁshRecherche minimax à sa baseUn des meilleurs logiciels aux échecshttps://stockﬁshchess.org/\nAlphaGo (et améliorations dérivées)Meilleur logiciel au jeu de GoMCTS comme composant essentiel...avec de l'apprentissage profond\nOn est dans une situation ou notre Minimax n'est pas capable de résoudre des jeux non triviaux\nUne grande partie du reste de ce module est dédiée à explorer ces diﬀérentes pistes"
+      }
+    ]
+  },
+  {
+    "id": "977ee7e6-0b88-4bf0-8544-0ec6dd97b47e",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_21.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nXXXXXXOOOOOOXXX..................Table des matières\n21Recherche adversarielle1. Motivation de la recherche adversarielle 2. Catégorisation d'environnements compétitifs et des jeux 3. Stratégie de recherche minimax 4. Mécanisme du alpha-beta pruning 5. Conception de fonctions d'évaluation (heuristiques) 6. Mécanismes supplémentaires d'amélioration 7. Arbre de recherche de Monte-Carlo (Monte-Carlo tree search) 8. Extension à d'autres familles de jeux (plusieurs adversaires, présence d'aléatoire, etc.) 9. Exemples et historique d'agents dédiés aux jeux"
+      }
+    ]
+  },
+  {
+    "id": "72dee04d-70f9-4c38-98b5-456e630e4d18",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_22.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartSource d'ineﬃcacité dans la recherche Minimax \n22\nEst-ce nécessaire de parcourir tout l'arbre pour calculer le score du noeud racine ?Résultat: le noeud racine contient ainsi le score pouvant être atteint et l'action en découlantPrincipe minimax: la valeur de tous les états terminaux est propagée vers le noeud racineObservation: tous les noeuds de l'arbre sont explorés pour réaliser ce calculExemple: considérons la situation où la valeur minimax de (b) a déjà été calculée (noeuds ﬁls explorés)\n312382461452\n(a)(c)(d)(e)(f)(b)Etape 1: le noeud (a) est MAXDéduction: sa valeur sera AU MOINS 3Etape 2: le noeud (c) est MINObservation: la valeur du noeud (d) est 2Déduction: (c) sera AU PLUS 2Etape 3: élagage de (e) et de (f) (opération de pruning)Observation: quelque soit la valeur des autres ﬁls de (c), ils n'auront aucun impact sur la valeur de (a)Déduction: on peut ainsi les élaguer (couper ces branches de l'arbre) et éviter du travail inutile\nOk! commençons par identiﬁer les sources d’ineﬃcacités dans le minimax\nAutrement dit: peut-on faire un résultat équivalent en explorant moins de noeuds ?"
+      }
+    ]
+  },
+  {
+    "id": "f2341c5a-ca80-419b-8b3f-898b1440da1c",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_23.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlpha-beta pruning (élagage alpha-beta)\n23Considérons un noeud n de l'arbre (MIN dans ce cas)(3) Le joueur MAX a une action potentielle de se déplacer au noeud n(1) Soit m un autre noeud MIN plus haut que n dans l'arbre (déjà calculé)\n(4) Lorsque se déplacer sur m ou m' est un meilleur choix(2) Soit m' un autre noeud MIN au même niveau que n dans l'arbre (déjà calculé)\nEn quelles circonstances ne voudra t-il jamais se déplacer au noeud n ?(5) On peut obtenir cette information en explorant certains descendants de nm\nm'n\n(6) On explore les descendants jusqu'à être sur que n est moins bon que m ou m’(7) Lorsqu'on a cette certitude, on peut supprimer les branches de n non exploréesCe raisonnement peut être fait pour les joueurs MAX et MIN symétriquement≥m≥m′ Amélioration de l’algorithme minimax visant à supprimer les branches de l'arbre qui n'ont  aucun impact sur le calcul des valeurs minimaxAlpha-beta pruning (élagage alpha-beta)\nEn détectant ces situations, on pourra ainsi élaguer une partie des possibilitésn≤m(ou m′ )"
+      }
+    ]
+  },
+  {
+    "id": "54cafd45-9e24-4c03-b932-35033961af9c",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_24.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlpha-beta pruning (élagage alpha-beta)\n24β:valeur du meilleur choix trouvé actuellement pour MIN sur le chemin d'un noeud jusqu'à la racineα:valeur du meilleur choix trouvé actuellement pour MAX sur le chemin d'un noeud jusqu'à la racinePrincipe: ces bornes sont propagées de successeurs en successeurs lors de la rechercheObjectif: repérer quelles parties de l'arbre n'auront aucun impact sur les valeurs minimaxCas 1: règle d’élagage pour un noeud MINObjectif du noeud: est avoir la plus petite valeur possibleElagage: on supprime les branches d'un noeud MIN si sa valeur actuelle est inférieure à alphaSigniﬁcation: ce noeud n'a aucune chance d'être meilleur qu'un autre déjà trouvé pour MAX Objectif du noeud: est avoir la plus grande valeur possibleElagage: on supprime les branches d'un noeud MAX si sa valeur actuelle est supérieure à betaSigniﬁcation: ce noeud n'a aucune chance d'être meilleur qu'un autre déjà trouvé pour MIN\nComment implémenter ce mécanisme eﬃcacement ?Idée: maintenir deux valeurs supplémentaires lors de la recherche (bornes alpha-beta)Interprétation:score minimum que le joueur MAX est assuré d'obtenir (borne inférieure sur le score)Interprétation:score maximum que le joueur MAX peut obtenir (borne supérieure sur le score)\nComment utiliser ces bornes ?\nCas 2: règle d’élagage pour un noeud MAX\n≤α\n≥β"
+      }
+    ]
+  },
+  {
+    "id": "d92d5cd1-3306-4836-a1a5-0300cfa60cec",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_25.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartAlpha-beta pruning (élagage alpha-beta)\n25\n𝖺𝗅𝗉𝗁𝖺𝖡𝖾𝗍𝖺𝖲𝖾𝖺𝗋𝖼𝗁(s0):⟨v,m⟩=𝗆𝖺𝗑𝖵𝖺𝗅𝗎𝖾(s0,−∞,+∞)𝗋𝖾𝗍𝗎𝗋𝗇⟨v,m⟩αβ\n𝗆𝖺𝗑𝖵𝖺𝗅𝗎𝖾(s,α,β):𝗂𝖿𝗂𝗌𝖳𝖾𝗋𝗆𝗂𝗇𝖺𝗅(s):v⋆=−∞m⋆=⊥𝖿𝗈𝗋𝖾𝖺𝖼𝗁a∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)⟨v,_⟩=𝗆𝗂𝗇𝖵𝖺𝗅𝗎𝖾(s′ ,α,β)s′ =𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a)𝗂𝖿v>v⋆:v⋆=vm⋆=a𝗋𝖾𝗍𝗎𝗋𝗇⟨v⋆,m⋆⟩𝗋𝖾𝗍𝗎𝗋𝗇⟨𝗎𝗍𝗂𝗅𝗂𝗍𝗒(s,𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋),⊥⟩\nα=max(α,v⋆)𝗂𝖿v⋆≥β:𝗋𝖾𝗍𝗎𝗋𝗇⟨v⋆,m⋆⟩Initialisation des bornes à +- l'inﬁni (aucune information ne peut être déduite à ce stade)\nMàJ de alpha, avec la plus haute valeur des ﬁlsPruning si une valeur est supérieure à beta\n𝗆𝗂𝗇𝖵𝖺𝗅𝗎𝖾(s,α,β):𝗂𝖿𝗂𝗌𝖳𝖾𝗋𝗆𝗂𝗇𝖺𝗅(s):v⋆=∞m⋆=⊥𝖿𝗈𝗋𝖾𝖺𝖼𝗁a∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)⟨v,_⟩=𝗆𝖺𝗑𝖵𝖺𝗅𝗎𝖾(s′ ,α,β)s′ =𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a)𝗂𝖿v<v⋆:v⋆=vm⋆=a𝗋𝖾𝗍𝗎𝗋𝗇⟨v⋆,m⋆⟩𝗋𝖾𝗍𝗎𝗋𝗇⟨𝗎𝗍𝗂𝗅𝗂𝗍𝗒(s,𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋),⊥⟩\nβ=min(β,v⋆)𝗂𝖿v⋆≤α:𝗋𝖾𝗍𝗎𝗋𝗇⟨v⋆,m⋆⟩Raisonnement similaire pour MINPropagation des bornes aux noeuds ﬁls\nOn a ainsi un algorithme concret intégrant le mécanisme d’élagage alpha-beta !"
+      }
+    ]
+  },
+  {
+    "id": "78dc1cf7-1b03-4964-8209-b456acc974ec",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_26.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartIllustration de l'algorithme\n26Beta garde la valeur de 3La valeur du noeud MIN est propagée au parent12382461452Initialisation de la recherche et des bornesv⋆=−∞α=−∞β=∞\nBeta garde la valeur de 3 (car meilleure que 12 pour MIN)12382461452v⋆=−∞α=−∞β=∞\n12382461452v⋆=−∞α=−∞β=∞Propagation des bornes actuelles au noeud ﬁls12382461452v⋆=−∞α=−∞β=∞v⋆=∞α=−∞β=∞\nBeta prend la valeur de 3 (plus grande valeur possible pour MIN)v⋆=−∞\n12382461452α=−∞β=∞v⋆=3α=−∞β=3β=min(3,12)−∞<3:𝖮𝖪\nv⋆=3α=−∞β=3β=min(3,8)−∞<3:𝖮𝖪12382461452v⋆=3α=3β=∞3α=max(−∞,3)v⋆=3α=−∞β=3β=min(∞,3)−∞<3:𝖮𝖪α<v (pas de pruning)∞>3:𝖮𝖪β>v (pas de pruning)\n⟨v,_⟩=𝗆𝗂𝗇𝖵𝖺𝗅𝗎𝖾(s′ ,α,β)"
+      }
+    ]
+  },
+  {
+    "id": "ed2bcb24-fec0-4fd1-b45a-ba43562a69e0",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_27.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartIllustration de l'algorithme\n27Observation: on arrive à un noeud où alpha est plus grand que beta Raison 1: on a déjà un chemin où le joueur MAX pourra AU MOINS obtenir un score de 3 (valeur alpha)Raison 2: a ce noeud, le joueur MAX pourra AU PLUS obtenir un score de 2 (valeur assurée pour MIN)Elagage: Il n'y a aucun intérêt de continuer l'expansion de ce noeud312382461452v⋆=3α=3β=∞α=3β=∞v⋆=∞Propagation des bornes actuelles au noeud ﬁls312382461452v⋆=3α=3β=∞α=3β=2v⋆=2β=min(∞,2)3<2:𝖯𝖱𝖴𝖭𝖨𝖭𝖦!Beta prend la valeur de 2 (plus grande valeur possible pour MIN)\nLa valeur du noeud MIN est propagée au parentα=3β=2v⋆=223123821452v⋆=∞α=3β=∞Propagation des bornes actuelles au noeud ﬁlsv⋆=3α=3β=∞23123821452v⋆=3α=3β=∞α=max(3,2)∞>3:𝖮𝖪\n⟨v,_⟩=𝗆𝗂𝗇𝖵𝖺𝗅𝗎𝖾(s′ ,α,β)"
+      }
+    ]
+  },
+  {
+    "id": "a84ff44f-7a8b-4729-b0a2-b80f35267b12",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_28.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartIllustration de l'algorithme\n28Observation: on est encore à une situation où alpha est plus grand que beta, mais on a ﬁni la recherche !v⋆=14α=3β=14β=min(∞,14)3<14:𝖮𝖪Beta prend la valeur de 14 (plus grande valeur possible pour MIN)\nv⋆=5α=3β=5β=min(14,5)3<5:𝖮𝖪v⋆=2α=3β=2β=min(5,2)3<2:𝖯𝖱𝖴𝖭𝖨𝖭𝖦!\nBeta prend la valeur de 5 (plus grande valeur possible pour MIN)Beta prend la valeur de 2 (plus grande valeur possible pour MIN)v⋆=3α=3β=∞v⋆=3α=3β=∞v⋆=∞α=3β=∞Propagation des bornes actuelles au noeud ﬁls23123821452v⋆=3α=3β=∞231238214523232123821452v⋆=3α=3β=∞23123821452\nL’algorithme a ﬁni son exécution, et on a évité l’exploration de deux noeuds"
+      }
+    ]
+  },
+  {
+    "id": "09835289-1e4a-4396-9c9b-6a39fd4bb43f",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_29.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartPropriétés de l'algorithme\n29Observation 1: les valeurs minimax (v) sont toujours propagées vers le noeud parentObservation 2: les bornes alpha-beta sont toujours propagées vers les noeuds ﬁlsObservation 3: les bornes beta sont mises à jour uniquement par les noeuds MINObservation 4: les bornes alpha sont mises à jour uniquement par les noeuds MAXSignal d’élagage: dès qu’on est à un noeud ou alpha est plus grand que betaAutrement dit: cet algorithme n'eﬀectue aucune approximation ! \nEst-il possible de pruner plus de branches dans notre exemple ?En pratique: des sous-arbres complets peuvent être prunés, et non seulement des noeuds feuilles\n3232123821452(a)(b)(c)(d)\nLa valeur minimax obtenue à la racine sera la même que celle obtenue par la recherche minimaxExactitude de l’élagage alpha-beta\nBonne nouvelle: au niveau calculatoire, on ne rajoute aucune opération coûteuseOui: en étendant le noeud (d) avant (b) et (c)Résultat: on aurait directement obtenu le signal de pruningElagage supplémentaire: les noeuds (c) et et (b)"
+      }
+    ]
+  },
+  {
+    "id": "cc20022a-a61b-4a7b-a307-6c6658789a89",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_30.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartOrdre de considération des actions\n30Idée 1: étendre d'abord les pires actions possibles pour le joueur actuel\nOrdre peu eﬃcace: aucun pruning possible\n𝗆𝖺𝗑𝖵𝖺𝗅𝗎𝖾(s,α,β):𝗂𝖿𝗂𝗌𝖳𝖾𝗋𝗆𝗂𝗇𝖺𝗅(s):v⋆=−∞m⋆=⊥𝖿𝗈𝗋𝖾𝖺𝖼𝗁a∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)⟨v,_⟩=𝗆𝗂𝗇𝖵𝖺𝗅𝗎𝖾(s′ ,α,β)s′ =𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a)𝗂𝖿v>v⋆:v⋆=vm⋆=a𝗋𝖾𝗍𝗎𝗋𝗇⟨v⋆,m⋆⟩𝗋𝖾𝗍𝗎𝗋𝗇⟨𝗎𝗍𝗂𝗅𝗂𝗍𝗒(s,𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋),⊥⟩\nα=max(α,v⋆)𝗂𝖿v⋆≥β:𝗋𝖾𝗍𝗎𝗋𝗇⟨v⋆,m⋆⟩Idée 2: étendre d'abord les meilleures actions pour le joueur actuel\nOrdre eﬃcace: 4 noeuds prunés (environ 30% des noeuds de l'arbre)322351426421283\nRègle d'or pour la sélectionAux noeuds MAX: étendre les actions ayant le plus haut scoreAux noeuds MIN: étendre les actions ayant le plus petit score\nA t-on accès à ces valeurs ?323283122462514\nL'eﬃcacité du pruning alpha-beta dépend fortement de l'ordre dans lequel les actions sont étendues"
+      }
+    ]
+  },
+  {
+    "id": "091e2bc9-1c66-4e6a-a9c0-a4cf8a077fcf",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_31.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartSélection d'un ordre des actions\n31Explication: cela revient à obtenir la valeur minimax (et donc résoudre le problème)Etendre d'abord les actions qui sont plus propices à être d'une bonne qualité pour le joueur actuelOrdre de sélection des actions dans alpha-beta\nCompromis possible: on peut tenter d'estimer à quel point une action est bonne pour un joueurIntuitivement: c'est ce qu'on fait lorsqu'on joue en considérant d'abord ce qui nous semble le plus favorable\nRecherche minimax simple: 𝒪(bm)Alpha-beta pruning avec un mauvais ordre: 𝒪(bm) (aucune amélioration)Alpha-beta pruning avec un ordre optimal: 𝒪(bm)=𝒪(bm/2)Bonne nouvelle: le pruning peut rendre possible une exploration deux fois plus profonde !Exemple pour les échecs: considérer d'abord les captures, puis les menaces, puis les déplacementsUtilisation d'une heuristique: estimer les états intermédiaires et les trier en fonction d'une heuristique\nMalheureusement, on n’a pas accès à ces valeurs !\nQuel impact l’élagage a t-il sur la complexité temporelle de la recherche minimax simple ?\nNouveau facteur de branchement: b→b (preuve en lecture complémentaire)Alpha-beta pruning avec un ordre aléatoire: ≈𝒪(b3m/4)"
+      }
+    ]
+  },
+  {
+    "id": "3c4c7ddd-7c02-4ad6-8feb-758309e32f11",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_32.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartChemins redondants et table de transposition\n32\nXXXXXXOOOOOOXXX..................\nVoyez-vous du travail inutile dans cet arbre de recherche ?Observation: un même état est présent plusieurs fois dans l’arbre de rechercheSource n’ineﬃcacité: les sous-arbres d’états identiques seront aussi identiquesMauvaise nouvelle: ne pas tenir compte de ce phénomène engendre de grosses pertes de performances"
+      }
+    ]
+  },
+  {
+    "id": "688629e8-f793-421d-be24-d3c7161f18e4",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_33.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartChemins redondants et table de transposition\n33Séquence d'actions diﬀérentes menant à un même état dans l'arbre de rechercheChemin redondant\nMémoire qui va retenir les états déjà visités lors de la rechercheTable de transposition\nCe mécanisme est très puissant ! (permet une exploration deux fois plus profondes aux échecs)Même philosophie que la recherche en graphe retenant les états déjà explorés (module précédent)Principe: avant d'étendre un état, on va vériﬁer qu'il ne se trouve pas déjà dans la mémoireImplémentation eﬃcace: avec une fonction de hachage (p.e., hachage de Zobrist - lecture complémentaire)"
+      }
+    ]
+  },
+  {
+    "id": "94a2f104-6186-4ff2-8099-150120ef7431",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_34.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nXXXXXXOOOOOOXXX..................Table des matières\n34Recherche adversarielle1. Motivation de la recherche adversarielle 2. Catégorisation d'environnements compétitifs et des jeux 3. Stratégie de recherche minimax 4. Mécanisme du alpha-beta pruning 5. Conception de fonctions d'évaluation (heuristiques) 6. Mécanismes supplémentaires d'amélioration 7. Arbre de recherche de Monte-Carlo (Monte-Carlo tree search) 8. Extension à d'autres familles de jeux (plusieurs adversaires, présence d'aléatoire, etc.) 9. Exemples et historique d'agents dédiés aux jeux"
+      }
+    ]
+  },
+  {
+    "id": "11aa4d05-1030-436e-b50e-14891a8e4e7c",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_35.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartStratégies pour améliorer la recherche\n35Plan de secours: utiliser des heuristiques pour estimer la qualité des états intermédiairesInconvénient: contrairement à l'alpha-beta pruning, on eﬀectue des approximations\nMauvaise nouvelle: on est encore très loin de pouvoir être eﬃcace à des jeux complexes (échecs, Go, etc.)\nQue peut-on faire ?Autre mauvaise nouvelle: on doit abandonner l'idée de calculer une stratégie optimaleInconvénient: on est généralement très sensible à la qualité des heuristiques choisiesObjectif: réduire la taille de l’espace de recherche\nPlusieurs stratégies sont possibles selon la façon dont les heuristiques sont intégrées à la recherche"
+      }
+    ]
+  },
+  {
+    "id": "055373e1-0cd2-410a-a07b-82ae1b2e53c9",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_36.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartStratégies de type A\n36Principe: ﬁxer une profondeur limite pour une exploration complèteImplication pratique: l’exploration de l'arbre est large mais peu profonde\nComment obtenir la valeur minimax des états de la profondeur non ﬁnale ?\nValeur ?Stratégie visant à eﬀectuer une recherche jusqu’à une certaine profondeur de l’arbreStratégie de type A"
+      }
+    ]
+  },
+  {
+    "id": "3e8ba82f-f5ba-4458-a085-d3bcccd395d9",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_37.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartHeuristique Minimax\n37Principe identique à la valeur minimax, sauf qu'on utilise une fonction heuristique pour évaluer la qualité des états de la profondeur limiteHeuristique minimax\n𝗁𝖾𝗎𝗋𝗂𝗌𝗍𝗂𝖼𝖤𝗏𝖺𝗅𝗎𝖺𝗍𝗂𝗈𝗇(s,𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋)𝗂𝖿𝗂𝗌𝖢𝗎𝗍𝗈𝖿𝖿𝖣𝖾𝗉𝗍𝗁(d)maxa∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)𝗁𝖾𝗎𝗋𝗂𝗌𝗍𝗂𝖼𝖬𝗂𝗇𝗂𝗆𝖺𝗑(𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a),d+1)𝗂𝖿𝗍𝗎𝗋𝗇(s)=𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋mina∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)𝗁𝖾𝗎𝗋𝗂𝗌𝗍𝗂𝖼𝖬𝗂𝗇𝗂𝗆𝖺𝗑(𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a),d+1)𝗂𝖿𝗍𝗎𝗋𝗇(s)=𝗆𝗂𝗇𝖯𝗅𝖺𝗒𝖾𝗋𝗁𝖾𝗎𝗋𝗂𝗌𝗍𝗂𝖼𝖬𝗂𝗇𝗂𝗆𝖺𝗑(s,d)={\nHeuristicEvaluation(               ,maxPlayer)Principe 1: les états de la profondeur limite sont estimés suivant notre heuristique d'évaluationEn pratique: combinaison possible et souhaitée avec de l'alpha-beta pruningPrincipe 2: les valeurs sont propagées jusqu'à la racine de la même façon que par la recherche minimaxImplication pratique: on évite de devoir aller à la ﬁn de l'arbre pour pouvoir calculer l'action à eﬀectuerHeuristicEvaluation(               ,maxPlayer)"
+      }
+    ]
+  },
+  {
+    "id": "59bd6aa8-824a-42e9-bd9c-7e3cfe394638",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_38.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartFonction heuristique des les jeux\n38Nature de l’heuristique: la signiﬁcation de sa valeurModule précédent: estimation de la distance entre un état et l'état ﬁnalModule actuel: estimation du score (utility) qui pourra être obtenu via cet état \nPour les états terminaux: 𝗁𝖾𝗎𝗋𝗂𝗌𝗍𝗂𝖼𝖤𝗏𝖺𝗅𝗎𝖺𝗍𝗂𝗈𝗇(s,p)=𝗎𝗍𝗂𝗅𝗂𝗍𝗒(s,p)\nPour les états non terminaux: mins∈S𝗎𝗍𝗂𝗅𝗂𝗍𝗒(s,p)≤𝗁𝖾𝗎𝗋𝗂𝗌𝗍𝗂𝖼𝖤𝗏𝖺𝗅𝗎𝖺𝗍𝗂𝗈𝗇(s,p)≤maxs∈S𝗎𝗍𝗂𝗅𝗂𝗍𝗒(s,p)Exemple: jeu d'échecsValeurs ﬁnales: score de -1 pour une défaite, +1 pour une victoire, 0 pour une égalité (point de vue blanc)\nInterprétation: état mitigé, avec une estimation d'un léger avantage pour les blancsEstimation de l’heuristique: 0.3\nInterprétation: état montrant un clair avantage pour les blancsEstimation de l’heuristique: 0.95Intuition: on voudra se retrouver dans un état avec une valeur élevée pour nous"
+      }
+    ]
+  },
+  {
+    "id": "bf1f2d11-72a6-40f2-b87e-f31a548b8048",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_39.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartConception d'une heuristique\n39Précision: fortement corrélée avec le score ﬁnal atteignable depuis l'étatEﬃcacité: pas trop coûteuse à calculer (l'objectif est de rendre la recherche plus rapide)La construction d'une heuristique revient souvent à un processus en deux étapes(1) Caractérisation: consiste à transformer un état en une série de caractéristiques (features) (2) Evaluation: consiste à évaluer la qualité d'un état, sur base des caractéristiques identiﬁées\nExemple: jeu d’échecs(1) Caractérisation sur base du matérielJoueur blanc: 𝗇_𝗉𝗂𝗈𝗇𝗌=3,𝗇_𝖼𝖺𝗏𝖺𝗅𝗂𝖾𝗋𝗌=1,…Joueur noir: 𝗇_𝗉𝗂𝗈𝗇𝗌=6,𝗇_𝖼𝖺𝗏𝖺𝗅𝗂𝖾𝗋𝗌=0,…(2) Evaluation pour une combinaison linéaire\nCalcul des poids: soit par connaissance experte, ou apprentissage automatiqueValeur des pièces: w𝗉𝗂𝗈𝗇𝗌=1,w𝖼𝖺𝗏𝖺𝗅𝗂𝖾𝗋𝗌=3,…\nQuelles sont les caractéristiques essentielles d'une bonne heuristique ?\nh(s)=w1x1(s)+w2x2(s)+…+wmxm(s)\nh𝗆𝖺𝗍𝖾𝗋𝗂𝖾𝗅(s,p)=𝗇_𝗉𝗂𝗈𝗇𝗌(s,p)+3×𝗇_𝖼𝖺𝗏𝖺𝗅𝗂𝖾𝗋𝗌(s,p)+3×𝗇_𝖿𝗈𝗎𝗌(s,p)+5×𝗇_𝗍𝗈𝗎𝗋𝗌(s,p)+…\nhblanc(s)=h𝗆𝖺𝗍𝖾𝗋𝗂𝖾𝗅(s,𝖻𝗅𝖺𝗇𝖼)−h𝗆𝖺𝗍𝖾𝗋𝗂𝖾𝗅(s,𝗇𝗈𝗂𝗋)"
+      }
+    ]
+  },
+  {
+    "id": "13583754-108a-4087-8182-6fca60f92d03",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_40.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDangers des stratégies de type A\n40(1) Forte dépendance à l’heuristique: haut risque d’une mauvaise action si l’heuristique est mauvaise\nQuels sont les dangers/diﬃcultés d’une stratégie de type A ?(2) Eﬀet de myopie: un état paraît bon à la profondeur limite, mais ne l’est pas réellement\nSituation à un noeud limite: avantage pour les noirs (meilleur matériel)Diﬃculté: la reine noire est non protégée et peut être prise gratuitement par la tour du joueur blancEn réalité, l'état est favorable pour les blancs (non visible à cause de la profondeur limite)Exemple: considérons une heuristique basée sur le matériel de chaque joueur\nTour des blancs\nQu’en pensez vous ?\nPrise de la reine noire\nAvez-vous une idée pour mitiger cette diﬃculté ?"
+      }
+    ]
+  },
+  {
+    "id": "e027b295-f1ea-45e1-a303-d06c6901eb07",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_41.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDangers des stratégies de type A\n41Amélioration possible: autoriser de couper la recherche que sur les quiescent states\nDiﬃculté: pas toujours aisé de repérer un quiescent state\nTour des blancs\nPrise de la reine noirePosition sécuritaire pour couper la recherche (sans action importante en attente)Etat sécuritaire (quiescent state)\nExemple aux échecs: ne pas couper la recherche lorsqu’une capture importante est en cours\n𝗁𝖾𝗎𝗋𝗂𝗌𝗍𝗂𝖼𝖤𝗏𝖺𝗅𝗎𝖺𝗍𝗂𝗈𝗇(s,𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋)𝗂𝖿𝖮𝗇𝖢𝗎𝗍𝗈𝖿𝖿𝖮𝗋𝖦𝗋𝖾𝖺𝗍𝖾𝗋(d)∧𝗂𝗌𝖰𝗎𝗂𝖾𝗌𝖼𝖾𝗇𝗍(s)maxa∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)𝗁𝖾𝗎𝗋𝗂𝗌𝗍𝗂𝖼𝖬𝗂𝗇𝗂𝗆𝖺𝗑(𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a),d+1)𝗂𝖿𝗍𝗎𝗋𝗇(s)=𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋mina∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)𝗁𝖾𝗎𝗋𝗂𝗌𝗍𝗂𝖼𝖬𝗂𝗇𝗂𝗆𝖺𝗑(𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a),d+1)𝗂𝖿𝗍𝗎𝗋𝗇(s)=𝗆𝗂𝗇𝖯𝗅𝖺𝗒𝖾𝗋𝗁𝖾𝗎𝗋𝗂𝗌𝗍𝗂𝖼𝖬𝗂𝗇𝗂𝗆𝖺𝗑(s,d)={Autre amélioration: arrêter d’étendre un noeud selon certains critères (p.ex., défaite ou victoire assurée)"
+      }
+    ]
+  },
+  {
+    "id": "460e0e33-c20e-4197-a6b7-d0e6c0bbd57b",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_42.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartStratégies de type B\n42Principe: ne pas considérer les actions qui sont mauvaises suite à notre évaluation heuristique\nSimilaire à la façon humaine de raisonner (de par notre faculté limitée à considérer trop de possibilités)Réalisation simple de cette stratégie: n'étendre que les n meilleurs mouvements suivant l'heuristiqueDanger: il est possible que la meilleure action soit supprimée par ce mécanismeAmélioration: intégrer une profondeur variable (profond pour les bonnes actions, progressivement plus faible)Stratégie visant à étendre en priorité que les actions qui sont les plus prometteusesStratégie de type B\nImplication pratique: l’exploration de l'arbre est étroite mais profondeIdéalement, on souhaite explorer jusqu’en bas de l’arbre, mais pour un exemple restreint de scénarios"
+      }
+    ]
+  },
+  {
+    "id": "ae7cfa3e-4b3e-485d-a5cf-fd0f7922362e",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_43.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartDébuts et ﬁns de partie\n43\nQuelles sont les particularités d’un début et d’une ﬁn de partie dans un jeu ?Début de partieParticularité 1: l’arbre de recherche est immense (exploration complète impensable)Fin de partie\nDans les deux cas, on économise du temps d’exécution par du pré-calcul et de la consommation mémoireConséquence: on ﬁnit souvent par réaliser les même actions en début de partieParticularité 2: les conséquences à long terme des actions sont diﬃciles à prévoirIdée: suivre une table d’ouverture pour les premiers mouvements, au lieu d’explorer l’arbreConstruction de la table: souvent sur base de connaissances expertes ou de statistiques\nParticularité 1: l’exploration complète de l’arbre est possible mais reste coûteuseParticularité 3: les conséquences d’une mauvaise action peuvent être irrémédiablesParticularité 2: beaucoup de ﬁn de partie peuvent se ressembler (p.e., KBNK)Idée: suivre une table de ﬁn de partie pour les derniers mouvements, au lieu d’explorerConstruction de la table: par l’exécution antérieure d’une stratégie de recherche (éventuellement coûteuse)"
+      }
+    ]
+  },
+  {
+    "id": "c5e5c92c-cc06-4df5-9e98-461f5208c3b0",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_44.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nhttps://stockﬁshchess.org/Cas d'étude: Stockﬁsh\n44Combinaison des idées précédentes: minimax, alpha-beta, et tables de transpositionStockﬁsh: logiciel entièrement dédié à jouer aux échecsCréation: en 2004 (développement toujours actif)Caractéristiques: open-source et code disponible sur Github\nhttps://github.com/oﬃcial-stockﬁsh/StockﬁshStratégie de recherche\nPerformances largement supérieures aux humainsUtilisation pratique: outil d'analyse sur les plateformes de jeu en ligne (Lichess)\nPerformancesIngrédient principal: heuristique excellente mais très complexe\nFragment de la fonction heuristiqueStockﬁsh: profondeur de plus de 30 actionsMinimax avec alpha-beta pruning: profondeur de 8 actionsSouvent la première ou deuxième place aux concours d’IAMécanisme additionnel: gestion spéciﬁque des les ﬁns de partie"
+      }
+    ]
+  },
+  {
+    "id": "0da1c845-baf5-4039-9894-d8b15221f026",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_45.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nXXXXXXOOOOOOXXX..................Table des matières\n45Recherche adversarielle1. Motivation de la recherche adversarielle 2. Catégorisation d'environnements compétitifs et des jeux 3. Stratégie de recherche minimax 4. Mécanisme du alpha-beta pruning 5. Conception de fonctions d'évaluation (heuristiques) 6. Mécanismes supplémentaires d'amélioration 7. Arbre de recherche de Monte-Carlo (Monte-Carlo tree search) 8. Extension à d'autres familles de jeux (plusieurs adversaires, présence d'aléatoire, etc.) 9. Exemples et historique d'agents dédiés aux jeux"
+      }
+    ]
+  },
+  {
+    "id": "7430ec61-b86b-41bf-a3a1-138b8b8b7452",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_46.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMotivation d'un autre algorithme de recherche\n46Diﬃculté: les stratégies vues dépendent fortement de la qualité des heuristiquesConséquence: si l’heuristique est mauvaise, les performances seront médiocresConséquence: pour certains jeux, il est très diﬃcile de construire une heuristique convenable\nQue faire dans cette situation ?\nAvec les méthodes vues, êtes-vous capables de créer une bonne AI pour n'importe quel jeu ? \nEn théorie: oui ! (dans un jeu déterministe, tour par tour, etc.)En pratique: on doit être capable de construire une bonne heuristiqueDiﬃculté: construire une heuristique comme pour Stockﬁsh demande des connaissances expertes\nJeu de Go: le matériel n'est pas une bonne indication d'une victoireCivilization: règles très complexes"
+      }
+    ]
+  },
+  {
+    "id": "d75313d2-63b6-4289-a760-4110eb447f9e",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_47.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartArbre de recherche de Monte Carlo - Monte Carlo Tree Search (MCTS)\n47Faiblesses du minimax heuristique avec alpha-beta pruningFaiblesse 1: extrêmement dépendant de la qualité de l’heuristique\nFaiblesse 2: exploration profonde diﬃcile avec un grand facteur de branchementJeu de Go: cas pathologique par excellente (b = 361 en début de partie)Monte Carlo tree search (MCTS)Stratégie alternative qui n'utilise nativement aucune heuristiqueIdée: estimer la qualité des états à l'aide de simulations (aléatoires) de partiesLes états amenant souvent à une victoire seront considérés comme prometteursL’arbre est construit en étendant en priorité des états prometteursAvantage: la stratégie est générique dans le sens où elle peut être exportée facilement de jeu en jeuDiﬃculté: la meilleure façon de réaliser les simulations n'est pas clairement déﬁnieAvantage: ne demande pas de déﬁnir une fonction d'évaluationDiﬃculté: de par la nature aléatoire de cette stratégie, on risque de manquer des lignes de jeu importantes\nSubtilité: la construction tient aussi compte de l’incertitude que l’on peut avoir sur la qualité d’un état"
+      }
+    ]
+  },
+  {
+    "id": "1bd56f50-b576-44f2-84c7-5f842e5fc076",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_48.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMCTS: Algorithme\n48Fonctionnement de l'algorithmeUn arbre de recherche est construit successivement via 4 phases fondamentales\nLes étapes (1) à (4) sont répétées jusqu'à ce que le budget temps soit épuisé(1) Sélection: à partir de la racine, choisir des actions aﬁn d'arriver à un un noeud feuille de l'arbre actuel(2) Expansion: étendre les noeuds successeurs du noeud feuille précédemment atteint(3) Simulation: prendre un successeur, simuler une partie à partir de ce noeud, et observer le score obtenu(4) Backpropagation: propager cette information jusqu'à la racine et mettre à jour certaines valeur\nSélection\nExpansionBackpropagation\nscore = 20\nScore = 20score = 20\nSimulation\nScore = 20"
+      }
+    ]
+  },
+  {
+    "id": "bea00c34-49d9-4a87-9642-49357b4562e9",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_49.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMCTS: pseudocode et initialisation\n49t=𝗂𝗇𝗂𝗍𝖳𝗋𝖾𝖾(s0)𝖿𝗈𝗋i∈0𝗍𝗈Θ:t=𝖻𝖺𝖼𝗄𝗉𝗋𝗈𝗉𝖺𝗀𝖺𝗍𝖾(v,nchild)𝗋𝖾𝗍𝗎𝗋𝗇𝖻𝖾𝗌𝗍𝖠𝖼𝗍𝗂𝗈𝗇(s0)nleaf=𝗌𝖾𝗅𝖾𝖼𝗍(t)nchild=𝖾𝗑𝗉𝖾𝗇𝖽(nleaf)v=𝗌𝗂𝗆𝗎𝗅𝖺𝗍𝖾(nchild)Initialisation de l'arbre de recherche à partir de l'état actuel (position actuelle du plateau)Itération: tant qu'un nombre d'itérations limite n'est pas atteint, on eﬀectue les 4 phases\nValeur de retour: on choisit une action à eﬀectuer sur base de l’arbre partiellement construitImplémentation: fournir une procédure complète pour ces diﬀérentes fonctionsN(n): le nombre total de simulations ayant impliqué un noeud nU(n):Le score total cumulé de toutes les simulations pour un noeud nInitialisation: création d’un noeud racine correspondant à l'état actuel du jeuPrincipe: deux statistiques seront maintenues pour chaque noeud étenduValeur initiale: ces valeurs sont initialisées à zéro pour la racineU=0N=0Phase de sélection: retourne un noeud feuille en vue d’une extensionPhase d'extension: le noeud feuille est étendu et un de ses ﬁls est retournéPhase de simulation: le noeud ﬁls est simulé aﬁn d'en estimer sa valeurPhase de backpropagation: l'information est remontée jusqu'à la racine en modiﬁant l'arbreParamètres: l'état sur lequel exécuter la recherche, et le nombre d'itérations limite\nA\n𝖬𝖢𝖳𝖲(s0,Θ):\nStratégie de recherche basée sur une répétition de ces 4 phases fondamentales Arbre de recherche de Monte-Carlo (MCTS- Monte-Carlo tree search)"
+      }
+    ]
+  },
+  {
+    "id": "d8b4cc99-d305-415e-bedc-2a82fa4bc4c2",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_50.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMCTS: phase de sélection\n50Phase de sélectionObjectif: atteindre un noeud feuille depuis la racine en vue de l’étendre\nComment sélectionner le noeud feuille à étendre ?C'est ici que les statistiques des noeuds seront utiliséesPremière idée: à partir de la racine, choisir chaque fois le noeud ayant obtenu le meilleur score moyen\n𝖺𝗏𝖾𝗋𝖺𝗀𝖾𝖲𝖼𝗈𝗋𝖾(n)=U(n)N(n)U=12U=0U=12N=31U=5N=10U=7N=20N=30N=1ACBEDExemple: considérons l'arbre suivant obtenu suite à quelques itérations\n𝖺𝗏𝖾𝗋𝖺𝗀𝖾𝖲𝖼𝗈𝗋𝖾(B)=1230=0.4𝖺𝗏𝖾𝗋𝖺𝗀𝖾𝖲𝖼𝗈𝗋𝖾(C)=01=0Au noeud A→Sélection de BSélection de DRésultat: D sera le prochain noeud à étendre\n𝖬𝖢𝖳𝖲(s0,Θ):t=𝗂𝗇𝗂𝗍𝖳𝗋𝖾𝖾(s0)𝖿𝗈𝗋i∈0𝗍𝗈Θ:t=𝖻𝖺𝖼𝗄𝗉𝗋𝗈𝗉𝖺𝗀𝖺𝗍𝖾(v,nchild)𝗋𝖾𝗍𝗎𝗋𝗇𝖻𝖾𝗌𝗍𝖠𝖼𝗍𝗂𝗈𝗇(s0)nleaf=𝗌𝖾𝗅𝖾𝖼𝗍(t)nchild=𝖾𝗑𝗉𝖾𝗇𝖽(nleaf)v=𝗌𝗂𝗆𝗎𝗅𝖺𝗍𝖾(nchild)Intuition: on priorise le scénario qui en moyenne a abouti au meilleur score cumulé lors des simulations\n𝖺𝗏𝖾𝗋𝖺𝗀𝖾𝖲𝖼𝗈𝗋𝖾(D)=510=0.5𝖺𝗏𝖾𝗋𝖺𝗀𝖾𝖲𝖼𝗈𝗋𝖾(E)=720=0.35Au noeud B→"
+      }
+    ]
+  },
+  {
+    "id": "a4dee04a-3958-496f-9d6a-6634e0c9f945",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_51.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMCTS: phase de sélection - principe UCT\n51\nQuelle est la faiblesse de cette idée ?U=12U=5N=10U=7N=20U=12N=30U=0N=1N=31ACBEDPrincipe: on choisit la meilleure action selon l’estimation actuelleDiﬃculté: nos estimations sont imparfaites !Surtout au début de la rechercheSurtout lorsque le nombre de simulation est faibleExemple: Le noeud C n'a été simulé qu'une seule fois, ainsi l'indication de son score actuel est peu ﬁableCorrection possible: inciter également à la sélection des noeuds qui ont été peu simulés (haute incertitude)Sélectionne d’un état successeur selon la valeur UCB (upper conﬁdence bound)Règle de sélection UCT (upper conﬁdent bound applied to trees)\nAvec C une constante permettant de balancer le poids donné à l'exploration𝖴𝖢𝖡𝟣(n)=U(n)N(n)+C×lnN(𝖯𝖺𝗋𝖾𝗇𝗍(n))N(n)La valeur de C est générallement choisie expérimentalement (valeur théorique de 2)Intuition: sélection sur base de la valeur moyenne (terme de gauche) et l’incertitude (terme de droite)"
+      }
+    ]
+  },
+  {
+    "id": "638f37e1-1cbf-4a62-9858-edc37d3dd29d",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_52.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMCTS: phase de sélection - principe UCT\n52U=12U=5N=10U=7N=20U=12N=30U=0N=1N=31ACBED\n𝖴𝖢𝖡𝟣(n)=U(n)N(n)+C×lnN(𝖯𝖺𝗋𝖾𝗇𝗍(n))N(n)Premier terme: favorise l'exploitation d'une bonne action𝖴𝖢𝖡𝟣(B)=1230+2×ln3130=1.08𝖴𝖢𝖡𝟣(C)=01+2×ln311=3.7Deuxième terme: favorise l'exploration des noeuds peu simulésSélection de l'action menant au noeud C Fonctionnement: plus le nombre de simulation est bas, plus la valeur est grandeAutres règles de sélection (à ne pas connaître)Avec V(n), la variance d’eﬀectuer l’action menant au noeud nAvec P(n), une probabilité de sélectionner l’action menant au n (calculée via un réseau de neurones)𝖴𝖢𝖡𝟣𝗍𝗎𝗇𝖾𝖽(n)=U(n)N(n)+C×lnN(𝖯𝖺𝗋𝖾𝗇𝗍(n))N(n)×min(14,V(n)+2ln(𝖯𝖺𝗋𝖾𝗇𝗍(n))N(n))\n𝖠𝗅𝗉𝗁𝖺𝖹𝖾𝗋𝗈𝖲𝖾𝗅𝖾𝖼𝗍𝗂𝗈𝗇(n)=U(n)N(n)+C×P(n)×N(𝖯𝖺𝗋𝖾𝗇𝗍(n))1+N(n)"
+      }
+    ]
+  },
+  {
+    "id": "e459d35a-53c7-49fd-ae43-a45c48cc7ab6",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_53.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMCTS: phase d'expansion\n53Phase d'expansion\n𝖬𝖢𝖳𝖲(s0,Θ):t=𝗂𝗇𝗂𝗍𝖳𝗋𝖾𝖾(s0)𝖿𝗈𝗋i∈0𝗍𝗈Θ:t=𝖻𝖺𝖼𝗄𝗉𝗋𝗈𝗉𝖺𝗀𝖺𝗍𝖾(v,nchild)𝗋𝖾𝗍𝗎𝗋𝗇𝖻𝖾𝗌𝗍𝖠𝖼𝗍𝗂𝗈𝗇(s0)nleaf=𝗌𝖾𝗅𝖾𝖼𝗍(t)nchild=𝖾𝗑𝗉𝖾𝗇𝖽(nleaf)v=𝗌𝗂𝗆𝗎𝗅𝖺𝗍𝖾(nchild)Déclenchement: dès qu’un noeud feuille est atteint lors de la sélectionObjectif: générer les successeurs du noeud feuilleConséquence: le noeud n'est plus une feuille (sauf si l’état est terminal)Condition d’expansion: que si le noeud a déjà été simulé\nCondition pour l'expansion:N(n)>0\nU=12U=0U=12N=31\nU=5N=10U=7N=20N=30N=1ACBEDInitialisation d’un noeud: Les statistiques du noeud sont mises à 0ACBEDGFU=12U=0U=12N=31\nU=5N=10U=7N=20N=30N=1U=0N=0U=0N=0"
+      }
+    ]
+  },
+  {
+    "id": "ecf9728a-bbee-407c-92fa-f113bd27a920",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_54.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMCTS: phase de simulation\n54Phase de simulation (rollout, playout)\n𝖬𝖢𝖳𝖲(s0,Θ):t=𝗂𝗇𝗂𝗍𝖳𝗋𝖾𝖾(s0)𝖿𝗈𝗋i∈0𝗍𝗈Θ:t=𝖻𝖺𝖼𝗄𝗉𝗋𝗈𝗉𝖺𝗀𝖺𝗍𝖾(v,nchild)𝗋𝖾𝗍𝗎𝗋𝗇𝖻𝖾𝗌𝗍𝖠𝖼𝗍𝗂𝗈𝗇(s0)nleaf=𝗌𝖾𝗅𝖾𝖼𝗍(t)nchild=𝖾𝗑𝗉𝖾𝗇𝖽(nleaf)v=𝗌𝗂𝗆𝗎𝗅𝖺𝗍𝖾(nchild)Déclenchement: dès qu’un noeud feuille atteint (sélection ou expansion)Objectif: obtenir une estimation de la qualité de l’étatValeur de retour: Le score ﬁnal obtenu à l'issue de la simulationConséquence: les statistiques du noeud simulé sont mises à jour\nN(n)=1 (une seule simulation a été faite pour ce noeud)U(n)=v (la valeur de ce noeud est le résultat de la simulation)ACBEDGFscore = 20U=12U=0U=12N=31\nU=5N=10U=7N=20N=30N=1U=0N=0U=0N=0v=20ACBEDGFU=12U=0U=12N=31\nU=5N=10U=7N=20N=30N=1U=20N=1U=0N=0Principe: simuler le reste d’une partie à partir de cet état\nComment réaliser une (bonne) simulation ?"
+      }
+    ]
+  },
+  {
+    "id": "5158777b-50a4-427d-a1e3-4b020ecc6e5d",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_55.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMCTS: phase de simulation\n55Idée 1: simulation aléatoireAvantage: peut fonctionner pour des jeux simples (donne une stratégie potable)Principe: les deux joueurs choisissent leurs actions aléatoirement lors des simulationsInconvénient: performances moindres pour des jeux plus complexesIdée 2: intégration d'heuristiquesPrincipe: utiliser une heuristique pour biaiser les simulations vers des bonnes actions Avantage: donne de meilleurs résultats en pratiqueInconvénient: demande quand même d'intégrer des heuristiques, souvent non trivialesExemple: donner une probabilité de sélection plus haute à une capture aux échecsIdée 3: principe de l'auto-entrainement (self-play)(1) Partir d'un agent aléatoirePrincipe: faire jouer l'agent contre lui-même lors des simulationsAlphaGo Zero: 29 millions de parties en self-play(2) mettre à jour l’agent après x itérations, et l’utiliser pour les nouvelles simulationsIntuition: l'agent va rencontrer un adversaire de plus en plus eﬃcace\nAvantage: très simple à mettre en place\nAvantage: la dépendance à l’heuristique est moindre que pour le cas minimax"
+      }
+    ]
+  },
+  {
+    "id": "b4691135-85b9-462b-bfc2-01456d3d8d75",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_56.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMCTS: phase de backpropagation\n56Phase de backpropagation\n𝖬𝖢𝖳𝖲(s0,Θ):t=𝗂𝗇𝗂𝗍𝖳𝗋𝖾𝖾(s0)𝖿𝗈𝗋i∈0𝗍𝗈Θ:t=𝖻𝖺𝖼𝗄𝗉𝗋𝗈𝗉𝖺𝗀𝖺𝗍𝖾(v,nchild)𝗋𝖾𝗍𝗎𝗋𝗇𝖻𝖾𝗌𝗍𝖠𝖼𝗍𝗂𝗈𝗇(s0)nleaf=𝗌𝖾𝗅𝖾𝖼𝗍(t)nchild=𝖾𝗑𝗉𝖾𝗇𝖽(nleaf)v=𝗌𝗂𝗆𝗎𝗅𝖺𝗍𝖾(nchild)ACBEDGFU=12U=0U=12N=31\nU=5N=10U=7N=20N=30N=1U=20N=1U=0N=0Objectif: mettre à jour les statistiques des noeuds après la simulation\nN(n)=N(n)+1 (on a fait une simulation de plus impliquant ce noeud)U(n)=U(n)+v (le score de ce noeud est mis à jour avec le résultat)\nProchaine itération: on répète le processus avec le nouvel arbre et les statistiques mises à jourACBEDGFU=12U=20U=32N=32\nU=5N=10U=7N=20N=30N=2U=20N=1U=0N=0Déclenchement: après chaque simulationImpact: sur tous les noeuds du chemin jusqu’à la racine\nCritère d’arrêt: après la réalisation de x itérations, ou sur base d’un budget temps alloué"
+      }
+    ]
+  },
+  {
+    "id": "84297808-2f2f-4570-8fe9-50144aa6d680",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_57.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMCTS: choix de l'action à exécuter\n57\nQuelle action choisiriez vous ? celle amenant à B ou C ?Choix de l'action\n𝖬𝖢𝖳𝖲(s0,Θ):t=𝗂𝗇𝗂𝗍𝖳𝗋𝖾𝖾(s0)𝖿𝗈𝗋i∈0𝗍𝗈Θ:t=𝖻𝖺𝖼𝗄𝗉𝗋𝗈𝗉𝖺𝗀𝖺𝗍𝖾(v,nchild)𝗋𝖾𝗍𝗎𝗋𝗇𝖻𝖾𝗌𝗍𝖠𝖼𝗍𝗂𝗈𝗇(s0)nleaf=𝗌𝖾𝗅𝖾𝖼𝗍(t)nchild=𝖾𝗑𝗉𝖾𝗇𝖽(nleaf)v=𝗌𝗂𝗆𝗎𝗅𝖺𝗍𝖾(nchild)Objectif principal: déterminer la meilleure action à exécuter\nN=1ACBEDGFU=12U=20U=32N=32\nU=5N=10U=7N=20N=30N=2U=20U=0N=0\nChoix intuitif: l'action ayant le meilleur score moyen\nQuel est le soucis de cette sélection ?\n𝖻𝖾𝗌𝗍𝖠𝖼𝗍𝗂𝗈𝗇(n)=U(n)N(n)→Selection de CCe choix est très dangereux !Danger: engendre un haut risque de favoriser les actions incertainesMeilleur choix: prendre l’action qui a été simulée le plus de fois\n𝖻𝖾𝗌𝗍𝖠𝖼𝗍𝗂𝗈𝗇(n)=N(n)→Selection de BExemple: seulement 2 simulations ont été faites pour CIntuition: la sélection UCB assure déjà que les actions les plus simulées sont de bonne qualité"
+      }
+    ]
+  },
+  {
+    "id": "1b40eaf7-93ac-4778-bc1f-e1071f244629",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_58.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMCTS vs Minimax (avec alpha-beta pruning et heuristiques)\n58\nQuand devriez choisir ou méthode ou une autre ?Diﬃcile à répondre, sans réponse claire et déﬁnitiveArguments en faveur de Minimax (+ améliorations)On peut uniquement énoncer certaines observations(1) Lorsque vous avez une excellente heuristique que vous souhaitez utiliser(2) Lorsque le facteur de branchement est faible (exploration plus profonde)Arguments en faveur de MCTS(1) Lorsqu’il est très diﬃcile de concevoir une bonne heuristique(2) Lorsque le facteur de branchement est grand (diﬃculté pour minimax)(3) Lorsque vous voulez facilement transposer votre agent à un autre jeuHybridation possible: construire un agent basé sur ces deux stratégiesExemple: utilisation d’une heuristique dans une simulation(3) Lorsque des actions critiques sont impliquées (action ayant un gros impact)\nBonus: se combine assez bien avec de l'apprentissage automatique\nExemple: MCTS en début de partie, et minimax par la suite\nACBEDGF"
+      }
+    ]
+  },
+  {
+    "id": "6d2f5093-adf0-4c25-8f3f-272804a581c4",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_59.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nXXXXXXOOOOOOXXX..................Table des matières\n59Recherche adversarielle1. Motivation de la recherche adversarielle 2. Catégorisation d'environnements compétitifs et des jeux 3. Stratégie de recherche minimax 4. Mécanisme du alpha-beta pruning 5. Conception de fonctions d'évaluation (heuristiques) 6. Mécanismes supplémentaires d'amélioration 7. Arbre de recherche de Monte-Carlo (Monte-Carlo tree search) 8. Extension à d'autres familles de jeux (plusieurs adversaires, présence d'aléatoire, etc.) 9. Exemples et historique d'agents dédiés aux jeux"
+      }
+    ]
+  },
+  {
+    "id": "5481b4ee-3d78-432a-9562-9fdb5b2f9cef",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_60.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartExtension à d'autres types de situations\n60\nHypothèse fondamentale: on a supposé que notre adversaire était rationnel (qu'il joue le mieux possible)Limitation: il existe une multitude d'autres jeux (ou situations réelles) qu’on ne sait pas encore gérerAutres variantes: plus de deux joueurs, sujets à l'aléatoire, avec des informations cachées, etc.\nRelaxation de l’hypothèse fondamentale: l’adversaire n’est pas forcément rationnel\nCadre actuel: jeux à deux joueurs, déterministe, tour par tour, à information parfaite, et à somme nulle\nQue se passe t-il si on sort de ce cadre ?"
+      }
+    ]
+  },
+  {
+    "id": "916e467b-ccda-4243-960e-f92b817856b1",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_61.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMinimax avec des joueurs non rationnels\n61Rappel minimax: on a la garantie que l'action choisie est optimale (si la recherche est ﬁnie)Supposition: l'adversaire est rationnel et va eﬀectuer la meilleure action possibleEn pratique: on a aucune assurance que l’adversaire joue rationnellement\nEst-ce que minimax garde son caractère optimal ?Bonne nouvelle: on garde l’assurance d’avoir un score au moins aussi bonMauvaise nouvelle: on risque de manquer un meilleur scoreIntuition: minimax envisage le pire scénario qui peut se produire pour nous\n109101010509ab\n(1) Raisonnement minimax: amène à exécuter l'action a(2) En cas d’erreur: si l'adversaire fait une erreur (action b)Résultat: le score obtenu sera alors de 10Résultat possible: on aurait pu obtenir un score de 50Note: MCTS n'est pas sensible à cela (ne suppose pas un adversaire optimal)Piste d'amélioration: modéliser le comportement non-optimal de l'adversaire\nExemple: arbre à deux niveaux de décisions"
+      }
+    ]
+  },
+  {
+    "id": "2dc899cd-dabd-40bd-bcf5-eb95931a12b0",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_62.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMinimax avec plus de deux joueurs\n62Jeu multi-joueur: jeu qui implique plus de deux joueursConséquence: chaque joueur a sa propre fonction d'utilité qu'il souhaite maximiserEtat terminal: donne le score atteint pour chaque joueurAdaptation du minimax: chaque joueur va faire le meilleur coup possible pour lui\nDynamique du jeu: en fonction des intérêts communs, des alliances peuvent être formées et détruitesNote: le jeu n'est pas forcément à somme nulle\n(1,2,6)(4,2,3)(6,1,2)(7,4,1)(5,1,1)(0,5,2)(7,7,1)(5,4,5)(1,2,6)(6,1,2)(0,5,2)(5,4,5)(1,2,6)(0,5,2)(1,2,6)Maximiser la valeur bleueMaximiser la valeur rougeMaximiser la valeur verte"
+      }
+    ]
+  },
+  {
+    "id": "62432ed2-ff2a-4444-9ede-0aa2047cf87a",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_63.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartMinimax avec la présence d'aléatoire\n63\nAléatoire explicite: dynamique propre du jeu (p.e., un lancement de dés)Adversaires imprévisibles: l'adversaire pas toujours rationnelActions imprévisibles: l'action faite peut échouer (tir au but d'un joueur)Chance node: nouveau type de noeud, représentant les diﬀérents scénarios possibles\nNiveau 1: le joueur actuel (MAX) a un choix entre deux actionsNiveau 2: un évènement aléatoire se produit (lancer de dé de l'adversaire avec 6 résultats équiprobables)Niveau 3: l’adversaire (MIN) a ensuite un choix entre deux actions\n1/61/61/61/61/61/61/61/61/61/61/61/6\nJeu stochastique: jeu qui implique une présence d’aléatoirePoint de considération: rajouter cette notion dans une recherche minimax"
+      }
+    ]
+  },
+  {
+    "id": "d549b3e6-47a9-4fec-9c1a-ebefebe62222",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_64.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartValeur Expectiminimax\n64Valeur minimax: reﬂète le résultat obtenu en une situation extrême (meilleure stratégie des deux joueurs)Valeur expectiminimax: tient également compte du résultat moyen obtenu lors des chance nodesInterprétation: représente le meilleur résultat moyen pouvant être obtenu si les deux joueurs sont optimauxValeur qui indique le score ﬁnal espéré (pour le joueur MAX) qui sera obtenu à partir d'un état, si les deux joueurs jouent de façon optimaleValeur Expectiminimax\n𝗎𝗍𝗂𝗅𝗂𝗍𝗒(s,𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋)𝗂𝖿𝗂𝗌𝖳𝖾𝗋𝗆𝗂𝗇𝖺𝗅(s)maxa∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)𝖤𝗑𝗉𝖬𝗂𝗇𝗂𝗆𝖺𝗑(𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a))𝗂𝖿𝗍𝗎𝗋𝗇(s)=𝗆𝖺𝗑𝖯𝗅𝖺𝗒𝖾𝗋mina∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)𝖤𝗑𝗉𝖬𝗂𝗇𝗂𝗆𝖺𝗑(𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a))𝗂𝖿𝗍𝗎𝗋𝗇(s)=𝗆𝗂𝗇𝖯𝗅𝖺𝗒𝖾𝗋𝖤𝗑𝗉𝖬𝗂𝗇𝗂𝗆𝖺𝗑(s)={∑a∈𝖺𝖼𝗍𝗂𝗈𝗇𝗌(s)P(a)𝖤𝗑𝗉𝖬𝗂𝗇𝗂𝗆𝖺𝗑(𝗍𝗋𝖺𝗇𝗌𝗂𝗍𝗂𝗈𝗇(s,a))𝗂𝖿𝗍𝗎𝗋𝗇(s)=𝖼𝗁𝖺𝗇𝖼𝖾𝖭𝗈𝖽𝖾Probabilité d’une action (P): chaque action aléatoire a une certaine probabilité d’être obtenueNote: à un chance node, une action correspond à une possibilité d’un tirage aléatoire"
+      }
+    ]
+  },
+  {
+    "id": "e3f45248-7883-45d2-bc2a-992d1ece69f5",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_65.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart275321640.90.10.90.1ABValeur Expectiminimax\n65\nQuelle action doit être faite si on veut maximiser son score moyen ?\nMauvaise nouvelle: en pratique, l’ajout d’aléatoire complexiﬁe énormément le problèmeAlpha-beta pruning: peut-on toujours supprimer des branches ? (oui, sous certaines conditions)Taille de l’arbre: considérablement plus grand car il faut explorer toutes les possibilitésFonction heuristique: comment les concevoir ?Considérations supplémentaires23142.11.3A:0.9×2+0.1×3=2.1B:0.9×1+0.1×4=1.32.1(1) Noeuds MIN: on prend la valeur minimale(2) Noeuds aléatoires: on prend la valeur moyenne (espérance)(3) Noeud MAX: on prend la valeur maximaleConclusion expectiminimax: on va choisir l’action A"
+      }
+    ]
+  },
+  {
+    "id": "d6204772-bc06-4741-bff9-1ac35cf4ae41",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_66.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nStratègoJeux partiellement observables\n66Jeux partiellement observablesInformations cachées pour tous: informations non connues de tous les joueurs (cartes communes au poker)Informations exclusives: informations disponibles seulement pour certains joueurs (unités au Stratègo)\nParticularités des stratégies pour ces jeux\nMauvaise nouvelle: il s’agit de situations très complexes sortant du cadre de ce cours\nStarcraft\nPoker\nWhistCaractéristiques principales: certains éléments du jeu ne sont pas visibles pour les joueurs\nAspect 1: utiliser au mieux les informations qui nous sont disponibles (exploiter une vue locale)Aspect 2: acquérir de nouvelles informations (avoir une vue globale)Aspect 3: tenir compte que l’adversaire a également des informations manquantesUne bonne stratégie passe généralement par la construction d’une représentation de l’environnement"
+      }
+    ]
+  },
+  {
+    "id": "f06e790d-fc13-4509-abf2-2e5a251ac3b2",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_67.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nXXXXXXOOOOOOXXX..................Table des matières\n67Recherche adversarielle1. Motivation de la recherche adversarielle 2. Catégorisation d'environnements compétitifs et des jeux 3. Stratégie de recherche minimax 4. Mécanisme du alpha-beta pruning 5. Conception de fonctions d'évaluation (heuristiques) 6. Mécanismes supplémentaires d'amélioration 7. Arbre de recherche de Monte-Carlo (Monte-Carlo tree search) 8. Extension à d'autres familles de jeux (plusieurs adversaires, présence d'aléatoire, etc.) 9. Exemples et historique d'agents dédiés aux jeux"
+      }
+    ]
+  },
+  {
+    "id": "bd14e030-c2ba-4b2d-b394-b00d10d2b161",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_68.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartHistorique des agents dédiés aux jeux\n68Niveau intermédiaire: performance d'un joueur moyenNiveau expert: capable de battre la majorité des joueursNiveau surhumain: capable de battre les meilleurs joueurs au monde Jeu résolu: possible de prédire le résultat d'une partie si les deux joueurs sont optimaux (niveau ultime)Niveau débutant: performance en dessous d'un joueur humain raisonnable (pas trop nul)Puissance 4\nEtat de l’art: Jeu résolu (1988)Résultat: le premier joueur peut forcer la victoire s'il joue de façon optimale Preuve: basée sur des raisonnements logiquesJeu de dames (checkers)\nEtat de l’art: jeu résolu (2007)Résultat: amène à une égalité si les deux joueurs sont optimauxPreuve: basée sur de l'alpha-beta pruning et une base de donnée des ﬁns de partieLecture complémentaire disponible sur Moodle\nComment caractériser les performances d’un agent intelligent par rapport à la performance humaine ?"
+      }
+    ]
+  },
+  {
+    "id": "ce1667a2-2db6-46e5-9b83-86a762af877b",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_69.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartHistorique des agents dédiés aux jeux\n69Jeu des échecs\nEtat de l’art: performance surhumaine (jeu non résolu)Moment clé: DeepBlue a battu le champion Garry Kasparov (1997)Caractéristique: minimax intégrant de l'alpha-beta pruning et des heuristiquesPerformances: capable d'évaluer 100 millions de positions par seconde Performances: capable d’explorer 40 coups à l'avanceBackgammon\nEtat de l’art: performance surhumaine (jeu non résolu)Diﬃculté du jeu: fait intervenir de l'aléatoire (lancer de deux dés)Postérité: première IA capable de battre un champion pour un jeu complexeMoment clé: BKG a battu un champion mondial (1980)Caractéristiques de l’algorithme: excellente fonction d'évaluationOthello\nEtat de l’art: performance surhumaine (jeu non résolu)Diﬃculté du jeu: il est diﬃcile de créer une bonne fonction d'évaluationMoment clé: Logistello a battu un champion mondial (1997)Heuristique: millions de paramètres calibrés avec une régression linéairehttps://skatgame.net/mburo/log.html"
+      }
+    ]
+  },
+  {
+    "id": "61a7fd2b-2c25-4925-9e6d-5e29e11fd360",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_70.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartHistorique des agents dédiés aux jeux\n70Jeu de GoEtat de l’art: performance surhumaine (jeu non résolu)Moment clé: AlphaGo a battu le champion Lee Sedol (2015)Mécanismes utilisés: MCTS, apprentissage supervisé, et par renforcement\nCaractéristique: utilisation d'un réseau de neurones (très) profondPostérité: AlphaGo Zero qui n'utilise plus de connaissances expertes\nStarcraft 2\nDiﬃculté du jeu: informations cachées et jeu temps-réelEtat de l’art: performance surhumaine (jeu non résolu)Moment clé: AlphaStar a battu des champions mondiaux (2019)Mécanismes utilisés: apprentissage par renforcement profondCaractéristique: utilisation intensive du mécanisme de self-play Poker\nDiﬃculté du jeu: présence d'aléatoire et d'informations cachéesMoment clé: Libratus a battu des champions (parties à 2 joueurs, 2017)Moment clé: Pluribus a battu des champions (parties à 6 joueurs, 2019)Etat de l’art: performance surhumaine (jeu non résolu)Mécanismes utilisés: apprentissage profond, et notions de théorie des jeux"
+      }
+    ]
+  },
+  {
+    "id": "61d68162-cff8-4757-a05b-098b08b5fb1e",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_71.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartHistorique des agents dédiés aux jeux\n71\nScrabble (2006)\nDota 2 (2018)\nQuake 3 (2019)(1) Jeux demandant une riche interaction entre les joueurs (négociation, alliance, trahison, etc.)(3) Jeux demandant une grande part d'exploration pour déceler les bonnes actions à exécuter(2) Jeux ayant une composante plus abstraite et faisant appel à l'imagination(4) Jeux sujets aux considérations du monde réel (physique des mouvements, etc.)\nNetHack\nIl y a encore plein d’autres jeux ou l’IA atteint des performances surhumaines\nEst-ce qu'il existe encore des jeux où les humains l'emportent ?"
+      }
+    ]
+  },
+  {
+    "id": "bc3fb6af-1aeb-42e1-b9ff-4e94d04535ed",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_72.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartPercée récente - Diplomacy\n72\nHuman-level play in the game of Diplomacy by combining language models with strategic reasoning (Meta, 2022)Diplomacy: jeu de plateau demandant des interactions très fortes avec les autres joueursCicero: agent développé par Meta en 2022 et ayant des performances supérieure au joueur moyen"
+      }
+    ]
+  },
+  {
+    "id": "5a7c0034-2a02-462d-9398-8f7a998f8101",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_73.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartA vous de jouer !\n73Il est préférable d'aller le plus profond possible dans l’arbre (un seul niveau peut faire une grosse diﬀérence)Utilisation d’un budget temps: une stratégie de type IDS est une bonne idéeImportant: déﬁnir une bonne heuristique est un point de conception crucial\n(1) Jouez et analysez vos parties pour identiﬁer les états qui sont favorables(2) Analysez les choix faits par votre agent et vériﬁer leur cohérence(2) N’oubliez pas de considérer les cas limitesDébut: une stratégie minimax heuristique est le plus simple pour démarrer\nA votre tour d’implémentez le meilleur agent pour Divercité !"
+      }
+    ]
+  },
+  {
+    "id": "3009021c-b69a-46db-9293-758d30abe65a",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_74.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin Cappart\nXXXXXXOOOOOOXXX..................Table des matières\n74Recherche adversarielle1. Motivation de la recherche adversarielle 2. Catégorisation d'environnements compétitifs et des jeux 3. Stratégie de recherche minimax 4. Mécanisme du alpha-beta pruning 5. Conception de fonctions d'évaluation (heuristiques) 6. Mécanismes supplémentaires d'amélioration 7. Arbre de recherche de Monte-Carlo (Monte-Carlo tree search) 8. Extension à d'autres familles de jeux (plusieurs adversaires, présence d'aléatoire, etc.) 9. Exemples et historique d'agents dédiés aux jeux"
+      }
+    ]
+  },
+  {
+    "id": "f8a256eb-2e93-465f-9e2e-f5f53f6d05ed",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_75.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartSynthèse des notions vues\n75Stratégie de recherche MinimaxRecherche adversarielleContexte: l’agent évolue dans un environnement compétitifEnvironnement: caractérisé par la présence d'un ou de plusieurs adversaires\nCadre de référence: deux joueurs, déterministe, tour par tour, à information parfaite, et à somme nulle\n324623128325214\nMinimax classique3232123821452\nAlpha-beta pruning\nAvec des heuristiquesAutres améliorations: tables de transposition, méthodes hybrides, suppression de branches, etc.Arbre de recherche MC\nDépendance moindre à une heuristiqueBasé sur des simulations de partiesMéthode assez générique"
+      }
+    ]
+  },
+  {
+    "id": "07d2772f-d872-4cb0-b21f-60f8f9d6a17c",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_76.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartExemples de questions d'examen\n761. Modéliser une situation comme un problème de recherche adversarielle 2. Savoir appliquer correctement un algorithme de recherche sur une situation donnée 3. Savoir construire des heuristiques pertinentesThéoriePratique1. Expliquer le fonctionnement et les propriétés d'une stratégie de recherche vue 2. Donner les avantages/inconvénients d'une stratégie de recherche par rapport à une autre 3. Expliquer les variations possibles de notre cadre de référence\nMate in 124 movesOh no ! You won again !\nFuturama (Mars University)"
+      }
+    ]
+  },
+  {
+    "id": "299fe7e5-2951-4772-9a08-019d9cab1767",
+    "image": "extracted_content\\M2-recherche-adversaire\\images\\page_77.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain the content of this page from the AI course material."
+      },
+      {
+        "from": "gpt",
+        "value": "Quentin CappartINF8175 - Intelligence artiﬁcielleMéthodes et algorithmesRecherche adversarielle: FIN\nDALLE: A colored pencil drawing by Cézanne of a robot playing chess"
+      }
+    ]
+  }
+]
