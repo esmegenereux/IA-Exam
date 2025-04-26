@@ -20,7 +20,20 @@ pip install -r requirements.txt
 
 ### 2. Organize Your Course Materials
 
-Place your course materials in the following structure:
+1. Place your PDF course materials in the `Class docs` directory:
+```
+Class docs/
+├── module1.pdf
+├── module2.pdf
+└── ...
+```
+
+2. Run the PDF processing script:
+```bash
+python src/pdf_processing/pdf_extractor.py
+```
+
+This will create processed content in:
 ```
 extracted_content/
 ├── module1/
@@ -43,7 +56,7 @@ python src/convert_to_llava_format.py
 
 This will create training data in:
 ```
-llava_training_data/
+src/llava_training_data/
 ├── module1_llava.json
 ├── module2_llava.json
 └── ...
@@ -73,17 +86,17 @@ The training will:
 
 - **src/**: Project-specific code
   - `convert_to_llava_format.py`: Data conversion utilities
-  - Custom processing scripts
+  - `pdf_processing/`: PDF extraction and processing tools
+  - `llava_training_data/`: Formatted training data
+
+- **Class docs/**: Original course materials
+  - PDF documents
+  - Organized by modules
 
 - **extracted_content/**: Processed course materials
   - Organized by modules
   - Contains images and text content
   - Includes module summaries
-
-- **llava_training_data/**: Formatted training data
-  - Structured conversation pairs
-  - Image references
-  - Ready for model training
 
 ## Training Configuration
 
