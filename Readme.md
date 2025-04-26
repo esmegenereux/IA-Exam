@@ -92,6 +92,52 @@ The training will:
 - Log training progress
 - Handle modular course content structure
 
+### 5. Export to USB Key
+
+After processing and training, you can export the data to a USB key for backup or transfer:
+
+1. **Prepare the USB Key**
+   - Ensure the USB key has sufficient space (recommended minimum 32GB)
+   - Format the USB key as exFAT for cross-platform compatibility
+   - Create a dedicated folder for the export (e.g., `llava_training_data_export`)
+
+2. **Export the Data**
+   ```bash
+   # Create export directory on USB key
+   mkdir /path/to/usb/llava_training_data_export
+   
+   # Copy the training data
+   cp -r src/convert_to_llava_format/llava_training_data/* /path/to/usb/llava_training_data_export/
+   ```
+
+3. **Verify the Export**
+   - Check that all files are copied successfully
+   - Verify the directory structure matches the original
+   - Ensure all image files are present and accessible
+   - Test opening a few JSON files to verify integrity
+
+4. **Important Considerations**
+   - The export includes:
+     - All processed images
+     - LLaVA format JSON files
+     - Training checkpoints (if any)
+   - Excluded files:
+     - Original PDFs (to save space)
+     - Temporary processing files
+     - Git repository data
+   - Recommended minimum free space on USB key: 32GB
+   - For large datasets, consider using compression:
+     ```bash
+     # Create a compressed archive
+     tar -czf llava_training_data.tar.gz src/convert_to_llava_format/llava_training_data/
+     ```
+
+5. **Cross-Platform Compatibility**
+   - Use exFAT file system for the USB key
+   - Avoid special characters in filenames
+   - Keep file paths under 260 characters
+   - Use lowercase for all filenames
+
 ## Project Structure
 
 ### Core Components
