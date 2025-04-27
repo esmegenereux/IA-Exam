@@ -1,5 +1,8 @@
 #!/bin/bash
 
+git lfs install
+git clone https://huggingface.co/Qwen/Qwen-VL-Chat path/to/qwen-vl-chat
+
 # Create and activate virtual environment
 python3 -m venv qwen_env
 source qwen_env/bin/activate
@@ -24,13 +27,8 @@ source ~/.bashrc
 pip install --upgrade pip
 
 # Install deep learning libraries with CUDA 11.4
-pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
-pip install transformers==4.30.2
-pip install vllm==0.2.0
-pip install accelerate==0.20.3
-pip install bitsandbytes==0.41.1
-pip install deepspeed==0.10.0
-pip install peft==0.4.0
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
+pip install transformers datasets peft bitsandbytes accelerate deepspeed
 
 # (Optional) Install xformers for faster training
 pip install xformers
